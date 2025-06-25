@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Atlas And Encyclopedia</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Animal Atlas & Encyclopedia</h1>
+        <p>Explore the fascinating world of animals!</p>
+    </header>
+
+    <main>
+        <!-- Animal Cards Section -->
+        <section class="animals">
+            <h2>Featured Animals</h2>
+            <div class="animal-cards">
+                <div class="card" onclick="showAnimal('tiger')">
+                    <img src="tiger.jpg" alt="Tiger">
+                    <h3>Tiger</h3>
+                </div>
+                <div class="card" onclick="showAnimal('elephant')">
+                    <img src="elephant.jpg" alt="Elephant">
+                    <h3>Elephant</h3>
+                </div>
+                <div class="card" onclick="showAnimal('penguin')">
+                    <img src="penguin.jpg" alt="Penguin">
+                    <h3>Penguin</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Fact Generator -->
+        <section class="fact-generator">
+            <h2>Random Animal Fact</h2>
+            <p id="fact-text">Click the button to learn something new!</p>
+            <button onclick="generateFact()">Generate Fact</button>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery">
+            <h2>Animal Gallery</h2>
+            <div class="gallery-images">
+                <img src="lion.jpg" alt="Lion">
+                <img src="giraffe.jpg" alt="Giraffe">
+                <img src="koala.jpg" alt="Koala">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Animal Atlas | Group 6A Project</p>
+    </footer>
+
+    <script src="brains.js"></script>
+</body>
+</html>
