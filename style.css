@@ -21,29 +21,66 @@ h1, h2, h3 {
 /* Animal Cards */
 .animal-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px;
+    gap: 24px;
+    padding: 24px;
 }
 
 .card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    width: 280px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 18px 12px 20px 12px;
+    position: relative;
+    border: 2px solid #e0e0e0;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border-color: #00704A;
 }
 
 .card img {
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: black;
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Card Badges for Animal, Habitat, Endangered */
+.card-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
+    background: #00704A;
+    letter-spacing: 1px;
+}
+
+.card-badge.habitat {
+    background: #4CAF50;
+}
+
+.card-badge.endangered {
+    background: #d32f2f;
 }
 
 /* Fact Generator */
@@ -78,12 +115,26 @@ h1, h2, h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    position: relative;
 }
 
 .gallery-images img {
     width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade transition for gallery images */
+.gallery-images {
+    position: relative;
+}
+.gallery-images.fade {
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+.gallery-images.show {
+    opacity: 1;
+    transition: opacity 1.2s;
 }
 
 footer {
@@ -223,7 +274,7 @@ ul li a:hover{
 }
 
 .content h2 {
-    color: #004d33;
+    color: black;
     text-align: center;
     font-size: 32px;
     margin-bottom: 24px;
@@ -254,7 +305,7 @@ ul li a:hover{
 }
 
 .content p strong {
-    color: #00704A;
+    color: black;
     font-size: 18px;
 }
 
@@ -285,4 +336,8 @@ ul li a:hover{
     font-size: 15px;
     padding-bottom: 10px;
     line-height: 30px;
+}
+
+.wf {
+    text-align: center;
 }
