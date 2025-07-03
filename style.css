@@ -198,7 +198,6 @@ ul li a:hover{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: background-color 0.4s;
 }
 
 .dropdown-content a:hover {
@@ -307,29 +306,26 @@ ul li a:hover{
 .content p strong {
     color: black;
     font-size: 18px;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .content .cn{
-    width: 200px;
-    height: 40px;
+    width: 180px;
     background: #00704A;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.content .cn a{
-    text-decoration: none;
     color: white;
-    transition: 0.3s ease;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 2px solid #00704A;
+    cursor: pointer;
 }
 
-.cn:hover{
-    background-color: #004d33;
+.content .cn:hover{
+    background: #004d33;
+    color: white;
 }
 
 .content .per{
