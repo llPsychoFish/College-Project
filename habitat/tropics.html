@@ -3,9 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donations - Animal Atlas And Encyclopedia</title>
+    <title>Forest Habitat - Animal Atlas</title>
+    <Style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+        /*slideshow Header */
+        .slideshow{
+            position:relative;
+            height: 350px;
+            overflow: hidden;
+        }
+        .slideshow img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1sease-in-out;
+        }
+        .slideshow img.active{
+            opacity: 1;
+        }
+        .header{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            background-color: rgba(0,0,0,0.4);
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1{
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .section{
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .sectionh2{
+            color: #2e7d32;
+            margin-top: 40px;
+        }
+        .forest-type{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .forest-card{
+            flex: 1 1 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .forest-card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .forest-card .info{
+            padding: 15px;
+        }
+        footer{
+            text-align: center;
+            background-color: #c8e6c9;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        a.back{
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2e7d32;
+        }
+    </Style>
 </head>
 <body>
-    <h1>This is the donations</h1>
+    <!--slideshow Header-->
+    <div class="slideshow">
+        <img
+        src="https://www.istockphoto.com/photo/summer-forest-with-bright-sun-shining-through-the-trees-gm
+        1700638280-538667973" class="active" alt="Forest">
+        <img 
+        src="https://www.istockphoto.com/photo/image-of-red-deer-stag-in-foggy-autumn-colorful-forest-gm637280958-113598063"
+         class="active" alt="Forest">
+        <img 
+        src="https://www.istockphoto.com/photo/a-view-up-into-the-trees-direction-sky-gm1317323736-404791748"
+        class="active" alt="Forest">
+
+        <div class="header-text">
+               <h1>Forest Habitat</h1>
+               <p>Forest are vital ecosystems, home to over 80% of land animals.
+              </p>
+             </div>
+        </div>
+        <!--Main Content-->
+        <div class="section">
+            <h2>What is a Forest?</h2>
+            <p>
+                A Forest is a large area dominated by trees and vegetation.
+                Forests provide shelter, food, and breeding grounds for animals, birds, and insects.
+                They also help maintain the earth's clmate and oxygen supply.
+            </p>
+            <h2>Types of Forests</h2>
+            <div class="forest-type">
+
+                <!--Tropical Rainforest-->
+                <div class="forest-card">
+                    <img
+                      src="https://www.istockphoto.com/photo/the-anvil-morning-mist-gm535499464-94965147"
+                       alt="Tropical Forest">
+                      <div class="info">
+                        <h3>Tropical Rainforest</h3>
+                        <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like
+                            Jaguars, toucans, and frogs
+                        </p>
+                      </div>
+                </div>
+                <!--Temperate Forest-->
+                <div class="forest-card">
+                    <img
+                      src="https://www.istockphoto.com/photo/forest-with-sun-gm676023938-124056701"
+                       alt="Temperate Forest">
+                      <div class="info">
+                        <h3>Temperate Forest</h3>
+                        <p>These forests have four seasons and house animals like deer, wolves, and bears.
+                            They're found in North America and Europe.
+                        </p>
+                      </div>
+                </div>
+
+                <!--Boreal (Taiga) Forest-->
+                <div class="forest-card">
+                    <img
+                      src="https://www.istockphoto.com/photo/fall-forest-and-lake-top-view-gm695189940-128498865"
+                      alt="Boreal Forest">
+                      <div class="info">
+                        <h3>Boreal Forest</h3>
+                        <p>Located in cold northern regions, boreal forests are filled with conifers
+                            and animals like moose, lynx, and owls
+                        </p>
+                      </div>
+                </div>
+
+            </div>
+
+            <h2>Animals in Forests</h2>
+            <p>Forests supports a wide variety of animals depending on the type and location.
+                Some common forest animals include:
+            </p>
+            <ul>
+                <li>Tigers, Leopards, and Elephants (Tropical Forest)</li>
+                <li>Foxes, Bears, and Racoons (Temperate Forests)</li>
+                <li>Wolves, Lynx, and Reindeer (Boreal Forest )</li>
+            </ul>
+             <a href="index.html">Back to main page</a>
+        </div>
+    
+        <footer>
+            &copy;Animal Encyclopedia. All rights reserved.
+        </footer>
+
+        <!--Javascript for slideshow-->
+        <script>
+            let slideindex=0;
+            const slide=document.querySelectorAll('.slideshow img');
+
+            function showNextSlide(){
+                slides[slideindex].classlist.remove('active');
+                slideindex=(slideindex + 1)% slides.length;
+                slide[slideindex].classlist.add('active');
+            }
+
+            setInterval(showNextSlide, 4000);
+        </script>
+
 </body>
 </html>
