@@ -11,8 +11,8 @@
         body{
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f8f0;
-            color: #333;
+            background-color: #f0fdf4;
+            color: #2e3d27;
         }
         /*slideshow Header */
         .slideshow{
@@ -26,12 +26,12 @@
             object-fit: cover;
             position: absolute;
             opacity: 0;
-            transition: opacity 1sease-in-out;
+            transition: opacity 1s ease-in-out;
         }
         .slideshow img.active{
             opacity: 1;
         }
-        .header{
+        .header-text{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -51,8 +51,8 @@
             max-width: 1000px;
             margin: auto;
         }
-        .sectionh2{
-            color: #2e7d32;
+        .section h2{
+            color: #2f6e4e;
             margin-top: 40px;
         }
         .forest-type{
@@ -78,7 +78,7 @@
         }
         footer{
             text-align: center;
-            background-color: #c8e6c9;
+            background-color: #dcedc8;
             padding: 15px;
             margin-top: 40px;
         }
@@ -86,7 +86,7 @@
             display: inline-block;
             margin-top: 20px;
             text-decoration: none;
-            color: #2e7d32;
+            color: #2f6e4e;
         }
     </Style>
 </head>
@@ -94,8 +94,8 @@
     <!--slideshow Header-->
     <div class="slideshow">
         <img
-        src="https://www.istockphoto.com/photo/summer-forest-with-bright-sun-shining-through-the-trees-gm
-        1700638280-538667973" class="active" alt="Forest">
+        src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?
+        auto=format&fit=crop&w=1470&q=80" class="active" alt="Forest1">
         <img 
         src="https://www.istockphoto.com/photo/image-of-red-deer-stag-in-foggy-autumn-colorful-forest-gm637280958-113598063"
          class="active" alt="Forest">
@@ -105,17 +105,18 @@
 
         <div class="header-text">
                <h1>Forest Habitat</h1>
-               <p>Forest are vital ecosystems, home to over 80% of land animals.
-              </p>
+               <p>Forest are rich ecosystems thatcover 31% of the earth and , support more than 80% of all
+              land animals.</p>
              </div>
         </div>
         <!--Main Content-->
         <div class="section">
             <h2>What is a Forest?</h2>
             <p>
-                A Forest is a large area dominated by trees and vegetation.
-                Forests provide shelter, food, and breeding grounds for animals, birds, and insects.
-                They also help maintain the earth's clmate and oxygen supply.
+                A Forest is a vast area covered with tree,shrubs,and rich plant life.
+                Forests regulate the climate, store carbon, purify water, provides food and offer habitat to countless 
+                species including birds, mammals, reptiles and insects.
+                They also help maintain the earth's oxygen supply.
             </p>
             <h2>Types of Forests</h2>
             <div class="forest-type">
@@ -140,12 +141,12 @@
                       <div class="info">
                         <h3>Temperate Forest</h3>
                         <p>These forests have four seasons and house animals like deer, wolves, and bears.
-                            They're found in North America and Europe.
+                            They're found in North America,Asia and Europe.
                         </p>
                       </div>
                 </div>
 
-                <!--Boreal (Taiga) Forest-->
+                <!--Boreal Forest-->
                 <div class="forest-card">
                     <img
                       src="https://www.istockphoto.com/photo/fall-forest-and-lake-top-view-gm695189940-128498865"
@@ -158,18 +159,60 @@
                       </div>
                 </div>
 
+                <!--Montane forest-->
+                <div class="forest-card">
+                    <img
+                    src="https://image.unsplash.com/photo-1623867025413-7ff2c67fc8f4?
+                    auto=format&fit=crop&w=1470&q=80" alt="Montane Forest">
+                    <div class="info">
+                        <h3>Montane Forest</h3>
+                        <p>Found in mountain regions with cooler temperatures. supports 
+                           unique high-altitudes wildlife. </p>
+                    </div>
+                </div>
+
             </div>
 
             <h2>Animals in Forests</h2>
-            <p>Forests supports a wide variety of animals depending on the type and location.
-                Some common forest animals include:
-            </p>
-            <ul>
-                <li>Tigers, Leopards, and Elephants (Tropical Forest)</li>
-                <li>Foxes, Bears, and Racoons (Temperate Forests)</li>
-                <li>Wolves, Lynx, and Reindeer (Boreal Forest )</li>
-            </ul>
-             <a href="index.html">Back to main page</a>
+            <div class="forest-type">
+
+                <div class="forest-card">
+                    <img
+                    src="https;//images.unsplash.com/photo-1592208304642-d76c7f5c6d5c?
+                    auto=format&fit=crop&w=1470&q=80" alt="Tiger">
+                    <div class="info">
+                        <h3>Tiger</h3>
+                        <p>The king of the tropical forest,stealthy,and strong.Tigers are endangered
+                            and need large territories.
+                        </p>
+                    </div>
+                </div>
+                <div class="forest-card">
+                    <img
+                    src="https;//images.unsplash.com/photo-1516997124291-3933c87cbe2d?
+                    auto=format&fit=crop&w=1470&q=80" alt="Deer">
+                    <div class="info">
+                        <h3>Deer</h3>
+                        <p>Graceful and quiet, deer thrive in temperate and boreal forests,
+                            feeding on leaves and shrubs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="forest-card">
+                    <img
+                    src="https;//images.unsplash.com/photo-1610337673040-7f45d0dfc85a?
+                    auto=format&fit=crop&w=1470&q=80" alt="Monkey">
+                    <div class="info">
+                        <h3>Monkey</h3>
+                        <p>Social and intelligent animals that live in the canopies of
+                            tropical rainforests.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html">Back to main page</a>
         </div>
     
         <footer>
