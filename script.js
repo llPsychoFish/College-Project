@@ -58,9 +58,10 @@ window.addEventListener('DOMContentLoaded', function() {
         'images/lion.jpg',
         'images/giraffe.jpg',
         'images/koala.jpg',
-        'images/penguin.jpg',
-        'images/tiger.jpg',
-        'images/elephant.jpg'
+        'images/poison_dart_frog.jpg',
+        'images/emerald_tree_boa.jpg',
+        'images/scarlet_macaw.jpg',
+        // Add more images as needed
     ];
     const galleryContainer = document.querySelector('.gallery-images');
     if (!galleryContainer) return;
@@ -90,5 +91,5 @@ window.addEventListener('DOMContentLoaded', function() {
     setInterval(() => {
         startIndex = (startIndex + 1) % galleryImages.length;
         showGalleryImages();
-    }, 3500); // Change images every 3.5 seconds
+    }, 6000); // Change images every 6 seconds (slower)
 });

@@ -45,13 +45,18 @@
 
     <main class="quiz-container">
         <section class="quiz">
-            <h2>Animal Quiz</h2>
-            <div id="quiz-content">
+            <h1 class="head">Animal Quiz</h1>
+            <div id="quiz-content" class="quiz-content">
                 <!-- Quiz questions will be generated here -->
             </div>
             <div class="controls">
-                <button id="start-btn" class="start-btn">Start Quiz</button>
-                <button id="next-btn" class="next-btn hide">Next Question</button>
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <button id="start-btn" class="start-btn">Start Quiz</button>
+                </div>
+                <button id="submit-btn" type="button">Submit</button>
+                <div id="result" class="result">
+                    <!-- Result will be displayed here -->
+                </div>
             </div>
         </section>
     </main>
@@ -59,5 +64,7 @@
     <footer>
         <p>© 2025 Animal Atlas | Group 6A Project</p>
     </footer>
+
+    <script src="quiz.js"></script>
 </body>
 </html>

@@ -140,3 +140,7 @@ footer {
     text-align: justify;
     color: #333;
 }
+
+p abbr {
+    text-decoration: none;
+}
