@@ -4,93 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest Habitat - Animal Atlas</title>
-    <Style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0fdf4;
-            color: #2e3d27;
-        }
-        /*slideshow Header */
-        .slideshow{
-            position:relative;
-            height: 350px;
-            overflow: hidden;
-        }
-        .slideshow img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .slideshow img.active{
-            opacity: 1;
-        }
-        .header-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            color: white;
-            background-color: rgba(0,0,0,0.4);
-            padding: 20px 40px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        h1{
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .section{
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .section h2{
-            color: #2f6e4e;
-            margin-top: 40px;
-        }
-        .forest-type{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .forest-card{
-            flex: 1 1 300px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .forest-card img{
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .forest-card .info{
-            padding: 15px;
-        }
-        footer{
-            text-align: center;
-            background-color: #dcedc8;
-            padding: 15px;
-            margin-top: 40px;
-        }
-        a.back{
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #2f6e4e;
-        }
-    </Style>
+    <link rel="stylesheet" href="tropics.css" type="text/css">
 </head>
 <body>
+    <header>
+            <h1>🐾 Animal Atlas & Encyclopedia</h1>
+            <p>Explore the fascinating world of animals!</p>
+        </header>
+
+        <nav class="menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ANIMAL LIST</a>
+                <div class="dropdown-content">
+                    <a href="../list/mammals.html">MAMMALS</a>
+                    <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
+                    <a href="../list/bird.html">BIRDS</a>
+                    <a href="../list/fish.html">SEA CREATURES</a>
+                </div>
+            </li>
+            <li><a href="../conservation.html">CONSERVATION</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">HABITAT</a>
+                <div class="dropdown-content">
+                    <a href="../habitat/ocean.html">OCEAN</a>
+                    <a href="../habitat/desert.html">DESERT</a>
+                    <a href="../habitat/tropics.html">RAINFOREST</a>
+                    <a href="../habitat/arctic.html">ARCTIC</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">RESOURCES</a>
+                <div class="dropdown-content">
+                    <a href="../resources/facts-jokes.html">FACTS & JOKES</a>
+                    <a href="../resources/quiz.html">FUN QUIZ</a>
+                </div>
+            </li>
+            <li><a href="../blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
     <!--slideshow Header-->
     <div class="slideshow">
         <img
@@ -216,22 +170,10 @@
         </div>
     
         <footer>
-            &copy;Animal Encyclopedia. All rights reserved.
+            <p>© 2025 Animal Atlas | Group 6A Project</p>
         </footer>
 
         <!--Javascript for slideshow-->
-        <script>
-            let slideindex=0;
-            const slide=document.querySelectorAll('.slideshow img');
-
-            function showNextSlide(){
-                slides[slideindex].classlist.remove('active');
-                slideindex=(slideindex + 1)% slides.length;
-                slide[slideindex].classlist.add('active');
-            }
-
-            setInterval(showNextSlide, 4000);
-        </script>
-
+        <script src="tropics.js"></script>
 </body>
 </html>
