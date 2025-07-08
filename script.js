@@ -52,44 +52,93 @@ function setRandomDescriptions() {
 // Set random descriptions on page load
 window.addEventListener('DOMContentLoaded', setRandomDescriptions);
 
-// Gallery image rotation with fade effect
+
+// Animal gallery fade-in/fade-out 3-grid slideshow
 window.addEventListener('DOMContentLoaded', function() {
     const galleryImages = [
-        'images/lion.jpg',
-        'images/giraffe.jpg',
-        'images/koala.jpg',
-        'images/poison_dart_frog.jpg',
-        'images/emerald_tree_boa.jpg',
-        'images/scarlet_macaw.jpg',
-        // Add more images as needed
+        'gallery/lion.jpg',
+        'gallery/giraffe.jpg',
+        'gallery/koala.jpg',
+        'gallery/poison_dart_frog.jpg',
+        'gallery/emerald_tree_boa.jpg',
+        'gallery/scarlet_macaw.jpg'
     ];
     const galleryContainer = document.querySelector('.gallery-images');
     if (!galleryContainer) return;
     let startIndex = 0;
-    const visibleCount = 3; // Number of images to show at once
+    const visibleCount = 1;
 
-    function showGalleryImages() {
-        galleryContainer.classList.remove('show');
-        galleryContainer.classList.add('fade');
+    function showGalleryImages(direction = 1) {
+        // Carousel: show only one image at a time, wrapping around
+        const oldWrapper = galleryContainer.querySelector('.swipe-wrapper');
+        const newWrapper = document.createElement('div');
+        newWrapper.className = 'swipe-wrapper';
+        newWrapper.style.display = 'flex';
+        newWrapper.style.justifyContent = 'center';
+        newWrapper.style.alignItems = 'center';
+        newWrapper.style.position = 'absolute';
+        newWrapper.style.left = direction > 0 ? '100%' : '-100%';
+        newWrapper.style.top = '0';
+        newWrapper.style.width = '100%';
+        newWrapper.style.transition = 'left 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+
+        let imgIndex = (startIndex) % galleryImages.length;
+        if (imgIndex < 0) imgIndex += galleryImages.length;
+        const img = document.createElement('img');
+        img.src = galleryImages[imgIndex];
+        img.alt = galleryImages[imgIndex].split('/').pop().replace('.jpg', '');
+        img.style.width = '500px';
+        img.style.height = '320px';
+        img.style.objectFit = 'cover';
+        img.style.borderRadius = '8px';
+        img.style.margin = '0 8px';
+        newWrapper.appendChild(img);
+        galleryContainer.style.position = 'relative';
+        galleryContainer.appendChild(newWrapper);
+        // Animate swipe
         setTimeout(() => {
-            galleryContainer.innerHTML = '';
-            for (let i = 0; i < visibleCount; i++) {
-                const imgIndex = (startIndex + i) % galleryImages.length;
-                const img = document.createElement('img');
-                img.src = galleryImages[imgIndex];
-                img.alt = galleryImages[imgIndex].split('/').pop().replace('.jpg', '');
-                galleryContainer.appendChild(img);
+            newWrapper.style.left = '0';
+            if (oldWrapper) {
+                oldWrapper.style.left = direction > 0 ? '-100%' : '100%';
+                oldWrapper.style.transition = 'left 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
             }
-            galleryContainer.classList.remove('fade');
-            galleryContainer.classList.add('show');
-        }, 1200); // Match the CSS transition duration (1.2s)
+        }, 10);
+        // Remove old after animation
+        setTimeout(() => {
+            if (oldWrapper) galleryContainer.removeChild(oldWrapper);
+        }, 700);
     }
-
     // Initial show
-    galleryContainer.classList.add('show');
-    showGalleryImages();
-    setInterval(() => {
+    galleryContainer.innerHTML = '';
+    showGalleryImages(1);
+
+    // Navigation buttons
+    const prevBtn = document.querySelector('.gallery-prev');
+    const nextBtn = document.querySelector('.gallery-next');
+    let autoSlide = setInterval(() => {
         startIndex = (startIndex + 1) % galleryImages.length;
-        showGalleryImages();
-    }, 6000); // Change images every 6 seconds (slower)
+        showGalleryImages(1);
+    }, 5000);
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            clearInterval(autoSlide);
+            startIndex = (startIndex - 1 + galleryImages.length) % galleryImages.length;
+            showGalleryImages(-1);
+            autoSlide = setInterval(() => {
+                startIndex = (startIndex + 1) % galleryImages.length;
+                showGalleryImages(1);
+            }, 5000);
+        });
+        nextBtn.addEventListener('click', () => {
+            clearInterval(autoSlide);
+            startIndex = (startIndex + 1) % galleryImages.length;
+            showGalleryImages(1);
+            autoSlide = setInterval(() => {
+                startIndex = (startIndex + 1) % galleryImages.length;
+                showGalleryImages(1);
+            }, 5000);
+        });
+    }
 });
+    

@@ -108,33 +108,58 @@ h1, h2, h3 {
 .gallery {
     padding: 16px;
     text-align: center;
+    position: relative;
 }
 
-.gallery-images {
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.85);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    color: #00704A;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.gallery-nav:hover {
+    background: #e0f7ef;
+}
+.gallery-prev {
+    left: 10px;
+}
+.gallery-next {
+    right: 10px;
+}
+
+/* Swiper Gallery Styles */
+
+/* Gallery Row Styles for 3-horizontal layout */
+.gallery-row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-    position: relative;
+    gap: 24px;
+    margin-bottom: 24px;
 }
-
-.gallery-images img {
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.gallery-row img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    border: 3px solid #e0e0e0;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
-/* Fade transition for gallery images */
-.gallery-images {
-    position: relative;
-}
-.gallery-images.fade {
-    opacity: 0;
-    transition: opacity 1.2s;
-}
-.gallery-images.show {
-    opacity: 1;
-    transition: opacity 1.2s;
+.gallery-row img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border-color: #00704A;
 }
 
 footer {
@@ -328,4 +353,13 @@ ul li a:hover{
 
 .wf {
     text-align: center;
+}
+
+.gallery-images {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
