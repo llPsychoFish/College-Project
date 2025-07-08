@@ -1,17 +1,17 @@
 const quizData = [
     {
         question: "What is the largest land animal?",
-        choices: ["Elephant", "Giraffe", "Hippopotamus", "Rhinoceros"],
+        choices: ["Hippopotamus", "Giraffe", "Elephants", "Rhinoceros"],
         correct: "Elephant"
     },
     {
         question: "Which animal is known as the 'King of the Jungle'?",
-        choices: ["Lion", "Tiger", "Leopard", "Jaguar"],
+        choices: ["Tiger", "Lion", "Leopard", "Jaguar"],
         correct: "Lion"
     },
     {
         question: "What is the fastest land animal?",
-        choices: ["Cheetah", "Greyhound", "Lion", "Horse"],
+        choices: ["Horse", "Greyhound", "Lion", "Cheetah"],
         correct: "Cheetah"
     },
     {
@@ -21,7 +21,7 @@ const quizData = [
     },
     {
         question: "What is the largest mammal in the world?",
-        choices: ["Blue Whale", "Elephant", "Giraffe", "Hippopotamus"],
+        choices: ["Giraffe", "Elephant", "Blue Whale", "Hippopotamus"],
         correct: "Blue Whale"
     }, 
     {
@@ -31,7 +31,7 @@ const quizData = [
     },
     {
         question: "What is the smallest bird in the world?",
-        choices: ["Bee Hummingbird", "Goldcrest", "Blue Tit", "Wren"],
+        choices: ["Wren", "Goldcrest", "Blue Tit", "Bee Hummingbird"],
         correct: "Bee Hummingbird"
     },
     {
@@ -46,12 +46,12 @@ const quizData = [
     },
     {
         question: "What is the only bird that can fly backwards?",
-        choices: ["Hummingbird", "Sparrow", "Swallow", "Kingfisher"],
+        choices: ["Swallow", "Sparrow", "Hummingbird", "Kingfisher"],
         correct: "Hummingbird"
     },
     {
         question: "Which animal has the longest gestation period?",
-        choices: ["Elephant", "Blue Whale", "Giraffe", "Horse"],
+        choices: ["Blue Whale", "Elephant", "Giraffe", "Horse"],
         correct: "Elephant"
     },
     {
@@ -61,7 +61,7 @@ const quizData = [
     },
     {
         question: "Which reptile is known for its ability to glide from tree to tree?",
-        choices: ["Draco Lizard", "Komodo Dragon", "Iguana", "Chameleon"],
+        choices: ["Chameleon", "Komodo Dragon", "Iguana", "Draco Lizard"],
         correct: "Draco Lizard"
     }
 ];
@@ -129,29 +129,34 @@ function submitQuiz() {
 function showResult() {
     const resultContainer = document.getElementById('result');
     const percentage = ((score / sessionQuestions.length) * 100).toFixed(2);
-    resultContainer.innerHTML = `<p>Your score: ${score} out of ${sessionQuestions.length} (${percentage}%)</p>
-        <button id="retake-btn">Retake Test</button>
-        <button id="newtest-btn">New Test</button>
-    `;
+    resultContainer.innerHTML = `<p>Your score: ${score} out of ${sessionQuestions.length} (${percentage}%)</p>`;
     document.getElementById('submit-btn').style.display = 'none';
-
-    // Add event listeners for the new buttons
-    document.getElementById('retake-btn').onclick = function() {
-        score = 0;
-        loadQuiz();
-        document.getElementById('submit-btn').style.display = 'block';
-    };
-    document.getElementById('newtest-btn').onclick = function() {
-        score = 0;
-        shuffle(quizData);
-        // Get a new set of questions
-        for (let i = 0; i < QUESTIONS_PER_SESSION; i++) {
-            sessionQuestions[i] = quizData[i];
-        }
-        loadQuiz();
-        document.getElementById('submit-btn').style.display = 'block';
-    };
+    document.getElementById('retake-btn').style.display = 'inline-block';
+    document.getElementById('newtest-btn').style.display = 'inline-block';
 }
+
+// Add event listeners for the static retake and new test buttons
+document.getElementById('retake-btn').onclick = function() {
+    score = 0;
+    loadQuiz();
+    document.getElementById('submit-btn').style.display = 'block';
+    document.getElementById('retake-btn').style.display = 'none';
+    document.getElementById('newtest-btn').style.display = 'none';
+    document.getElementById('result').innerHTML = '';
+};
+document.getElementById('newtest-btn').onclick = function() {
+    score = 0;
+    shuffle(quizData);
+    for (let i = 0; i < QUESTIONS_PER_SESSION; i++) {
+        sessionQuestions[i] = quizData[i];
+    }
+    loadQuiz();
+    document.getElementById('submit-btn').style.display = 'block';
+    document.getElementById('retake-btn').style.display = 'none';
+    document.getElementById('newtest-btn').style.display = 'none';
+    document.getElementById('result').innerHTML = '';
+};
+
 
 
 // Add event listener for Start Quiz button
@@ -175,5 +180,7 @@ window.onload = function() {
     document.getElementById('quiz-content').style.display = 'none';
     document.getElementById('submit-btn').style.display = 'none';
     document.getElementById('start-btn').style.display = 'block';
+    document.getElementById('retake-btn').style.display = 'none';
+    document.getElementById('newtest-btn').style.display = 'none';
     document.getElementById('result').innerHTML = '';
 };
