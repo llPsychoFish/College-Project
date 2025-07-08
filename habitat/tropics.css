@@ -157,3 +157,14 @@ header {
 h1, h2, h3 {
     margin: 8px 0;
 }
+.button {
+    background-color: #2f6e4e;
+    width: fit-content;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
