@@ -61,7 +61,9 @@ window.addEventListener('DOMContentLoaded', function() {
         'gallery/koala.jpg',
         'gallery/poison_dart_frog.jpg',
         'gallery/emerald_tree_boa.jpg',
-        'gallery/scarlet_macaw.jpg'
+        'gallery/scarlet_macaw.jpg',
+        'gallery/platypus.jpg',
+        'gallery/hammerhead_shark.jpg',
     ];
     const galleryContainer = document.querySelector('.gallery-images');
     if (!galleryContainer) return;
