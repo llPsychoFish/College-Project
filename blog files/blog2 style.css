@@ -1,0 +1,130 @@
+/* === Reset some basic styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4faff;
+  color: #333;
+  padding: 20px;
+}
+
+/* === Header styles === */
+h1, h2, h3, h4 {
+  color: #2e7d32; /* Green headers */
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+/* === Image styling === */
+img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* === Paragraph and lists === */
+p {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* === Navigation links === */
+a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Read More / Back Buttons === */
+.read-more, .back-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover, .back-link:hover {
+  background-color: #1b5e20;
+}
+
+/* === Container for multiple blog cards === */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* === Blog post card preview === */
+.blog-post {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* === Divider === */
+hr {
+  border: none;
+  border-top: 1px dashed #a5d6a7;
+  margin: 40px 0;
+}
