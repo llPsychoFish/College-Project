@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Habitat - Animal Atlas</title>
-    <Style>
-        *{
-            box-sizing: border-box;
-        }
+    <style>
         body{
             margin: 0;
             font-family: Arial, sans-serif;
@@ -28,7 +25,8 @@
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
-        .slideshow img.active{
+
+         .slideshow img.active{
             opacity: 1;
         }
         .header-text{
@@ -51,8 +49,9 @@
             max-width: 1000px;
             margin: auto;
         }
-        .section h2{
-            color: #0077b6;
+
+         .section h2{
+            color: hsl(148, 100%, 36%);
             margin-top: 40px;
         }
         .ocean-type{
@@ -73,24 +72,140 @@
             height: 200px;
             object-fit: cover;
         }
+
         .ocean-card .info{
             padding: 15px;
         }
         footer{
-            text-align: center;
-            background-color: #b2ebf2;
-            padding: 15px;
-            margin-top: 40px;
+            background: linear-gradient(to left, #00B050, #00704A);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 16px;
         }
         a.back{
             display: inline-block;
             margin-top: 20px;
             text-decoration: none;
-            color: #0077b6;
+            color: hsl(137, 71%, 72%);
         }
-    </Style>
+
+.menu{
+    width: 100%;
+    height: 70px;
+    clear: both;
+    background-color: #004d33;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 31px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00704A;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #004d33;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    background: linear-gradient(to left, #00B050, #00704A);
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+h1, h2, h3 {
+    margin: 8px 0;
+}        
+    </style>
+     <link rel="stylesheet" href="desert.css" type="text/css">
 </head>
 <body>
+     <header>
+            <h1>🐾 Animal Atlas & Encyclopedia</h1>
+            <p>Explore the fascinating world of animals!</p>
+        </header>
+
+        <nav class="menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ANIMAL LIST</a>
+                <div class="dropdown-content">
+                    <a href="../list/mammals.html">MAMMALS</a>
+                    <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
+                    <a href="../list/bird.html">BIRDS</a>
+                    <a href="../list/fish.html">SEA CREATURES</a>
+                </div>
+            </li>
+            <li><a href="../conservation.html">CONSERVATION</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">HABITAT</a>
+                <div class="dropdown-content">
+                    <a href="../habitat/ocean.html">OCEAN</a>
+                    <a href="../habitat/desert.html">DESERT</a>
+                    <a href="../habitat/tropics.html">RAINFOREST</a>
+                    <a href="../habitat/arctic.html">ARCTIC</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">RESOURCES</a>
+                <div class="dropdown-content">
+                    <a href="../resources/facts-jokes.html">FACTS & JOKES</a>
+                    <a href="../resources/quiz.html">FUN QUIZ</a>
+                </div>
+            </li>
+            <li><a href="../blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
+
     <!--slideshow Header-->
     <div class="slideshow">
         <img
@@ -107,6 +222,7 @@
                <h1>Ocean Habitat</h1>
                <p>Covering 70% of the earth, oceans are home to a vast world of
                 marine life.</p>
+             </div>
         </div>
 
         <!--Main Content-->
@@ -203,23 +319,13 @@
         </div>
     
         <footer>
-            &copy;Animal Encyclopedia. All rights reserved.
+            <p>© 2025 Animal Atlas | Group 6A Project</p>
         </footer>
 
         <!--Javascript for slideshow-->
-        <script>
-            let slideindex=0;
-            const slide=document.querySelectorAll('.slideshow img');
-
-            function showNextSlide(){
-                slides[slideindex].classlist.remove('active');
-                slideindex=(slideindex + 1)% slides.length;
-                slide[slideindex].classlist.add('active');
-            }
-
-            setInterval(showNextSlide, 4000);
-        </script>
-
+        <script src="desert.js"></script>
     
 </body>
 </html>
+
+   

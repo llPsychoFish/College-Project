@@ -1,10 +1,25 @@
-let slideindex=0;
-            const slide=document.querySelectorAll('.slideshow img');
 
-            function showNextSlide(){
-                slides[slideindex].classlist.remove('active');
-                slideindex=(slideindex + 1)% slides.length;
-                slide[slideindex].classlist.add('active');
+           document.addEventListener("DOMContentLoaded",function(){
+           const slides=document.getElementById("slides");
+            const totalSlides= slides.children.length;
+            let index=0;
+            
+
+            function showSlide(i){
+                index = (i + totalSlides) % totalSlides;
+                slides.style.transform= `translatex(-${index * 100}%)`;
+            }
+            function nextslide(){
+                showSlide(index + 1);
+            }
+            function prevslide(){
+                showSlide(index - 1);
             }
 
-            setInterval(showNextSlide, 4000);
+            // Auto slide every 4 seconds
+            setInterval(() =>{
+                nextslide();
+            },4000);
+            console.log("Carousel script running");
+
+        }) 

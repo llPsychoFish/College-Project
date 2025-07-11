@@ -2,7 +2,7 @@ body{
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #e0f7fa;
-            color: #003b49;
+            color: hsl(137, 44%, 61%);
 }
         /*slideshow Header */
 .slideshow{
@@ -44,9 +44,13 @@ body{
         }
 
 .section h2{
-            color: #0077b6;
+            color: hsl(150, 90%, 19%);
             margin-top: 40px;
-        }
+          }
+          p{
+            color: hsl(0, 0%, 5%);
+            
+          }
         .ocean-type{
             display: flex;
             flex-wrap: wrap;
@@ -80,14 +84,14 @@ a.back{
             display: inline-block;
             margin-top: 20px;
             text-decoration: none;
-            color: #0077b6;
+            color: hsl(133, 84%, 17%);
 }   
 
 .menu{
     width: 100%;
     height: 70px;
     clear: both;
-    background-color: #004d33;
+    background-color: hsl(136, 87%, 21%);
 }
 
 ul{
@@ -155,4 +159,15 @@ header {
 
 h1, h2, h3 {
     margin: 8px 0;
+}
+.button {
+    background-color: #2f6e4e;
+    width: fit-content;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }

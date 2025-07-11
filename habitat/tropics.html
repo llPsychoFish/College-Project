@@ -46,12 +46,29 @@
     </nav>
 
     <!--slideshow Header-->
-    <div class="slideshow">
-          <img src="images/tropical_rainforest.jpg" alt="Tropical Rainforest">
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <div class="slide">
+              <img src="habitat_images/forest3.jpg" class="active" alt="forest1">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest2.jpg" class="active" alt="forest2">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest1.jpg" class="active" alt="forest3">
+            </div>
+        </div>
+    <div class="navigation">
+        <button class="nav-btn" onclick="preslide()">Prev</button>
+        <button class="nav-btn" onclick="nextslide()">Next</button>
+    </div>
+    </div>
+
+
 
         <div class="header-text">
                <h1>Forest Habitat</h1>
-               <p>Forest are rich ecosystems thatcover 31% of the earth and , support more than 80% of all
+               <p>Forests are rich ecosystems that cover 31% of the earth and , support more than 80% of all
               land animals.</p>
              </div>
         </div>
@@ -69,7 +86,7 @@
 
                 <!--Tropical Rainforest-->
                 <div class="forest-card">
-                      <img src="images/tropical_rainforest.jpg" alt="Tropical Rainforest">
+                      <img src="habitat_images/tropical_rainforest.jpg" alt="Tropical Rainforest">
                       <div class="info">
                         <h3>Tropical Rainforest</h3>
                         <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like
@@ -80,7 +97,7 @@
                 <!--Temperate Forest-->
                 <div class="forest-card">
                     <img
-                      src="https://www.istockphoto.com/photo/forest-with-sun-gm676023938-124056701"
+                      src="habitat_images/temperate_forest.jpg"
                        alt="Temperate Forest">
                       <div class="info">
                         <h3>Temperate Forest</h3>
@@ -93,7 +110,7 @@
                 <!--Boreal Forest-->
                 <div class="forest-card">
                     <img
-                      src="https://www.istockphoto.com/photo/fall-forest-and-lake-top-view-gm695189940-128498865"
+                      src="habitat_images/boreal_forest.jpg"
                       alt="Boreal Forest">
                       <div class="info">
                         <h3>Boreal Forest</h3>
@@ -106,8 +123,7 @@
                 <!--Montane forest-->
                 <div class="forest-card">
                     <img
-                    src="https://image.unsplash.com/photo-1623867025413-7ff2c67fc8f4?
-                    auto=format&fit=crop&w=1470&q=80" alt="Montane Forest">
+                    src="habitat_images/montane forest.jpg" alt="Montane Forest">
                     <div class="info">
                         <h3>Montane Forest</h3>
                         <p>Found in mountain regions with cooler temperatures. supports 
@@ -121,7 +137,7 @@
             <div class="forest-type">
 
                 <div class="forest-card">
-                     <img src="images/lion.jpg" alt="Lion">
+                     <img src="habitat_images/lion.jpg" alt="Lion">
                     <div class="info">
                         <h3>Lion</h3>
                         <p>The king of the tropical forest,stealthy,and strong.Lions are endangered
@@ -131,8 +147,7 @@
                 </div>
                 <div class="forest-card">
                     <img
-                    src="https;//images.unsplash.com/photo-1516997124291-3933c87cbe2d?
-                    auto=format&fit=crop&w=1470&q=80" alt="Deer">
+                    src="habitat_images/deer.jpg" alt="Deer">
                     <div class="info">
                         <h3>Deer</h3>
                         <p>Graceful and quiet, deer thrive in temperate and boreal forests,
@@ -143,8 +158,7 @@
 
                 <div class="forest-card">
                     <img
-                    src="https;//images.unsplash.com/photo-1610337673040-7f45d0dfc85a?
-                    auto=format&fit=crop&w=1470&q=80" alt="Monkey">
+                    src="habitat_images/monkey2.jpg" alt="Monkey">
                     <div class="info">
                         <h3>Monkey</h3>
                         <p>Social and intelligent animals that live in the canopies of
@@ -165,7 +179,7 @@
             <p>© 2025 Animal Atlas | Group 6A Project</p>
         </footer>
 
-        <!--Javascript for slideshow-->
+        <!--Javascript for carousel-container-->
         <script src="tropics.js"></script>
 </body>
 </html>
