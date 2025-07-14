@@ -3,171 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Habitat - Animal Atlas</title>
-    <style>
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
-            color: #003b49;
-        }
-        /*slideshow Header */
-        .slideshow{
-            position:relative;
-            height: 350px;
-            overflow: hidden;
-        }
-        .slideshow img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-         .slideshow img.active{
-            opacity: 1;
-        }
-        .header-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            color: white;
-            background-color: rgba(0,0,0,0.4);
-            padding: 20px 40px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        h1{
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .section{
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-         .section h2{
-            color: hsl(148, 100%, 36%);
-            margin-top: 40px;
-        }
-        .ocean-type{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .ocean-card{
-            flex: 1 1 300px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .ocean-card img{
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .ocean-card .info{
-            padding: 15px;
-        }
-        footer{
-            background: linear-gradient(to left, #00B050, #00704A);
-    color: white;
-    text-align: center;
-    padding: 16px;
-    margin-top: 16px;
-        }
-        a.back{
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: hsl(137, 71%, 72%);
-        }
-
-.menu{
-    width: 100%;
-    height: 70px;
-    clear: both;
-    background-color: #004d33;
-}
-
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-ul li{
-    list-style: none;
-    margin: 0 31px;
-    font-size: 16px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: #FFD700;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #00704A;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #004d33;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-header {
-    background: linear-gradient(to left, #00B050, #00704A);
-    color: white;
-    text-align: center;
-    padding: 16px;
-}
-
-h1, h2, h3 {
-    margin: 8px 0;
-}        
-    </style>
-     <link rel="stylesheet" href="desert.css" type="text/css">
+    <title>Forest Habitat - Animal Atlas</title>
+    <link rel="stylesheet" href="tropics.css" type="text/css">
 </head>
 <body>
-     <header>
+    <header>
             <h1>🐾 Animal Atlas & Encyclopedia</h1>
             <p>Explore the fascinating world of animals!</p>
         </header>
@@ -205,127 +45,141 @@ h1, h2, h3 {
         </ul>
     </nav>
 
-
     <!--slideshow Header-->
-    <div class="slideshow">
-        <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?
-        auto=format&fit=crop&w=1470&q=80" class="active" alt="Ocean1">
-        <img 
-        src="https://images.unsplash.com/photo-1572842296271-1d2a87fd20c9?
-         auto=format&fit=crop&w=1470&q=80"  alt="ocean2">
-        <img 
-        src="https://images.unsplash.com/photo-1587502536263-9293c4c85aa?
-        auto=format&fit=crop&w=1470&q=80"  alt="Ocean3">
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <div class="slide">
+              <img src="habitat_images/forest3.jpg" class="active" alt="forest1">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest2.jpg" class="active" alt="forest2">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest1.jpg" class="active" alt="forest3">
+            </div>
+        </div>
+    <div class="navigation">
+        <button class="nav-btn" onclick="preslide()">Prev</button>
+        <button class="nav-btn" onclick="nextslide()">Next</button>
+    </div>
+    </div>
+
+
 
         <div class="header-text">
-               <h1>Ocean Habitat</h1>
-               <p>Covering 70% of the earth, oceans are home to a vast world of
-                marine life.</p>
+               <h1>Forest Habitat</h1>
+               <p>Forests are rich ecosystems that cover 31% of the earth and , support more than 80% of all
+              land animals.</p>
              </div>
         </div>
-
         <!--Main Content-->
         <div class="section">
-            <h2>What is an Ocean?</h2>
+            <h2>What is a Forest?</h2>
             <p>
-                Oceans are massive bodies of salt water thatsurrounds continents.
-                They host a wide variety of ecosystems,from shallow coral reef to the deep dark sea.
-                Ocean habitats support Whales, Dolphins, Sharks, Turtle sand million of fishes and pant species.
+                A Forest is a vast area covered with tree,shrubs,and rich plant life.
+                Forests regulate the climate, store carbon, purify water, provides food and offer habitat to countless 
+                species including birds, mammals, reptiles and insects.
+                They also help maintain the earth's oxygen supply.
             </p>
-            <h2>Types of Ocean Habitats</h2>
-            <div class="ocean-type">
+            <h2>Types of Forests</h2>
+            <div class="forest-type">
 
-                <!--Coral Reefs-->
-                <div class="ocean-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1533750349088-cd871a92f31e?
-                      auto=format&fit=crop&w=1470&q=80" alt="Coral Reef">
+                <!--Tropical Rainforest-->
+                <div class="forest-card">
+                      <img src="habitat_images/tropical_rainforest.jpg" alt="Tropical Rainforest">
                       <div class="info">
-                        <h3>Coral Reefs--</h3>
-                        <p>colorful underwater structures formed by corals. Coral Reefs 
-                            are rich in biodiversity, home to clown fish, sea turtles and anemones.
+                        <h3>Tropical Rainforest</h3>
+                        <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like
+                            Jaguars, toucans, and frogs
                         </p>
                       </div>
                 </div>
-                <!--Open Ocean-->
-                <div class="ocean-card">
+                <!--Temperate Forest-->
+                <div class="forest-card">
                     <img
-                      src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?
-                       auto=format&fit=crop&w=140&q=80" alt="Opean Ocean">
+                      src="habitat_images/temperate_forest.jpg"
+                       alt="Temperate Forest">
                       <div class="info">
-                        <h3>Open Ocean</h3>
-                        <p>This is the deep blue sea, far from shore. Whales, Dolphins, Tuna,
-                            and Sharks roam these vast waters
+                        <h3>Temperate Forest</h3>
+                        <p>These forests have four seasons and house animals like deer, wolves, and bears.
+                            They're found in North America,Asia and Europe.
                         </p>
                       </div>
                 </div>
 
-                <!--Deep Sea-->
-                <div class="ocean-card">
+                <!--Boreal Forest-->
+                <div class="forest-card">
                     <img
-                      src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?
-                      auto=format&fit=crop&w=1470&q=80" alt="Deep Sea">
+                      src="habitat_images/boreal_forest.jpg"
+                      alt="Boreal Forest">
                       <div class="info">
-                        <h3>Deep Sea</h3>
-                        <p>Dark and cold, the deep sea is home to strange creatures like 
-                            Anglerfish and Giant Squid. It's one of the least explored places on Earth.
+                        <h3>Boreal Forest</h3>
+                        <p>Located in cold northern regions, boreal forests are filled with conifers
+                            and animals like moose, lynx, and owls
                         </p>
                       </div>
+                </div>
+
+                <!--Montane forest-->
+                <div class="forest-card">
+                    <img
+                    src="habitat_images/montane forest.jpg" alt="Montane Forest">
+                    <div class="info">
+                        <h3>Montane Forest</h3>
+                        <p>Found in mountain regions with cooler temperatures. supports 
+                           unique high-altitudes wildlife. </p>
+                    </div>
                 </div>
 
             </div>
 
-            <h2>Ocean Animals</h2>
-            <div class="Ocean-type">
+            <h2>Animals in Forests</h2>
+            <div class="forest-type">
 
-                <div class="ocean-card">
-                    <img
-                    src="https;//images.unsplash.com/photo-1500375592092-40eb2168fd21?
-                    auto=format&fit=crop&w=1470&q=80" alt="Dolphine">
+                <div class="forest-card">
+                     <img src="habitat_images/lion.jpg" alt="Lion">
                     <div class="info">
-                        <h3>Dolphine</h3>
-                        <p>Smart and social mammals that live in the pods. They communicate with 
-                            clicks and whistles.
+                        <h3>Lion</h3>
+                        <p>The king of the tropical forest,stealthy,and strong.Lions are endangered
+                            and need large territories.
                         </p>
                     </div>
                 </div>
-                <div class="ocean-card">
+                <div class="forest-card">
                     <img
-                    src="https;//images.unsplash.com/photo-15?79783900882-c0c4bffc2a5d?
-                    auto=format&fit=crop&w=1470&q=80" alt="Sea Turtle">
+                    src="habitat_images/deer.jpg" alt="Deer">
                     <div class="info">
-                        <h3>Sea Turtle</h3>
-                        <p>Graceful swimmers with hard shells, they nest on beaches and 
-                            live most of their lives in the sea.
+                        <h3>Deer</h3>
+                        <p>Graceful and quiet, deer thrive in temperate and boreal forests,
+                            feeding on leaves and shrubs.
                         </p>
                     </div>
                 </div>
 
-                <div class="ocean-card">
+                <div class="forest-card">
                     <img
-                    src="https;//images.unsplash.com/photo-1598819659692-8dc4c88b1f9?
-                    auto=format&fit=crop&w=1470&q=80" alt="Shark">
+                    src="habitat_images/monkey2.jpg" alt="Monkey">
                     <div class="info">
-                        <h3>Sharks</h3>
-                        <p>Top preditors of the ocean, Sharks help keep marin life 
-                            populations balanced.
+                        <h3>Monkey</h3>
+                        <p>Social and intelligent animals that live in the canopies of
+                            tropical rainforests.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <a href="index.html">Back to main page</a>
+       <div class="button">
+          <a href="../index.html">Back </a>
+        
+
+       </div>     
         </div>
     
         <footer>
             <p>© 2025 Animal Atlas | Group 6A Project</p>
         </footer>
 
-        <!--Javascript for slideshow-->
-        <script src="desert.js"></script>
-    
+        <!--Javascript for carousel-container-->
+        <script src="tropics.js"></script>
 </body>
 </html>
-
-   

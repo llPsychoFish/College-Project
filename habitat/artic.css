@@ -27,7 +27,7 @@ body{
             object-fit: cover;
             position: absolute;
             opacity: 0;
-            transition: opacity 1s is ease-in-out;
+            transition: opacity is ease-in-out;
         }
         .slide img.active{
             opacity: 1;
@@ -83,10 +83,6 @@ body{
             color: #2f6e4e;
             margin-top: 40px;
         }
-         p{
-            color: hsl(0, 0%, 5%);
-            
-          }
         .forest-type{
             display: flex;
             flex-wrap: wrap;

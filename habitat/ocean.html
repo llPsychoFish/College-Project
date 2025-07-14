@@ -45,14 +45,28 @@
         </ul>
     </nav>
 
-
-    <div class="slideshow">
+    <!--slideshow Header-->
+    <div class="carousel-container">
+        <div class="slides" id="slide">
+            <div class="slide">
         <img
-        src="habitat_images/0cean_wave.gif" class="active" alt="Ocean1">
+        src="habitat_images/sea1.jpg" class="active" alt="Ocean1">
+            </div>
+            <div class="slide">
         <img 
         src="habitat_images/sea2.jpg" class="active" alt="ocean2">
+            </div>
+            <div class="slide">
         <img 
-        src="habitat_images/sea1.jpg" class="active"  alt="Ocean3">
+        src="habitat_images/ocean3.jpg" class="active"  alt="Ocean3">
+            </div>
+        
+        <div class="navigation">
+            <buttton class="nav-btn" onclick="preslide()">Prev</buttton>
+            <button class="nav-btn" onclick="nextslide()">Next</button>
+            </div>
+        </div>
+    </div>
 
         <div class="header-text">
                <h1>Ocean Habitat</h1>
