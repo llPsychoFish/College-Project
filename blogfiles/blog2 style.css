@@ -1,0 +1,312 @@
+/* === Reset some basic styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* === Header styles === */
+h1, h2, h3, h4 {
+  margin: 8px 0;
+}
+
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+/* === Image styling === */
+img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* === Paragraph and lists === */
+p {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* === Navigation links === */
+a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Read More / Back Buttons === */
+.read-more, .back-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover, .back-link:hover {
+  background-color: #1b5e20;
+}
+
+/* === Container for multiple blog cards === */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* === Blog post card preview === */
+.blog-post {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* === Divider === */
+hr {
+  border: none;
+  border-top: 1px dashed #a5d6a7;
+  margin: 40px 0;
+}
+
+header {
+  background: linear-gradient(to left, #00B050, #00704A);
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.menu{
+    width: 100%;
+    height: 70px;
+    clear: both;
+    background-color: #004d33;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 31px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00704A;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #004d33;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+hr {
+        border: none;
+        border-top: 5px solid #e2d80d;
+        margin: 32px 0;
+      }
+
+footer {
+        background: linear-gradient(to left, #00b050, #00704a);
+        color: white;
+        text-align: center;
+        padding: 16px;
+        margin-top: 16px;
+      }
+
+.green-header {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
+        color: #fff;
+        padding: 32px 0 18px 0;
+        text-align: center;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+      }
+      .green-header h1 {
+        margin: 0;
+        font-size: 2.2em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12)
+      }
+
+
+
+
+
+      /* Blog Homepage Styles */
+
+/* Container for all blog posts */
+.container {
+  max-width: 1100px;
+  margin: 40px auto 32px auto;
+  padding: 32px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.10);
+}
+
+/* Blog post preview card */
+.container h2 {
+  font-size: 1.5em;
+  color: #00704A;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.container a {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  text-decoration: none;
+  background: #f8fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+  padding: 18px 18px 18px 0;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.container a:hover {
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.13);
+  transform: translateY(-4px) scale(1.01);
+  background: #e9f7ef;
+}
+
+.container img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+}
+
+.container p {
+  color: #333;
+  font-size: 1.08em;
+  margin: 0;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #a5d6a7;
+  margin: 32px 0 16px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .container {
+    padding: 10px 2vw;
+  }
+  .container a {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+  }
+  .container img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+}

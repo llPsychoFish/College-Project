@@ -5,81 +5,124 @@
     <title>Cute But Dangerous Baby Animals</title>
     <style>
 
-      .green-header {
-        background: #43a047;
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        margin: 0 -20px 0 -20px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        color: #fff;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      hr {
-        border: none;
-        border-top: 5px solid #43a047;
-        margin: 32px 0;
-      }
-
       body {
-        font-family: "Segoe UI", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background: #f0f8ff;
-        color: #333;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #2980b9;
-        text-decoration: none;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-      }
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
-      .animal-detail-flex {
-        display: flex;
-        flex-direction: column;
-        margin: 18px 0 18px 0;
-        text-align: left;
-      }
-      .animal-images {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        margin-bottom: 18px;
-      }
-      .animal-img-left,
-      .animal-img-right {
-        width: 48%;
-        height: 320px;
-        object-fit: cover;
-        border-radius: 0;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
-        display: block;
-      }
-      .animal-desc {
-        font-size: 1em;
-        color: #155724;
-        background: #e8f5e9;
-        border-left: 4px solid #43a047;
-        padding: 8px 14px;
-        border-radius: 6px;
-      }
+.green-header {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
+  color: #fff;
+  padding: 32px 0 18px 0;
+  text-align: center;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.green-header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #43a047;
+  margin: 32px 0 24px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 24px 0 0 24px;
+  color: #00704A;
+  background: #e9f7ef;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.back-link:hover {
+  background: #43a047;
+  color: #fff;
+}
+
+.animal-detail-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0 18px 0;
+  text-align: left;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+  padding: 18px 18px 12px 18px;
+}
+
+.animal-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.animal-img-left,
+.animal-img-right {
+  width: 48%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+  display: block;
+}
+
+.animal-desc {
+  font-size: 1.08em;
+  color: #155724;
+  background: #e8f5e9;
+  border-left: 4px solid #43a047;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #00704A;
+  font-size: 1.4em;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 800px) {
+  .animal-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .animal-img-left,
+  .animal-img-right {
+    width: 100%;
+    height: 180px;
+  }
+  .animal-detail-flex {
+    padding: 10px 5vw;
+  }
+  .back-link {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
     </style>
   </head>
   <body>
@@ -462,13 +505,13 @@ There’s no such thing as an unguarded baby in the wild, and this one comes wit
 </li> <hr>
 
    
-    <h2>
+    <p>
       t’s easy to be enchanted by the innocent looks and playful antics of baby animals, but as we’ve seen, looks can be deceiving. 
       From powerful instincts to hidden aggression and the ever-present threat of protective parents, these tiny creatures are not to be taken lightly.
        While their cuteness draws us in, it’s important to remember that they’re still wild at heart — and nature doesn’t play by human rules.
 
 So next time you spot a fluffy cub or a tiny hatchling in the wild, admire it from a safe distance. Because when it comes to survival, even the smallest animals know how to protect themselves — and they might just surprise you with what they’re capable of.
-    </h2>
+    </p>
 
     <a class="back-link" href="blog2.html">← Back to Blog List</a>
   </body>
