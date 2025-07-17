@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded",function(){
+
+           document.addEventListener("DOMContentLoaded",function(){
            const slides=document.getElementById("slides");
             const totalSlides= slides.children.length;
             let index=0;
