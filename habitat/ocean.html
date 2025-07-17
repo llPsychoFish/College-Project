@@ -1,4 +1,4 @@
-<!DOCTYPE
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,22 +49,18 @@
     <div class="carousel-container">
         <div class="slides" id="slides">
             <div class="slide">
-        <img
-        src="habitat_images/sea1.jpg" class="active" alt="Ocean1">
+                <img src="habitat_images/sea1.jpg" alt="Ocean1">
             </div>
             <div class="slide">
-        <img 
-        src="habitat_images/sea2.jpg" class="active" alt="ocean2">
+                <img src="habitat_images/sea2.jpg" alt="Ocean2">
             </div>
             <div class="slide">
-        <img 
-        src="habitat_images/ocean3.jpg" class="active"  alt="Ocean3">
+                <img src="habitat_images/ocean3.jpg" alt="Ocean3">
             </div>
-        
+        </div>
         <div class="navigation">
-            <buttton class="nav-btn" onclick="preslide()">Prev</buttton>
-            <button class="nav-btn" onclick="nextslide()">Next</button>
-            </div>
+            <button class="nav-btn" id="prevBtn">Prev</button>
+            <button class="nav-btn" id="nextBtn">Next</button>
         </div>
     </div>
 
@@ -146,11 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="button">
-               <a href="../index.html">Back </a> 
-            </div>
-
-            
+               <a href="../index.html" class="button">Back</a> 
         </div>
     
         <footer>

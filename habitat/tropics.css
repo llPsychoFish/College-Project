@@ -60,12 +60,12 @@ body{
         }
         .header-text{
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%,-50%);
             color: white;
             background-color: rgba(0,0,0,0.4);
-            padding: 20px 40px;
+            padding: 15px 35px;
             border-radius: 10px;
             text-align: center;
         }
@@ -200,9 +200,11 @@ h1, h2, h3 {
     width: fit-content;
     color: white;
     padding: 10px 20px;
-    margin-top: 32px;
+    text-decoration: none;
+    margin: 32px 0 0 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: block;
 }
