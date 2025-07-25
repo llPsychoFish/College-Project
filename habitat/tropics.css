@@ -95,8 +95,18 @@ body{
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             overflow: hidden;
-            width: 200;
-            height: 250;
+            transition: transform 0.2s, box-shadow  0.2s, border-color 0.2s;
+            cursor: pointer;
+            border: 2px solid #e0e0e0;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        
+        }
+
+        .forest-card * {
+            text-decoration: none;
+            color: inherit;
         }
         .forest-card img{
             width: 100%;
@@ -107,6 +117,13 @@ body{
         .forest-card .info{
             padding: 15px;
         }
+
+        .forest-card:hover{
+            transform: translateY(-6px) scale(1.04);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.18);
+            border-color: #00704A;
+        }
+
 footer{
     background: linear-gradient(to left, #00B050, #00704A);
     color: white;
