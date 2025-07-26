@@ -111,7 +111,51 @@ footer {
     margin-top: 16px;
 }
 
-.content {
+.rept-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6;
+    height: auto;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.amph-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6;
+    height: auto;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.rept-content h1 {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.rept-content .par {
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+.amph-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 32px;
@@ -125,7 +169,7 @@ footer {
     margin-bottom: 16px;
 }
 
-.content h1 {
+.amph-content h1 {
     color: black;
     text-align: center;
     font-size: 32px;
@@ -133,7 +177,7 @@ footer {
     font-weight: bold;
 }
 
-.content .par {
+.amph-content .par {
     font-size: 18px;
     margin-bottom: 24px;
     line-height: 1.8;
