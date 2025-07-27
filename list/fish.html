@@ -3,9 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fish & Sea Creatures</title>
+    <link rel="stylesheet" href="fish.css" type="text/css">
 </head>
 <body>
-    
+    <header>
+        <h1>🐾 Animal Atlas & Encyclopedia</h1>
+        <p>Explore the World of Reptiles & Amphibians!</p>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">ANIMAL LIST</a>
+          <div class="dropdown-content">
+            <a href="mammals.html">MAMMALS</a>
+            <a href="reptiles.html">REPTILES & AMPHIBIANS</a>
+            <a href="bird.html">BIRDS</a>
+            <a href="fish.html">SEA CREATURES</a>
+          </div>
+        </li>
+        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">HABITAT</a>
+          <div class="dropdown-content">
+            <a href="../habitat/ocean.html">OCEAN</a>
+            <a href="../habitat/desert.html">DESERT</a>
+            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/arctic.html">ARCTIC</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">RESOURCES</a>
+          <div class="dropdown-content">
+            <a href="../resources/facts-jokes.html">FACTS & JOKES</a>
+            <a href="../resources/quiz.html">FUN QUIZ</a>
+          </div>
+        </li>
+        <li><a href="../blogfiles/blog2.html">BLOG</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="fish-content">
+            <h1>Fish & Sea Creatures</h1>
+            <p class="par">
+            Fish are aquatic animals that have gills, fins, and a streamlined body. They are cold-blooded and live in water, 
+            ranging from freshwater rivers to the vast oceans. Fish play a crucial role in aquatic ecosystems and are a 
+            significant source of food for humans and other animals.
+            </p>
+        </div>
+
+        <div class="fish-list">
+            <div class="fishes">
+                <button class="button" onclick="showInfo('bony-fish')">Bony Fish</button>
+                <button class="button" onclick="showInfo('nonbony-fish')">Non-Bony Fish</button>
+
+                <div id="bony-fish" class="info-section">
+                    <h2>Bony Fish</h2>
+                    <p>Bony fishes are Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi quam aperiam, totam qui dolor at omnis accusamus quos rem maiores sapiente dignissimos facilis, quisquam mollitia ipsa vero, voluptate sed.</p>
+                    <button class="button" onclick="showInfo('Clownfish')">Clown Fish</button>
+                    <button class="button" onclick="showInfo('Tuna')">Tuna</button>
+                    <button class="button" onclick="showInfo('Guppy')">Guppy</button>
+                    <button onclick="hideInfo('bony-fish')">← Back</button>
+                </div>
+
+                <!-- This is where the codes for the bony fish go like in the reptile code-->
+
+                <div id="nonbony-fish" class="info-section">
+                    <h2>Non-Bony Fish</h2>
+                    <p>Non-bony fishes are Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi quam aperiam, totam qui dolor at omnis accusamus quos rem maiores sapiente dignissimos facilis, quisquam mollitia ipsa vero, voluptate sed.</p>
+                    <button class="button" onclick="showInfo('Shark')">Shark</button>
+                    <button class="button" onclick="showInfo('Ray')">Ray</button>
+                    <button class="button" onclick="showInfo('Eel')">Eel</button>
+                    <button onclick="hideInfo('nonbony-fish')">← Back</button>
+                </div>
+
+                <!-- same goes for the non bony fish-->
+            </div> 
+        </div>
+
+        <hr>
+
+        <div class="sea-content">
+            <h1>Sea Creatures</h1>
+            <p class="par">
+            Sea creatures are a diverse group of animals that inhabit the world's oceans and seas. They include a wide range of species, from the smallest plankton to the largest whales. These creatures play vital roles in marine ecosystems and are essential for maintaining the health of our oceans.
+            </p>
+        </div>
+
+        <div class="sea-list">
+            <div class="creatures">
+                <button class="button" onclick="showInfo('mollusks')">Mollusks</button>
+                <button class="button" onclick="showInfo('crustaceans')">Crustaceans</button>
+                <button class="button" onclick="showInfo('cnidarians')">Cnidarians</button>
+                <button class="button" onclick="showInfo('echinoderms')">Echinoderms</button>
+                <button class="button" onclick="showInfo('sponges')">Sponges</button>
+                <button class="button" onclick="showInfo('marine-snakes')">Marine Snakes</button>
+                <button class="button" onclick="showInfo('cephalopods')">Cephalopods</button>
+
+                <div id="mollusks" class="info-section">
+                    <h2>Mollusks</h2>
+                    <p>Mollusks are a diverse group of invertebrates that include snails, clams, and octopuses. They have soft bodies, often protected by a hard shell.</p>
+                    <button class="button" onclick="showInfo('Octopus')">Octopus</button>
+                    <button class="button" onclick="showInfo('Squid')">Squid</button>
+                    <button class="button" onclick="showInfo('Snail')">Snail</button>
+                    <button onclick="hideInfo('mollusks')">← Back</button>
+                </div>
+
+                <!-- Mollusks info goes here -->
+
+                <div id="crustaceans" class="info-section">
+                    <h2>Crustaceans</h2>
+                    <p>Crustaceans are a group of arthropods that include crabs, lobsters, and shrimp. They have a hard exoskeleton and jointed limbs.</p>
+                    <button class="button" onclick="showInfo('Crab')">Crab</button>
+                    <button class="button" onclick="showInfo('Lobster')">Lobster</button>
+                    <button class="button" onclick="showInfo('Shrimp')">Shrimp</button>
+                    <button onclick="hideInfo('crustaceans')">← Back</button>
+                </div>
+
+                <!-- Crustaceans info goes here -->
+
+                <div id="cnidarians" class="info-section">
+                    <h2>Cnidarians</h2>
+                    <p>Cnidarians are simple aquatic animals that include jellyfish, corals, and sea anemones. They have specialized cells called cnidocytes for capturing prey.</p>
+                    <button class="button" onclick="showInfo('Jellyfish')">Jellyfish</button>
+                    <button class="button" onclick="showInfo('Coral')">Coral</button>
+                    <button class="button" onclick="showInfo('Sea Anemone')">Sea Anemone</button>
+                    <button onclick="hideInfo('cnidarians')">← Back</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Animal Atlas | Group 6A Project</p>
+    </footer>
+
+    <script src="list.js"></script>
 </body>
 </html>
