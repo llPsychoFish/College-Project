@@ -1,3 +1,7 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,20 +71,37 @@
 
 
         <div class="header-text">
-               <h1>Forest Habitat</h1>
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 2";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo "<h1>".$row['name']."</h1>";
+              }  
+            }
+            ?>
+               
                <p>Forests are rich ecosystems that cover 31% of the earth and , support more than 80% of all
               land animals.</p>
              </div>
         </div>
         <!--Main Content-->
         <div class="section">
-            <h2>What is a Forest?</h2>
-            <p>
-                A Forest is a vast area covered with tree,shrubs,and rich plant life.
-                Forests regulate the climate, store carbon, purify water, provides food and offer habitat to countless 
-                species including birds, mammals, reptiles and insects.
-                They also help maintain the earth's oxygen supply.
-            </p>
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 2";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<h2>What is a Forest?</h2>
+                        <p>".$row['description']."</p>";
+                }
+            }
+            ?>
+            
             <h2>Types of Forests</h2>
             <div class="forest-type">
 

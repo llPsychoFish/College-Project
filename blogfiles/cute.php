@@ -1,166 +1,36 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Cute But Dangerous Baby Animals</title>
-    <style>
-
-      body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f0f8ff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.green-header {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
-  color: #fff;
-  padding: 32px 0 18px 0;
-  text-align: center;
-  border-radius: 0 0 18px 18px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-}
-.green-header h1 {
-  margin: 0;
-  font-size: 2.2em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
-}
-
-hr {
-  border: none;
-  border-top: 2px dashed #43a047;
-  margin: 32px 0 24px 0;
-}
-
-.back-link {
-  display: inline-block;
-  margin: 24px 0 0 24px;
-  color: #00704A;
-  background: #e9f7ef;
-  padding: 8px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.2s, color 0.2s;
-}
-.back-link:hover {
-  background: #43a047;
-  color: #fff;
-}
-
-.animal-detail-flex {
-  display: flex;
-  flex-direction: column;
-  margin: 18px 0 18px 0;
-  text-align: left;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
-  padding: 18px 18px 12px 18px;
-}
-
-.animal-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-.animal-img-left,
-.animal-img-right {
-  width: 48%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
-  display: block;
-}
-
-.animal-desc {
-  font-size: 1.08em;
-  color: #155724;
-  background: #e8f5e9;
-  border-left: 4px solid #43a047;
-  padding: 12px 18px;
-  border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-li {
-  list-style: none;
-  margin-bottom: 32px;
-}
-
-h2 {
-  color: #00704A;
-  font-size: 1.4em;
-  margin: 0 0 12px 0;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 800px) {
-  .animal-images {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .animal-img-left,
-  .animal-img-right {
-    width: 100%;
-    height: 180px;
-  }
-  .animal-detail-flex {
-    padding: 10px 5vw;
-  }
-  .back-link {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cute.css" type="text/css" />
   </head>
   <body>
-    <a href="blog2.html" class="back-link">← Back to Home</a>
     <div class="green-header">
-      <h1>Cute But Dangerous: Baby Animals You Shouldn't Mess With</h1>
-    </div>
-    <style>
-      .green-header {
-        width: 100vw;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        border-radius: 0 0 18px 18px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #fff;
-        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
-      }
-    </style>
-    <hr>
-    <a href="blog2.html" class="back-link">← Back to Home</a>
-  
-    <p style="font-size: larger;">
-      When we think of baby animals, we imagine soft fur, tiny footsteps, playful squeaks, and irresistible cuteness. 
-      From fuzzy bear cubs to wide-eyed tiger kittens, it’s easy to forget that these adorable creatures are born into the wild — and with the wild comes danger.
-       Beneath their charming exteriors, many baby animals are equipped with surprisingly sharp claws, strong instincts, and powerful defensive behaviors.
-        Even more alarming? Their cuteness often masks how unpredictable — and even deadly — they can be, especially when threatened or when their fiercely protective parents are nearby.<br> <br>
+      <?php
+      $sql = "SELECT * FROM blogs WHERE id = 3";
+      $result = mysqli_query($conn, $sql);
+      $queryResults = mysqli_num_rows($result);
 
-In this blog, we take a walk on the wild side and explore the world of baby animals that look like living plush toys but come with serious warning labels. So buckle up — these baby animals might melt your heart, but they’re definitely not your average cuddle buddies.
+      if ($queryResults > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<h1>".$row['title']."</h1>
+                </div>
+                <hr>
+                <a href='blog2.html' class='back-link'>← Back to Home</a>
+                <p class='pet'>".$row['content']."</p>";
+        }
+      } else {
+        echo "No results found.";
+      }
+      ?>
+      
+      <p class="pet">In this blog, we take a walk on the wild side and explore the world of baby animals that look like living plush toys but come with serious warning labels. So buckle up — these baby animals might melt your heart, but they’re definitely not your average cuddle buddies.
     </p>
  </div>
   </div>

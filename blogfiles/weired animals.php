@@ -1,106 +1,34 @@
-      
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Top 10 Weirdest Animals</title>
-   
-    <style>
-      .green-header {
-        width: 100vw;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        border-radius: 0 0 18px 18px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #fff;
-        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
-      }
-   hr {
-        border: none;
-        border-top: 5px solid #43a047;
-        margin: 32px 0;
-      }
-
-      body {
-        font-family: "Segoe UI", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background: #f0f8ff;
-        color: #333;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #2980b9;
-        text-decoration: none;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-      }
-
-
-.animal-detail-flex {
-  display: flex;
-  flex-direction: column;
-  margin: 18px 0 18px 0;
-  text-align: left;
-}
-.animal-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-.animal-img-left,
-.animal-img-right {
-  width: 48%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 0;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
-  display: block;
-}
-.animal-desc {
-  font-size: 1em;
-  color: #155724;
-  background: #e8f5e9;
-  border-left: 4px solid #43a047;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-    </style>
+    <link rel="stylesheet" href="weired.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
   </head>
   <body>
     <div class="green-header">
-      <h1>10 Weirdest Animals You’ve Never Heard Of</h1>
-    </div>
-    <hr>
-    
-    <p style="font-size: large;">
-     Our planet is home to creatures so strange, they seem like they belong in a fantasy world. 
-     From the permanently smiling axolotl that never grows up, to the delicate leafy sea dragon that looks like drifting seaweed,
-      and the nearly invisible glass frog with see-through skin — nature never runs out of surprises. In this blog, we explore some of the weirdest animals on Earth.
-       These bizarre beings may look odd, but each one plays a fascinating role in the story of life on our planet. Get ready to be amazed, confused, and completely captivated.:
-    </p>
+      <?php
+      $sql = "SELECT * FROM blogs WHERE id = 2";
+      $result = mysqli_query($conn, $sql);
+      $queryResults = mysqli_num_rows($result);
+
+      if ($queryResults > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<h1>".$row['title']."</h1>
+                </div>
+                <hr>
+                <p class='pet'>".$row['content']."</p>";
+        }
+      } else {
+        echo "No results found.";
+      }
+      ?>
+      
     
 
 <li>

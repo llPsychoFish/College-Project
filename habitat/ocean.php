@@ -1,3 +1,7 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,14 +64,25 @@
             </div>
         
         <div class="navigation">
-            <buttton class="nav-btn" onclick="preslide()">Prev</buttton>
+            <button class="nav-btn" onclick="preslide()">Prev</button>
             <button class="nav-btn" onclick="nextslide()">Next</button>
             </div>
         
     </div>
 
         <div class="header-text">
-               <h1>Ocean Habitat</h1>
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 1";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo "<h1>".$row['name']."</h1>";
+              }  
+            }
+            ?>
+               
                <p>Covering 70% of the earth, oceans are home to a vast world of
                 marine life.</p>
         </div>
@@ -75,12 +90,19 @@
 
         <!--Main Content-->
         <div class="section">
-            <h2>What is an Ocean?</h2>
-            <p>
-                Oceans are massive bodies of salt water that surround continents.
-                They host a wide variety of ecosystems, from shallow coral reefs to the deep dark sea.
-                Ocean habitats support whales, dolphins, sharks, turtles, and millions of fish and plant species.
-            </p>
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 1";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                   echo "<h2>What is an Ocean?</h2>
+                        <p>".$row['description']."</p>"; 
+                }
+            }
+            ?>
+            
             <h2>Types of Ocean Habitats</h2>
             <div class="ocean-type">
 
@@ -156,44 +178,6 @@
         </div>
         <!--Javascript for carousel-container and modal-->
         <script src="ocean.js"></script>
-        <script>
-        function openModal(data) {
-          var modal = document.getElementById('lightboxModal');
-          var modalContent = modal.querySelector('.modal-content');
-          var modalImage = document.getElementById('modalImage');
-          var modalTitle = document.getElementById('modalTitle');
-          var modalBody = document.getElementById('modalBody');
-          modalContent.classList.remove('image-only');
-          modalImage.style.display = 'none';
-          modalTitle.style.display = 'none';
-          modalBody.style.display = 'none';
-          if (data.image) {
-            modalImage.src = data.image;
-            modalImage.style.display = 'block';
-          }
-          if (data.image && !data.title && !data.info) {
-            modalContent.classList.add('image-only');
-          } else {
-            if (data.title) {
-              modalTitle.textContent = data.title;
-              modalTitle.style.display = 'block';
-            }
-            if (data.info) {
-              modalBody.textContent = data.info;
-              modalBody.style.display = 'block';
-            }
-          }
-          modal.style.display = 'flex';
-        }
-        function closeModal() {
-          document.getElementById('lightboxModal').style.display = 'none';
-        }
-        document.addEventListener('click', function(e) {
-          var modal = document.getElementById('lightboxModal');
-          if (modal.style.display === 'flex' && e.target === modal) {
-            closeModal();
-          }
-        });
-        </script>
+       
 </body>
 </html>

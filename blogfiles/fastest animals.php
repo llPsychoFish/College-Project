@@ -1,124 +1,35 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Fastest Animals</title>
-    <style>
-      
-.green-header {
-        background: #43a047;
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        margin: 0 -20px 0 -20px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        color: #fff;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      hr {
-        border: none;
-        border-top: 5px solid #43a047;
-        margin: 32px 0;
-      }
-
-      body {
-        font-family: "Segoe UI", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background: #f0f8ff;
-        color: #333;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #2980b9;
-        text-decoration: none;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-      }
-
-      .animal-detail-flex {
-        display: flex;
-        flex-direction: column;
-        margin: 18px 0 18px 0;
-        text-align: left;
-      }
-      .animal-images {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        margin-bottom: 18px;
-      }
-      .animal-img-left,
-      .animal-img-right {
-        width: 48%;
-        height: 320px;
-        object-fit: cover;
-        border-radius: 0;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
-        display: block;
-      }
-      .animal-desc {
-        font-size: 1em;
-        color: #155724;
-        background: #e8f5e9;
-        border-left: 4px solid #43a047;
-        padding: 8px 14px;
-        border-radius: 6px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="fast.css" type="text/css">
   </head>
   <body>
 
 <div class="green-header">
-      <h1>Fastest Animals in the World </h1>
-    </div>
-    <style>
-      .green-header {
-        width: 100vw;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        border-radius: 0 0 18px 18px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #fff;
-        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
-      }
-    </style>
-    <hr>
-    <a href="blog2.html" class="back-link">← Back to Home</a>
-  
-    <p style="font-size: larger;">
-      Speed isn’t just for racecars — nature has its own elite sprinters, divers, and flyers.
-In the wild, speed means survival. Whether it’s a predator chasing down its prey or a small creature escaping danger, being fast can be the difference between life and death.
- Across land, air, and sea, evolution has produced some astonishingly quick animals — some can sprint faster than a sports car, dive from the sky at bone-shattering speeds, or glide through water with the grace of a torpedo.
-In this blog, we’ll explore some of the fastest animals on the planet — the kings and queens of acceleration, top speed, and agility.
- From birds that dive like missiles to mammals that burn up the savanna, get ready to meet the natural world’s true speedsters.
-    </p>
+  <?php
+  $sql = "SELECT * FROM blogs WHERE id = 1";
+  $result = mysqli_query($conn, $sql);
+  $queryResults = mysqli_num_rows($result);
+
+  if ($queryResults > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo "<h1>".$row['title']."</h1>
+            </div>
+             <hr>
+            <a href='blog2.html' class='back-link'>← Back to Home</a>
+            <p class='pet'>".$row['content']."</p>";
+    }
+  } else {
+    echo "No results found.";
+  }
+  ?>
+     
  </div>
   </div>
 </li> <hr>

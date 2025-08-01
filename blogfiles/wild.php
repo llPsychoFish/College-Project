@@ -1,119 +1,35 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Wild Cousins of Your Pets</title>
-    <style>
-      .green-header {
-        background: #43a047;
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        margin: 0 -20px 0 -20px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        color: #fff;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      hr {
-        border: none;
-        border-top: 5px solid #43a047;
-        margin: 32px 0;
-      }
-
-      body {
-        font-family: "Segoe UI", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background: #f0f8ff;
-        color: #333;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #2980b9;
-        text-decoration: none;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-      }
-
-      .animal-detail-flex {
-        display: flex;
-        flex-direction: column;
-        margin: 18px 0 18px 0;
-        text-align: left;
-      }
-      .animal-images {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        margin-bottom: 18px;
-      }
-      .animal-img-left,
-      .animal-img-right {
-        width: 48%;
-        height: 320px;
-        object-fit: cover;
-        border-radius: 0;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
-        display: block;
-      }
-      .animal-desc {
-        font-size: 1em;
-        color: #155724;
-        background: #e8f5e9;
-        border-left: 4px solid #43a047;
-        padding: 8px 14px;
-        border-radius: 6px;
-      }
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wild.css" type="text/css" />
   </head>
   <body>
     <div class="green-header">
-      <h1>Wild Cousins of Your Pets</h1>
-    </div>
-    <style>
-      .green-header {
-        width: 100vw;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #43a047 60%, #66bb6a 100%);
-        color: #fff;
-        padding: 32px 0 18px 0;
-        text-align: center;
-        border-radius: 0 0 18px 18px;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      .green-header h1 {
-        margin: 0;
-        font-size: 2.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #fff;
-        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
-      }
-    </style>
-    <hr />
-    <a href="index.html" class="back-link">← Back to Home</a>
+      <?php
+      $sql = "SELECT * FROM blogs WHERE id = 4";
+      $result = mysqli_query($conn, $sql);
+      $queryResults = mysqli_num_rows($result);
 
-    <p>
-      Believe it or not, your cuddly pet has wild ancestors! Let’s meet their
-      relatives in the wild:
-    </p>
+      if ($queryResults > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+      echo "<h1>".$row['title']."</h1>
+            </div>
+            <hr/>
+            <a href='index.html' class='back-link'>← Back to Home</a>
+            <p class='pet'>".$row['content']."</p>";
+      }
+      } else {
+        echo "No results found.";
+      }
+      ?>
+      
 
 </div>
   </div>
