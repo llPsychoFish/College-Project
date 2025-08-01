@@ -85,58 +85,38 @@
             <div class="forest-type">
 
                 <!--Tropical Rainforest-->
-                <div class="forest-card">
-                    <a href="tropical_forest.html" class="forest">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/tropical_rainforest.jpg', title: 'Tropical Rainforest', info: 'Found near the equator, tropical rainforests are hot, humid, and home to animals like Jaguars, toucans, and frogs.'})">
                       <img src="habitat_images/tropical_rainforest.jpg" alt="Tropical Rainforest">
                       <div class="info">
                         <h3>Tropical Rainforest</h3>
-                        <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like
-                            Jaguars, toucans, and frogs
-                        </p>
+                        <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like Jaguars, toucans, and frogs.</p>
                       </div>
-                    </a>
                 </div>
                 <!--Temperate Forest-->
-                <div class="forest-card">
-                    <a href="temperate_forest.html" class="forest">
-                    <img
-                      src="habitat_images/temperate_forest.jpg"
-                       alt="Temperate Forest">
-                      <div class="info">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/temperate_forest.jpg', title: 'Temperate Forest', info: 'These forests have four seasons and house animals like deer, wolves, and bears. They\'re found in North America, Asia and Europe.'})">
+                    <img src="habitat_images/temperate_forest.jpg" alt="Temperate Forest">
+                    <div class="info">
                         <h3>Temperate Forest</h3>
-                        <p>These forests have four seasons and house animals like deer, wolves, and bears.
-                            They're found in North America,Asia and Europe.
-                        </p>
-                      </div>
-                    </a>
+                        <p>These forests have four seasons and house animals like deer, wolves, and bears. They're found in North America, Asia and Europe.</p>
+                    </div>
                 </div>
 
                 <!--Boreal Forest-->
-                <div class="forest-card">
-                    <a href="boreal_forest.html" class="forest">
-                    <img
-                      src="habitat_images/boreal_forest.jpg"
-                      alt="Boreal Forest">
-                      <div class="info">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/boreal_forest.jpg', title: 'Boreal Forest', info: 'Located in cold northern regions, boreal forests are filled with conifers and animals like moose, lynx, and owls.'})">
+                    <img src="habitat_images/boreal_forest.jpg" alt="Boreal Forest">
+                    <div class="info">
                         <h3>Boreal Forest</h3>
-                        <p>Located in cold northern regions, boreal forests are filled with conifers
-                            and animals like moose, lynx, and owls
-                        </p>
-                      </div>
-                    </a>
+                        <p>Located in cold northern regions, boreal forests are filled with conifers and animals like moose, lynx, and owls.</p>
+                    </div>
                 </div>
 
                 <!--Montane forest-->
-                <div class="forest-card">
-                    <a href="montane_forest.html" class="forest">
-                    <img
-                    src="habitat_images/montane forest.jpg" alt="Montane Forest">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/montane forest.jpg', title: 'Montane Forest', info: 'Found in mountain regions with cooler temperatures. Supports unique high-altitude wildlife.'})">
+                    <img src="habitat_images/montane forest.jpg" alt="Montane Forest">
                     <div class="info">
                         <h3>Montane Forest</h3>
-                        <p>Found in mountain regions with cooler temperatures. supports 
-                           unique high-altitudes wildlife. </p>
+                        <p>Found in mountain regions with cooler temperatures. Supports unique high-altitude wildlife.</p>
                     </div>
-                    </a>
                 </div>
 
             </div>
@@ -144,41 +124,27 @@
             <h2>Animals in Forests</h2>
             <div class="forest-type">
 
-                <div class="forest-card">
-                    <a href="lion.html" class="forest">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/lion.jpg', title: 'Lion', info: 'The king of the tropical forest, stealthy, and strong. Lions are endangered and need large territories.'})">
                      <img src="habitat_images/lion.jpg" alt="Lion">
                     <div class="info">
                         <h3>Lion</h3>
-                        <p>The king of the tropical forest,stealthy,and strong.Lions are endangered
-                            and need large territories.
-                        </p>
+                        <p>The king of the tropical forest, stealthy, and strong. Lions are endangered and need large territories.</p>
                     </div>
-                    </a>
                 </div>
-                <div class="forest-card">
-                    <a href="deer.html" class="forest">
-                    <img
-                    src="habitat_images/deer.jpg" alt="Deer">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/deer.jpg', title: 'Deer', info: 'Graceful and quiet, deer thrive in temperate and boreal forests, feeding on leaves and shrubs.'})">
+                    <img src="habitat_images/deer.jpg" alt="Deer">
                     <div class="info">
                         <h3>Deer</h3>
-                        <p>Graceful and quiet, deer thrive in temperate and boreal forests,
-                            feeding on leaves and shrubs.
-                        </p>
+                        <p>Graceful and quiet, deer thrive in temperate and boreal forests, feeding on leaves and shrubs.</p>
                     </div>
-                    </a>
                 </div>
 
-                <div class="forest-card">
-                    <a href="monkey.html" class="forest">
-                    <img
-                    src="habitat_images/monkey2.jpg" alt="Monkey">
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/monkey2.jpg', title: 'Monkey', info: 'Social and intelligent animals that live in the canopies of tropical rainforests.'})">
+                    <img src="habitat_images/monkey2.jpg" alt="Monkey">
                     <div class="info">
                         <h3>Monkey</h3>
-                        <p>Social and intelligent animals that live in the canopies of
-                            tropical rainforests.
-                        </p>
+                        <p>Social and intelligent animals that live in the canopies of tropical rainforests.</p>
                     </div>
-                    </a>
                 </div>
             </div>
           <a href="../index.html" class="button">Back </a>   
@@ -188,7 +154,55 @@
             <p>© 2025 Animal Atlas | Group 6A Project</p>
         </footer>
 
-        <!--Javascript for carousel-container-->
+        <!-- Lightbox Modal HTML -->
+        <div id="lightboxModal" class="modal-overlay" style="display:none;">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" style="max-width:95%; max-height:340px; object-fit:cover; display:none; margin-bottom:1rem;" />
+            <h2 id="modalTitle" style="display:none;"></h2>
+            <p id="modalBody" style="display:none;"></p>
+          </div>
+        </div>
+        <!--Javascript for carousel-container and modal-->
         <script src="tropics.js"></script>
+        <script>
+        function openModal(data) {
+          var modal = document.getElementById('lightboxModal');
+          var modalContent = modal.querySelector('.modal-content');
+          var modalImage = document.getElementById('modalImage');
+          var modalTitle = document.getElementById('modalTitle');
+          var modalBody = document.getElementById('modalBody');
+          modalContent.classList.remove('image-only');
+          modalImage.style.display = 'none';
+          modalTitle.style.display = 'none';
+          modalBody.style.display = 'none';
+          if (data.image) {
+            modalImage.src = data.image;
+            modalImage.style.display = 'block';
+          }
+          if (data.image && !data.title && !data.info) {
+            modalContent.classList.add('image-only');
+          } else {
+            if (data.title) {
+              modalTitle.textContent = data.title;
+              modalTitle.style.display = 'block';
+            }
+            if (data.info) {
+              modalBody.textContent = data.info;
+              modalBody.style.display = 'block';
+            }
+          }
+          modal.style.display = 'flex';
+        }
+        function closeModal() {
+          document.getElementById('lightboxModal').style.display = 'none';
+        }
+        document.addEventListener('click', function(e) {
+          var modal = document.getElementById('lightboxModal');
+          if (modal.style.display === 'flex' && e.target === modal) {
+            closeModal();
+          }
+        });
+        </script>
 </body>
 </html>

@@ -1,3 +1,58 @@
+/* Lightbox Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 480px;
+  max-width: 95vw;
+  height: 400px;
+  max-height: 95vh;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.modal-content.image-only {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.modal-content.image-only #modalImage {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+#modalImage {
+  max-width: 95%;
+  max-height: 340px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+#modalBody {
+  overflow-y: auto;
+  max-height: 60px;
+  text-align: center;
+}
+.close-btn {
+  position: absolute; top: 10px; right: 20px; font-size: 2rem; cursor: pointer;
+}
 body{
             margin: 0;
             font-family: Arial, sans-serif;
