@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Habitat - Animal Atlas</title>
+    <link rel="stylesheet" href="artic.css" type="text/css">
+</head>
+<body>
+    <header>
+            <h1>🐾 Animal Atlas & Encyclopedia</h1>
+            <p>Explore the fascinating world of animals!</p>
+        </header>
+
+        <nav class="menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ANIMAL LIST</a>
+                <div class="dropdown-content">
+                    <a href="../list/mammals.html">MAMMALS</a>
+                    <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
+                    <a href="../list/bird.html">BIRDS</a>
+                    <a href="../list/fish.html">SEA CREATURES</a>
+                </div>
+            </li>
+            <li><a href="../conservation.html">CONSERVATION</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">HABITAT</a>
+                <div class="dropdown-content">
+                    <a href="../habitat/ocean.html">OCEAN</a>
+                    <a href="../habitat/desert.html">DESERT</a>
+                    <a href="../habitat/tropics.html">RAINFOREST</a>
+                    <a href="../habitat/arctic.html">ARCTIC</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">RESOURCES</a>
+                <div class="dropdown-content">
+                    <a href="../resources/facts-jokes.html">FACTS & JOKES</a>
+                    <a href="../resources/quiz.html">FUN QUIZ</a>
+                </div>
+            </li>
+            <li><a href="../blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
+    <!--slideshow Header-->
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <div class="slide">
+              <img src="habitat_images/arctic.jpg" class="active" alt="arctic1">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/arctic1.jpg" class="active" alt="arctic2">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/north.jpg" class="active" alt="arctic3">
+            </div>
+        </div>
+    <div class="navigation">
+        <button class="nav-btn" onclick="preslide()">Prev</button>
+        <button class="nav-btn" onclick="nextslide()">Next</button>
+    </div>
+    </div>
+
+
+
+        <div class="header-text">
+               <h1>Arctic Habitat</h1>
+               <p>Explore the Frozen Wilderness</p>
+        </div>
+        <!--Artic Habitat Content-->
+        <div class="content">
+
+            <h2>Introduction</h2>
+            <p>
+                The Arctic is a unique and fragile ecosystem characterized by its extreme cold, ice-covered landscapes, and diverse wildlife.
+                 It is home to a variety of animals that have adapted to survive in harsh conditions, including polar bears, seals, and migratory birds.
+                  The Arctic plays a crucial role in regulating the Earth's climate and is facing significant challenges due to climate change.
+            </p>
+
+            <h2>Arctic Climate</h2>
+            <p>
+                The Arctic climate is defined by long, harsh winters and short, cool summers. 
+                Temperatures can plummet to extreme lows,and the region is covered in ice for much of the year.
+                The Arctic experiences 24-hour daylight in summer and polar night in winter,
+                creating unique conditions for both flora and fauna.
+            </p> 
+
+            <h2>Arctic Animal</h2>
+          <P>
+                The Arctic is home to a variety of animals that have adapted to its extreme conditions. 
+                These include the iconic polar bear, which relies on sea ice for hunting seals, and the Arctic fox, known for its thick fur and ability to survive in freezing temperatures.
+                Other notable species include walruses, narwhals, and various migratory birds that travel to the Arctic during the summer months.
+          </p>
+
+          <h2>Arctic Plant</h2>
+          <p>
+                Despite the harsh conditions, the Arctic is home to a variety of hardy plants, including mosses, lichens, and low-growing shrubs.
+                These plants have adapted to survive in nutrient-poor soils and short growing seasons.
+                They play a crucial role in the Arctic ecosystem, providing food and shelter for many animals.
+          </p>
+          
+
+
+
+            <h2>Animals in Arctic</h2>
+            <div class="artic-type">
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/polar.jpg', title: 'Polar Bear', info: 'The iconic polar bear relies on sea ice for hunting seals.'})">
+                    <img src="habitat_images/polar.jpg" alt="Polar Bear">
+                    <div class="info">
+                        <h3>Polar Bear</h3>
+                    </div>
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/fox.jpg', title: 'Arctic Fox', info: 'The Arctic fox is known for its thick fur and ability to survive in freezing temperatures.'})">
+                    <img src="habitat_images/fox.jpg" alt="Arctic Fox">
+                    <div class="info">
+                        <h3>Arctic Fox</h3>
+                    </div>
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/pin.jpg', title: 'Penguin', info: 'Penguins are adapted to cold climates and are found in the Arctic region.'})">
+                    <img src="habitat_images/pin.jpg" alt="Penguin">
+                    <div class="info">
+                        <h3>Penguin</h3>
+                    </div>
+                </div>
+            </div>
+            <h2 class="artic-head">Animal Gallery</h2>
+            <div class="artic-type">
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic2.jpg'})">
+                    <img src="habitat_images/arctic2.jpg" alt="arctic1">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic3.jpg'})">
+                    <img src="habitat_images/arctic3.jpg" alt="artic2">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic4.jpg'})">
+                    <img src="habitat_images/arctic4.jpg" alt="arctic3">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic5.jpg'})">
+                    <img src="habitat_images/arctic5.jpg" alt="artic4">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic6.jpg'})">
+                    <img src="habitat_images/arctic6.jpg" alt="arctic5">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/north1.jpg'})">
+                    <img src="habitat_images/north1.jpg" alt="arctic6">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic7.jpg'})">
+                    <img src="habitat_images/arctic7.jpg" alt="arctic7">
+                </div>
+                <div class="artic-card" onclick="openModal({image: 'habitat_images/arctic8.jpg'})">
+                    <img src="habitat_images/arctic8.jpg" alt="arctic8">
+                </div>
+            </div>
+          <a href="../index.html" class="button">Back </a>   
+        </div>
+    
+        <footer>
+            <p>© 2025 Animal Atlas | Group 6A Project</p>
+        </footer>
+
+        <!-- Lightbox Modal HTML -->
+        <div id="lightboxModal" class="modal-overlay" style="display:none;">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" style="max-width:100%; display:none; margin-bottom:1rem;" />
+            <h2 id="modalTitle" style="display:none;"></h2>
+            <p id="modalBody" style="display:none;"></p>
+          </div>
+        </div>
+        <!--Javascript for carousel-container and modal-->
+        <script src="artic.js"></script>
+        <script>
+        function openModal(data) {
+          // Show image if present
+          if (data.image) {
+            document.getElementById('modalImage').src = data.image;
+            document.getElementById('modalImage').style.display = 'block';
+          } else {
+            document.getElementById('modalImage').style.display = 'none';
+          }
+          // Show title if present
+          if (data.title) {
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalTitle').style.display = 'block';
+          } else {
+            document.getElementById('modalTitle').style.display = 'none';
+          }
+          // Show info if present
+          if (data.info) {
+            document.getElementById('modalBody').textContent = data.info;
+            document.getElementById('modalBody').style.display = 'block';
+          } else {
+            document.getElementById('modalBody').style.display = 'none';
+          }
+          document.getElementById('lightboxModal').style.display = 'flex';
+        }
+        function closeModal() {
+          document.getElementById('lightboxModal').style.display = 'none';
+        }
+        // Optional: close modal when clicking outside content
+        document.addEventListener('click', function(e) {
+          var modal = document.getElementById('lightboxModal');
+          if (modal.style.display === 'flex' && e.target === modal) {
+            closeModal();
+          }
+        });
+        </script>
+</body>
+</html>

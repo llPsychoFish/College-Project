@@ -1,0 +1,229 @@
+<?php
+  include '../dbh.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Habitat - Animal Atlas</title>
+    <link rel="stylesheet" href="tropics.css" type="text/css">
+</head>
+<body>
+    <header>
+            <h1>🐾 Animal Atlas & Encyclopedia</h1>
+            <p>Explore the fascinating world of animals!</p>
+        </header>
+
+        <nav class="menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ANIMAL LIST</a>
+                <div class="dropdown-content">
+                    <a href="../list/mammals.html">MAMMALS</a>
+                    <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
+                    <a href="../list/bird.html">BIRDS</a>
+                    <a href="../list/fish.html">SEA CREATURES</a>
+                </div>
+            </li>
+            <li><a href="../conservation.html">CONSERVATION</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">HABITAT</a>
+                <div class="dropdown-content">
+                    <a href="../habitat/ocean.html">OCEAN</a>
+                    <a href="../habitat/desert.html">DESERT</a>
+                    <a href="../habitat/tropics.html">RAINFOREST</a>
+                    <a href="../habitat/arctic.html">ARCTIC</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">RESOURCES</a>
+                <div class="dropdown-content">
+                    <a href="../resources/facts-jokes.html">FACTS & JOKES</a>
+                    <a href="../resources/quiz.html">FUN QUIZ</a>
+                </div>
+            </li>
+            <li><a href="../blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
+    <!--slideshow Header-->
+    <div class="carousel-container">
+        <div class="slides" id="slides">
+            <div class="slide">
+              <img src="habitat_images/forest3.jpg" class="active" alt="forest1">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest2.jpg" class="active" alt="forest2">
+            </div>
+            <div class="slide">
+             <img src="habitat_images/forest1.jpg" class="active" alt="forest3">
+            </div>
+        </div>
+    <div class="navigation">
+        <button class="nav-btn" onclick="preslide()">Prev</button>
+        <button class="nav-btn" onclick="nextslide()">Next</button>
+    </div>
+    </div>
+
+
+
+        <div class="header-text">
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 2";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo "<h1>".$row['name']."</h1>";
+              }  
+            }
+            ?>
+               
+               <p>Forests are rich ecosystems that cover 31% of the earth and , support more than 80% of all
+              land animals.</p>
+             </div>
+        </div>
+        <!--Main Content-->
+        <div class="section">
+            <?php
+            $sql = "SELECT * FROM habitat WHERE id = 2";
+            $result = mysqli_query($conn, $sql);
+            $queryResults = mysqli_num_rows($result);
+
+            if ($queryResults > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<h2>What is a Forest?</h2>
+                        <p>".$row['description']."</p>";
+                }
+            }
+            ?>
+            
+            <h2>Types of Forests</h2>
+            <div class="forest-type">
+
+                <!--Tropical Rainforest-->
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/tropical_rainforest.jpg', title: 'Tropical Rainforest', info: 'Found near the equator, tropical rainforests are hot, humid, and home to animals like Jaguars, toucans, and frogs.'})">
+                      <img src="habitat_images/tropical_rainforest.jpg" alt="Tropical Rainforest">
+                      <div class="info">
+                        <h3>Tropical Rainforest</h3>
+                        <p>Found near the equator, tropical rainforests are hot, humid, and home to animals like Jaguars, toucans, and frogs.</p>
+                      </div>
+                </div>
+                <!--Temperate Forest-->
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/temperate_forest.jpg', title: 'Temperate Forest', info: 'These forests have four seasons and house animals like deer, wolves, and bears. They\'re found in North America, Asia and Europe.'})">
+                    <img src="habitat_images/temperate_forest.jpg" alt="Temperate Forest">
+                    <div class="info">
+                        <h3>Temperate Forest</h3>
+                        <p>These forests have four seasons and house animals like deer, wolves, and bears. They're found in North America, Asia and Europe.</p>
+                    </div>
+                </div>
+
+                <!--Boreal Forest-->
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/boreal_forest.jpg', title: 'Boreal Forest', info: 'Located in cold northern regions, boreal forests are filled with conifers and animals like moose, lynx, and owls.'})">
+                    <img src="habitat_images/boreal_forest.jpg" alt="Boreal Forest">
+                    <div class="info">
+                        <h3>Boreal Forest</h3>
+                        <p>Located in cold northern regions, boreal forests are filled with conifers and animals like moose, lynx, and owls.</p>
+                    </div>
+                </div>
+
+                <!--Montane forest-->
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/montane forest.jpg', title: 'Montane Forest', info: 'Found in mountain regions with cooler temperatures. Supports unique high-altitude wildlife.'})">
+                    <img src="habitat_images/montane forest.jpg" alt="Montane Forest">
+                    <div class="info">
+                        <h3>Montane Forest</h3>
+                        <p>Found in mountain regions with cooler temperatures. Supports unique high-altitude wildlife.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2>Animals in Forests</h2>
+            <div class="forest-type">
+
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/lion.jpg', title: 'Lion', info: 'The king of the tropical forest, stealthy, and strong. Lions are endangered and need large territories.'})">
+                     <img src="habitat_images/lion.jpg" alt="Lion">
+                    <div class="info">
+                        <h3>Lion</h3>
+                        <p>The king of the tropical forest, stealthy, and strong. Lions are endangered and need large territories.</p>
+                    </div>
+                </div>
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/deer.jpg', title: 'Deer', info: 'Graceful and quiet, deer thrive in temperate and boreal forests, feeding on leaves and shrubs.'})">
+                    <img src="habitat_images/deer.jpg" alt="Deer">
+                    <div class="info">
+                        <h3>Deer</h3>
+                        <p>Graceful and quiet, deer thrive in temperate and boreal forests, feeding on leaves and shrubs.</p>
+                    </div>
+                </div>
+
+                <div class="forest-card" onclick="openModal({image: 'habitat_images/monkey2.jpg', title: 'Monkey', info: 'Social and intelligent animals that live in the canopies of tropical rainforests.'})">
+                    <img src="habitat_images/monkey2.jpg" alt="Monkey">
+                    <div class="info">
+                        <h3>Monkey</h3>
+                        <p>Social and intelligent animals that live in the canopies of tropical rainforests.</p>
+                    </div>
+                </div>
+            </div>
+          <a href="../index.html" class="button">Back </a>   
+        </div>
+    
+        <footer>
+            <p>© 2025 Animal Atlas | Group 6A Project</p>
+        </footer>
+
+        <!-- Lightbox Modal HTML -->
+        <div id="lightboxModal" class="modal-overlay" style="display:none;">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" style="max-width:95%; max-height:340px; object-fit:cover; display:none; margin-bottom:1rem;" />
+            <h2 id="modalTitle" style="display:none;"></h2>
+            <p id="modalBody" style="display:none;"></p>
+          </div>
+        </div>
+        <!--Javascript for carousel-container and modal-->
+        <script src="tropics.js"></script>
+        <script>
+        function openModal(data) {
+          var modal = document.getElementById('lightboxModal');
+          var modalContent = modal.querySelector('.modal-content');
+          var modalImage = document.getElementById('modalImage');
+          var modalTitle = document.getElementById('modalTitle');
+          var modalBody = document.getElementById('modalBody');
+          modalContent.classList.remove('image-only');
+          modalImage.style.display = 'none';
+          modalTitle.style.display = 'none';
+          modalBody.style.display = 'none';
+          if (data.image) {
+            modalImage.src = data.image;
+            modalImage.style.display = 'block';
+          }
+          if (data.image && !data.title && !data.info) {
+            modalContent.classList.add('image-only');
+          } else {
+            if (data.title) {
+              modalTitle.textContent = data.title;
+              modalTitle.style.display = 'block';
+            }
+            if (data.info) {
+              modalBody.textContent = data.info;
+              modalBody.style.display = 'block';
+            }
+          }
+          modal.style.display = 'flex';
+        }
+        function closeModal() {
+          document.getElementById('lightboxModal').style.display = 'none';
+        }
+        document.addEventListener('click', function(e) {
+          var modal = document.getElementById('lightboxModal');
+          if (modal.style.display === 'flex' && e.target === modal) {
+            closeModal();
+          }
+        });
+        </script>
+</body>
+</html>
