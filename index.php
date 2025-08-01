@@ -35,9 +35,9 @@
         <li class="dropdown">
           <a href="#" class="dropbtn">HABITAT</a>
           <div class="dropdown-content">
-            <a href="../habitat/ocean.html">OCEAN</a>
+            <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/tropics.php">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
