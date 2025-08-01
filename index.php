@@ -1,3 +1,7 @@
+<?php
+  include 'dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +27,7 @@
           <div class="dropdown-content">
             <a href="../list/mammals.html">MAMMALS</a>
             <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
-            <a href="../list/bird.html">BIRDS</a>
+            <a href="../list/bird.php">BIRDS</a>
             <a href="../list/fish.html">SEA CREATURES</a>
           </div>
         </li>
@@ -49,8 +53,10 @@
     </nav>
 
     <div class="search">
-      <input class="srch" type="search" name="search" placeholder="Search Animals"/>
-      <button class="btn" type="submit">Search</button>
+      <form action="search.php" method="POST">
+        <input class="srch" type="search" name="search" placeholder="Search Animals"/>
+        <button class="btn" type="submit" name="submit-search">Search</button>
+      </form>
     </div>
 
     <div class="content">

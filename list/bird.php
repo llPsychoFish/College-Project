@@ -1,3 +1,7 @@
+<?php
+  include '../dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,61 +89,39 @@
       </button>
 
       <div id="Arctic_Tern" class="info-section">
-        <h2>Arctic Tern</h2>
-        <img src="list_image/arctic_tern.jpg" alt="Arctic Tern" />
-        <p>Scientific Name: <b>Sterna paradisaea</b></p>
-        <p>
-          Type :
-          <abbr
-            title="Non-raptor birds are a diverse group that feed on seeds, fruits,fish, insects, or nectar"
-            ><b>Non-raptor</b></abbr
-          >
-        </p>
-        <p>
-          The Arctic Tern is a small seabird renowned not for its size, but for
-          its extraordinary endurance and adaptability. Known as one of the
-          greatest travelers in the animal kingdom, this bird annually performs
-          a round-trip migration from the Arctic to the Antarctic, covering tens
-          of thousands of kilometers. With elegant white plumage, sharp red
-          beaks, and streamlined bodies, Arctic Terns are as beautiful as they
-          are biologically fascinating.
-        </p>
+        <?php
+        $sql = "SELECT * FROM birds WHERE id = 1";
+        $result = mysqli_query($conn, $sql);
+        $queryResults = mysqli_num_rows($result);
 
-        <h3>Habitat</h3>
-        <p>
-          Arctic Terns breed in Arctic and sub-Arctic regions, including
-          Greenland, Iceland, Alaska, and northern parts of Canada, Europe, and
-          Russia. Their nesting sites are typically coastal tundra, rocky
-          islands, and beaches. During the non-breeding season, they fly to the
-          Antarctic Circle, spending their time in cold southern oceans, far
-          away from human settlements. This extreme migration allows them to
-          experience two summers per year, giving them more daylight than any
-          other animal on Earth.
-        </p>
+        if ($queryResults > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo "<h2>".$row['name']."</h2>
+                    <img src='list_image/arctic_tern.jpg' alt='Arctic Tern'/>
+                    <p>Scientific Name: <b>Sterna paradisaea</b></p>
+                    <p>Type :<abbr title='Non-raptor birds are a diverse group that feed on seeds, fruits,fish, insects, or nectar'><b>Non-raptor</b></abbr></p>
+                    <p>".$row['description']."</p>
+                    <h3>Habitat</h3>
+                    <p>".$row['habitat']."</p>
+                    <h3>Migration</h3>
+                    <p>Every year, the Arctic Tern travels from the Arctic to the Antarctic and back again, making a round trip of about 70,000 to 80,000
+                    kilometers (43,000 to 50,000 miles)—the longest known migration in the animal kingdom. They follow a zigzag route, catching favorable wind
+                    currents and stopping at key feeding sites along the way. This journey is not only a test of endurance but also a demonstration of how finely
+                    attuned these birds are to Earth's geography and weather systems.</p>
+                    <h3>Breeding and Life Cycle</h3>";
+            }
+          } else {
+            echo "No results found.";
 
-        <h3>Feeding Habits</h3>
-        <p>
-          Arctic Terns are carnivorous, feeding mainly on small fish and marine
-          invertebrates like shrimp and krill. They forage by hovering above the
-          water and diving to catch prey near the surface. Sometimes, they also
-          pick insects from land or water, especially during breeding when food
-          must be plentiful for their chicks. Their sharp eyesight helps them
-          spot fish underwater, and their fast, agile flight aids in quick
-          capture.
-        </p>
+          }
 
-        <h3>Migration</h3>
-        <p>
-          Every year, the Arctic Tern travels from the Arctic to the Antarctic
-          and back again, making a round trip of about 70,000 to 80,000
-          kilometers (43,000 to 50,000 miles)—the longest known migration in the
-          animal kingdom. They follow a zigzag route, catching favorable wind
-          currents and stopping at key feeding sites along the way. This journey
-          is not only a test of endurance but also a demonstration of how finely
-          attuned these birds are to Earth's geography and weather systems.
-        </p>
+        ?>
 
-        <h3>Breeding and Life Cycle</h3>
+
+
+
+
+
         <p>
           Breeding takes place during the Arctic summer, when daylight is nearly
           continuous. Arctic Terns are monogamous and often return to the same
@@ -340,52 +322,37 @@
       <button class="button" onclick="showInfo('Cassowary')">Cassowary</button>
 
       <div id="Cassowary" class="info-section">
-        <h2>Cassowary</h2>
-        <img src="list_image/cassowary.jpg" alt="Cassowary" />
-        <p>
-          Type :
-          <abbr
-            title="Non-raptor birds are a diverse group that feed on seeds, fruits,fish, insects, or nectar"
-            ><b>Non-raptor</b></abbr
-          >
-        </p>
-        <p>
-          The cassowary is one of the most remarkable birds walking the Earth
-          today. With its dinosaur-like appearance, vibrant coloring, and
-          reputation as one of the most dangerous birds in the world, the
-          cassowary is as fascinating as it is fearsome. Native to the tropical
-          forests of northern Australia, New Guinea, and surrounding islands,
-          this flightless bird plays a vital role in its ecosystem—and commands
-          respect from anyone who crosses its path.
-        </p>
-        <h3>Species of Cassowary</h3>
-        <p>
-          There are three species of cassowary:<br />
+       <?php
+       $sql = "SELECT * FROM birds WHERE id = 2";
+        $result = mysqli_query($conn, $sql);
+        $queryResults = mysqli_num_rows($result);
 
-          1.
-          <abbr title="pictured above"
-            ><b>Sourthern Cassowary (Casuarius casuarius)</b></abbr
-          >– the most well-known and widely studied<br />
-          2. Northern Cassowary (Casuarius unappendiculatus)<br />
-          3. Dwarf Cassowary (Casuarius bennetti)<br />
-          The Southern Cassowary is the largest and most iconic, often referred
-          to when people mention “the cassowary.”
-        </p>
-        <h3>Habitat</h3>
-        <p>
-          Cassowaries inhabit dense tropical rainforests, swamps, and mangroves
-          in northern Australia, New Guinea, and nearby islands. They prefer
-          areas with thick vegetation that provides cover and abundant food
-          sources. These birds are solitary and territorial, often establishing
-          large home ranges that they defend from other cassowaries. Their
-          primary range includes:<br />
-          Northern Queensland, Australia+<br />
-          New Guinea and surrounding islands<br />
-          Parts of Indonesia<br />
-          They rely on thick vegetation and ample fruit supplies, as they are
-          mostly forest dwellers, using their powerful legs to move through the
-          underbrush and escape danger.
-        </p>
+        if ($queryResults > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo "<h2>".$row['name']."</h2>"
+                      ."<img src='list_image/cassowary.jpg' alt='Cassowary'/>"
+                      ."<p>Type :<abbr title='Non-raptor birds are a diverse group that feed on seeds, fruits,fish, insects, or nectar'><b>Non-raptor</b></abbr></p>"
+                      ."<p>".$row['description']."</p>
+                      <h3>Species of Cassowary</h3>
+                      <p>
+                      There are three species of cassowary:<br />
+                      1.<abbr title='pictured above'><b>Sourthern Cassowary (Casuarius casuarius)</b></abbr>– the most well-known and widely studied<br />
+                      2. Northern Cassowary (Casuarius unappendiculatus)<br />
+                      3. Dwarf Cassowary (Casuarius bennetti)<br />
+                      The Southern Cassowary is the largest and most iconic, often referred
+                      to when people mention “the cassowary.”</p>
+                      <h3>Habitat</h3>
+                      <p>".$row['habitat']."</p>";
+
+              }
+          }
+
+       ?>
+
+
+
+
+
         <h3>Physical Characteristics</h3>
         <p>
           The cassowary looks like something out of prehistory:<br />
@@ -1888,43 +1855,29 @@
       <button class="button" onclick="showInfo('Owl')">Owl</button>
 
       <div id="Owl" class="info-section">
-        <h2>Owl</h2>
-        <img src="list_image/snow owl.jpg" alt="Owl" />
-        <p>Scientific Name: <b>Strigiformes</b></p>
-        <p>
-          Type :
-          <abbr
-            title="Birds of prey (raptors) are meat-eating birds with sharp talons, hooked beaks, and excellent vision. Examples: eagles, hawks, owls."
-            ><b>Birds of Prey</b></abbr
-          >
-        </p>
-        <p>
-          Owls are nocturnal birds of prey known for their distinctive
-          appearance, silent flight, and exceptional hunting skills. They are
-          found on every continent except Antarctica and inhabit a wide range of
-          environments, from forests and grasslands to deserts and urban areas.
-          Owls play crucial roles in controlling rodent populations and maintaining
-          ecosystem balance.
-        </p>
-        <h3>Types of Owls</h3>
-        <p>
-          There are about 200 species of owls, each adapted to different
-          habitats and climates. Some of the most notable include:<br />
-          Barn Owl (Tyto alba) – known for its heart-shaped face and silent flight.<br />
-          Great Horned Owl (Bubo virginianus) – recognized by its tufted "horns" and powerful build.<br />
-          Snowy Owl (Bubo scandiacus) – famous for its striking white plumage and association with the Arctic.<br />
-          Eastern Screech Owl (Megascops asio) – a small owl known for its distinctive trilling call.<br />
-          Each species has unique adaptations for hunting, nesting, and social behavior.
-        </p>
-        <h3>Habitat and Distribution</h3>
-        <p>
-          Owls inhabit a variety of environments, including:<br />
-          Forests, grasslands, deserts, and urban areas<br />
-          They are found on every continent except Antarctica, with some species
-          adapted to specific habitats. Owls prefer areas with dense vegetation
-          for nesting and cover from predators. They are primarily nocturnal,
-          hunting at night and roosting during the day.
-        </p>
+        <?php
+        $sql = "SELECT * FROM birds WHERE id = 3";
+        $result = mysqli_query($conn, $sql);
+        $queryResults = mysqli_num_rows($result);
+
+          if ($queryResults > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo "<h2>".$row['name']."</h2>
+                      <img src='list_image/snow owl.jpg' alt='Owl' />
+                      <p>Scientific Name:<b>Strigiformes</b></p>
+                      <p>Type :<abbr title='Birds of prey (raptors) are meat-eating birds with sharp talons, hooked beaks, and excellent vision. Examples: eagles, hawks, owls.'><b>Birds of Prey</b></abbr></p>
+                      <p>".$row['description']."</p>
+                      <h3>Types of Owls</h3>
+                      <p>There are about 200 species of owls, each adapted to different habitats and climates. Some of the most notable include:<br/>
+                      Barn Owl (Tyto alba) – known for its heart-shaped face and silent flight.<br/> Great Horned Owl (Bubo virginianus) – recognized by its tufted \"horns\" and powerful build.<br/>Snowy Owl (Bubo scandiacus) – famous for its striking white plumage and association with the Arctic.<br/>
+                      Eastern Screech Owl (Megascops asio) – a small owl known for its distinctive trilling call.<br/>Each species has unique adaptations for hunting, nesting, and social behavior.</p>
+                      <h3>Habitat and Distribution</h3>
+                      <p>".$row['habitat']."</p>";
+              }
+          }
+
+        ?>
+
         <h3>Feeding Habits</h3>
         <p>
           Owls are carnivorous, feeding primarily on small mammals, birds,
@@ -2620,47 +2573,30 @@
 
       <button class="button" onclick="showInfo('Vulture')">Vulture</button>
       <div id="Vulture" class="info-section">
-        <h2>Vulture</h2>
-        <img src="list_image/AndeanCondorMale.jpg" alt="Vulture" />
-        <p>Scientific Name: <b>Gyps</b></p>
-        <p>
-          Type :
-          <abbr
-            title="Birds of prey (raptors) are meat-eating birds with sharp talons, hooked beaks, and excellent vision. Examples: eagles, hawks, owls."
-            ><b>Birds of Prey</b></abbr
-          >
-        </p>
-        <p>
-          Vultures are large, scavenging birds of prey known for their
-          distinctive appearance and important ecological role. They are found
-          on every continent except Antarctica and play a crucial role in
-          maintaining the health of ecosystems by consuming carrion and
-          preventing the spread of disease.
-        </p>
+        <?php
+        $sql = "SELECT * FROM birds WHERE id = 4";
+        $result = mysqli_query($conn, $sql);
+        $queryResults = mysqli_num_rows($result);
 
+        if ($queryResults > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo "<h2>".$row['name']."</h2>
+                    <img src='list_image/black vulture.jpg' alt='Black Vulture'/>
+                    <p>Scientific Name: <b>Gyps</b></p>
+                    <p>Type :<abbr title='Birds of prey (raptors) are meat-eating birds with sharp talons, hooked beaks, and excellent vision. Examples: eagles, hawks, owls.'><b>Birds of Prey</b></abbr></p>
+                    <p>".$row['description']."</p>
+                    <h3>Types of Vultures</h3>
+                    <p>There are about 23 species of vultures, each adapted to different habitats and climates. Some of the most notable include:<br/>
+                    Griffon Vulture (Gyps fulvus) – known for its large wingspan and distinctive white head.<br/>
+                    Andean Condor (Vultur gryphus) – recognized by its massive size and striking black plumage.<br/>
+                    Turkey Vulture (Cathartes aura) – known for its red head and keen sense of smell.<br/>Each species has unique adaptations for feeding, nesting, and social behavior.</p>
+                    <h3>Habitat and Distribution</h3>
+                    <p>".$row['habitat']."</p>";
+            }
+        }
+
+        ?>
         
-        <h3>Types of Vultures</h3>
-        <p>
-          There are about 23 species of vultures, each adapted to different
-          habitats and climates. Some of the most notable include:<br />
-          Griffon Vulture (Gyps fulvus) – known for its large wingspan and
-          distinctive white head.<br />
-          Andean Condor (Vultur gryphus) – recognized by its massive size and
-          striking black plumage.<br />
-          Turkey Vulture (Cathartes aura) – known for its red head and keen sense
-          of smell.<br />
-          Each species has unique adaptations for feeding, nesting, and social
-          behavior.
-        </p>
-        <h3>Habitat and Distribution</h3>
-        <p>
-          Vultures inhabit a variety of environments, including:<br />
-          Grasslands, savannas, deserts, and mountainous regions<br />
-          They are found on every continent except Antarctica, with the highest
-          diversity in Africa and Asia. Vultures prefer areas with abundant
-          carrion and open spaces for soaring and nesting. They are often seen
-          soaring high in the sky or perched on tall trees or cliffs.
-        </p>
         <h3>Feeding Habits</h3>
         <p>
           Vultures are scavengers, feeding primarily on carrion (dead animals).
