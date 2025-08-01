@@ -225,3 +225,60 @@ p abbr {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.read-more {
+    display: none;
+    margin-top: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    color: #00704A;
+    text-decoration: none;
+    padding: 10px 20px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Read More Toggle Button Styling */
+.read-more-toggle {
+    display: inline-block;
+    background: linear-gradient(135deg, #2e8b57, #00704A);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(46, 139, 87, 0.3);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.read-more-toggle:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 139, 87, 0.4);
+    color: white !important;
+}
+
+.read-more-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(46, 139, 87, 0.3);
+}
+
+/* Read More Content Styling */
+.read-more.show {
+    display: block;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.read-more p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
