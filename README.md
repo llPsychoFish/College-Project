@@ -143,7 +143,10 @@ College-Project/
 
 ## 👥 Group 6A Members
 
-*[Add team member names and roles here]*
+- **Arnold Sampson** - Lead Programmer & Project Coordinator
+  - Frontend development and user interface design
+  - Backend PHP programming and database integration
+  - Project architecture and technical leadership
 
 ## 🤝 Contributing
 
