@@ -147,6 +147,13 @@ College-Project/
   - Frontend development and user interface design
   - Backend PHP programming and database integration
   - Project architecture and technical leadership
+- **Amegashitsi Jackson** - Chief Editor & Researcher
+  - Content editing and quality assurance
+  - Wildlife research and fact-checking
+  - Educational resource development
+- **Aderkotey Foster** - Blog Creator
+  - Developed and authored the blog section
+  - Curated wildlife stories and articles
 
 ## 🤝 Contributing
 
