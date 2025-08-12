@@ -19,25 +19,30 @@
       <p>Explore the fascinating world of animals!</p>
     </header>
 
-    <nav class="menu">
+   <nav class="menu">
+      <div class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
-        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.php">HOME</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">ANIMAL LIST</a>
           <div class="dropdown-content">
             <a href="../list/mammals.html">MAMMALS</a>
             <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
-            <a href="../list/bird.php">BIRDS</a>
+            <a href="../list/bird.html">BIRDS</a>
             <a href="../list/fish.html">SEA CREATURES</a>
           </div>
         </li>
-        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li><a href="../conserve/conservation.html">CONSERVATION</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">HABITAT</a>
           <div class="dropdown-content">
             <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.php">FOREST</a>
+            <a href="../habitat/tropics.html">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
@@ -51,6 +56,23 @@
         <li><a href="../blogfiles/blog2.html">BLOG</a></li>
       </ul>
     </nav>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="../list/mammals.html">MAMMALS</a></li>
+        <li><a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a></li>
+        <li><a href="../list/bird.php">BIRDS</a></li>
+        <li><a href="../list/fish.html">SEA CREATURES</a></li>
+        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li><a href="../habitat/ocean.php">OCEAN</a></li>
+        <li><a href="../habitat/desert.html">DESERT</a></li>
+        <li><a href="../habitat/tropics.php">FOREST</a></li>
+        <li><a href="../habitat/arctic.html">ARCTIC</a></li>
+        <li><a href="../resources/facts-jokes.html">FACTS & JOKES</a></li>
+        <li><a href="../resources/quiz.html">FUN QUIZ</a></li>
+        <li><a href="../blogfiles/blog2.html">BLOG</a></li>
+      </ul>
+    </div>
 
     <div class="search">
       <form action="search.php" method="POST">

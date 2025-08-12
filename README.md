@@ -74,12 +74,12 @@ College-Project/
 ├── 📄 dbh.php                  # Database connection handler
 ├── 📁 list/                    # Animal categories
 │   ├── 📄 mammals.html
-│   ├── 📄 birds.html
+│   ├── 📄 birds.php
 │   ├── 📄 reptiles.html
 │   ├── 📄 fish.html
 │   └── 📁 list_image/         # Animal images
 ├── 📁 habitat/                 # Habitat sections
-│   ├── 📄 ocean.html
+│   ├── 📄 ocean.php
 │   ├── 📄 desert.html
 │   ├── 📄 tropics.php
 │   ├── 📄 arctic.html
