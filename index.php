@@ -88,7 +88,7 @@
         <div class="animal-cards">
           <!-- Animal Card -->
           <div class="card">
-            <img src="images/dingo.jpg" alt="Dingo" />
+            <img src="images/dingo.jpg" alt="Dingo"/>
             <h3>Dingo (Animal of the Week)</h3>
             <p class="des1 card-desc">
               Dingoes are highly adaptable and can thrive in various
