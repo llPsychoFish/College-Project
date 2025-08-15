@@ -18,13 +18,13 @@
 
         <nav class="menu">
         <ul>
-            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.php">HOME</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">ANIMAL LIST</a>
                 <div class="dropdown-content">
                     <a href="../list/mammals.html">MAMMALS</a>
                     <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
-                    <a href="../list/bird.html">BIRDS</a>
+                    <a href="../list/bird.php">BIRDS</a>
                     <a href="../list/fish.html">SEA CREATURES</a>
                 </div>
             </li>
@@ -32,9 +32,9 @@
             <li class="dropdown">
                 <a href="#" class="dropbtn">HABITAT</a>
                 <div class="dropdown-content">
-                    <a href="../habitat/ocean.html">OCEAN</a>
+                    <a href="../habitat/ocean.php">OCEAN</a>
                     <a href="../habitat/desert.html">DESERT</a>
-                    <a href="../habitat/tropics.html">FOREST</a>
+                    <a href="../habitat/tropics.php">FOREST</a>
                     <a href="../habitat/arctic.html">ARCTIC</a>
                 </div>
             </li>
