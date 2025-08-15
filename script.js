@@ -6,6 +6,15 @@ function showAnimal(animal) {
     alert(`You clicked on ${animalData.name}! Fun fact: ${animalData.fact}`);
 }
 
+// Close sidebar when clicking outside
+      window.addEventListener('click', function(e) {
+          var sidebar = document.querySelector('.sidebar');
+          var hamburger = document.querySelector('.hamburger');
+          if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+              sidebar.classList.remove('active');
+          }
+      });
+
 // Random fact generator
 const facts = [
     "A group of flamingos is called a 'flamboyance'.", // Fun fact 1
@@ -173,3 +182,4 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
