@@ -44,9 +44,9 @@
         <li><a href="../blogfiles/blog2.html">BLOG</a></li>
       </ul>
     </nav>
-    <main>
-      <div class="rept-content">
-        <h1>Reptiles</h1>
+    <div class="content">
+      <h1>Reptiles & Amphibians</h1>
+      <div class="readmore-block">
         <p class="par">
           Reptiles are cold-blooded vertebrates that have scales or scutes covering their skin. 
           They breathe air through lungs and most lay eggs on land, though some give birth to live young. 
@@ -55,35 +55,63 @@
           adapted to live in various environments including deserts, forests, oceans, and freshwater 
           habitats. Many reptiles are excellent predators with specialized hunting techniques.
         </p>
+        <button class="read-more-toggle">Read More</button>
+        <div class="read-more">
+          <p>
+            Reptiles represent one of the most ancient and successful vertebrate groups on Earth, with a fossil record dating back over 300 million years. This class includes approximately 10,000 known species divided into four major groups: lizards and snakes (Squamata), turtles and tortoises (Testudines), crocodilians (Crocodilia), and the tuatara (Rhynchocephalia).<br><br>
+            
+            The key adaptations that allowed reptiles to colonize terrestrial environments include waterproof skin covered in scales or scutes, efficient kidneys that conserve water, and the amniotic egg with a protective shell. Unlike amphibians, reptiles are not dependent on water for reproduction, allowing them to thrive in arid environments.<br><br>
+            
+            Reptilian diversity is remarkable - from the smallest gecko measuring just 16mm to massive saltwater crocodiles exceeding 6 meters in length. Their feeding strategies range from herbivorous iguanas and tortoises to apex predators like Komodo dragons and venomous snakes with sophisticated venom delivery systems.<br><br>
+            
+            Ecologically, reptiles serve crucial roles as both predators and prey. Many species are important pest controllers, with some snakes and lizards consuming large quantities of rodents and insects. Others, like marine iguanas and some tortoises, are primary herbivores that shape plant communities through their grazing patterns.<br><br>
+            
+            Modern reptiles face significant conservation challenges, with habitat destruction, climate change, and human persecution threatening many species. However, their remarkable adaptability and efficient metabolism continue to make them successful in environments where other vertebrates struggle to survive.
+          </p>
+          <button class="read-more-toggle">Read Less</button>
+        </div>
       </div>
+    </div>
 
-      <div class="rept-list">
-        <div class="reptiles">
-          <button class="button" onclick="showInfo('lizard-list')">Lizards</button>
-          <button class="button" onclick="showInfo('snake-list')">Snakes</button>
-          <button class="button" onclick="showInfo('tortoise-list')">Tortoises</button>
-
-          <div id="lizard-list" class="info-section">
-            <h2>Lizards</h2>
-                <p>
-                Lizards are a diverse group of reptiles found on every continent except Antarctica..<br/>
-                 They range in size from tiny geckos to large monitors and display a wide variety of colors, shapes, and behaviors. .<br/>
-                 Most lizards have four legs, external ear openings, and movable eyelids. .<br/>
-                 They are primarily carnivorous or insectivorous, though some species eat plants..<br/>
-                  Lizards are known for their ability to shed their tails to escape predators and for their adaptability to many habitats, including deserts, forests, and urban areas.
-                </p>
-              <button class="button" onclick="showInfo('Iguana')">Iguana</button>
-              <button class="button" onclick="showInfo('Chameleon')">Chameleon</button>
-              <button class="button" onclick="showInfo('Gecko')">Gecko</button>
-              <button class="button" onclick="showInfo('Skink')">Skink</button>
-              <button class="button" onclick="showInfo('Tegu')">Tegu</button>
-              <button class="button" onclick="showInfo('Whiptail')">Whiptail</button>
-              <button class="button" onclick="showInfo('Monitor Lizards')">Monitor Lizards</button>
-              <button class="button" onclick="showInfo('Gila Monster')">Gila Monster</button>
-              <button class="button" onclick="showInfo('Komodo Dragon')">Komodo Dragon</button>
-              <button class="button" onclick="showInfo('Legless lizard')">Legless lizard</button>
-              <button class="back-btn" onclick="hideInfo('lizard-list')">← Back</button>
-            </div>
+    <div class="reptile-list">
+      <!-- Lizards Section -->
+      <div id="lizard-list" class="info-section">
+        <h2>🦎 Lizards</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Lizards are a diverse group of reptiles found on every continent except Antarctica. They range in size from tiny geckos to large monitors and display a wide variety of colors, shapes, and behaviors. Most lizards have four legs, external ear openings, and movable eyelids. They are primarily carnivorous or insectivorous, though some species eat plants. Lizards are known for their ability to shed their tails to escape predators and for their adaptability to many habitats.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Lizards belong to the order Squamata, which they share with snakes, making them one of the most successful reptile groups on Earth. With over 6,000 known species, lizards exhibit remarkable diversity in size, habitat, and behavior. The smallest lizard, the dwarf gecko, measures just 16mm in length, while the largest, the Komodo dragon, can reach over 3 meters and weigh up to 70kg.<br><br>
+              
+              Lizards have evolved numerous fascinating adaptations for survival. Many species can change color for camouflage, communication, or temperature regulation. Some, like chameleons, have independently moving eyes and projectile tongues that can extend twice their body length. Geckos have specialized toe pads with millions of tiny hairs called setae that allow them to walk on any surface, including glass.<br><br>
+              
+              Most lizards are ectothermic, relying on external heat sources to regulate body temperature through behavioral thermoregulation - basking in the sun to warm up and seeking shade to cool down. This energy-efficient strategy allows them to survive in harsh environments where mammals might struggle.<br><br>
+              
+              Reproduction varies greatly among lizard species. While most lay eggs (oviparous), some give birth to live young (viviparous), and others retain eggs until hatching (ovoviviparous). Some species, like certain whiptail lizards, can reproduce through parthenogenesis, creating genetic clones without mating.<br><br>
+              
+              Ecologically, lizards serve crucial roles as both predators and prey. They help control insect populations, disperse seeds, and provide food for birds, mammals, and other reptiles. Many species are excellent indicators of ecosystem health due to their sensitivity to environmental changes.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Iguana')">Iguana</button>
+          <button class="button" onclick="showInfo('Chameleon')">Chameleon</button>
+          <button class="button" onclick="showInfo('Gecko')">Gecko</button>
+          <button class="button" onclick="showInfo('Skink')">Skink</button>
+          <button class="button" onclick="showInfo('Tegu')">Tegu</button>
+          <button class="button" onclick="showInfo('Whiptail')">Whiptail</button>
+          <button class="button" onclick="showInfo('Monitor Lizards')">Monitor Lizards</button>
+          <button class="button" onclick="showInfo('Gila Monster')">Gila Monster</button>
+          <button class="button" onclick="showInfo('Komodo Dragon')">Komodo Dragon</button>
+          <button class="button" onclick="showInfo('Legless lizard')">Legless Lizard</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('lizard-list')">← Back</button>
+      </div>
             
             <div id="Iguana" class="info-section">
               <h2>Iguana</h2>
@@ -674,6 +702,7 @@ most well-known including:<br/>
               <h3>Physical Characteristics</h3>
               <p>
                 Komodo dragons are massive lizards that can grow up to 10 feet (3 meters) in length and weigh over 300 pounds (136 kg).<br/>
+  
                 They have a robust build, with a broad head, powerful limbs, and a long, muscular tail.<br/>
                 Their skin is covered in tough, scaly armor that provides protection against predators and environmental conditions.<br/>
                 Komodo dragons have sharp claws and serrated teeth that help them tear into prey.
@@ -785,31 +814,49 @@ most well-known including:<br/>
             </div>
 
 
-            <div id="snake-list" class="info-section">
-              <h2>Snakes</h2>
-              <p>
-                Snakes are elongated, legless reptiles found on every continent except Antarctica. .<br/>
-                They have flexible bodies covered in scales and move by slithering. .<br/>
-                Most snakes are carnivorous, feeding on small animals, birds, or eggs. .<br/>
-                Some species are venomous, using their venom to subdue prey or defend themselves, while others constrict their prey. .<br/>
-                Snakes play important roles in ecosystems as both predators and prey, and they inhabit a wide range of environments, from forests and deserts to wetlands and grasslands.
-              </p>
-                <button class="button" onclick="showInfo('Python')">Python</button>
-                <button class="button" onclick="showInfo('Cobra')">Cobra</button>
-                <button class="button" onclick="showInfo('Boa')">Boa</button>
-                <button class="button" onclick="showInfo('Anaconda')">Anaconda</button>
-                <button class="button" onclick="showInfo('Kingsnake')">Kingsnake</button>
-                <button class="button" onclick="showInfo('Milksnake')">Milksnake</button>
-                <button class="button" onclick="showInfo('Viper')">Viper</button>
-                <button class="button" onclick="showInfo('Mamba')">Mamba</button>
-                <button class="button" onclick="showInfo('Coralsnakes')">Coralsnakes</button>
-                <button class="button" onclick="showInfo('Krait')">Krait</button>
-                <button class="button" onclick="showInfo('Garter')">Garter</button>
-                <button class="button" onclick="showInfo('GreenSnake')">Green Snake</button>
-                <button class="button" onclick="showInfo('BlindSnake')">Blind Snake</button>
-                <button class="button" onclick="showInfo('ThreadSnake')">Thread Snake</button>
-                <button class="button" onclick="showInfo('Rattle Snake')">Rattle Snake</button>
-              <button class="back-btn" onclick="hideInfo('snake-list')">← Back</button>
+      <!-- Snakes Section -->
+      <div id="snake-list" class="info-section">
+        <h2>🐍 Snakes</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Snakes are elongated, legless reptiles found on every continent except Antarctica. They have flexible bodies covered in scales and move by slithering. Most snakes are carnivorous, feeding on small animals, birds, or eggs. Some species are venomous, using their venom to subdue prey or defend themselves, while others constrict their prey. Snakes play important roles in ecosystems as both predators and prey, and they inhabit a wide range of environments.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Snakes represent one of the most specialized groups of reptiles, having evolved from lizard ancestors around 150 million years ago. With over 3,000 species worldwide, they exhibit remarkable diversity in size, habitat, and hunting strategies. The smallest snake, the thread snake, measures just 10cm in length, while the largest pythons and anacondas can exceed 8 meters.<br><br>
+              
+              The evolution of snakes involved the loss of limbs and the development of a highly flexible skull that allows them to swallow prey much larger than their head diameter. Their forked tongues work in conjunction with the Jacobson's organ to "taste" chemical signals in the environment, providing exceptional tracking abilities.<br><br>
+              
+              Snake locomotion is achieved through four main methods: lateral undulation (side-to-side movement), rectilinear motion (straight-line movement), concertina locomotion (accordion-like movement), and sidewinding (used in sandy environments). Each method is adapted to different terrains and hunting strategies.<br><br>
+              
+              Venomous snakes have evolved sophisticated venom delivery systems with fangs that can be fixed, rear-fanged, or retractable. Snake venoms are complex cocktails of proteins and enzymes that can affect the nervous system, blood clotting, or tissue integrity. Non-venomous species rely on constriction, drowning, or simply overpowering their prey.<br><br>
+              
+              Ecologically, snakes are crucial for controlling rodent populations and maintaining ecosystem balance. Many species are ambush predators, while others actively hunt. Their role as both predator and prey makes them keystone species in many environments.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Python')">Python</button>
+          <button class="button" onclick="showInfo('Cobra')">Cobra</button>
+          <button class="button" onclick="showInfo('Boa')">Boa</button>
+          <button class="button" onclick="showInfo('Anaconda')">Anaconda</button>
+          <button class="button" onclick="showInfo('Kingsnake')">Kingsnake</button>
+          <button class="button" onclick="showInfo('Milksnake')">Milksnake</button>
+          <button class="button" onclick="showInfo('Viper')">Viper</button>
+          <button class="button" onclick="showInfo('Mamba')">Mamba</button>
+          <button class="button" onclick="showInfo('Coralsnakes')">Coral Snakes</button>
+          <button class="button" onclick="showInfo('Krait')">Krait</button>
+          <button class="button" onclick="showInfo('Garter')">Garter Snake</button>
+          <button class="button" onclick="showInfo('GreenSnake')">Green Snake</button>
+          <button class="button" onclick="showInfo('BlindSnake')">Blind Snake</button>
+          <button class="button" onclick="showInfo('ThreadSnake')">Thread Snake</button>
+          <button class="button" onclick="showInfo('Rattle Snake')">Rattlesnake</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('snake-list')">← Back</button>
+      </div>
 
              <div id="" class="info-section">
           <h2></h2>
@@ -1727,18 +1774,200 @@ most well-known including:<br/>
       
 
 
-            <div id="tortoise-list" class="info-section">
-              <h2>Tortoises</h2>
-              <p>
-                Tortoises are land-dwelling reptiles recognized for their hard, domed shells and slow, steady movement. They are herbivores, feeding mainly on grasses, leaves, and fruits. Tortoises can live for many decades, with some species reaching over 100 years old. Their sturdy shells provide protection from predators, and they are found in a variety of habitats, from deserts to forests.
-              </p>
-                <button class="button" onclick="showInfo('Galapagos Tortoise')">Galapagos Tortoise</button>
-                <button class="button" onclick="showInfo('Aldabra Tortoise')">Aldabra Tortoise</button>
-                <button class="button" onclick="showInfo('Leopard Tortoise')">Leopard Tortoise</button>
-                <button class="button" onclick="showInfo('Speckled Padloper')">Speckled Padloper</button>
-                <button class="button" onclick="showInfo('Pancake Tortoise')">Pancake Tortoise</button>
-                <button class="button" onclick="showInfo('Indian Star Tortoise')">Indian Star Tortoise</button>
-              <button onclick="hideInfo('tortoise-list')">← Back</button>
+      <!-- Tortoises Section -->
+      <div id="tortoise-list" class="info-section">
+        <h2>🐢 Tortoises & Turtles</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Tortoises are land-dwelling reptiles recognized for their hard, domed shells and slow, steady movement. They are herbivores, feeding mainly on grasses, leaves, and fruits. Tortoises can live for many decades, with some species reaching over 100 years old. Their sturdy shells provide protection from predators, and they are found in a variety of habitats, from deserts to forests.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Tortoises and turtles belong to the order Testudines, one of the oldest reptile groups with fossils dating back over 200 million years. Their most distinctive feature is the shell (carapace and plastron) formed from modified ribs and vertebrae, providing unparalleled protection among reptiles.<br><br>
+              
+              There are over 350 species of turtles and tortoises worldwide, divided into terrestrial tortoises, freshwater turtles, and marine sea turtles. Tortoises are exclusively land-dwelling and have evolved sturdy, elephant-like feet for walking on land, while aquatic species have webbed feet or flippers for swimming.<br><br>
+              
+              These reptiles exhibit remarkable longevity, with many species living well over 100 years. Their slow metabolism allows them to survive extended periods without food or water, making them well-adapted to harsh environments. Some desert tortoises can survive without drinking water for over a year.<br><br>
+              
+              Tortoises play crucial ecological roles as ecosystem engineers. Their grazing helps maintain grassland habitats, while their burrowing creates shelter for numerous other species. Many plants have co-evolved with tortoises, producing large, colorful fruits specifically adapted for tortoise dispersal.<br><br>
+              
+              Conservation challenges facing these species include habitat destruction, illegal collection for the pet trade, and climate change affecting nesting beaches for sea turtles. Many species are critically endangered, requiring dedicated conservation efforts to prevent extinction.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Galapagos Tortoise')">Galápagos Tortoise</button>
+          <button class="button" onclick="showInfo('Aldabra Tortoise')">Aldabra Tortoise</button>
+          <button class="button" onclick="showInfo('Leopard Tortoise')">Leopard Tortoise</button>
+          <button class="button" onclick="showInfo('Speckled Padloper')">Speckled Padloper</button>
+          <button class="button" onclick="showInfo('Pancake Tortoise')">Pancake Tortoise</button>
+          <button class="button" onclick="showInfo('Indian Star Tortoise')">Indian Star Tortoise</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('tortoise-list')">← Back</button>
+      </div>
+
+      <!-- Crocodilians Section -->
+      <div id="crocodilian-list" class="info-section">
+        <h2>🐊 Crocodilians</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Crocodilians are large, semi-aquatic reptiles that include crocodiles, alligators, gharials, and caimans. They are among the most successful predators on Earth, having survived virtually unchanged for over 200 million years. These powerful reptiles are found in tropical and subtropical regions worldwide and are characterized by their powerful jaws, armored skin, and semi-aquatic lifestyle.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Crocodilians represent one of the most ancient and successful reptile lineages, with 27 species currently recognized across three families: Crocodylidae (true crocodiles), Alligatoridae (alligators and caimans), and Gavialidae (gharials). These apex predators have remained virtually unchanged for millions of years, earning them the title of "living fossils."<br><br>
+              
+              Their anatomy is perfectly adapted for both aquatic and terrestrial environments. Crocodilians possess powerful tails for swimming, webbed feet, valvular nostrils and ears that seal underwater, and a nictitating membrane that protects their eyes while submerged. Their bite force is among the strongest in the animal kingdom, with saltwater crocodiles generating forces exceeding 3,700 pounds per square inch.<br><br>
+              
+              Crocodilians are surprisingly sophisticated in their behavior. They exhibit complex social structures, advanced parental care, and sophisticated communication through vocalizations, body language, and chemical signals. Mothers construct elaborate nests and provide extended care for their young, which is unusual among reptiles.<br><br>
+              
+              Ecologically, crocodilians serve as keystone species in their aquatic ecosystems. They help maintain fish populations, create wallows that provide water sources during dry seasons, and their presence indicates healthy wetland ecosystems. Unfortunately, many species have faced severe population declines due to hunting for their valuable hides and habitat destruction.<br><br>
+              
+              Modern conservation efforts have been remarkably successful for some species, with American alligators and several crocodile species recovering from near extinction. However, others like the Chinese alligator and Philippine crocodile remain critically endangered.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('crocodile-group')">🐊 Crocodiles</button>
+          <button class="button" onclick="showInfo('alligator-group')">🐊 Alligators</button>
+          <button class="button" onclick="showInfo('gharial-group')">🐊 Gharials</button>
+          <button class="button" onclick="showInfo('caiman-group')">🐊 Caimans</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('crocodilian-list')">← Back</button>
+      </div>
+
+      <!-- Crocodiles Group -->
+      <div id="crocodile-group" class="info-section">
+        <h2>🐊 Crocodiles</h2>
+        <div class="readmore-block">
+          <p class="par">
+            True crocodiles are characterized by their pointed snouts and visible teeth when their mouths are closed. They are generally more aggressive than alligators and can tolerate saltwater environments. Crocodiles are found in tropical regions around the world and include some of the largest and most dangerous predators on Earth.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Crocodiles belong to the family Crocodylidae and are distinguished from alligators by their narrower, more pointed snouts and the visibility of both upper and lower teeth when their mouths are closed. This tooth arrangement gives them a more menacing appearance and reflects their adaptation to catching fish and other aquatic prey.<br><br>
+              
+              Most crocodile species are capable of tolerating saltwater to varying degrees, with saltwater crocodiles being the most marine-adapted. They possess special salt glands that allow them to excrete excess salt, enabling them to inhabit coastal waters, estuaries, and even venture into the open ocean.<br><br>
+              
+              Crocodiles are generally more aggressive and opportunistic than their alligator cousins. They are ambush predators with incredible patience, often remaining motionless for hours before launching lightning-fast attacks on unsuspecting prey. Their bite force is among the strongest in the animal kingdom.<br><br>
+              
+              These ancient predators exhibit complex social behaviors, sophisticated communication through vocalizations and body language, and demonstrate remarkable intelligence in problem-solving and tool use. Mother crocodiles provide extensive parental care, guarding nests and carrying hatchlings to water.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('American Crocodile')">American Crocodile</button>
+          <button class="button" onclick="showInfo('Saltwater Crocodile')">Saltwater Crocodile</button>
+          <button class="button" onclick="showInfo('Nile Crocodile')">Nile Crocodile</button>
+          <button class="button" onclick="showInfo('Cuban Crocodile')">Cuban Crocodile</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('crocodile-group')">← Back</button>
+      </div>
+
+      <!-- Alligators Group -->
+      <div id="alligator-group" class="info-section">
+        <h2>🐊 Alligators</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Alligators are distinguished by their broad, rounded snouts and the fact that only their upper teeth are visible when their mouths are closed. They are primarily freshwater reptiles and are generally less aggressive than crocodiles. Alligators are found only in the United States and China, representing ancient lineages that have survived for millions of years.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Alligators belong to the family Alligatoridae and are easily distinguished from crocodiles by their broader, more U-shaped snouts. This wider jaw structure is adapted for crushing rather than gripping, making them effective at breaking the shells of turtles and the bones of large prey.<br><br>
+              
+              Unlike crocodiles, alligators are primarily restricted to freshwater environments and cannot tolerate saltwater for extended periods. They lack the specialized salt glands that allow crocodiles to excrete excess salt, limiting them to rivers, lakes, swamps, and marshes.<br><br>
+              
+              Alligators are generally more docile than crocodiles but are still formidable predators. They are excellent parents, with mothers providing protection and care for their young for up to two years. This extended parental care is unusual among reptiles and contributes to higher survival rates for juveniles.<br><br>
+              
+              The American alligator represents one of conservation's greatest success stories, recovering from near extinction in the 1960s to stable populations today. In contrast, the Chinese alligator remains critically endangered, with fewer than 130 individuals surviving in the wild.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('American Alligator')">American Alligator</button>
+          <button class="button" onclick="showInfo('Chinese Alligator')">Chinese Alligator</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('alligator-group')">← Back</button>
+      </div>
+
+      <!-- Gharials Group -->
+      <div id="gharial-group" class="info-section">
+        <h2>🐊 Gharials</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Gharials are the most specialized crocodilians, with extremely narrow snouts perfectly adapted for catching fish. They are the most aquatic of all crocodilians and are easily recognized by the distinctive bulbous growth (ghara) on mature males' snouts. These ancient reptiles are critically endangered and represent a unique evolutionary lineage.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Gharials represent the most ancient and specialized branch of crocodilian evolution, belonging to the family Gavialidae. Their extremely narrow, elongated snouts contain 106-110 sharp, interlocking teeth perfectly designed for catching slippery fish underwater.<br><br>
+              
+              The most distinctive feature of mature male gharials is the "ghara," a bulbous growth at the tip of their snout that amplifies their vocalizations during mating season. This structure, resembling a traditional Indian pot called a "ghara," gives these crocodilians their name.<br><br>
+              
+              Gharials are the most aquatic of all crocodilians, with legs positioned for efficient swimming rather than walking on land. Adult females only come ashore to nest, while males rarely leave the water. Their limbs are relatively weak compared to other crocodilians, making them clumsy on land.<br><br>
+              
+              These magnificent reptiles are critically endangered, with fewer than 200 breeding adults remaining in the wild. Their decline is due to habitat loss, fishing net entanglement, sand mining, and pollution of their river habitats. Conservation efforts are ongoing but face significant challenges in their native range.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Gharial')">Gharial</button>
+          <button class="button" onclick="showInfo('False Gharial')">False Gharial</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('gharial-group')">← Back</button>
+      </div>
+
+      <!-- Caimans Group -->
+      <div id="caiman-group" class="info-section">
+        <h2>🐊 Caimans</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Caimans are South and Central American crocodilians that belong to the alligator family. They are generally smaller than their North American and Asian relatives but are highly adaptable and successful in their range. Caimans play crucial roles as apex predators in Neotropical aquatic ecosystems and show remarkable diversity in size and habitat preferences.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Caimans are members of the Alligatoridae family and are closely related to alligators, sharing similar broad snouts and tooth arrangements. However, they have evolved unique adaptations to their Neotropical environments and show greater diversity in size and ecological niches than true alligators.<br><br>
+              
+              The group includes species ranging from the relatively small spectacled caiman to the massive black caiman, which can rival saltwater crocodiles in size. This size diversity allows different caiman species to occupy various ecological niches within the same river systems without direct competition.<br><br>
+              
+              Caimans are remarkably adaptable and have successfully colonized a wide range of aquatic habitats throughout Central and South America. Some species, like the spectacled caiman, have even adapted to human-modified environments and urban water bodies, contributing to their conservation success.<br><br>
+              
+              These crocodilians serve as keystone species in their ecosystems, particularly in the Amazon basin. The black caiman, in particular, is the apex predator of many South American river systems and plays a crucial role in maintaining fish populations and overall ecosystem health.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Spectacled Caiman')">Spectacled Caiman</button>
+          <button class="button" onclick="showInfo('Black Caiman')">Black Caiman</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('caiman-group')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Main Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('lizard-list')">🦎 Lizards</button>
+      <button class="category-btn" onclick="showInfo('snake-list')">🐍 Snakes</button>
+      <button class="category-btn" onclick="showInfo('tortoise-list')">🐢 Tortoises & Turtles</button>
+      <button class="category-btn" onclick="showInfo('crocodilian-list')">🐊 Crocodilians</button>
+    </div>
         
 
 
@@ -2026,38 +2255,70 @@ most well-known including:<br/>
      </div>
     <hr>
 
-    <div class="amph-content">
+    <div class="content">
       <h1>Amphibians</h1>
-      <p class="par">
-        Amphibians are cold-blooded vertebrates that typically live part of their lives in water 
-        and part on land. They have smooth, moist skin without scales and usually undergo 
-        metamorphosis from aquatic larvae to terrestrial adults. Amphibians include frogs, toads, 
-        salamanders, and newts. They breathe through their skin, lungs, and sometimes gills during 
-        their larval stage. Most amphibians lay their eggs in water or moist environments, and their 
-        permeable skin makes them sensitive to environmental changes and pollution.
-      </p>
-    </div>
-    <div class="amph-list">
-      <div class="amphibians">
-        <button class="button" onclick="showInfo('salamander-list')">Salamanders</button>
-        <button class="button" onclick="showInfo('newt-list')">Newts</button>
-        <button class="button" onclick="showInfo('frog-list')">Frogs</button>
-        <button class="button" onclick="showInfo('toad-list')">Toads</button>
-
-        <div id="salamander-list" class="info-section">
-          <h2>Salamanders</h2>
-          <p>Salamanders are amphibians with slender bodies, long tails, and smooth, moist skin.<br> 
-             They are found in both aquatic and terrestrial habitats, often near water. <br> 
-            Salamanders typically undergo metamorphosis from aquatic larvae to adult forms and are known for their ability to regenerate lost limbs.</p>
-         
-            <button class="button" onclick="showInfo('Japanese Giant Salamander')">Japanese Giant Salamander</button>
-            <button class="button" onclick="showInfo('Hellbender')">Hellbender</button>
-            <button class="button" onclick="showInfo('Lungless Salamander')">Lungless Salamander</button>
-            <button class="button" onclick="showInfo('Tiger Salamander')">Tiger Salamander</button>
-           
-            <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
-          <button class="back-btn" onclick="hideInfo('salamander-list')">← Back</button>
+      <div class="readmore-block">
+        <p class="par">
+          Amphibians are cold-blooded vertebrates that typically live part of their lives in water 
+          and part on land. They have smooth, moist skin without scales and usually undergo 
+          metamorphosis from aquatic larvae to terrestrial adults. Amphibians include frogs, toads, 
+          salamanders, and newts. They breathe through their skin, lungs, and sometimes gills during 
+          their larval stage. Most amphibians lay their eggs in water or moist environments, and their 
+          permeable skin makes them sensitive to environmental changes and pollution.
+        </p>
+        <button class="read-more-toggle">Read More</button>
+        <div class="read-more">
+          <p>
+            Amphibians were the first vertebrates to successfully colonize land approximately 365 million years ago, representing a crucial evolutionary transition from aquatic to terrestrial life. Today, there are over 8,000 known amphibian species divided into three main groups: frogs and toads (Anura), salamanders and newts (Caudata), and caecilians (Gymnophiona).<br><br>
+            
+            The defining characteristic of amphibians is their complex life cycle involving metamorphosis. Most species begin life as aquatic larvae with gills, then undergo dramatic physiological changes to become air-breathing adults. This dual lifestyle requires specialized adaptations for both aquatic and terrestrial environments.<br><br>
+            
+            Amphibian skin is uniquely permeable, allowing for cutaneous respiration (breathing through the skin) and making them highly sensitive to environmental toxins and pH changes. This sensitivity makes amphibians excellent bioindicators of ecosystem health, with population declines often signaling environmental problems.<br><br>
+            
+            Many amphibians possess remarkable regenerative abilities, particularly salamanders, which can regrow entire limbs, tails, and even parts of their hearts and brains. This regenerative capacity has made them important subjects for medical research.<br><br>
+            
+            Unfortunately, amphibians are currently experiencing the most severe conservation crisis of any vertebrate group, with over 40% of species threatened with extinction due to habitat destruction, climate change, pollution, and emerging diseases like chytrid fungus.
+          </p>
+          <button class="read-more-toggle">Read Less</button>
         </div>
+      </div>
+    </div>
+
+    <div class="amphibian-list">
+      <!-- Salamanders Section -->
+      <div id="salamander-list" class="info-section">
+        <h2>🦎 Salamanders & Newts</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Salamanders are amphibians with slender bodies, long tails, and smooth, moist skin. They are found in both aquatic and terrestrial habitats, often near water. Salamanders typically undergo metamorphosis from aquatic larvae to adult forms and are known for their ability to regenerate lost limbs.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Salamanders represent the most diverse group of amphibians after frogs, with over 700 species worldwide. They are found primarily in temperate regions of the Northern Hemisphere, with the greatest diversity in North America. Salamanders range from tiny species less than 2cm long to giants like the Chinese and Japanese giant salamanders that can exceed 1.5 meters.<br><br>
+              
+              The most remarkable feature of salamanders is their extraordinary regenerative ability. They can regrow entire limbs, tails, jaws, and even portions of their hearts, brains, and spinal cords. This regeneration involves the formation of a blastema, a mass of undifferentiated cells that gradually reform the lost structure.<br><br>
+              
+              Salamanders exhibit diverse reproductive strategies. Most species lay eggs in water or moist environments, but some species give birth to live young, while others undergo direct development without an aquatic larval stage. Some lungless salamanders even practice internal fertilization and parental care.<br><br>
+              
+              Ecologically, salamanders play crucial roles as both predators and prey. They consume vast quantities of insects, spiders, and other invertebrates, helping control forest pest populations. In some ecosystems, salamander biomass exceeds that of all mammals combined.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Japanese Giant Salamander')">Japanese Giant Salamander</button>
+          <button class="button" onclick="showInfo('Hellbender')">Hellbender</button>
+          <button class="button" onclick="showInfo('Lungless Salamander')">Lungless Salamander</button>
+          <button class="button" onclick="showInfo('Tiger Salamander')">Tiger Salamander</button>
+          <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
+          <button class="button" onclick="showInfo('Smooth Newt')">Smooth Newt</button>
+          <button class="button" onclick="showInfo('Rough-skinned Newt')">Rough-skinned Newt</button>
+          <button class="button" onclick="showInfo('Great Crested Newt')">Great Crested Newt</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('salamander-list')">← Back</button>
+      </div>
 
         <div id="Japanese Giant Salamander" class="info-section">
           <h2>Japanese Giant Salamander</h2>
@@ -2269,15 +2530,7 @@ most well-known including:<br/>
         </div>
 
 
-        <div id="newt-list" class="info-section">
-          <h2>Newts</h2>
-          <p>Newts are a subgroup of salamanders that are usually semi-aquatic, spending part of their lives in water and part on land.<br>
-             They have rougher skin compared to other salamanders and often display bright warning colors.<br> 
-             Newts also undergo metamorphosis and are noted for their regenerative abilities.</p>
-          <button class="button" onclick="showInfo('Smooth Newt')">Smooth Newt</button>
-            <button class="button" onclick="showInfo('Rough-skinned Newt')">Rough-skinned Newt</button>
-            <button class="button" onclick="showInfo('Great Crested Newt')">Great Crested Newt</button>
-          <button class="back-btn" onclick="hideInfo('newt-list')">← Back</button>
+
 
 
            <div id="Smooth Newt" class="info-section">
@@ -2475,16 +2728,40 @@ most well-known including:<br/>
 
         </div>
 
-        <div id="frog-list" class="info-section">
-          <h2>Frogs</h2>
-          <p>Frogs are tailless amphibians known for their jumping abilities, croaking sounds, and smooth, moist skin.</p>
-            <button class="button" onclick="showInfo('Goliath Frog')">Goliath Frog</button>
-            <button class="button" onclick="showInfo('Brazilian Gold Frog')">Brazilian Gold Frog</button>
-            <button class="button" onclick="showInfo('Poison Dart Frog')">Poison Dart Frog</button>
-            <button class="button" onclick="showInfo('Glass Frog')">Glass Frog</button>
-            <button class="button" onclick="showInfo('Tree Frog')">Tree Frog</button>
-            <button class="button" onclick="showInfo('Flying Frog')">Flying Frog</button>
-            <button class="back-btn" onclick="hideInfo('frog-list')">← Back</button>
+      <!-- Frogs Section -->
+      <div id="frog-list" class="info-section">
+        <h2>🐸 Frogs</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Frogs are tailless amphibians known for their jumping abilities, croaking sounds, and smooth, moist skin. They are found in diverse habitats worldwide and play crucial roles in ecosystem food webs as both predators and prey.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Frogs belong to the order Anura, which means "without tail," and represent the largest and most diverse group of amphibians with over 6,000 species worldwide. They have successfully colonized virtually every habitat except the most extreme polar and desert environments.<br><br>
+              
+              Frog anatomy is highly specialized for their lifestyle. Their powerful hind legs and modified pelvic girdle enable remarkable jumping abilities - some species can leap over 40 times their body length. Their specialized skin serves multiple functions: respiration, water absorption, and protection through toxic secretions.<br><br>
+              
+              Frog reproduction typically involves external fertilization in aquatic environments. Males often engage in elaborate courtship behaviors, including complex vocalizations produced by vocal sacs. Tadpoles undergo complete metamorphosis, developing from herbivorous filter-feeders to carnivorous adults.<br><br>
+              
+              Ecologically, frogs serve as crucial links in food webs. As tadpoles, they help control algae and detritus in aquatic systems, while adults consume vast quantities of insects, making them natural pest controllers. They also serve as important prey for fish, birds, snakes, and mammals.<br><br>
+              
+              Many frog species face severe conservation challenges, with over 200 species having gone extinct in recent decades due to habitat destruction, climate change, pollution, and the devastating chytrid fungus pandemic.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Goliath Frog')">Goliath Frog</button>
+          <button class="button" onclick="showInfo('Brazilian Gold Frog')">Brazilian Gold Frog</button>
+          <button class="button" onclick="showInfo('Poison Dart Frog')">Poison Dart Frog</button>
+          <button class="button" onclick="showInfo('Glass Frog')">Glass Frog</button>
+          <button class="button" onclick="showInfo('Tree Frog')">Tree Frog</button>
+          <button class="button" onclick="showInfo('Flying Frog')">Flying Frog</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('frog-list')">← Back</button>
+      </div>
 
             <div id="Goliath Frog" class="info-section">
               <h2>Goliath Frog</h2>
@@ -2803,15 +3080,46 @@ most well-known including:<br/>
 
                   
 
-        <div id="toad-list" class="info-section">
-            <h2>Toads</h2>
-            <p>Toads are a group of amphibians characterized by their dry, warty skin and stout bodies.</p>
-            <button class="button" onclick="showInfo('Cane Toad')">Cane Toad</button>
-            <button class="button" onclick="showInfo('Oak Toad')">Oak Toad</button>
-            <button class="button" onclick="showInfo('Common Toad')">Common Toad</button>
-            <button class="button" onclick="showInfo('Surinam Toad')">Surinam Toad</button>
-                <button class="back-btn" onclick="hideInfo('toad-list')">← Back</button>
-            </div>
+      <!-- Toads Section -->
+      <div id="toad-list" class="info-section">
+        <h2>🐸 Toads</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Toads are a group of amphibians characterized by their dry, warty skin and stout bodies. While closely related to frogs, toads have adapted to more terrestrial lifestyles and can be found in drier environments.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Toads are actually a specialized group of frogs that have evolved adaptations for terrestrial life. Their thick, warty skin helps prevent water loss, allowing them to venture farther from water sources than typical frogs. The "warts" are actually specialized glands that can secrete toxic or noxious substances for protection.<br><br>
+              
+              Most toads have prominent parotoid glands behind their eyes that produce bufotoxins - powerful chemical deterrents against predators. These toxins can cause severe irritation or even death in small predators, making toads formidable despite their passive appearance.<br><br>
+              
+              Toad reproduction still requires water, but many species are more flexible in their breeding site requirements. Some species can breed in temporary pools, slow-moving streams, or even roadside ditches. Their eggs are typically laid in long strings rather than clusters.<br><br>
+              
+              Ecologically, toads are important pest controllers, consuming large quantities of insects, slugs, and other invertebrates. A single toad can eat thousands of insects in a growing season, making them valuable allies in agriculture and gardening.<br><br>
+              
+              Many toad species are excellent colonizers and can adapt to disturbed habitats, though some specialized species are threatened by habitat loss and pollution.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Cane Toad')">Cane Toad</button>
+          <button class="button" onclick="showInfo('Oak Toad')">Oak Toad</button>
+          <button class="button" onclick="showInfo('Common Toad')">Common Toad</button>
+          <button class="button" onclick="showInfo('Surinam Toad')">Surinam Toad</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('toad-list')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Amphibian Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('salamander-list')">🦎 Salamanders & Newts</button>
+      <button class="category-btn" onclick="showInfo('frog-list')">🐸 Frogs</button>
+      <button class="category-btn" onclick="showInfo('toad-list')">🐸 Toads</button>
+    </div>
 
             <div id="Cane Toad" class="info-section">
               <h2>Cane Toad</h2>
@@ -3019,18 +3327,187 @@ most well-known including:<br/>
             </div>
 
           </div>
+
+      <!-- Crocodilian Individual Animal Sections -->
+      <div id="American Alligator" class="info-section">
+        <h2>American Alligator</h2>
+        <img src="list_image/american-alligator.jpg" alt="American Alligator" />
+        <p>Scientific Name: <b>Alligator mississippiensis</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The American Alligator is a large, semi-aquatic crocodilian native to the southeastern United States. Once near extinction, it has made a remarkable recovery and is now considered a conservation success story. These powerful predators are keystone species in their wetland ecosystems.</p>
+        <h3>Habitat</h3>
+        <p>American Alligators inhabit freshwater environments including swamps, marshes, rivers, lakes, and ponds throughout the southeastern United States, from North Carolina to Texas.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Adult males can reach 11-15 feet in length and weigh up to 1,000 pounds. They have broad, rounded snouts, powerful tails, and armored skin. Their coloration is dark olive-brown to black.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic predators feeding on fish, birds, mammals, reptiles, and amphibians. They are ambush hunters with one of the strongest bite forces in the animal kingdom.</p>
+        <h3>Behavior and Parenting</h3>
+        <p>Females build large mound nests and provide extensive parental care, carrying hatchlings to water and protecting them for up to two years. They communicate through vocalizations and body language.</p>
+        <button class="back-btn" onclick="hideInfo('American Alligator')">← Back</button>
+      </div>
+
+      <div id="American Crocodile" class="info-section">
+        <h2>American Crocodile</h2>
+        <img src="list_image/american-crocodile.jpg" alt="American Crocodile" />
+        <p>Scientific Name: <b>Crocodylus acutus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The American Crocodile is a large crocodilian found in coastal areas of the Caribbean, Central America, and southern Florida. Unlike their alligator cousins, they can tolerate saltwater and are excellent swimmers in marine environments.</p>
+        <h3>Habitat</h3>
+        <p>Coastal areas, mangrove swamps, river mouths, and saltwater lagoons from southern Florida through Central America and the Caribbean islands.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 20 feet. Distinguished from alligators by their narrower, more pointed snouts and visible teeth when mouth is closed. Olive-green to gray coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Diet includes fish, birds, crabs, turtles, and small mammals. They are excellent swimmers and often hunt in deeper waters than alligators.</p>
+        <h3>Conservation Status</h3>
+        <p>Listed as vulnerable, with habitat loss and hunting being primary threats. Conservation efforts have helped stabilize some populations.</p>
+        <button class="back-btn" onclick="hideInfo('American Crocodile')">← Back</button>
+      </div>
+
+      <div id="Saltwater Crocodile" class="info-section">
+        <h2>Saltwater Crocodile</h2>
+        <img src="list_image/saltwater-crocodile.jpg" alt="Saltwater Crocodile" />
+        <p>Scientific Name: <b>Crocodylus porosus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Saltwater Crocodile is the largest living crocodilian and the largest terrestrial predator on Earth. Found throughout Southeast Asia and northern Australia, these apex predators are renowned for their size, strength, and aggressive nature.</p>
+        <h3>Habitat</h3>
+        <p>Coastal waters, rivers, swamps, and estuaries from India and Southeast Asia to northern Australia. They can travel far out to sea.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Males can exceed 23 feet in length and weigh over 2,200 pounds. They have the strongest bite force of any animal, exceeding 3,700 psi. Broad head with powerful jaws.</p>
+        <h3>Feeding Habits</h3>
+        <p>Apex predators that hunt fish, birds, mammals, and other reptiles. Known for their "death roll" hunting technique and ability to take large prey.</p>
+        <h3>Behavior</h3>
+        <p>Highly territorial and aggressive. Excellent swimmers capable of traveling hundreds of miles through ocean waters. Mothers provide extensive parental care.</p>
+        <button class="back-btn" onclick="hideInfo('Saltwater Crocodile')">← Back</button>
+      </div>
+
+      <div id="Nile Crocodile" class="info-section">
+        <h2>Nile Crocodile</h2>
+        <img src="list_image/nile-crocodile.jpg" alt="Nile Crocodile" />
+        <p>Scientific Name: <b>Crocodylus niloticus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Nile Crocodile is Africa's largest crocodilian and one of the most feared predators on the continent. These ancient hunters have terrorized and fascinated humans for millennia, featuring prominently in Egyptian mythology and culture.</p>
+        <h3>Habitat</h3>
+        <p>Rivers, lakes, marshes, and coastal areas throughout much of Africa, from the Nile River basin to southern Africa.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 20 feet and weigh over 1,650 pounds. Dark olive-bronze coloration with darker cross-banding. Powerful build with armored skin.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic predators that hunt fish, birds, zebras, hippos, and other large mammals. Known for cooperative hunting behavior during wildebeest migrations.</p>
+        <h3>Cultural Significance</h3>
+        <p>Revered and feared in ancient Egyptian culture, often associated with the god Sobek. Featured prominently in African folklore and modern conservation efforts.</p>
+        <button class="back-btn" onclick="hideInfo('Nile Crocodile')">← Back</button>
+      </div>
+
+      <div id="Gharial" class="info-section">
+        <h2>Gharial</h2>
+        <img src="list_image/gharial.jpg" alt="Gharial" />
+        <p>Scientific Name: <b>Gavialis gangeticus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Gharial is a critically endangered crocodilian native to the Indian subcontinent. Distinguished by its extremely narrow snout and the bulbous growth (ghara) on mature males' snouts, gharials are specialized fish-eaters and among the most aquatic of all crocodilians.</p>
+        <h3>Habitat</h3>
+        <p>Fast-flowing rivers with sandy banks in India and Nepal, primarily the Ganges, Brahmaputra, Mahanadi, and Indus river systems.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Males can reach 20 feet in length. Distinguished by extremely narrow snouts adapted for catching fish, and the distinctive bulbous "ghara" on mature males. Olive-green coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Specialized fish-eaters with narrow snouts perfectly adapted for catching slippery prey underwater. Their diet consists almost entirely of fish.</p>
+        <h3>Conservation Status</h3>
+        <p>Critically endangered with fewer than 200 breeding adults remaining in the wild. Threats include habitat loss, fishing nets, and pollution.</p>
+        <button class="back-btn" onclick="hideInfo('Gharial')">← Back</button>
+      </div>
+
+      <div id="Chinese Alligator" class="info-section">
+        <h2>Chinese Alligator</h2>
+        <img src="list_image/chinese-alligator.jpg" alt="Chinese Alligator" />
+        <p>Scientific Name: <b>Alligator sinensis</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Chinese Alligator is one of the world's most endangered crocodilians, with fewer than 130 individuals remaining in the wild. Native to eastern China, these small alligators are critically important for conservation efforts and scientific research.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater wetlands, ponds, and slow-moving rivers in the Yangtze River valley of eastern China. Historically more widespread.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Smaller than American Alligators, reaching only 5-7 feet in length. Heavily armored with bony plates and a broad, rounded snout. Dark coloration with lighter banding.</p>
+        <h3>Feeding Habits</h3>
+        <p>Diet consists of fish, snails, mussels, birds, and small mammals. They are less aggressive than their American cousins.</p>
+        <h3>Conservation Efforts</h3>
+        <p>Critically endangered with extensive captive breeding programs. Habitat restoration and release programs are ongoing but face significant challenges.</p>
+        <button class="back-btn" onclick="hideInfo('Chinese Alligator')">← Back</button>
+      </div>
+
+      <div id="Spectacled Caiman" class="info-section">
+        <h2>Spectacled Caiman</h2>
+        <img src="list_image/spectacled-caiman.jpg" alt="Spectacled Caiman" />
+        <p>Scientific Name: <b>Caiman crocodilus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Spectacled Caiman is the most widespread crocodilian in the Americas, found from southern Mexico to northern Argentina. Named for the bony ridge between their eyes that resembles spectacles, these adaptable crocodilians thrive in various aquatic habitats.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater habitats including rivers, lakes, wetlands, and even man-made water bodies throughout Central and South America.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Medium-sized crocodilians reaching 6-8 feet in length. Distinguished by the bony ridge connecting the eyes and relatively narrow snout. Olive-green to brown coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic feeders consuming fish, birds, small mammals, reptiles, and invertebrates. Diet varies with age and availability of prey.</p>
+        <h3>Adaptability</h3>
+        <p>Highly adaptable to human-modified environments, often found in agricultural areas and urban water bodies. This adaptability has helped them maintain stable populations.</p>
+        <button class="back-btn" onclick="hideInfo('Spectacled Caiman')">← Back</button>
+      </div>
+
+      <div id="Black Caiman" class="info-section">
+        <h2>Black Caiman</h2>
+        <img src="list_image/black-caiman.jpg" alt="Black Caiman" />
+        <p>Scientific Name: <b>Melanosuchus niger</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Black Caiman is the largest crocodilian in South America and the apex predator of the Amazon basin. Once heavily hunted for their valuable hides, conservation efforts have helped their populations recover in many areas.</p>
+        <h3>Habitat</h3>
+        <p>Slow-moving rivers, flooded forests, lakes, and wetlands throughout the Amazon basin in South America.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 16 feet and weigh over 880 pounds. Dark coloration with lighter bands, particularly visible in juveniles. Broad snout and powerful build.</p>
+        <h3>Feeding Habits</h3>
+        <p>Apex predators feeding on fish, birds, mammals, and other reptiles. Adults can take large prey including capybaras, deer, and even jaguars.</p>
+        <h3>Ecological Role</h3>
+        <p>Keystone species in Amazon ecosystems, helping maintain fish populations and creating habitat for other species through their movements and nesting activities.</p>
+        <button class="back-btn" onclick="hideInfo('Black Caiman')">← Back</button>
+      </div>
+
+      <div id="Cuban Crocodile" class="info-section">
+        <h2>Cuban Crocodile</h2>
+        <img src="list_image/cuban-crocodile.jpg" alt="Cuban Crocodile" />
+        <p>Scientific Name: <b>Crocodylus rhombifer</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Cuban Crocodile is one of the most endangered crocodilian species, found only in Cuba's Zapata Swamp and Isla de la Juventud. These highly intelligent and aggressive crocodiles are known for their ability to leap out of water and their distinctive diamond-shaped scales.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater swamps and marshes in Cuba, primarily the Zapata Swamp and Lanier Swamp on Isla de la Juventud.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Medium-sized crocodiles reaching 10-11 feet in length. Distinguished by their bright coloration, diamond-shaped scales, and relatively short, broad snout.</p>
+        <h3>Unique Abilities</h3>
+        <p>Exceptional jumpers capable of leaping several feet out of water. Highly intelligent and known for their problem-solving abilities and tool use.</p>
+        <h3>Conservation Status</h3>
+        <p>Critically endangered with only about 3,000-4,000 individuals remaining. Hybridization with American crocodiles poses an additional threat.</p>
+        <button class="back-btn" onclick="hideInfo('Cuban Crocodile')">← Back</button>
+      </div>
+
+      <div id="False Gharial" class="info-section">
+        <h2>False Gharial</h2>
+        <img src="list_image/false-gharial.jpg" alt="False Gharial" />
+        <p>Scientific Name: <b>Tomistoma schlegelii</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The False Gharial is a critically endangered crocodilian found in Southeast Asia. Despite its name, recent genetic studies suggest it may be more closely related to gharials than to true crocodiles. These semi-aquatic predators are known for their narrow snouts and arboreal tendencies.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater swamps, rivers, and peat swamp forests in Malaysia, Indonesia, Brunei, and Thailand.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 16 feet. Distinguished by their narrow snout (similar to gharials), dark coloration with lighter bands, and relatively long legs.</p>
+        <h3>Feeding Habits</h3>
+        <p>Primarily fish-eaters, but also consume crustaceans, amphibians, and small mammals. Their narrow snouts are adapted for catching fish.</p>
+        <h3>Unique Behavior</h3>
+        <p>Unusual among crocodilians for their tendency to climb and bask on fallen logs and low branches. Mothers provide extended parental care.</p>
+        <button class="back-btn" onclick="hideInfo('False Gharial')">← Back</button>
+      </div>
+
       <hr>
 
     
 
   
-      </div>
-    </main>
-
     <footer>
       <p>© 2025 Animal Atlas | Group 6A Project</p>
     </footer>
 
-    <script src="list.js"></script>
-</body>
+    <script src="mammals.js"></script>
+  </body>
 </html>

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>🐾 Animal Atlas & Encyclopedia</h1>
+      <h1> Animal Atlas & Encyclopedia</h1>
       <p>Explore the World of Mammals!</p>
     </header>
 
@@ -47,18 +47,156 @@
 
     <div class="content">
       <h1>Mammals</h1>
-      <p class="par">
-        Mammals are warm-blooded vertebrates known for having hair or fur on
-        their bodies and for feeding their young with milk produced by special
-        glands called mammary glands. They have a backbone, breathe air through
-        lungs, and most give birth to live young (with a few exceptions like the
-        platypus and echidna, which lay eggs). Mammals are highly diverse and
-        include animals such as humans, dogs, whales, elephants, and bats. They
-        are found in nearly every environment on Earth, from deep oceans to high
-        mountains. thanks to their adaptability and complex behavior.
-      </p>
-         </div>
-    <button class="button" onclick="showInfo('Dingo')">Dingo</button>
+      <div class="readmore-block">
+        <p class="par">
+          Mammals are warm-blooded vertebrates known for having hair or fur on
+          their bodies and for feeding their young with milk produced by special
+          glands called mammary glands. They have a backbone, breathe air through
+          lungs, and most give birth to live young (with a few exceptions like the
+          platypus and echidna, which lay eggs). Mammals are highly diverse and
+          include animals such as humans, dogs, whales, elephants, and bats. They
+          are found in nearly every environment on Earth, from deep oceans to high
+          mountains, thanks to their adaptability and complex behavior.
+        </p>
+        <button class="read-more-toggle">Read More</button>
+        <div class="read-more">
+          <p>
+          Mammals belong to the class Mammalia and are one of the most successful vertebrate groups, with over 5,400 known species ranging from the tiny bumblebee bat weighing just 2 grams to the massive blue whale reaching lengths of 30 meters and weights of up to 200 tons. This incredible diversity has allowed mammals to colonize virtually every habitat on Earth.<br><br>
+          
+          The defining characteristics of mammals extend beyond milk production and hair. They possess a four-chambered heart that efficiently circulates oxygenated blood, a diaphragm that aids in breathing, and most significantly, highly developed brains with a neocortex that enables complex behaviors, learning, and social interactions. Many mammals exhibit advanced parental care, with extended periods of dependency that allow for learning and skill development.<br><br>
+          
+          Mammals are classified into three major groups based on reproduction: placental mammals (eutherians) like lions and humans, which nourish their young through a placenta; marsupials like kangaroos and opossums, which give birth to underdeveloped young that continue growing in a pouch; and monotremes like platypus and echidnas, which are the only mammals that lay eggs.<br><br>
+          
+          Behaviorally, mammals display remarkable intelligence and social complexity. Many species form intricate social structures, from wolf packs with complex hierarchies to elephant herds led by matriarchs. Communication methods include vocalizations, scent marking, body language, and in some cases like dolphins and whales, sophisticated echolocation systems.<br><br>
+          
+          Ecologically, mammals serve vital roles as predators, herbivores, pollinators, and seed dispersers. Bats pollinate numerous plant species and control insect populations, while large herbivores like elephants shape entire landscapes. Unfortunately, mammals face significant threats from habitat loss, climate change, and human activities, with many species currently endangered or extinct.
+          </p>
+          <button class="read-more-toggle">Read Less</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mammal-list">
+      <!-- Terrestrial Mammals Section -->
+      <div id="terrestrial-mammals" class="info-section">
+        <h2> Terrestrial Mammals</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Terrestrial mammals are those that live primarily on land, adapted to various ground-based environments from forests and grasslands to deserts and mountains. These mammals have evolved specialized features for land-based life including strong limbs for running, walking, or climbing, and various adaptations for different terrains and climates.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Terrestrial mammals represent the largest group of mammals and show incredible diversity in size, behavior, and ecological roles. They range from tiny shrews weighing just a few grams to massive elephants weighing several tons. These mammals have developed various locomotion strategies including quadrupedal walking, running, hopping, and even specialized forms like the saltatory movement of kangaroos.<br><br>
+
+            Many terrestrial mammals are social, forming complex societies with hierarchical structures, cooperative hunting, and sophisticated communication systems. Examples include wolf packs, elephant herds, and primate communities. Others are solitary, coming together only for mating purposes.<br><br>
+
+            Terrestrial mammals occupy various ecological niches as herbivores (like deer and rabbits), carnivores (like big cats and canids), and omnivores (like bears and primates). They play crucial roles in seed dispersal, soil aeration, and maintaining ecosystem balance through predator-prey relationships.<br><br>
+
+            Adaptations to terrestrial life include specialized digestive systems for processing plant matter in herbivores, powerful hunting tools in carnivores, and diverse social behaviors for survival and reproduction. Many have developed seasonal behaviors like migration or hibernation to cope with environmental changes.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Dingo')">Dingo</button>
+          <button class="button" onclick="showInfo('Lion')">Lion</button>
+          <button class="button" onclick="showInfo('Elephant')">Elephant</button>
+          <button class="button" onclick="showInfo('Wolf')">Wolf</button>
+          <button class="button" onclick="showInfo('Tiger')">Tiger</button>
+          <button class="button" onclick="showInfo('Bear')">Bear</button>
+          <button class="button" onclick="showInfo('Kangaroo')">Kangaroo</button>
+          <button class="button" onclick="showInfo('Giraffe')">Giraffe</button>
+          <button class="button" onclick="showInfo('Zebra')">Zebra</button>
+          <button class="button" onclick="showInfo('Rhinoceros')">Rhinoceros</button>
+          <button class="button" onclick="showInfo('Platypus')">Platypus</button>
+          <button class="button" onclick="showInfo('Echidna')">Echidna</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('terrestrial-mammals')">← Back</button>
+      </div>
+
+      <!-- Flying/Arboreal Mammals Section -->
+      <div id="flying-arboreal-mammals" class="info-section">
+        <h2> Flying & Arboreal Mammals</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Flying and arboreal mammals are specialized for life in the trees and air. This group includes true flying mammals like bats, gliding mammals like flying squirrels, and tree-dwelling species like primates and koalas. They have evolved unique adaptations for aerial movement and life in the canopy.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Flying and arboreal mammals showcase some of the most remarkable evolutionary adaptations in the animal kingdom. Bats, the only truly flying mammals, have developed wing membranes stretched between elongated finger bones, sophisticated echolocation systems, and specialized roosting behaviors. They represent about 20% of all mammal species and play crucial roles as pollinators, seed dispersers, and insect controllers.<br><br>
+
+            Gliding mammals like flying squirrels, sugar gliders, and colugos have developed patagiums (skin flaps) that allow them to glide between trees, conserving energy while moving through forest canopies. These adaptations enable them to access food sources and escape predators efficiently.<br><br>
+
+            Arboreal mammals such as primates, koalas, and sloths have evolved specialized gripping hands and feet, enhanced balance, and often prehensile tails for navigating tree branches. Many have developed complex social behaviors and communication systems adapted to the three-dimensional forest environment.<br><br>
+
+            These mammals are often highly specialized feeders, with many bats being nectar specialists, fruit bats serving as important seed dispersers, and arboreal mammals adapted to specific plant diets. Their aerial and arboreal lifestyles make them particularly sensitive to habitat fragmentation and deforestation.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Bat')">Bat</button>
+          <button class="button" onclick="showInfo('Flying Squirrel')">Flying Squirrel</button>
+          <button class="button" onclick="showInfo('Monkey')">Monkey</button>
+          <button class="button" onclick="showInfo('Koala')">Koala</button>
+          <button class="button" onclick="showInfo('Sloth')">Sloth</button>
+          <button class="button" onclick="showInfo('Orangutan')">Orangutan</button>
+          <button class="button" onclick="showInfo('Lemur')">Lemur</button>
+          <button class="button" onclick="showInfo('Sugar Glider')">Sugar Glider</button>
+          <button class="button" onclick="showInfo('Chimpanzee')">Chimpanzee</button>
+          <button class="button" onclick="showInfo('Gibbon')">Gibbon</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('flying-arboreal-mammals')">← Back</button>
+      </div>
+
+      <!-- Aquatic Mammals Section -->
+      <div id="aquatic-mammals" class="info-section">
+        <h2> Aquatic & Marine Mammals</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Aquatic mammals have adapted to life in water environments, from freshwater rivers and lakes to the vast oceans. This group includes whales, dolphins, seals, sea otters, and manatees. They have evolved streamlined bodies, specialized breathing systems, and unique reproductive strategies for aquatic life.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Aquatic mammals represent one of the most dramatic evolutionary transitions, with species that have returned to aquatic environments after their ancestors lived on land. Cetaceans (whales and dolphins) are the most specialized, having evolved streamlined bodies, modified limbs into flippers, and sophisticated echolocation abilities. They range from the massive blue whale, the largest animal ever known, to small dolphins with complex social behaviors.<br><br>
+
+            Pinnipeds (seals, sea lions, and walruses) maintain connections to both land and sea, coming ashore to breed while spending most of their lives in water. They have evolved powerful flippers, dense fur or blubber for insulation, and the ability to hold their breath for extended periods during deep dives.<br><br>
+
+            Other aquatic mammals like manatees and dugongs (sirenians) are herbivorous marine mammals that graze on aquatic vegetation, while sea otters represent a unique case of a recent evolutionary transition to marine life, using tools and maintaining the densest fur of any animal for insulation.<br><br>
+
+            These mammals face unique challenges including pressure changes during diving, maintaining body temperature in cold water, and finding food in three-dimensional aquatic environments. Many have developed sophisticated communication systems, from the complex songs of humpback whales to the clicks and whistles of dolphins, essential for navigation and social interaction in their aquatic world.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Whale')">Whale</button>
+          <button class="button" onclick="showInfo('Dolphin')">Dolphin</button>
+          <button class="button" onclick="showInfo('Seal')">Seal</button>
+          <button class="button" onclick="showInfo('Sea Otter')">Sea Otter</button>
+          <button class="button" onclick="showInfo('Manatee')">Manatee</button>
+          <button class="button" onclick="showInfo('Walrus')">Walrus</button>
+          <button class="button" onclick="showInfo('Orca')">Orca</button>
+          <button class="button" onclick="showInfo('Sea Lion')">Sea Lion</button>
+          <button class="button" onclick="showInfo('Dugong')">Dugong</button>
+          <button class="button" onclick="showInfo('Narwhal')">Narwhal</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('aquatic-mammals')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Main Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('terrestrial-mammals')"> Terrestrial Mammals</button>
+      <button class="category-btn" onclick="showInfo('flying-arboreal-mammals')"> Flying & Arboreal Mammals</button>
+      <button class="category-btn" onclick="showInfo('aquatic-mammals')"> Aquatic & Marine Mammals</button>
+    </div>
 
     <div id="Dingo" class="info-section">
       <h2>Dingo</h2>
@@ -136,6 +274,1094 @@
       </p>
 
       <button onclick="hideInfo('Dingo')">← Back</button>
+    </div>
+
+    <!-- Additional Mammal Info Sections -->
+    <div id="Lion" class="info-section">
+      <h2>Lion</h2>
+      <img src="list_image/lion.jpg" alt="Lion" />
+      <p>Scientific Name: <b>Panthera leo</b></p>
+      <p>Species: <abbr title="The most widespread lion subspecies, found across most of Africa"><b>African Lion (P. l. leo)</b></abbr>, Asiatic Lion (P. l. persica)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Lions are magnificent apex predators and one of the most iconic animals in the world. Known as the "King of the Jungle" despite primarily living in savannas, lions are the only truly social cats, living in complex family groups called prides. These powerful carnivores have fascinated humans for millennia and play crucial ecological roles in African ecosystems. This exploration covers their appearance, habitat, hunting strategies, social structure, reproduction, conservation challenges, and fascinating behavioral adaptations.
+      </p>
+      
+      <h3>Appearance and Physical Characteristics</h3>
+      <p>
+        Lions are the second-largest cats in the world after tigers. Adult males weigh between 150-250 kg and measure up to 3 meters in length, while females are smaller at 110-180 kg. The most distinctive feature of male lions is their magnificent mane, which varies in color from blonde to black and serves as both protection during fights and a sign of health and dominance. Females lack manes but are equally powerful hunters with lean, muscular builds optimized for speed and agility.
+      </p>
+      
+      <h3>Habitat and Distribution</h3>
+      <p>
+        Lions primarily inhabit savannas, grasslands, and open woodlands across sub-Saharan Africa, with a small critically endangered population of Asiatic lions in India's Gir Forest. They prefer areas with adequate prey populations and access to water sources. Historically, lions roamed across Africa, Asia, and even southern Europe, but their range has dramatically decreased due to human encroachment and habitat loss.
+      </p>
+      
+      <h3>Diet and Hunting Behavior</h3>
+      <p>
+        Lions are apex predators that primarily hunt large ungulates including zebras, wildebeest, buffalo, and antelopes. They are cooperative hunters, with lionesses doing most of the hunting while males typically protect the territory and pride. Lions can consume up to 15 kg of meat in a single feeding and may go several days between meals. They are also opportunistic scavengers and will steal kills from other predators.
+      </p>
+      
+      <h3>Social Structure and Pride Dynamics</h3>
+      <p>
+        Lions live in complex social groups called prides, typically consisting of 2-3 related adult males, 5-6 related females, and their offspring. This social structure is unique among cats and provides advantages for hunting large prey, defending territory, and protecting cubs. Female lions remain with their birth pride for life, while males are expelled at 2-3 years old and must establish their own territories.
+      </p>
+      
+      <h3>Reproduction and Cub Rearing</h3>
+      <p>
+        Female lions give birth after a 110-day gestation period to 1-4 cubs in secluded dens. Cubs are born blind and helpless, weighing only 1-2 kg. Mothers keep cubs hidden for the first 6-8 weeks before introducing them to the pride. All females in a pride help care for cubs, creating a cooperative nursery system that increases survival rates.
+      </p>
+      
+      <h3>Role in the Ecosystem</h3>
+      <p>
+        As apex predators, lions play crucial roles in maintaining ecosystem balance by controlling herbivore populations and preventing overgrazing. Their presence influences the behavior and distribution of prey species, creating complex ecological relationships. Lions also serve as important scavengers, cleaning up carcasses and preventing disease spread.
+      </p>
+      
+      <h3>Conservation Status and Human Interaction</h3>
+      <p>
+        Lions are classified as vulnerable, with populations declining from over 200,000 a century ago to approximately 20,000 today. Main threats include habitat loss, human-wildlife conflict, poaching, and declining prey populations. Conservation efforts focus on protected areas, community-based conservation programs, and reducing human-lion conflict through innovative strategies.
+      </p>
+      
+      <h3>Fascinating Facts</h3>
+      <p>
+        A lion's roar can be heard up to 8 kilometers away and serves to communicate with pride members and warn competitors.<br />
+        Lions sleep or rest for 16-20 hours per day, conserving energy for hunting and territorial defense.<br />
+        The distinctive mane of male lions continues growing throughout their lives and darker manes indicate higher testosterone levels and better health.<br />
+        Lions have excellent night vision, being six times more sensitive to light than human eyes, making them effective nocturnal hunters.<br />
+        Female lions synchronize their reproductive cycles, often giving birth around the same time to enable communal cub-rearing and increase survival rates.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Lion')">← Back</button>
+    </div>
+
+    <div id="Whale" class="info-section">
+      <h2>Whale</h2>
+      <img src="list_image/whale.jpg" alt="Whale" />
+      <p>Scientific Name: <b>Cetacea order</b></p>
+      <p>Species: <abbr title="The largest animal ever known to have lived on Earth"><b>Blue Whale (Balaenoptera musculus)</b></abbr>, Humpback Whale (Megaptera novaeangliae), Sperm Whale (Physeter macrocephalus), Gray Whale (Eschrichtius robustus), Right Whale (Eubalaena species), Orca (Orcinus orca), Pilot Whale (Globicephala species)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Whales represent one of evolution's most extraordinary transformations - land mammals that returned to the oceans and became the largest animals ever to exist on Earth. These magnificent marine giants have conquered every ocean, from polar ice waters to tropical seas, developing incredible adaptations for fully aquatic life. From the massive blue whale reaching lengths of 30 meters and weights of 200 tons to the intelligent orcas with complex social structures, whales demonstrate remarkable diversity in size, behavior, and ecological roles. This comprehensive exploration examines their evolutionary journey, spectacular physical adaptations, complex behaviors, sophisticated communication systems, vital ecological functions, cultural significance, and urgent conservation needs in our changing oceans.
+      </p>
+      
+      <h3>Extraordinary Size and Physical Supremacy</h3>
+      <p>
+        Whales showcase the most extreme size range of any mammalian order, from 4-meter pilot whales weighing 1 ton to blue whales exceeding 30 meters and 200 tons - making them the largest animals ever known. Their streamlined bodies, modified limbs transformed into flippers, and powerful tail flukes enable efficient movement through water. Whales lack external ears and have blowholes positioned on top of their heads for efficient breathing at the surface, with some species capable of holding their breath for over 2 hours during deep dives.
+      </p>
+      
+      <h3>Global Ocean Distribution</h3>
+      <p>
+        Whales inhabit every ocean on Earth, from Arctic pack ice to tropical coral reefs. Many species undertake epic migrations spanning thousands of kilometers between feeding and breeding areas - gray whales complete the longest mammalian migration at 20,000 kilometers annually. Different species occupy distinct oceanic niches: blue whales follow krill concentrations, sperm whales dive to extreme depths for squid, while orcas adapt to diverse marine environments worldwide.
+      </p>
+      
+      <h3>Revolutionary Feeding Strategies</h3>
+      <p>
+        Whales have evolved two primary feeding strategies that revolutionized marine predation. Baleen whales use massive filter-feeding systems with plates of keratin to strain enormous volumes of water, capturing millions of tiny organisms like krill and small fish. Toothed whales are active predators using echolocation to hunt fish, squid, and marine mammals. A blue whale can consume 4 tons of krill daily, while sperm whales dive over 2,000 meters to hunt giant squid in complete darkness.
+      </p>
+      
+      <h3>Sophisticated Echolocation and Sonar</h3>
+      <p>
+        Toothed whales possess the most advanced biological sonar systems on Earth, producing focused sound beams and interpreting echoes to create detailed three-dimensional mental maps of their environment. Sperm whales generate the loudest sounds in the animal kingdom at 230 decibels, while dolphins can echolocate objects buried in sand and distinguish between different materials. This biosonar enables hunting in complete darkness and navigation across vast ocean distances.
+      </p>
+      
+      <h3>Complex Social Structures and Intelligence</h3>
+      <p>
+        Whales exhibit remarkable intelligence and sophisticated social behaviors rivaling those of primates. Orcas live in matrilineal pods with distinct dialects and cultural traditions passed down through generations. Sperm whales form complex multi-level societies with distinct clans, while humpback whales demonstrate cultural learning through song evolution. Many species show self-awareness, empathy, cooperation, and tool use, indicating advanced cognitive abilities.
+      </p>
+      
+      <h3>Extraordinary Communication Systems</h3>
+      <p>
+        Whale communication systems represent some of nature's most complex acoustic phenomena. Humpback whale songs can contain 30+ distinct themes, evolve seasonally, and travel hundreds of kilometers underwater. Blue whale calls at frequencies below human hearing can communicate across entire ocean basins. Each orca pod has unique vocal dialects, while sperm whales use complex click patterns that may function as individual identification codes.
+      </p>
+      
+      <h3>Remarkable Reproductive Strategies</h3>
+      <p>
+        Whale reproduction involves fascinating adaptations for fully aquatic life. Gestation periods range from 10-17 months, with calves born tail-first underwater and immediately assisted to the surface for their first breath. Mothers produce incredibly rich milk (30-50% fat content) enabling rapid calf growth. Many species fast during breeding seasons, surviving entirely on stored blubber while nursing demanding offspring.
+      </p>
+      
+      <h3>Critical Ecological Roles</h3>
+      <p>
+        Whales serve as crucial ecosystem engineers in marine environments through the "whale pump" - transporting nutrients from deep waters to surface waters through their feeding and waste production. Their massive bodies support diverse communities of parasites and commensals, while whale falls (dead whales sinking to the ocean floor) create unique deep-sea ecosystems supporting specialized species for decades.
+      </p>
+      
+      <h3>Conservation Challenges and Recovery</h3>
+      <p>
+        Whales face numerous modern threats including ship strikes, fishing net entanglement, ocean noise pollution, climate change, and plastic pollution. Commercial whaling devastated many populations, but international protection has enabled remarkable recoveries for some species like humpback and gray whales. However, North Atlantic right whales remain critically endangered with fewer than 340 individuals, while many populations still struggle to recover.
+      </p>
+      
+      <h3>Cultural Impact and Human Fascination</h3>
+      <p>
+        Whales have captured human imagination across cultures, appearing in ancient mythology, literature, and spiritual beliefs. From Moby Dick to modern whale watching tourism generating billions in revenue, these marine giants continue to inspire awe and wonder. Indigenous cultures have sustainable whaling traditions spanning millennia, viewing whales as sacred beings essential to their cultural identity.
+      </p>
+      
+      <h3>Incredible Whale Phenomena</h3>
+      <p>
+        Blue whale hearts alone weigh as much as a small car (400 kg) and beat only 5-6 times per minute, pumping 220 liters of blood with each heartbeat.<br />
+        Sperm whales can dive to depths exceeding 3,000 meters and hold their breath for over 90 minutes while hunting giant squid in the oceanic abyss.<br />
+        Humpback whale songs can last up to 30 minutes and be repeated for hours, with entire populations learning and modifying songs in real-time across ocean basins.<br />
+        A blue whale's tongue weighs as much as an elephant, and its mouth can hold 100 tons of water and food during feeding.<br />
+        Whales sleep by shutting down half their brain at a time, allowing them to remain conscious enough to surface and breathe while resting.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Whale')">← Back</button>
+    </div>
+
+    <div id="Bat" class="info-section">
+      <h2>Bat</h2>
+      <img src="list_image/bat.jpg" alt="Bat" />
+      <p>Scientific Name: <b>Chiroptera order</b></p>
+      <p>Species: <abbr title="The most common North American species, vital for insect control"><b>Big Brown Bat (Eptesicus fuscus)</b></abbr>, Little Brown Bat (Myotis lucifugus), Vampire Bat (Desmodus rotundus), Flying Fox (Pteropus species), Fruit Bat (Megachiroptera suborder), Microbat species (Microchiroptera suborder)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Bats represent one of evolution's most remarkable achievements - the only mammals capable of powered flight, comprising nearly 25% of all mammal species with over 1,400 species worldwide. These extraordinary nocturnal creatures have conquered the night sky through sophisticated adaptations including the most advanced echolocation systems in nature, diverse feeding strategies, and crucial ecological roles as pollinators, seed dispersers, and pest controllers. From tiny bumblebee bats weighing 2 grams to massive flying foxes with 2-meter wingspans, bats demonstrate incredible diversity while facing unprecedented threats from habitat loss, disease, and human persecution. This comprehensive exploration examines their revolutionary flight capabilities, sophisticated sensory systems, diverse ecological roles, complex social behaviors, vital ecosystem services, and urgent conservation needs.
+      </p>
+      
+      <h3>Revolutionary Flight Mechanics</h3>
+      <p>
+        Bats have evolved unique flight capabilities that distinguish them from all other flying animals. Their wing membranes stretch between elongated finger bones, creating flexible, controllable surfaces that enable incredible maneuverability including hovering, rapid direction changes, and precise landing. Unlike birds, bat wings can fold completely, allowing them to crawl efficiently on land. Their flight muscles comprise up to 20% of their body weight, generating the power needed for sustained flight while consuming enormous amounts of energy.
+      </p>
+      
+      <h3>Sophisticated Echolocation Mastery</h3>
+      <p>
+        Most bats possess the most advanced biological sonar systems on Earth, producing ultrasonic calls up to 200 kHz and processing returning echoes to create detailed three-dimensional acoustic images of their environment. This echolocation is so precise that bats can distinguish wires as thin as human hair, identify different insect species by their wing-beat patterns, and navigate through dense forests at high speed in complete darkness. Some species can adjust their call frequencies to avoid interference from other bats hunting in the same area.
+      </p>
+      
+      <h3>Global Distribution and Diverse Habitats</h3>
+      <p>
+        Bats inhabit every continent except Antarctica, occupying diverse environments from tropical rainforests to deserts, urban areas to remote caves. They require roosting sites for daytime rest and reproduction, utilizing caves, trees, buildings, and artificial structures. Different species show remarkable habitat specialization - some prefer old-growth forests, others thrive in agricultural landscapes, while urban-adapted species exploit human-made structures for roosting and feeding.
+      </p>
+      
+      <h3>Incredible Dietary Diversity</h3>
+      <p>
+        Bats demonstrate extraordinary dietary diversity with species specialized for insects, fruit, nectar, fish, small vertebrates, and even blood. Insectivorous bats can consume half their body weight in insects nightly, providing crucial pest control services worth billions of dollars annually to agriculture. Fruit bats and nectar-feeding bats serve as essential pollinators and seed dispersers for hundreds of plant species, including economically important crops like bananas, mangoes, and agave.
+      </p>
+      
+      <h3>Complex Social Behaviors and Roosting</h3>
+      <p>
+        Bat social structures range from solitary species to massive colonies containing millions of individuals. Large maternity colonies enable mothers to share body heat for maintaining optimal temperatures for pup development, while communal roosting provides protection from predators and weather. Some species demonstrate complex social behaviors including information sharing about food sources, cooperative hunting, and vocal learning where young bats learn calls from adults.
+      </p>
+      
+      <h3>Remarkable Reproduction and Development</h3>
+      <p>
+        Bat reproduction involves fascinating adaptations for aerial life, including delayed fertilization, extended gestation periods, and the ability to give birth while hanging upside down. Most species produce only one offspring annually, though some tropical species can have multiple births. Mothers provide intensive care, carrying pups during flight until they're capable of independent flight, and nursing them with milk containing the highest protein content of any mammal.
+      </p>
+      
+      <h3>Critical Ecosystem Services</h3>
+      <p>
+        Bats provide invaluable ecosystem services that benefit both natural ecosystems and human economies. Insectivorous bats consume enormous quantities of pest insects, reducing the need for pesticides and saving farmers billions annually. Pollinating bats are essential for the reproduction of over 500 plant species, including important crops, while seed-dispersing bats help maintain forest diversity and enable reforestation of disturbed areas.
+      </p>
+      
+      <h3>Hibernation and Migration Strategies</h3>
+      <p>
+        Many temperate bat species demonstrate remarkable physiological adaptations for surviving winter through hibernation, dramatically slowing their metabolism and surviving on stored fat reserves. Some species migrate hundreds of kilometers to suitable hibernation sites, while others cluster in massive groups to conserve heat. During hibernation, their heart rate can drop from 400 to 25 beats per minute, and their body temperature approaches ambient temperature.
+      </p>
+      
+      <h3>Threats and Conservation Challenges</h3>
+      <p>
+        Bats face numerous threats including habitat loss, white-nose syndrome (a devastating fungal disease), wind turbine mortality, pesticide poisoning, and human persecution based on misconceptions. Many species are declining rapidly, with some facing extinction. Conservation efforts focus on protecting roosting sites, reducing pesticide use, creating bat-friendly agricultural practices, and educating the public about bats' ecological importance.
+      </p>
+      
+      <h3>Cultural Significance and Human Relations</h3>
+      <p>
+        Bats have complex relationships with human cultures, appearing in folklore and mythology worldwide as symbols ranging from evil and death to good fortune and wisdom. Despite misconceptions about disease transmission and aggression, bats are generally harmless to humans and provide enormous benefits. Modern conservation emphasizes education to overcome negative perceptions and promote appreciation for bats' ecological services.
+      </p>
+      
+      <h3>Extraordinary Bat Capabilities</h3>
+      <p>
+        Vampire bats have anticoagulant saliva so effective that scientists study it for developing stroke medications, and they share blood meals with hungry roost-mates in reciprocal altruism rarely seen in animals.<br />
+        Some bats can detect objects as fine as spider silk using echolocation and can distinguish between edible and poisonous insects based solely on acoustic signatures.<br />
+        The bumblebee bat from Thailand is the world's smallest mammal, weighing only 2 grams with a body length of 3 cm, yet can fly at speeds exceeding 20 km/h.<br />
+        Flying foxes have the largest wingspans of any bat at nearly 2 meters and can travel over 50 kilometers nightly searching for fruit, making them crucial for forest regeneration across large landscapes.<br />
+        Many bat species can live over 30 years despite their small size and high metabolic rates, with some individuals reaching ages exceeding 40 years in the wild.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Bat')">← Back</button>
+    </div>
+
+    <!-- Placeholder sections for other mammals -->
+    <div id="Elephant" class="info-section">
+      <h2>Elephant</h2>
+      <img src="list_image/elephant.jpg" alt="Elephant" />
+      <p>Scientific Name: <b>Elephantidae family</b></p>
+      <p>Species: <abbr title="The most widespread species, found across sub-Saharan Africa"><b>African Bush Elephant (Loxodonta africana)</b></abbr>, African Forest Elephant (L. cyclotis), Asian Elephant (Elephas maximus)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Elephants are among Earth's most remarkable creatures, holding the distinction of being the largest land mammals while simultaneously demonstrating extraordinary intelligence, complex emotions, and intricate social behaviors that rival those of primates. These gentle giants have roamed the planet for millions of years, serving as ecosystem engineers that shape entire landscapes. Their profound intelligence, long memories, and deep family bonds have earned them reverence across cultures, yet they face unprecedented threats from human activities. This comprehensive examination explores their magnificent anatomy, sophisticated societies, ecological importance, cultural significance, and urgent conservation needs.
+      </p>
+      
+      <h3>Magnificent Physical Architecture</h3>
+      <p>
+        Elephants possess extraordinary physical adaptations that enable their massive size and complex behaviors. Adult African elephants can weigh up to 6,000 kg and stand 4 meters tall, while Asian elephants are slightly smaller. Their most remarkable feature is their trunk, containing over 40,000 muscles that function as a versatile tool for breathing, drinking, communication, and manipulation. Their large ears serve as natural air conditioners, flapping to cool their massive bodies, while their thick, pillar-like legs support immense weight and enable surprisingly quiet movement.
+      </p>
+      
+      <h3>Habitat and Ecosystem Engineering</h3>
+      <p>
+        Elephants inhabit diverse ecosystems across Africa and Asia, from savannas and forests to deserts and marshlands. They are true ecosystem engineers, creating water holes during droughts that benefit countless other species, clearing pathways through dense vegetation, and dispersing seeds across vast distances. A single elephant can scatter seeds over 50 kilometers daily, making them crucial for forest regeneration and biodiversity maintenance.
+      </p>
+      
+      <h3>Diet and Foraging Behavior</h3>
+      <p>
+        Elephants are herbivorous giants that consume 150-300 kg of vegetation daily, spending 12-18 hours foraging. They eat grasses, fruits, bark, roots, and leaves from over 350 plant species. Their feeding habits dramatically shape landscapes - they can push over trees to reach leaves, creating grasslands that benefit other species. During dry seasons, elephants use their tusks and trunks to dig for water and salt, often creating vital water sources for entire ecosystems.
+      </p>
+      
+      <h3>Extraordinary Intelligence and Memory</h3>
+      <p>
+        Elephants possess remarkable cognitive abilities, demonstrating self-awareness, empathy, problem-solving skills, and tool use. They can recognize themselves in mirrors, mourn their dead, and show compassion for distressed family members. Their legendary memory enables them to remember drought survival routes across generations, recognize hundreds of individuals, and navigate complex social relationships spanning decades.
+      </p>
+      
+      <h3>Complex Matriarchal Societies</h3>
+      <p>
+        Elephant societies are led by the oldest, most experienced female - the matriarch. Family units consist of related females and their offspring, while adult males typically live solitary lives or form loose bachelor groups. The matriarch's knowledge of food sources, water locations, and danger zones is crucial for family survival. These societies demonstrate sophisticated communication, cooperation, and collective decision-making.
+      </p>
+      
+      <h3>Communication and Emotional Depth</h3>
+      <p>
+        Elephants communicate through multiple channels including vocalizations, body language, chemical signals, and infrasonic calls that travel several kilometers. They express joy, grief, anger, and compassion through recognizable behaviors. Elephant "funerals" where families gather around deceased members and "greetings" involving trunk intertwining and rumbling demonstrate their emotional complexity.
+      </p>
+      
+      <h3>Reproduction and Child Rearing</h3>
+      <p>
+        Female elephants have the longest pregnancy of any mammal - 22 months - typically giving birth to a single calf weighing 100-120 kg. Calves are raised collectively by the entire family unit, with aunts, sisters, and grandmothers all participating in care and protection. Young elephants learn essential survival skills through observation and play, with critical knowledge passed down through generations.
+      </p>
+      
+      <h3>Critical Conservation Challenges</h3>
+      <p>
+        Elephants face severe threats from ivory poaching, habitat fragmentation, human-wildlife conflict, and climate change. African elephant populations have declined by 75% over the past century, while Asian elephants are critically endangered with fewer than 50,000 remaining. Conservation efforts include anti-poaching operations, corridor creation, community-based programs, and international ivory trade bans.
+      </p>
+      
+      <h3>Incredible Elephant Facts</h3>
+      <p>
+        Elephants can "hear" with their feet, detecting vibrations from other elephants up to 10 kilometers away through specialized cells in their trunks and feet.<br />
+        An elephant's skin is 2.5 cm thick but so sensitive they can feel insects landing on it, leading to mud baths and dust showers for protection.<br />
+        Elephants are one of the few animals that bury their dead and return to visit grave sites, showing behaviors associated with mourning and remembrance.<br />
+        Baby elephants can stand within 20 minutes of birth but rely on their mothers' milk for up to 4 years while learning essential survival skills.<br />
+        Elephants have been observed helping other species in distress, including lifting fallen humans and rescuing trapped animals from mud or water.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Elephant')">← Back</button>
+    </div>
+
+    <div id="Wolf" class="info-section">
+      <h2>Wolf</h2>
+      <img src="list_image/wolf.jpg" alt="Wolf" />
+      <p>Scientific Name: <b>Canis lupus</b></p>
+      <p>Species: <abbr title="The most widespread subspecies, found across most of their range"><b>Eurasian Wolf (C. l. lupus)</b></abbr>, Mexican Wolf (C. l. baileyi), Eastern Wolf (C. l. lycaon), Great Plains Wolf (C. l. nubilus), Arabian Wolf (C. l. arabs)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Wolves are among nature's most successful and intelligent predators, serving as the ancestral foundation for all domestic dogs while remaining wild, powerful, and free. These remarkable canids have shaped ecosystems across the Northern Hemisphere for thousands of years, demonstrating sophisticated social structures, cooperative hunting strategies, and complex communication systems that rival those of primates. Once widespread across North America, Europe, and Asia, wolves have endured persecution, near-extinction, and remarkable recovery stories that highlight both human impact and conservation success. This detailed exploration examines their physical prowess, pack dynamics, hunting mastery, ecological importance, cultural significance, and ongoing conservation challenges.
+      </p>
+      
+      <h3>Physical Adaptations and Strength</h3>
+      <p>
+        Wolves are powerfully built predators, with adults weighing 25-80 kg depending on subspecies and geographic location. Their lean, muscular bodies are designed for endurance, capable of traveling 50-100 kilometers daily at a steady pace. Wolves possess incredibly strong jaws with a bite force of 1,500 PSI - twice that of a large dog. Their large paws act as natural snowshoes, while their double-layered coat provides insulation in temperatures as low as -40°C. Their exceptional senses include hearing frequencies up to 80 kHz and detecting scents over 2.5 kilometers away.
+      </p>
+      
+      <h3>Habitat and Territory</h3>
+      <p>
+        Wolves inhabit diverse ecosystems including forests, tundra, mountains, and grasslands across North America, Europe, and Asia. They require large territories to support their prey needs - pack territories can range from 50 to 1,000 square kilometers depending on prey density. Wolves prefer areas with minimal human presence and abundant ungulate populations, though they demonstrate remarkable adaptability to various climates and terrains.
+      </p>
+      
+      <h3>Sophisticated Pack Structure</h3>
+      <p>
+        Wolf packs are family units typically consisting of a breeding pair (alpha male and female), their current year's pups, and sometimes yearlings from previous litters. Pack sizes usually range from 4-8 individuals, though can reach 20+ in areas with abundant prey. The social hierarchy is based on age, experience, and family relationships rather than dominance through aggression. Older wolves lead through experience and decision-making rather than physical intimidation.
+      </p>
+      
+      <h3>Cooperative Hunting Mastery</h3>
+      <p>
+        Wolves are supreme cooperative hunters, capable of taking down prey many times their individual size through coordinated teamwork. They primarily target large ungulates like deer, elk, moose, and caribou, though they also hunt smaller prey when necessary. Hunting success rates average 10-20%, requiring persistence and strategy. Wolves can reach speeds of 65 km/h in short bursts and maintain 10 km/h for hours during pursuits.
+      </p>
+      
+      <h3>Complex Communication Systems</h3>
+      <p>
+        Wolves communicate through an intricate combination of vocalizations, body language, and scent marking. Their famous howls serve multiple purposes: pack assembly, territory marking, and long-distance communication across 10+ kilometers. Wolves use over 11 different vocal sounds, including barks, whines, growls, and whimpers, each conveying specific meanings. Scent marking through urine, feces, and gland secretions creates detailed information networks about identity, reproductive status, and territorial boundaries.
+      </p>
+      
+      <h3>Reproduction and Pup Development</h3>
+      <p>
+        Only the alpha pair typically breeds, producing 4-6 pups after a 63-day gestation period. Pups are born blind and deaf in underground dens, weighing about 500 grams. The entire pack participates in pup care, with non-breeding adults acting as babysitters, hunters, and teachers. Pups learn essential survival skills through play, observation, and supervised hunting expeditions, remaining with the pack for 1-3 years before dispersing to find their own territories.
+      </p>
+      
+      <h3>Ecological Keystone Species</h3>
+      <p>
+        Wolves are keystone species whose presence dramatically influences entire ecosystems through trophic cascades. By controlling ungulate populations and altering prey behavior, wolves indirectly affect vegetation growth, stream flow, and countless other species. The reintroduction of wolves to Yellowstone National Park demonstrated their power to restore ecological balance, leading to increased biodiversity and ecosystem health.
+      </p>
+      
+      <h3>Cultural Impact and Human Relations</h3>
+      <p>
+        Wolves hold profound cultural significance across many societies, appearing in mythology, folklore, and spiritual beliefs as symbols of wilderness, family loyalty, and wild freedom. However, conflicts with livestock farming have led to centuries of persecution, resulting in extirpation from much of their historical range. Modern conservation efforts focus on coexistence strategies, compensation programs, and public education.
+      </p>
+      
+      <h3>Conservation and Recovery</h3>
+      <p>
+        Wolf populations have shown remarkable recovery in many regions through legal protection, reintroduction programs, and habitat conservation. Success stories include recoveries in Yellowstone, the Great Lakes region, and parts of Europe. However, wolves still face threats from habitat fragmentation, human-wildlife conflict, and political challenges to their protected status.
+      </p>
+      
+      <h3>Fascinating Wolf Behaviors</h3>
+      <p>
+        Wolves can recognize individual pack members by their unique howl signatures, even distinguishing between family members from great distances.<br />
+        A wolf's sense of smell is 100 times stronger than humans, allowing them to detect a scent trail several days old and track prey across vast distances.<br />
+        Wolves demonstrate grief and mourning behaviors, with pack members howling mournfully when a family member dies or disappears.<br />
+        Wolf pups are born with blue eyes that change to yellow or amber as they mature, and their adult coat color can range from pure white to solid black.<br />
+        Wolves have been observed playing games, including tag and keep-away, which strengthen pack bonds and develop hunting coordination skills.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Wolf')">← Back</button>
+    </div>
+
+    <div id="Dolphin" class="info-section">
+      <h2>Dolphin</h2>
+      <img src="list_image/dolphin.jpg" alt="Dolphin" />
+      <p>Scientific Name: <b>Delphinidae family</b></p>
+      <p>Species: <abbr title="The most widespread and studied species, found in oceans worldwide"><b>Bottlenose Dolphin (Tursiops truncatus)</b></abbr>, Common Dolphin (Delphinus delphis), Spinner Dolphin (Stenella longirostris), Pacific White-sided Dolphin (Lagenorhynchus obliquidens), Risso's Dolphin (Grampus griseus), Dusky Dolphin (Lagenorhynchus obscurus)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Dolphins represent the pinnacle of marine intelligence and social complexity, captivating humans with their playful nature, remarkable cognitive abilities, and sophisticated communication systems. These highly evolved cetaceans have mastered life in the ocean through extraordinary adaptations including advanced echolocation, complex social structures, and cultural learning that rivals that of great apes. Found in oceans worldwide, dolphins serve as ambassadors for marine conservation while demonstrating behaviors that challenge our understanding of animal consciousness and intelligence. This comprehensive examination explores their exceptional cognitive abilities, intricate social dynamics, revolutionary communication systems, hunting strategies, human interactions, and conservation challenges in increasingly threatened marine environments.
+      </p>
+      
+      <h3>Exceptional Intelligence and Cognitive Abilities</h3>
+      <p>
+        Dolphins possess one of the largest brain-to-body ratios of any animal, with highly developed cerebral cortexes indicating advanced cognitive processing. They demonstrate self-awareness by recognizing themselves in mirrors, show empathy by assisting injured individuals of their own and other species, and exhibit complex problem-solving abilities. Dolphins use tools, engage in play behavior throughout their lives, and display cultural learning where knowledge is passed between generations and across populations.
+      </p>
+      
+      <h3>Global Ocean Distribution and Habitats</h3>
+      <p>
+        Dolphins inhabit virtually every ocean and many coastal waters worldwide, from tropical coral reefs to temperate seas and even some river systems. Different species have adapted to specific marine niches - bottlenose dolphins thrive in coastal waters, spinner dolphins prefer open ocean environments, while some species like the Amazon river dolphin have adapted to freshwater habitats. They prefer warm, shallow coastal waters but demonstrate remarkable adaptability to diverse aquatic environments.
+      </p>
+      
+      <h3>Revolutionary Echolocation Systems</h3>
+      <p>
+        Dolphins possess the most sophisticated biological sonar systems in the animal kingdom, producing up to 1,000 clicks per second and processing the returning echoes to create detailed three-dimensional mental maps of their environment. Their echolocation is so precise they can distinguish between objects of different materials, detect buried fish in sand, and even see inside other dolphins. This biosonar enables hunting in murky water and navigation across vast ocean distances with remarkable accuracy.
+      </p>
+      
+      <h3>Hydrodynamic Perfection and Speed</h3>
+      <p>
+        Dolphins have evolved streamlined bodies that represent near-perfect hydrodynamic efficiency, enabling them to reach speeds up to 60 km/h while expending minimal energy. Their smooth skin, flexible bodies, and powerful tail flukes allow for incredible maneuverability including leaps up to 5 meters out of the water. Special adaptations include collapsible ribcages for deep diving and efficient oxygen storage systems that enable breath-holding for up to 10 minutes.
+      </p>
+      
+      <h3>Complex Social Structures and Alliances</h3>
+      <p>
+        Dolphin societies demonstrate extraordinary complexity with multi-level alliances, cooperation networks, and social hierarchies that change dynamically. Bottlenose dolphins form alliances of 2-3 males that can persist for decades, while these groups form super-alliances with other male groups during conflicts. Female dolphins often assist each other during childbirth and collectively care for young, creating supportive networks essential for calf survival.
+      </p>
+      
+      <h3>Sophisticated Communication and Signature Whistles</h3>
+      <p>
+        Dolphins possess one of the most complex communication systems in the animal kingdom, using signature whistles that function like individual names throughout their lives. These unique vocal signatures develop during the first year of life and are used for individual identification across long distances. Dolphins can imitate each other's signature whistles, engage in vocal learning, and use complex combinations of clicks, whistles, and burst-pulse sounds to convey different meanings.
+      </p>
+      
+      <h3>Innovative Hunting Strategies</h3>
+      <p>
+        Dolphins demonstrate remarkable hunting intelligence through cooperative strategies that vary by population and are passed down culturally. Some populations practice strand feeding, where they chase fish onto beaches and temporarily beach themselves to capture prey. Others use tail slapping to stun fish, create mud clouds to confuse prey, or work together to herd fish into tight balls for efficient feeding. Tool use includes carrying sponges on their rostrums to protect against sharp objects while foraging.
+      </p>
+      
+      <h3>Reproduction and Calf Development</h3>
+      <p>
+        Dolphin reproduction involves sophisticated social behaviors and extended maternal care. Females give birth after 12-month pregnancies to single calves that immediately swim alongside their mothers. Calves nurse for 1-2 years but may remain with mothers for up to 8 years, learning essential survival skills, hunting techniques, and social behaviors. This extended learning period is crucial for developing the complex skills needed for dolphin society.
+      </p>
+      
+      <h3>Human Interactions and Research</h3>
+      <p>
+        Dolphins have formed unique relationships with humans, often approaching boats and swimmers with apparent curiosity. They have been trained for military applications, therapeutic programs, and entertainment, though ethical concerns have emerged about captivity. Wild dolphins sometimes cooperate with human fishermen, and there are documented cases of dolphins rescuing drowning humans, suggesting inter-species empathy and understanding.
+      </p>
+      
+      <h3>Conservation Challenges in Modern Oceans</h3>
+      <p>
+        Dolphins face numerous threats from human activities including fishing net entanglement (bycatch), ocean pollution, noise pollution from ship traffic and sonar, habitat destruction, and climate change affecting prey distribution. Some populations have declined dramatically, while others show signs of recovery through protective legislation and marine protected areas. Conservation efforts focus on reducing bycatch, establishing marine sanctuaries, and mitigating human impacts on marine ecosystems.
+      </p>
+      
+      <h3>Extraordinary Dolphin Abilities</h3>
+      <p>
+        Dolphins can recognize their own names (signature whistles) and respond to them even when played back after 20+ years of separation from the individual who calls them.<br />
+        Their echolocation is so precise they can detect objects as thin as human hair and distinguish between different metals, demonstrating sonar capabilities beyond current human technology.<br />
+        Dolphins engage in recreational drug use by carefully handling pufferfish to induce mild toxin effects that appear to create euphoric states shared among group members.<br />
+        They can learn to understand symbolic language, with some captive dolphins demonstrating vocabularies exceeding 40 symbols and understanding of basic grammar.<br />
+        Dolphins maintain lifelong friendships spanning decades and have been observed traveling hundreds of kilometers to reunite with former pod members.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Dolphin')">← Back</button>
+    </div>
+
+    <div id="Monkey" class="info-section">
+      <h2>Monkey</h2>
+      <img src="list_image/monkey.jpg" alt="Monkey" />
+      <p>Scientific Name: <b>Various families</b></p>
+      <p>Species: <abbr title="The most widespread and adaptable Old World monkey species"><b>Rhesus Macaque (Macaca mulatta)</b></abbr>, Capuchin Monkey (Cebus species), Baboon (Papio species), Vervet Monkey (Chlorocebus pygerythrus), Howler Monkey (Alouatta species), Spider Monkey (Ateles species), Mandrill (Mandrillus sphinx)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Monkeys represent one of the most diverse and successful primate radiations, demonstrating remarkable adaptability that has enabled them to colonize virtually every tropical and subtropical environment on Earth. These intelligent, social mammals exhibit extraordinary behavioral flexibility, complex communication systems, and sophisticated problem-solving abilities that rival those of great apes while maintaining their distinctive arboreal adaptations. From tiny pygmy marmosets weighing 100 grams to powerful mandrills exceeding 50 kg, monkeys showcase incredible diversity in size, behavior, and ecological roles. This comprehensive exploration examines their evolutionary success, remarkable intelligence, complex social structures, diverse ecological adaptations, conservation challenges, and their crucial roles as both environmental indicators and ecosystem engineers across tropical regions.
+      </p>
+      
+      <h3>Extraordinary Diversity and Adaptations</h3>
+      <p>
+        Monkeys display remarkable morphological and behavioral diversity, with over 260 species adapted to environments ranging from high-altitude mountains to dense rainforests and even urban landscapes. Old World monkeys (Africa and Asia) differ from New World monkeys (Americas) in key features - Old World species have narrow noses, non-prehensile tails, and specialized digestive systems, while New World monkeys possess wide noses, often prehensile tails, and different dental arrangements. This diversity enables occupation of numerous ecological niches within tropical ecosystems.
+      </p>
+      
+      <h3>Global Distribution and Habitat Specialization</h3>
+      <p>
+        Monkeys inhabit tropical and subtropical regions across Africa, Asia, Central and South America, with remarkable habitat specialization. Arboreal species like spider monkeys have evolved long limbs and prehensile tails for canopy navigation, while terrestrial baboons developed powerful builds for ground living. Some species like macaques demonstrate incredible adaptability, thriving in environments from tropical forests to snow-covered mountains and human-dominated landscapes.
+      </p>
+      
+      <h3>Advanced Intelligence and Problem-Solving</h3>
+      <p>
+        Monkeys demonstrate sophisticated cognitive abilities including tool use, abstract thinking, and cultural learning that varies between populations. Capuchin monkeys use stones to crack nuts and sticks to extract insects, while some macaque populations have developed unique behaviors like washing sweet potatoes in seawater. They show self-awareness, numerical concepts, and can learn symbolic communication, with some species demonstrating planning abilities and understanding of cause-and-effect relationships.
+      </p>
+      
+      <h3>Complex Social Structures and Hierarchies</h3>
+      <p>
+        Monkey societies exhibit remarkable complexity with multi-level social organizations, alliance formations, and dynamic hierarchies that serve crucial survival functions. Baboon troops can contain over 100 individuals with intricate dominance hierarchies and coalition partnerships. Females typically remain in their birth groups while males disperse, creating matrilineal societies where rank and alliances often pass between generations. These social bonds provide protection, resource access, and collaborative child-rearing opportunities.
+      </p>
+      
+      <h3>Sophisticated Communication Systems</h3>
+      <p>
+        Monkeys possess complex communication repertoires combining vocalizations, facial expressions, body postures, and gestures to convey detailed information about social relationships, environmental threats, and emotional states. Vervet monkeys have specific alarm calls for different predator types - eagles, snakes, and leopards - allowing appropriate escape responses. Many species use dozens of distinct vocalizations and can learn new calls through social interaction, demonstrating vocal flexibility rare in non-human animals.
+      </p>
+      
+      <h3>Diverse Feeding Strategies and Ecological Roles</h3>
+      <p>
+        Monkeys exhibit remarkable dietary diversity from specialized leaf-eaters like colobus monkeys with multi-chambered stomachs to omnivorous capuchins consuming fruits, insects, small vertebrates, and even shellfish. They serve crucial ecological functions as seed dispersers - spider monkeys can disperse seeds over 1 kilometer from parent trees, while smaller species pollinate flowers and control insect populations. Their feeding behaviors significantly influence forest structure and plant community composition.
+      </p>
+      
+      <h3>Reproduction and Extended Parental Care</h3>
+      <p>
+        Monkey reproduction involves extended gestation periods, highly developed offspring, and prolonged parental investment that enables complex learning and social development. Most species give birth to single offspring after 5-8 month pregnancies, with infants requiring intensive care for months to years. Young monkeys learn essential survival skills through play, observation, and practice, with mothers and other group members actively teaching foraging techniques, social behaviors, and predator recognition.
+      </p>
+      
+      <h3>Threats and Conservation Challenges</h3>
+      <p>
+        Monkeys face severe threats from deforestation, habitat fragmentation, hunting for bushmeat and traditional medicine, and capture for the illegal pet trade. Many species are critically endangered, including the Sumatran orangutan-related species and various South American primates. Climate change affects their food sources and habitat ranges, while human encroachment creates conflict situations and disease transmission risks that threaten both monkey and human populations.
+      </p>
+      
+      <h3>Cultural Significance and Human Relations</h3>
+      <p>
+        Monkeys hold profound cultural significance across many societies, appearing in religious beliefs, folklore, and mythology as symbols of wisdom, mischief, and human-like qualities. In Hindu tradition, the monkey deity Hanuman represents strength and devotion, while many cultures view monkeys as clever tricksters. However, human-monkey conflicts increase as habitats shrink and populations overlap, requiring innovative conservation strategies that benefit both species.
+      </p>
+      
+      <h3>Research and Medical Contributions</h3>
+      <p>
+        Monkeys have contributed enormously to medical and behavioral research due to their physiological similarities to humans and complex cognitive abilities. Research with monkeys has advanced understanding of brain function, social behavior, disease mechanisms, and potential treatments for human conditions. However, ethical considerations increasingly emphasize non-invasive studies and conservation-focused research that benefits both scientific knowledge and wild populations.
+      </p>
+      
+      <h3>Remarkable Monkey Abilities</h3>
+      <p>
+        Japanese macaques are the only primates besides humans that live in areas with snow, developing cultural behaviors like bathing in hot springs that are passed down through generations.<br />
+        Spider monkeys can swing through forest canopies at speeds up to 55 km/h using their long arms and prehensile tails as a "fifth hand" for incredible acrobatic maneuvers.<br />
+        Capuchin monkeys demonstrate advanced tool use, creating custom tools by modifying sticks and stones, and different populations have distinct tool-use traditions passed culturally between generations.<br />
+        Vervet monkeys have been observed exhibiting behaviors suggesting they understand death, showing grief responses and carrying deceased infants for days while displaying mourning-like behaviors.<br />
+        Some monkey species can learn to understand hundreds of human symbols and demonstrate basic mathematical concepts, including addition and numerical ordering abilities.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Monkey')">← Back</button>
+    </div>
+
+    <!-- Additional placeholder sections for other mammals can be added here -->
+    <div id="Tiger" class="info-section">
+      <h2>Tiger</h2>
+      <img src="list_image/tiger.jpg" alt="Tiger" />
+      <p>Scientific Name: <b>Panthera tigris</b></p>
+      <p>Species: <abbr title="The most numerous subspecies, found primarily in India"><b>Bengal Tiger (P. t. tigris)</b></abbr>, Siberian Tiger (P. t. altaica), South China Tiger (P. t. amoyensis), Indochinese Tiger (P. t. corbetti), Malayan Tiger (P. t. jacksoni), Sumatran Tiger (P. t. sumatrae)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Tigers are the largest and most powerful wild cats in the world, commanding respect and awe wherever they roam. These magnificent solitary predators are instantly recognizable by their distinctive orange coat adorned with black stripes, with each individual's pattern being as unique as human fingerprints. Once widespread across Asia, tigers now face critical endangerment, making them one of conservation's most urgent priorities. This comprehensive exploration examines their physical prowess, hunting strategies, territorial behavior, reproduction, cultural significance, and the desperate fight to save them from extinction.
+      </p>
+      
+      <h3>Appearance and Physical Supremacy</h3>
+      <p>
+        Tigers are nature's ultimate predator design, with adult males weighing 180-300 kg and measuring up to 3.3 meters in length including their tail. Their powerful muscular bodies can generate tremendous force, with bite strength reaching 1,000 PSI. The iconic orange coat with black stripes provides perfect camouflage in dappled forest light, while their white chest and face markings may confuse prey. Their retractable claws can extend up to 10 cm, and their canine teeth measure up to 7.5 cm long.
+      </p>
+      
+      <h3>Habitat and Historical Range</h3>
+      <p>
+        Tigers once roamed from Turkey to Indonesia and from the Caspian Sea to Java, but now survive only in fragmented populations across 13 Asian countries. They inhabit diverse ecosystems including tropical forests, grasslands, mangrove swamps, and even snow-covered regions in Siberia. Each tiger requires a large territory - males can claim up to 400 square kilometers, while females typically control 20-400 square kilometers depending on prey density.
+      </p>
+      
+      <h3>Hunting Mastery and Diet</h3>
+      <p>
+        Tigers are solitary, ambush predators that rely on stealth and explosive power rather than endurance. They primarily hunt at dawn and dusk, targeting large ungulates like deer, wild boar, and water buffalo. A tiger can leap 10 meters horizontally and 5 meters vertically during an attack. They kill with a powerful bite to the throat or nape, often dragging prey weighing up to 200 kg to secluded feeding areas. Tigers need 9-10 kg of meat daily but can consume up to 25 kg in a single feeding.
+      </p>
+      
+      <h3>Territorial Behavior and Communication</h3>
+      <p>
+        Tigers are fiercely territorial, marking boundaries with scent markings, claw marks on trees, and vocalizations. They have an impressive vocal range including roars that can be heard 3 kilometers away, chuffs for friendly communication, and moans for long-distance contact. Unlike most cats, tigers are excellent swimmers and often hunt in water, making them one of the most versatile predators.
+      </p>
+      
+      <h3>Reproduction and Maternal Care</h3>
+      <p>
+        Female tigers give birth to 2-4 cubs after a 103-day gestation period. Cubs are born blind and helpless, weighing only 1 kg. Mothers provide intensive care for 18-24 months, teaching essential hunting skills and territorial knowledge. Tiger mothers are extremely protective and will fiercely defend their cubs against any threat, including male tigers who may kill cubs to bring females into estrus.
+      </p>
+      
+      <h3>Cultural Significance and Human Relations</h3>
+      <p>
+        Tigers hold profound cultural significance across Asia, appearing in folklore, religion, and national symbols. However, human encroachment has created deadly conflicts, with tigers occasionally turning to livestock or humans as prey when natural food sources disappear. Traditional medicine demand for tiger parts has driven illegal poaching, making tigers worth more dead than alive in illegal markets.
+      </p>
+      
+      <h3>Conservation Crisis and Hope</h3>
+      <p>
+        Tiger numbers crashed from 100,000 in 1900 to just 3,200 in 2010, but intensive conservation efforts have increased populations to approximately 4,500 today. Major threats include habitat fragmentation, human-wildlife conflict, poaching, and climate change. Success stories from India, Nepal, and Russia prove that with adequate protection and political will, tiger populations can recover.
+      </p>
+      
+      <h3>Remarkable Adaptations</h3>
+      <p>
+        Tigers have night vision six times better than humans, making them deadly nocturnal hunters.<br />
+        Each tiger's stripes are unique, and the pattern continues onto their skin beneath the fur.<br />
+        Siberian tigers can survive temperatures as low as -40°C and are the largest tigers, adapted for harsh northern climates.<br />
+        Tigers can imitate the calls of other animals to lure prey within striking distance.<br />
+        A tiger's whiskers are so sensitive they can detect the slightest air movement, helping them navigate in complete darkness.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Tiger')">← Back</button>
+    </div>
+
+    <div id="Bear" class="info-section">
+      <h2>Bear</h2>
+      <img src="list_image/bear.jpg" alt="Bear" />
+      <p>Scientific Name: <b>Ursidae family</b></p>
+      <p>Species: <abbr title="The most common and widespread species, found across North America and parts of Asia"><b>American Black Bear (Ursus americanus)</b></abbr>, Brown Bear (U. arctos), Polar Bear (U. maritimus), Giant Panda (Ailuropoda melanoleuca), Asiatic Black Bear (U. thibetanus), Sun Bear (Helarctos malayanus), Sloth Bear (Melursus ursinus), Spectacled Bear (Tremarctos ornatus)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Bears are among Earth's most powerful and adaptable mammals, representing one of nature's most successful evolutionary stories spanning from the tiny sun bear weighing 60 kg to the massive polar bear reaching 700 kg. These intelligent, resourceful omnivores have conquered virtually every habitat from Arctic ice to tropical forests, demonstrating remarkable behavioral flexibility and survival strategies. Found across North America, parts of Europe and Asia, bears have captivated human imagination for millennia while playing crucial ecological roles as both apex predators and ecosystem engineers. This comprehensive examination explores their incredible diversity, adaptive capabilities, complex behaviors, seasonal strategies, ecological importance, cultural significance, and conservation challenges facing different species.
+      </p>
+      
+      <h3>Remarkable Physical Adaptations</h3>
+      <p>
+        Bears possess extraordinary physical capabilities that make them among nature's most formidable animals. Their powerful builds combine immense strength with surprising agility - brown bears can run 50 km/h and climb trees despite weighing up to 680 kg. Bears have incredible bite forces ranging from 400 PSI in sun bears to over 1,200 PSI in polar bears. Their non-retractable claws, measuring up to 15 cm in brown bears, serve as versatile tools for digging, climbing, fishing, and defense. Most remarkably, their sense of smell is seven times stronger than bloodhounds, capable of detecting food sources over 30 kilometers away.
+      </p>
+      
+      <h3>Diverse Habitats and Global Distribution</h3>
+      <p>
+        Bears demonstrate remarkable habitat diversity, with different species specialized for environments ranging from Arctic sea ice to tropical rainforests. Polar bears dominate the frozen Arctic, brown bears thrive in temperate forests and tundra, black bears adapt to diverse woodland habitats, while giant pandas inhabit specific bamboo forests in China. Sun bears navigate Southeast Asian rainforests, spectacled bears climb Andean mountains, and sloth bears roam Indian grasslands and forests.
+      </p>
+      
+      <h3>Extraordinary Dietary Adaptations</h3>
+      <p>
+        Bears showcase incredible dietary flexibility, with species ranging from the almost entirely carnivorous polar bear to the 99% herbivorous giant panda. Most bears are opportunistic omnivores, seasonally shifting between plant matter, fish, insects, small mammals, and carrion. Brown bears demonstrate this adaptability by gorging on salmon during spawning runs, then switching to berries and nuts for winter preparation. Their ability to extract maximum nutrition from diverse food sources has enabled their global success.
+      </p>
+      
+      <h3>Hibernation and Seasonal Strategies</h3>
+      <p>
+        Many bear species exhibit one of nature's most remarkable survival strategies - hibernation or winter dormancy. During this period, bears can slow their heart rate from 40 to 8 beats per minute, reduce breathing by 50%, and survive entirely on stored body fat for up to 7 months without eating, drinking, urinating, or defecating. Pregnant females give birth during hibernation to tiny, underdeveloped cubs weighing only 300-500 grams.
+      </p>
+      
+      <h3>Intelligence and Problem-Solving Abilities</h3>
+      <p>
+        Bears demonstrate remarkable intelligence rivaling that of great apes, with documented tool use, complex problem-solving abilities, and sophisticated memory systems. They can remember food source locations across vast territories for decades, demonstrate understanding of cause and effect, and adapt quickly to new situations. Their cognitive abilities enable them to thrive in human-modified landscapes, though this sometimes creates conflicts.
+      </p>
+      
+      <h3>Reproduction and Maternal Excellence</h3>
+      <p>
+        Bear reproduction involves fascinating adaptations including delayed implantation, where fertilized eggs don't develop until the mother has sufficient fat reserves. Cubs are born during hibernation, incredibly small and helpless, requiring intensive maternal care for 1.5-3 years depending on species. Mother bears are legendary for their protective instincts and will fearlessly defend cubs against any threat, including larger male bears.
+      </p>
+      
+      <h3>Ecological Keystone Roles</h3>
+      <p>
+        Bears serve as crucial ecosystem engineers and keystone species across their ranges. They disperse seeds across vast distances through their travels and waste, dig up soil while foraging, and create trails used by other animals. Salmon-eating bears transfer marine nutrients to forest ecosystems, while their predation helps control ungulate populations and their digging aerates soil and creates habitat for other species.
+      </p>
+      
+      <h3>Conservation Challenges and Success Stories</h3>
+      <p>
+        Bear conservation presents complex challenges, with species facing threats from habitat loss, climate change, human-wildlife conflict, and poaching for traditional medicine. Polar bears face critical threats from Arctic ice loss, while giant pandas have recovered through intensive conservation but remain vulnerable. Success stories include American black bear recovery and brown bear recolonization in parts of Europe through protective legislation and habitat restoration.
+      </p>
+      
+      <h3>Cultural Significance and Human Relations</h3>
+      <p>
+        Bears hold profound cultural significance across many societies, appearing in mythology, folklore, and spiritual beliefs as symbols of strength, wisdom, and wilderness. However, human-bear conflicts increase as habitat shrinks and human development expands. Modern conservation emphasizes coexistence strategies including bear-proof containers, wildlife corridors, and community education programs.
+      </p>
+      
+      <h3>Astonishing Bear Facts</h3>
+      <p>
+        Polar bears are the only bears considered marine mammals, spending most of their lives on sea ice and capable of swimming over 100 kilometers without rest.<br />
+        Giant panda cubs are born pink, blind, and 900 times smaller than their mothers - smaller than a mouse despite their mother weighing 100 kg.<br />
+        Bears can climb trees at 30 km/h and have been observed using rocks as tools to scratch themselves and sticks to obtain food.<br />
+        A bear's sense of smell is so acute they can detect a human scent on a footprint three days after the person passed through the area.<br />
+        Brown bears can enter a state called "walking hibernation" where they remain active but dramatically slow their metabolism during food-scarce periods.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Bear')">← Back</button>
+    </div>
+
+    <div id="Kangaroo" class="info-section">
+      <h2>Kangaroo</h2>
+      <img src="list_image/kangaroo.jpg" alt="Kangaroo" />
+      <p>Scientific Name: <b>Macropodidae family</b></p>
+      <p>Species: <abbr title="The largest and most well-known species, found across eastern and southern Australia"><b>Red Kangaroo (Osphranter rufus)</b></abbr>, Eastern Grey Kangaroo (Macropus giganteus), Western Grey Kangaroo (M. fuliginosus), Antilopine Kangaroo (M. antilopinus)</p>
+      <p>Reproduction Type: <abbr title="Marsupial - gives birth to underdeveloped young that continue growing in a pouch."><b>Marsupial</b></abbr></p>
+      
+      <p>
+        Kangaroos are perhaps Australia's most iconic animals, representing a unique evolutionary pathway that has produced some of the world's most remarkable hopping mammals. These extraordinary marsupials have perfected an energy-efficient form of locomotion that allows them to traverse vast Australian landscapes with minimal effort, reaching speeds that rival motorcycles. As the largest marsupials on Earth, kangaroos embody the distinctive nature of Australian wildlife and serve as symbols of the continent's unique evolutionary heritage. This detailed exploration examines their revolutionary locomotion, complex social structures, remarkable reproductive strategies, ecological roles, cultural significance, and conservation status in modern Australia.
+      </p>
+      
+      <h3>Revolutionary Hopping Locomotion</h3>
+      <p>
+        Kangaroos have evolved one of nature's most efficient forms of locomotion - bipedal hopping that becomes more energy-efficient at higher speeds. Their powerful hind legs act like springs, storing and releasing energy with each bound, allowing them to travel 25 kilometers on the energy equivalent of walking the same distance. Large red kangaroos can reach speeds of 60 km/h and leap 8 meters horizontally and 3 meters vertically. Their long, muscular tail serves as a crucial "fifth leg," providing balance during hopping and support when standing.
+      </p>
+      
+      <h3>Diverse Habitats and Distribution</h3>
+      <p>
+        Kangaroos inhabit diverse Australian environments from arid deserts to grasslands, open woodlands, and coastal areas. Red kangaroos dominate the dry interior, grey kangaroos prefer woodlands and grasslands, while antilopine kangaroos thrive in tropical northern regions. Their distribution spans most of Australia except dense forests and urban areas, with different species adapted to specific climate and vegetation zones.
+      </p>
+      
+      <h3>Specialized Physical Adaptations</h3>
+      <p>
+        Kangaroos possess remarkable physical features optimized for their lifestyle. Males can reach 2 meters in height and weigh up to 90 kg, while females are considerably smaller. Their powerful hind limbs contain muscles that comprise 50% of their body weight, while their small front limbs are used for feeding, grooming, and fighting. Their large ears provide excellent hearing, and their eyes are positioned to detect movement across the open landscapes they inhabit.
+      </p>
+      
+      <h3>Extraordinary Reproductive Strategy</h3>
+      <p>
+        Kangaroos demonstrate one of the most remarkable reproductive systems in the animal kingdom. Females can simultaneously support three offspring at different developmental stages: an embryo in diapause (suspended development), a joey in the pouch, and an older joey that returns to nurse. This reproductive flexibility allows kangaroos to maximize breeding success in unpredictable environments. Newborn joeys are only 2 cm long and must crawl into the pouch to continue development.
+      </p>
+      
+      <h3>Complex Social Structure and Communication</h3>
+      <p>
+        Kangaroos live in complex social groups called mobs, typically consisting of 2-30 individuals depending on food availability and species. These groups have flexible hierarchies based on size, age, and fighting ability. Males compete for access to females through ritualized boxing matches, rearing up on their hind legs and using their powerful front limbs to wrestle. They communicate through soft clicking sounds, grunting vocalizations, and subtle body language including ear positioning and tail movements.
+      </p>
+      
+      <h3>Feeding Ecology and Diet</h3>
+      <p>
+        Kangaroos are specialized grazers and browsers with unique digestive adaptations for processing low-quality vegetation. They are crepuscular feeders, most active during dawn and dusk when temperatures are cooler and vegetation moisture content is higher. Their chambered stomachs enable them to extract maximum nutrition from grasses, leaves, and shoots. Some species can survive entirely on dry vegetation, obtaining all necessary water from their food.
+      </p>
+      
+      <h3>Behavioral Adaptations and Intelligence</h3>
+      <p>
+        Kangaroos display sophisticated behavioral adaptations including temperature regulation through licking their forearms (where blood vessels are close to the surface), seeking shade during hot days, and conserving water through concentrated urine production. They demonstrate learning abilities, can recognize individual humans, and show problem-solving skills in navigating human-modified landscapes.
+      </p>
+      
+      <h3>Ecological Roles and Environmental Impact</h3>
+      <p>
+        As native herbivores, kangaroos play crucial ecological roles in Australian ecosystems through their grazing patterns, which help maintain grassland structure and prevent woody plant encroachment. Their movements create pathways used by other animals, and their waste fertilizes soil. However, in some areas where natural predators have been removed, kangaroo populations can grow large enough to compete with livestock for vegetation.
+      </p>
+      
+      <h3>Cultural Significance and Modern Challenges</h3>
+      <p>
+        Kangaroos hold profound significance in Australian Aboriginal culture, appearing in Dreamtime stories, rock art, and traditional hunting practices spanning 40,000+ years. They feature prominently on Australia's coat of arms and currency, symbolizing the nation's unique wildlife heritage. Modern challenges include habitat fragmentation, vehicle strikes, climate change impacts, and management conflicts between conservation and agricultural interests.
+      </p>
+      
+      <h3>Remarkable Kangaroo Characteristics</h3>
+      <p>
+        Kangaroos cannot walk backwards due to their unique body structure, which is why they appear on Australia's coat of arms as a symbol of moving forward as a nation.<br />
+        A kangaroo's tail is so strong it can support the animal's entire body weight and is used as a powerful weapon during fights between males.<br />
+        Female kangaroos can pause their pregnancy for up to 11 months during drought conditions, resuming development when environmental conditions improve.<br />
+        Kangaroos are excellent swimmers and have been observed swimming between islands and crossing rivers using a dog-paddle style stroke.<br />
+        The collective noun for kangaroos is a "mob," but a group can also be called a "court" or a "troop" depending on the context and species.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Kangaroo')">← Back</button>
+    </div>
+
+    <div id="Giraffe" class="info-section">
+      <h2>Giraffe</h2>
+      <img src="list_image/giraffe.jpg" alt="Giraffe" />
+      <p>Scientific Name: <b>Giraffa camelopardalis</b></p>
+      <p>Species: <abbr title="The most widespread subspecies, found across East Africa"><b>Masai Giraffe (G. c. tippelskirchi)</b></abbr>, Northern Giraffe (G. c. camelopardalis), Southern Giraffe (G. c. giraffa), Reticulated Giraffe (G. c. reticulata)</p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      
+      <p>
+        Giraffes are the undisputed giants of the animal kingdom, standing as Earth's tallest mammals with their extraordinary height adaptations that have enabled them to exploit ecological niches unavailable to other herbivores. These magnificent creatures represent one of evolution's most dramatic examples of specialized anatomy, with every aspect of their physiology adapted to support their towering stature and unique browsing lifestyle. Native to African savannas, giraffes have developed complex social structures, remarkable cardiovascular systems, and intricate behavioral adaptations that allow them to thrive in challenging environments. This comprehensive exploration examines their spectacular physical architecture, sophisticated social dynamics, specialized feeding strategies, reproductive behaviors, ecological importance, conservation challenges, and the fascinating engineering solutions that enable their extraordinary height.
+      </p>
+      
+      <h3>Extraordinary Physical Architecture</h3>
+      <p>
+        Giraffes represent remarkable evolutionary engineering, with adult bulls reaching heights of 5.7 meters and weighing up to 1,930 kg. Their most distinctive feature - the elongated neck containing only seven vertebrae like all mammals - can measure 2.4 meters alone, each vertebra extending up to 25 cm. Their cardiovascular system is equally extraordinary, featuring a 60 cm heart weighing 11 kg that generates blood pressure twice that of humans to pump blood up their massive necks. Special valves and blood vessels prevent fainting when they lower their heads to drink.
+      </p>
+      
+      <h3>Habitat and Distribution Across Africa</h3>
+      <p>
+        Giraffes inhabit savannas, grasslands, and open woodlands across sub-Saharan Africa, preferring areas with scattered acacia trees that provide their primary food source. Their distribution has dramatically decreased due to habitat fragmentation, with populations now confined to protected areas and reserves. Different subspecies occupy distinct regions - Masai giraffes in East Africa, reticulated giraffes in northern Kenya, and southern giraffes across southern Africa.
+      </p>
+      
+      <h3>Specialized Feeding and Browsing Behavior</h3>
+      <p>
+        Giraffes are highly specialized browsers that feed primarily on acacia trees, using their remarkable 45-50 cm prehensile tongues to strip leaves from thorny branches. Their narrow mouths and flexible tongues enable precise selection of the most nutritious leaves while avoiding thorns. They can consume 34 kg of vegetation daily, spending 16-20 hours feeding to meet their massive energy requirements. Their height advantage allows access to food sources up to 6 meters high, unavailable to competing herbivores.
+      </p>
+      
+      <h3>Complex Social Structure and Communication</h3>
+      <p>
+        Giraffes live in dynamic, loose social networks called fission-fusion societies, where group composition changes frequently but individuals maintain long-term relationships. Adult females form core groups with their offspring, while males establish dominance hierarchies through ritualized "necking" battles - swinging their heads and necks like massive clubs. Despite their size, giraffes communicate through infrasonic calls below human hearing range, subtle body language, and chemical signals.
+      </p>
+      
+      <h3>Remarkable Reproductive Adaptations</h3>
+      <p>
+        Giraffe reproduction involves extraordinary adaptations for their size. Females give birth standing up, with calves dropping nearly 2 meters to the ground - this dramatic fall stimulates breathing and breaks the umbilical cord. Newborn calves stand 1.8 meters tall and weigh 100 kg, yet can stand within an hour and run within 24 hours. The 15-month gestation period is among the longest of any mammal, producing highly developed offspring capable of keeping up with the herd immediately.
+      </p>
+      
+      <h3>Behavioral Adaptations and Intelligence</h3>
+      <p>
+        Despite their seemingly awkward appearance, giraffes demonstrate remarkable behavioral flexibility and problem-solving abilities. They have developed unique drinking and sleeping postures to accommodate their height - spreading their front legs wide and bending awkwardly to reach water sources. They sleep only 2-6 hours daily, often while standing, and demonstrate excellent spatial memory for locating widely scattered food sources across vast territories.
+      </p>
+      
+      <h3>Ecological Roles and Ecosystem Impact</h3>
+      <p>
+        As megaherbivores, giraffes play crucial ecological roles in African ecosystems by shaping vegetation structure through their browsing patterns. Their feeding creates unique savanna mosaics, opening canopies for smaller browsers while dispersing seeds across vast distances through their movements and waste. They serve as important prey for lions and provide cleaning services for oxpecker birds that remove parasites from their skin.
+      </p>
+      
+      <h3>Conservation Crisis and Population Decline</h3>
+      <p>
+        Giraffe populations have declined by 40% over the past three decades, dropping from 155,000 to approximately 117,000 individuals. They face threats from habitat loss, human-wildlife conflict, poaching, and civil unrest in their range countries. Some subspecies like the West African giraffe number fewer than 600 individuals, making them more endangered than many well-known species yet receiving far less conservation attention.
+      </p>
+      
+      <h3>Cultural Significance and Human Fascination</h3>
+      <p>
+        Giraffes have fascinated humans throughout history, appearing in ancient Egyptian art, medieval European tapestries, and modern conservation symbols. Their gentle nature and unique appearance make them beloved zoo animals and wildlife tourism attractions. Many African cultures have traditional stories and beliefs centered around giraffes, often viewing them as bridges between earth and sky due to their extraordinary height.
+      </p>
+      
+      <h3>Extraordinary Giraffe Facts</h3>
+      <p>
+        A giraffe's blood pressure is 280/180 mmHg (compared to 120/80 in humans) to pump blood up their enormous necks, yet special adaptations prevent them from fainting when bending down.<br />
+        Each giraffe's spot pattern is completely unique, like human fingerprints, and remains consistent throughout their 20-25 year lifespan in the wild.<br />
+        Giraffes can run up to 55 km/h despite their size, and their long legs enable them to kick with enough force to kill a lion with a single blow.<br />
+        They need only 2-3 hours of sleep per day and often sleep standing up with their heads resting on their rumps or other giraffes for support.<br />
+        Baby giraffes can survive falls from trees up to 3 meters high, and their mothers often kick them to encourage standing and walking within hours of birth.
+      </p>
+      
+      <button class="back-btn" onclick="hideInfo('Giraffe')">← Back</button>
+    </div>
+
+    <div id="Zebra" class="info-section">
+      <h2>Zebra</h2>
+      <img src="list_image/zebra.jpg" alt="Zebra" />
+      <p>Scientific Name: <b>Equus species</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Zebras are African equids known for their distinctive black and white striped coats. There are three species of zebras, and each individual has a unique stripe pattern. They are closely related to horses and donkeys.</p>
+      <h3>Habitat</h3>
+      <p>Zebras inhabit grasslands, savannas, and mountainous regions across eastern and southern Africa. Different species are adapted to various environments from sea level to high altitudes.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Zebras have black and white stripes that may help with temperature regulation and confuse predators. They have strong legs for running and can reach speeds up to 65 km/h.</p>
+      <h3>Social Behavior</h3>
+      <p>Zebras live in family groups led by a dominant stallion, or in large herds during migration. They are highly social and use various vocalizations, including the characteristic "barking" call.</p>
+      <h3>Diet and Migration</h3>
+      <p>Zebras are grazers that primarily eat grass. Some populations participate in massive migrations, following rainfall and fresh grass across the African plains alongside wildebeest and other animals.</p>
+      <button class="back-btn" onclick="hideInfo('Zebra')">← Back</button>
+    </div>
+
+    <div id="Rhinoceros" class="info-section">
+      <h2>Rhinoceros</h2>
+      <img src="list_image/rhino.jpg" alt="Rhinoceros" />
+      <p>Scientific Name: <b>Rhinocerotidae family</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Rhinoceroses are large, herbivorous mammals characterized by their thick skin and prominent horns made of keratin. There are five species of rhinos, and they are among the most endangered large mammals due to poaching and habitat loss.</p>
+      <h3>Habitat</h3>
+      <p>Rhinos inhabit grasslands, savannas, forests, and wetlands in Africa and Asia. Different species prefer different habitats, from the grasslands preferred by white rhinos to the forests favored by Sumatran rhinos.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Rhinos can weigh up to 2,300 kg and have thick, protective skin. Their horns are made of compressed hair and continue growing throughout their lives. Despite their bulk, they can run up to 50 km/h.</p>
+      <h3>Behavior and Diet</h3>
+      <p>Rhinos are generally solitary animals, except mothers with calves. They are herbivores with different feeding preferences - some are grazers while others are browsers. They have poor eyesight but excellent hearing and smell.</p>
+      <h3>Conservation Crisis</h3>
+      <p>All rhino species are threatened, with some critically endangered. The main threats are poaching for their horns (used in traditional medicine) and habitat destruction. Conservation efforts include anti-poaching programs and captive breeding.</p>
+      <button class="back-btn" onclick="hideInfo('Rhinoceros')">← Back</button>
+    </div>
+
+    <div id="Flying Squirrel" class="info-section">
+      <h2>Flying Squirrel</h2>
+      <img src="list_image/flying_squirrel.jpg" alt="Flying Squirrel" />
+      <p>Scientific Name: <b>Pteromyini tribe</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Flying squirrels are nocturnal gliding mammals that don't actually fly but glide using a membrane called a patagium. They are found in forests across North America, Europe, and Asia and are highly adapted for arboreal life.</p>
+      <h3>Habitat</h3>
+      <p>Flying squirrels inhabit deciduous, coniferous, and mixed forests. They prefer mature forests with large trees that provide nesting cavities and gliding opportunities between trees.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Flying squirrels have large eyes for night vision, soft dense fur, and a furry membrane (patagium) stretching from wrists to ankles. Their flat tail acts as a rudder during gliding, allowing them to glide up to 150 meters.</p>
+      <h3>Behavior and Diet</h3>
+      <p>These nocturnal mammals are highly social and often share nests, especially in winter. They eat nuts, seeds, fruit, fungi, and sometimes insects or bird eggs. They cache food for winter survival.</p>
+      <h3>Gliding Abilities</h3>
+      <p>Flying squirrels launch from high branches and use their patagium to glide to lower branches on other trees. They can make sharp turns mid-flight and land softly by using their tail as a brake.</p>
+      <button class="back-btn" onclick="hideInfo('Flying Squirrel')">← Back</button>
+    </div>
+
+    <div id="Koala" class="info-section">
+      <h2>Koala</h2>
+      <img src="list_image/koala.jpg" alt="Koala" />
+      <p>Scientific Name: <b>Phascolarctos cinereus</b></p>
+      <p>Reproduction Type: <abbr title="Marsupial - gives birth to underdeveloped young that continue growing in a pouch."><b>Marsupial</b></abbr></p>
+      <p>Koalas are iconic Australian marsupials known for their eucalyptus diet and sleepy nature. Despite being called "koala bears," they are not bears but are more closely related to wombats and kangaroos.</p>
+      <h3>Habitat</h3>
+      <p>Koalas inhabit eucalyptus forests and woodlands along eastern and southeastern Australia. They are highly dependent on specific eucalyptus species and spend most of their lives in trees.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Koalas have thick gray fur, large noses for detecting eucalyptus quality, strong claws for gripping branches, and opposable digits for grasping. They weigh 4-15 kg and have excellent climbing abilities.</p>
+      <h3>Diet and Behavior</h3>
+      <p>Koalas are specialized feeders that eat only eucalyptus leaves, which are toxic to most animals. They sleep 18-22 hours per day to conserve energy due to their low-nutrition diet.</p>
+      <h3>Conservation Challenges</h3>
+      <p>Koalas face threats from habitat destruction, bushfires, disease, and climate change. They are listed as vulnerable, with populations declining due to urban development and deforestation.</p>
+      <button class="back-btn" onclick="hideInfo('Koala')">← Back</button>
+    </div>
+
+    <div id="Sloth" class="info-section">
+      <h2>Sloth</h2>
+      <img src="list_image/sloth.jpg" alt="Sloth" />
+      <p>Scientific Name: <b>Folivora suborder</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Sloths are slow-moving arboreal mammals found in Central and South American rainforests. They are known for their extremely slow movement and spending most of their lives hanging upside down from tree branches.</p>
+      <h3>Habitat</h3>
+      <p>Sloths inhabit tropical rainforests from Central America to northern South America. They live almost entirely in the forest canopy, rarely coming down to the ground except to defecate once a week.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Sloths have long curved claws for hanging from branches, slow metabolism, and algae growing on their fur that provides camouflage. There are two-toed and three-toed species with different characteristics.</p>
+      <h3>Unique Adaptations</h3>
+      <p>Sloths move so slowly that algae grows on their fur, providing camouflage. Their slow movement helps them avoid detection by predators. They have a specialized stomach with multiple chambers for digesting leaves.</p>
+      <h3>Ecological Role</h3>
+      <p>Sloths play important roles as mobile ecosystems, hosting moths, beetles, and algae. Their weekly ground visits provide fertilizer for trees, and they serve as prey for jaguars, eagles, and snakes.</p>
+      <button class="back-btn" onclick="hideInfo('Sloth')">← Back</button>
+    </div>
+
+    <div id="Orangutan" class="info-section">
+      <h2>Orangutan</h2>
+      <img src="list_image/orangutan.jpg" alt="Orangutan" />
+      <p>Scientific Name: <b>Pongo species</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Orangutans are highly intelligent great apes found only in the rainforests of Borneo and Sumatra. They are known for their reddish-brown hair, long arms, and remarkable problem-solving abilities. They are critically endangered due to habitat destruction.</p>
+      <h3>Habitat</h3>
+      <p>Orangutans inhabit tropical rainforests in Borneo and Sumatra. They spend most of their time in the forest canopy, building nests in trees for sleeping and rarely coming to the ground.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Adult orangutans have long reddish-brown hair and extremely long arms (up to 2.3 meters span) adapted for swinging through trees. Males are much larger than females and develop distinctive cheek pads called flanges.</p>
+      <h3>Intelligence and Behavior</h3>
+      <p>Orangutans are among the most intelligent animals, using tools to extract honey and insects, and showing complex problem-solving abilities. They are mostly solitary, with mothers caring for their young for 6-8 years.</p>
+      <h3>Conservation Crisis</h3>
+      <p>All orangutan species are critically endangered due to deforestation for palm oil plantations, logging, and human encroachment. Conservation efforts focus on habitat protection and rehabilitation programs.</p>
+      <button class="back-btn" onclick="hideInfo('Orangutan')">← Back</button>
+    </div>
+
+    <div id="Lemur" class="info-section">
+      <h2>Lemur</h2>
+      <img src="list_image/lemur.jpg" alt="Lemur" />
+      <p>Scientific Name: <b>Lemuridae family</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Lemurs are primates found only in Madagascar and the Comoro Islands. They are among the world's most endangered mammals, with many species critically threatened. They range from tiny mouse lemurs to the large indri.</p>
+      <h3>Habitat</h3>
+      <p>Lemurs inhabit various environments in Madagascar, from tropical rainforests to dry deciduous forests and spiny forests. Different species are adapted to specific habitats on the island.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Lemurs vary greatly in size and appearance, from the 30-gram mouse lemur to the 9-kilogram indri. Most have long tails, large eyes, and excellent jumping abilities for moving through trees.</p>
+      <h3>Social Behavior</h3>
+      <p>Many lemur species live in social groups with complex hierarchies, often led by dominant females. They communicate through vocalizations, scent marking, and visual displays.</p>
+      <h3>Conservation Emergency</h3>
+      <p>Lemurs are among the most endangered mammals due to habitat destruction, hunting, and climate change. Over 90% of lemur species are threatened with extinction, making conservation efforts critical.</p>
+      <button class="back-btn" onclick="hideInfo('Lemur')">← Back</button>
+    </div>
+
+    <div id="Sugar Glider" class="info-section">
+      <h2>Sugar Glider</h2>
+      <img src="list_image/sugar_glider.jpg" alt="Sugar Glider" />
+      <p>Scientific Name: <b>Petaurus breviceps</b></p>
+      <p>Reproduction Type: <abbr title="Marsupial - gives birth to underdeveloped young that continue growing in a pouch."><b>Marsupial</b></abbr></p>
+      <p>Sugar gliders are small, nocturnal marsupials native to Australia and New Guinea. They are named for their love of sweet foods and their ability to glide through the air using a membrane between their limbs.</p>
+      <h3>Habitat</h3>
+      <p>Sugar gliders inhabit forests and woodlands in eastern Australia, Tasmania, and New Guinea. They prefer areas with eucalyptus trees that provide both food and nesting hollows.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Sugar gliders are small (80-140 grams) with large eyes for night vision, a gliding membrane (patagium), and a long tail for steering. They can glide up to 50 meters between trees.</p>
+      <h3>Social Behavior and Diet</h3>
+      <p>Sugar gliders are highly social and live in colonies of 6-10 individuals. They eat tree sap, nectar, insects, and small vertebrates. They mark territory with scent glands and communicate through various vocalizations.</p>
+      <h3>Gliding and Adaptation</h3>
+      <p>Their gliding ability allows them to travel efficiently through the forest canopy while avoiding ground predators. They can control their glide path and land precisely on target branches.</p>
+      <button class="back-btn" onclick="hideInfo('Sugar Glider')">← Back</button>
+    </div>
+
+    <div id="Chimpanzee" class="info-section">
+      <h2>Chimpanzee</h2>
+      <img src="list_image/chimpanzee.jpg" alt="Chimpanzee" />
+      <p>Scientific Name: <b>Pan troglodytes</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Chimpanzees are our closest living relatives, sharing about 99% of human DNA. They are highly intelligent great apes known for their complex social behaviors, tool use, and problem-solving abilities.</p>
+      <h3>Habitat</h3>
+      <p>Chimpanzees inhabit tropical forests, woodlands, and savannas across central and western Africa. They spend time both in trees and on the ground, adapting to various forest environments.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Adult chimpanzees weigh 40-70 kg and have long arms, opposable thumbs, and expressive faces. They walk on their knuckles when on the ground and are excellent climbers.</p>
+      <h3>Intelligence and Tool Use</h3>
+      <p>Chimpanzees use tools for various purposes, including fishing for termites, cracking nuts, and hunting. They can learn sign language, solve complex problems, and show self-awareness.</p>
+      <h3>Social Structure</h3>
+      <p>Chimpanzees live in complex social groups called communities with intricate hierarchies, alliances, and relationships. They show empathy, cooperation, and sometimes warfare between groups.</p>
+      <button class="back-btn" onclick="hideInfo('Chimpanzee')">← Back</button>
+    </div>
+
+    <div id="Gibbon" class="info-section">
+      <h2>Gibbon</h2>
+      <img src="list_image/gibbon.jpg" alt="Gibbon" />
+      <p>Scientific Name: <b>Hylobatidae family</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Gibbons are small apes known for their incredible agility and loud, melodious calls that can be heard for miles. They are the fastest-moving primates in the trees and are famous for their spectacular brachiation (swinging from branch to branch).</p>
+      <h3>Habitat</h3>
+      <p>Gibbons inhabit tropical rainforests of Southeast Asia, including Thailand, Malaysia, Indonesia, and southern China. They spend almost their entire lives in the forest canopy, rarely coming to the ground.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Gibbons are small apes weighing 5-12 kg with extremely long arms (up to 1.5 times their body length) and no tail. They have dense fur and strong, hook-like hands perfectly adapted for swinging through trees at speeds up to 55 km/h.</p>
+      <h3>Behavior and Communication</h3>
+      <p>Gibbons are known for their elaborate morning songs - duets between mated pairs that strengthen pair bonds and mark territory. These songs can last 10-30 minutes and be heard up to 2 kilometers away.</p>
+      <h3>Social Structure and Conservation</h3>
+      <p>Gibbons are monogamous and live in small family groups. They are highly territorial and defend their areas through songs and displays. Most gibbon species are endangered due to deforestation and habitat fragmentation in Southeast Asia.</p>
+      <button class="back-btn" onclick="hideInfo('Gibbon')">← Back</button>
+    </div>
+
+    <div id="Seal" class="info-section">
+      <h2>Seal</h2>
+      <img src="list_image/seal.jpg" alt="Seal" />
+      <p>Scientific Name: <b>Pinnipedia clade</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Seals are semi-aquatic marine mammals that are excellent swimmers and divers. Unlike sea lions, true seals have no external ear flaps and cannot rotate their rear flippers forward, making them more clumsy on land but superior swimmers.</p>
+      <h3>Habitat</h3>
+      <p>Seals inhabit coastal waters worldwide, from tropical to polar regions. They prefer areas with access to both water for feeding and land or ice for resting, breeding, and molting.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Seals have streamlined bodies, short front flippers, and rear flippers that cannot rotate forward. They range from 45 kg (ringed seals) to 4,000 kg (elephant seals). Their dense fur or thick blubber provides insulation in cold water.</p>
+      <h3>Diving and Feeding</h3>
+      <p>Seals are remarkable divers, with some species capable of diving over 2,000 meters deep and holding their breath for up to 2 hours. They primarily eat fish, krill, squid, and crustaceans, using their sensitive whiskers to locate prey in murky water.</p>
+      <h3>Behavior and Life Cycle</h3>
+      <p>Seals come ashore to breed, give birth, and molt. They are highly social during breeding season, forming large colonies. Pups are typically born with thick, fluffy coats and must learn to swim and hunt from their mothers.</p>
+      <button class="back-btn" onclick="hideInfo('Seal')">← Back</button>
+    </div>
+
+    <div id="Sea Otter" class="info-section">
+      <h2>Sea Otter</h2>
+      <img src="list_image/sea_otter.jpg" alt="Sea Otter" />
+      <p>Scientific Name: <b>Enhydra lutris</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Sea otters are marine mammals known for their playful behavior and tool use. They have the densest fur of any animal and play a crucial role in maintaining healthy kelp forest ecosystems by controlling sea urchin populations.</p>
+      <h3>Habitat</h3>
+      <p>Sea otters inhabit coastal waters along the northern Pacific Ocean, from California to Alaska and Russia. They prefer shallow waters near kelp forests and rocky shores.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Sea otters have extremely dense fur (up to 1 million hairs per square inch) for insulation, webbed hind feet for swimming, and dexterous front paws for manipulating food and tools.</p>
+      <h3>Tool Use and Feeding</h3>
+      <p>Sea otters are one of the few animals that use tools, using rocks to crack open shellfish while floating on their backs. They eat sea urchins, crabs, clams, and fish, consuming 25% of their body weight daily.</p>
+      <h3>Ecological Importance</h3>
+      <p>Sea otters are a keystone species that control sea urchin populations, protecting kelp forests. Without sea otters, sea urchins can destroy kelp forests, affecting entire marine ecosystems.</p>
+      <button class="back-btn" onclick="hideInfo('Sea Otter')">← Back</button>
+    </div>
+
+    <div id="Manatee" class="info-section">
+      <h2>Manatee</h2>
+      <img src="list_image/manatee.jpg" alt="Manatee" />
+      <p>Scientific Name: <b>Trichechus species</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Manatees are gentle, slow-moving aquatic mammals also known as "sea cows." They are herbivorous marine mammals that inhabit warm coastal waters and rivers. They are vulnerable to extinction due to human activities.</p>
+      <h3>Habitat</h3>
+      <p>Manatees inhabit warm coastal waters, rivers, and springs in Florida, the Caribbean, West Africa, and the Amazon. They prefer shallow waters with abundant aquatic vegetation.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Manatees are large (up to 590 kg), gray mammals with paddle-like flippers, a rounded tail, and whiskers on their snouts. They have poor eyesight but excellent hearing and touch sensitivity.</p>
+      <h3>Diet and Behavior</h3>
+      <p>Manatees are herbivores that eat seagrass, algae, and other aquatic plants, consuming up to 10% of their body weight daily. They are generally solitary but may gather in warm-water refuges during cold weather.</p>
+      <h3>Conservation Challenges</h3>
+      <p>Manatees face threats from boat strikes, habitat loss, pollution, and cold stress. They are protected under various laws, and conservation efforts include speed zones in waterways and habitat protection.</p>
+      <button class="back-btn" onclick="hideInfo('Manatee')">← Back</button>
+    </div>
+
+    <div id="Walrus" class="info-section">
+      <h2>Walrus</h2>
+      <img src="list_image/walrus.jpg" alt="Walrus" />
+      <p>Scientific Name: <b>Odobenus rosmarus</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Walruses are large marine mammals known for their distinctive tusks and mustaches. They are pinnipeds (fin-footed mammals) that inhabit Arctic waters and are important to Arctic ecosystems and indigenous cultures.</p>
+      <h3>Habitat</h3>
+      <p>Walruses inhabit Arctic and subarctic waters around ice floes and rocky coastlines. They prefer shallow waters where they can easily reach the seafloor to feed on clams and other mollusks.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Adult walruses can weigh up to 2,000 kg and have prominent tusks (elongated canine teeth) used for hauling out of water, fighting, and breaking ice. They have thick blubber and sensitive whiskers for finding food.</p>
+      <h3>Social Behavior</h3>
+      <p>Walruses are highly social and gather in large herds on ice floes or beaches. They have complex social hierarchies and use their tusks to establish dominance. Bulls can be very aggressive during mating season.</p>
+      <h3>Feeding and Adaptation</h3>
+      <p>Walruses primarily eat clams and other bottom-dwelling mollusks, using their sensitive whiskers to locate prey in murky water. They can dive to depths of 90 meters and hold their breath for up to 30 minutes.</p>
+      <button class="back-btn" onclick="hideInfo('Walrus')">← Back</button>
+    </div>
+
+    <div id="Orca" class="info-section">
+      <h2>Orca</h2>
+      <img src="list_image/orca.jpg" alt="Orca" />
+      <p>Scientific Name: <b>Orcinus orca</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Orcas, also known as killer whales, are the largest members of the dolphin family. They are apex predators found in all oceans and are known for their intelligence, complex social structures, and distinctive black and white coloration.</p>
+      <h3>Habitat</h3>
+      <p>Orcas inhabit all oceans from the Arctic to the Antarctic. They prefer coastal waters but can also be found in open oceans. Different populations have specific ranges and migration patterns.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Adult orcas can reach lengths of 9 meters and weigh up to 6 tons. Males are larger than females and have distinctive tall dorsal fins. Their black and white coloration provides camouflage when hunting.</p>
+      <h3>Intelligence and Social Structure</h3>
+      <p>Orcas live in complex social groups called pods with matriarchal leadership. They have sophisticated communication systems, cultural traditions passed down through generations, and coordinate hunting strategies.</p>
+      <h3>Hunting and Diet</h3>
+      <p>Orcas are apex predators with diverse diets including fish, seals, sea lions, and even whales. Different populations specialize in different prey types and have developed unique hunting techniques for their preferred food sources.</p>
+      <button class="back-btn" onclick="hideInfo('Orca')">← Back</button>
+    </div>
+
+    <div id="Sea Lion" class="info-section">
+      <h2>Sea Lion</h2>
+      <img src="list_image/sea_lion.jpg" alt="Sea Lion" />
+      <p>Scientific Name: <b>Otariidae family</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Sea lions are intelligent marine mammals known for their playful behavior and agility both in water and on land. Unlike seals, sea lions have external ear flaps and can rotate their rear flippers forward to "walk" on land.</p>
+      <h3>Habitat</h3>
+      <p>Sea lions inhabit coastal waters and rocky shores around the Pacific Ocean, from California to South America and Australia. They prefer areas with abundant fish and safe haul-out sites for resting and breeding.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Sea lions have streamlined bodies, external ear flaps, and long front flippers. Males are much larger than females and may have sagittal crests (bony ridges) on their skulls. They can reach speeds of 40 km/h underwater.</p>
+      <h3>Behavior and Intelligence</h3>
+      <p>Sea lions are highly social and intelligent, capable of learning complex behaviors. They are excellent swimmers and divers, able to dive to depths of 274 meters and hold their breath for up to 20 minutes.</p>
+      <h3>Diet and Ecology</h3>
+      <p>Sea lions primarily eat fish, squid, and occasionally shellfish. They are important predators in marine ecosystems and serve as prey for sharks and orcas. They play crucial roles in nutrient cycling between marine and terrestrial environments.</p>
+      <button class="back-btn" onclick="hideInfo('Sea Lion')">← Back</button>
+    </div>
+
+    <div id="Dugong" class="info-section">
+      <h2>Dugong</h2>
+      <img src="list_image/dugong.jpg" alt="Dugong" />
+      <p>Scientific Name: <b>Dugong dugon</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Dugongs are marine mammals closely related to manatees and are the only herbivorous marine mammals in the Indo-Pacific region. They are often called "sea cows" and are important to many indigenous cultures.</p>
+      <h3>Habitat</h3>
+      <p>Dugongs inhabit shallow coastal waters of the Indo-Pacific, from East Africa to Australia. They prefer areas with extensive seagrass beds, which provide their primary food source.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Dugongs have streamlined bodies, paddle-like flippers, and a distinctive notched tail fluke. They can grow up to 4 meters long and weigh up to 420 kg. Males may have small tusks used for fighting.</p>
+      <h3>Diet and Behavior</h3>
+      <p>Dugongs are strict herbivores that feed almost exclusively on seagrass. They use their muscular upper lip to uproot seagrass and can consume up to 40 kg of seagrass per day. They are generally solitary but may feed in small groups.</p>
+      <h3>Conservation Status</h3>
+      <p>Dugongs are vulnerable to extinction due to hunting, habitat loss, boat strikes, and climate change affecting seagrass beds. They are protected under international law and are considered sacred by many coastal communities.</p>
+      <button class="back-btn" onclick="hideInfo('Dugong')">← Back</button>
+    </div>
+
+    <div id="Narwhal" class="info-section">
+      <h2>Narwhal</h2>
+      <img src="list_image/narwhal.jpg" alt="Narwhal" />
+      <p>Scientific Name: <b>Monodon monoceros</b></p>
+      <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+      <p>Narwhals are Arctic whales famous for their long, spiral tusks that can grow up to 3 meters long. Often called the "unicorns of the sea," they are one of the most specialized Arctic marine mammals.</p>
+      <h3>Habitat</h3>
+      <p>Narwhals inhabit Arctic waters around Greenland, Canada, and Russia. They prefer deep waters and are closely associated with sea ice, following ice edges and living in ice-covered waters year-round.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Narwhals are medium-sized whales (4-5 meters long) with mottled gray skin that darkens with age. Males typically have a long, spiraled tusk (actually an elongated tooth) that can weigh up to 10 kg.</p>
+      <h3>Tusk Function and Behavior</h3>
+      <p>The narwhal's tusk is sensitive and may be used for sensing environmental changes, establishing dominance, or attracting mates. Narwhals are deep divers, capable of diving over 1,500 meters deep to hunt for Arctic cod, squid, and shrimp.</p>
+      <h3>Arctic Adaptation</h3>
+      <p>Narwhals are perfectly adapted to Arctic life, with thick blubber for insulation and the ability to navigate through sea ice. They are threatened by climate change as Arctic ice diminishes and human activities increase in their habitat.</p>
+      <button class="back-btn" onclick="hideInfo('Narwhal')">← Back</button>
+    </div>
+
+    <!-- Egg-laying Mammals (Monotremes) -->
+    <div id="Platypus" class="info-section">
+      <h2>Platypus</h2>
+      <img src="list_image/platypus.jpg" alt="Platypus" />
+      <p>Scientific Name: <b>Ornithorhynchus anatinus</b></p>
+      <p>Reproduction Type: <abbr title="They lay eggs - the only mammal that does this along with echidnas."><b>Oviparous</b></abbr></p>
+      
+      <p>The platypus is one of the world's most unusual animals and one of only two egg-laying mammals (monotremes). This semi-aquatic mammal from Australia has a duck-like bill, beaver-like tail, and webbed feet, making it appear like a creature assembled from different animals.</p>
+      <h3>Habitat</h3>
+      <p>Platypuses live along freshwater rivers and streams in eastern Australia and Tasmania. They dig burrows in riverbanks for shelter and nesting.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Adult platypuses are about 40-50 cm long with a distinctive leathery bill that contains electroreceptors for hunting underwater. Males have venomous spurs on their hind legs.</p>
+      <h3>Feeding and Behavior</h3>
+      <p>Platypuses are excellent swimmers and hunt for invertebrates, small fish, and crustaceans underwater. They close their eyes and ears while diving and rely on their bill's electroreception to locate prey.</p>
+      <h3>Reproduction</h3>
+      <p>Female platypuses lay 1-2 leathery eggs in their burrow and incubate them for about 10 days. After hatching, the babies drink milk that seeps through pores in the mother's skin.</p>
+      <button class="back-btn" onclick="hideInfo('Platypus')">← Back</button>
+    </div>
+
+    <div id="Echidna" class="info-section">
+      <h2>Echidna</h2>
+      <img src="list_image/echidna.jpg" alt="Echidna" />
+      <p>Scientific Name: <b>Tachyglossus aculeatus</b></p>
+      <p>Reproduction Type: <abbr title="They lay eggs - the only mammal that does this along with platypus."><b>Oviparous</b></abbr></p>
+      <p>The echidna, also known as the spiny anteater, is the other egg-laying mammal (monotreme) besides the platypus. Covered in spines and equipped with a long snout, echidnas are specialized for eating ants and termites.</p>
+      <h3>Habitat</h3>
+      <p>Echidnas are found throughout Australia and New Guinea in various habitats including forests, grasslands, and deserts. They are excellent diggers and create burrows for shelter.</p>
+      <h3>Physical Characteristics</h3>
+      <p>Echidnas have sharp spines covering their back and sides, strong claws for digging, and a long sticky tongue for catching insects. They can roll into a spiky ball when threatened.</p>
+      <h3>Feeding and Behavior</h3>
+      <p>Echidnas use their powerful claws to tear open ant and termite nests, then use their long tongue to collect insects. They are generally solitary animals except during mating season.</p>
+      <h3>Reproduction</h3>
+      <p>Female echidnas lay a single leathery egg which they carry in a temporary pouch. After 10 days, the baby (called a puggle) hatches and continues to develop in the pouch, drinking milk from specialized mammary glands.</p>
+      <button class="back-btn" onclick="hideInfo('Echidna')">← Back</button>
     </div>
 
     <footer>

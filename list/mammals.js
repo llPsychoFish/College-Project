@@ -1,4 +1,4 @@
-// Show/Hide information sections for fish and sea creature details
+// Show/Hide information sections for animal details
 function showInfo(infoId) {
     // Hide all info sections first
     const allInfoSections = document.querySelectorAll('.info-section');
@@ -83,12 +83,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         });
     });
-    
-    // Initially hide all info sections
-    const allInfoSections = document.querySelectorAll('.info-section');
-    allInfoSections.forEach(section => {
-        section.style.display = 'none';
-    });
 });
-
-  

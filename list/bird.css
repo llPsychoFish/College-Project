@@ -1,18 +1,52 @@
+/* Enhanced Button Styles */
 .button {
-    padding: 12px 24px;
-    margin: 10px;
-    font-size: 16px;
+    padding: 14px 22px;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 600;
     border: 2px solid #2e8b57;
-    border-radius: 10px;
+    border-radius: 25px;
     cursor: pointer;
-    background: none;
+    background: linear-gradient(135deg, #ffffff, #f0fff0);
     color: #2e8b57;
-  }
-  .button:hover {
-    background-color: #2e8b57;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(46, 139, 87, 0.2);
+    text-transform: capitalize;
+    min-width: 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #2e8b57, #228b22);
     color: white;
-  }
-  .info-section {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.4);
+    border-color: #228b22;
+}
+
+.button:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);
+}
+
+/* Info Section Styles */
+.info-section {
     display: none;
     margin: 30px auto;
     max-width: 800px;
@@ -21,32 +55,52 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     padding: 32px;
     animation: fadeIn 0.3s ease-in;
-  }
+    border-top: 4px solid #2e8b57;
+}
 
-  body {
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #f0fff0;
     color: #333;
 }
 
 header {
-    background: linear-gradient(to left, #00B050, #00704A);
+    background: linear-gradient(to left, #2e8b57, #228b22);
     color: white;
     text-align: center;
     padding: 16px;
+}
+
+header h1::before {
+    content: "🐾 ";
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+header h1::after {
+    content: " 🦅";
+    font-size: 28px;
+    margin-left: 8px;
 }
 
 h1, h2, h3 {
     margin: 8px 0;
 }
 
+/* Enhanced Navigation Menu */
 .menu{
     width: 100%;
     height: 70px;
     clear: both;
-    background-color: #004d33;
+    background-color: #1f5f3f;
 }
 
 ul{
@@ -72,8 +126,8 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #FFD700;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+    color: #90EE90;
+    text-shadow: 0 0 5px rgba(144, 238, 144, 0.6);
 }
 
 .dropdown {
@@ -84,7 +138,7 @@ ul li a:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #00704A;
+    background-color: #2e8b57;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -98,7 +152,7 @@ ul li a:hover{
 }
 
 .dropdown-content a:hover {
-    background-color: #004d33;
+    background-color: rgba(46, 139, 87, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
@@ -109,14 +163,16 @@ h1{
     text-align: center;
 }
 
+/* Enhanced Footer */
 footer {
-    background: linear-gradient(to left, #00B050, #00704A);
+    background: linear-gradient(to left, #2e8b57, #228b22);
     color: white;
     text-align: center;
     padding: 16px;
     margin-top: 16px;
 }
 
+/* Enhanced Content Styling */
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -129,14 +185,22 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 16px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .content h1 {
-    color: black;
+    color: #2e8b57;
     text-align: center;
     font-size: 32px;
     margin-bottom: 24px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content h1::before {
+    content: "🦅 ";
+    font-size: 36px;
+    margin-right: 10px;
 }
 
 .content .par {
@@ -147,31 +211,60 @@ footer {
     color: #333;
 }
 
-p abbr {
-    text-decoration: none;
+.readmore-block {
+    text-align: center;
 }
 
-#Eagle {
-    text-decoration: none;
+/* Enhanced Info Section Headers */
+.info-section h2 {
+    color: #2e8b57;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn {
-    background-color: #2f6e4e;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 16px;
-    transition: background-color 0.3s ease;
+.info-section h3 {
+    color: #2e8b57;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-left: 4px solid #2e8b57;
+    padding-left: 12px;
+    background: linear-gradient(to right, #f0fff0, transparent);
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
-.back-btn:hover {
-    background-color: #1f4d33;
+.info-section p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: #444;
+    font-size: 16px;
 }
 
-/* Info Section Content Styling */
+.info-section p:first-of-type {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #2e8b57;
+    padding-left: 16px;
+    margin: 20px 0;
+    background: #f0fff0;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+/* Scientific name and special text styling */
+.info-section p b {
+    color: #2e8b57;
+    font-weight: 700;
+}
+
+/* Enhanced Image Styling */
 .info-section img {
     width: 100%;
     max-width: 400px;
@@ -181,44 +274,89 @@ p abbr {
     margin: 16px auto;
     display: block;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #f0fff0;
 }
 
-.info-section h2 {
-    color: black;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2e8b57;
-    padding-bottom: 10px;
+/* Enhanced Back Button */
+.back-btn {
+    background: linear-gradient(135deg, #2e8b57, #228b22);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 2px solid #2e8b57;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(46, 139, 87, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 120px;
 }
 
-.info-section h3 {
-    color: black;
-    font-size: 20px;
-    margin-top: 24px;
-    margin-bottom: 12px;
+.back-btn::before {
+    content: "🦅 ";
+    margin-right: 5px;
 }
 
-.info-section p {
-    line-height: 1.7;
-    margin-bottom: 16px;
-    text-align: justify;
+.back-btn:hover {
+    background: linear-gradient(135deg, #228b22, #1f5f3f);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(34, 139, 34, 0.4);
+    border-color: #228b22;
 }
 
-.info-section p:first-of-type {
-    font-style: italic;
-    color: #666;
-    border-left: 4px solid #2e8b57;
-    padding-left: 16px;
-    margin: 20px 0;
-}
-
-.info-section abbr {
+p abbr {
+    text-decoration: none;
     background-color: #e8f5e8;
     padding: 2px 6px;
     border-radius: 4px;
     border-bottom: 1px dotted #2e8b57;
+    font-weight: bold;
+    cursor: help;
+    transition: all 0.3s ease;
 }
+
+p abbr:hover {
+    background-color: #2e8b57;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Individual Bird Button Emojis */
+button[onclick*="Arctic_Tern"]::before { content: "🛩️ "; }
+button[onclick*="Blue_Footed_Booby"]::before { content: "🦶 "; }
+button[onclick*="Cassowary"]::before { content: "⚠️ "; }
+button[onclick*="Drongo"]::before { content: "🎭 "; }
+button[onclick*="Eagle"]::before { content: "🦅 "; }
+button[onclick*="Falcon"]::before { content: "⚡ "; }
+button[onclick*="Hawk"]::before { content: "👁️ "; }
+button[onclick*="Owl"]::before { content: "🦉 "; }
+button[onclick*="Penguin"]::before { content: "🐧 "; }
+button[onclick*="Flamingo"]::before { content: "🦩 "; }
+button[onclick*="Pelican"]::before { content: "🪣 "; }
+button[onclick*="Hummingbird"]::before { content: "🌺 "; }
+button[onclick*="Woodpecker"]::before { content: "🔨 "; }
+button[onclick*="Crow"]::before { content: "🖤 "; }
+button[onclick*="Parrot"]::before { content: "🦜 "; }
+button[onclick*="Robin"]::before { content: "🍒 "; }
+button[onclick*="Swan"]::before { content: "🦢 "; }
+button[onclick*="Duck"]::before { content: "🦆 "; }
+button[onclick*="Goose"]::before { content: "📯 "; }
+button[onclick*="Peacock"]::before { content: "🦚 "; }
+button[onclick*="Turkey"]::before { content: "🦃 "; }
+button[onclick*="Ostrich"]::before { content: "🏃 "; }
+button[onclick*="Emu"]::before { content: "🦘 "; }
+button[onclick*="Kiwi"]::before { content: "🥝 "; }
+button[onclick*="Albatross"]::before { content: "🌊 "; }
+button[onclick*="Seagull"]::before { content: "🏖️ "; }
+button[onclick*="Puffin"]::before { content: "🎨 "; }
+button[onclick*="Cardinal"]::before { content: "❤️ "; }
+button[onclick*="Bluejay"]::before { content: "💙 "; }
+button[onclick*="Sparrow"]::before { content: "🏡 "; }
 
 /* Animation for smooth appearance */
 @keyframes fadeIn {
@@ -229,11 +367,11 @@ p abbr {
 .read-more {
     display: none;
     margin-top: 16px;
-    background-color: #f9f9f9;
+    background-color: #f9fff9;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     cursor: pointer;
-    color: #00704A;
+    color: #2e8b57;
     text-decoration: none;
     padding: 10px 20px;
     animation: fadeIn 0.3s ease-in;
@@ -242,7 +380,7 @@ p abbr {
 /* Read More Toggle Button Styling */
 .read-more-toggle {
     display: inline-block;
-    background: linear-gradient(135deg, #2e8b57, #00704A);
+    background: linear-gradient(135deg, #2e8b57, #228b22);
     color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
@@ -259,7 +397,7 @@ p abbr {
 }
 
 .read-more-toggle:hover {
-    background: linear-gradient(135deg, #228B22, #006400);
+    background: linear-gradient(135deg, #228b22, #1f5f3f);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(46, 139, 87, 0.4);
     color: white !important;
@@ -281,4 +419,47 @@ p abbr {
     padding: 0;
     line-height: 1.6;
     color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        margin: 15px 10px;
+    }
+    
+    .button {
+        width: 85%;
+        margin: 8px auto;
+        padding: 16px 20px;
+        font-size: 16px;
+        display: block;
+    }
+    
+    .info-section {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+    
+    .info-section img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .info-section h2 {
+        font-size: 24px;
+    }
+    
+    .info-section h3 {
+        font-size: 18px;
+    }
+    
+    .info-section p {
+        font-size: 15px;
+    }
+    
+    .content h1 {
+        font-size: 28px;
+    }
 }

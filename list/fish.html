@@ -61,26 +61,158 @@
                 <button class="button" onclick="showInfo('nonbony-fish')">Non-Bony Fish</button>
 
                 <div id="bony-fish" class="info-section">
-                    <h2>Bony Fish</h2>
-                    <p>Bony fishes are Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi quam aperiam, totam qui dolor at omnis accusamus quos rem maiores sapiente dignissimos facilis, quisquam mollitia ipsa vero, voluptate sed.</p>
+                    <h2>🐠 Bony Fish</h2>
+                    <p>Bony fishes are the largest group of fish, characterized by their skeleton made of bone rather than cartilage. They have a swim bladder that helps them control their buoyancy, and most have scales covering their bodies. This group includes most of the fish we commonly see in aquariums, rivers, lakes, and oceans.</p>
                     <button class="button" onclick="showInfo('Clownfish')">Clown Fish</button>
                     <button class="button" onclick="showInfo('Tuna')">Tuna</button>
                     <button class="button" onclick="showInfo('Guppy')">Guppy</button>
+                    <button class="button" onclick="showInfo('Goldfish')">Goldfish</button>
+                    <button class="button" onclick="showInfo('Salmon')">Salmon</button>
+                    <button class="button" onclick="showInfo('Angelfish')">Angelfish</button>
                     <button onclick="hideInfo('bony-fish')">← Back</button>
                 </div>
 
-                <!-- This is where the codes for the bony fish go like in the reptile code-->
+                <!-- Individual Bony Fish Information -->
+                <div id="Clownfish" class="info-section">
+                    <h2>Clownfish</h2>
+                    <img src="list_image/clownfish.jpg" alt="Clownfish" />
+                    <p>Scientific Name: <b>Amphiprioninae subfamily</b></p>
+                    <p>Reproduction Type: <abbr title="They lay eggs that are fertilized externally."><b>Oviparous</b></abbr></p>
+                    <p>Clownfish are small, brightly colored marine fish famous for their symbiotic relationship with sea anemones. They are popular in aquariums and were featured prominently in the movie "Finding Nemo."</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Clownfish live in warm waters of the Pacific and Indian Oceans, particularly around coral reefs. They make their homes among the tentacles of sea anemones.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Clownfish are typically orange with white stripes bordered by black. They grow to about 3-4 inches long and have a distinctive rounded body shape.</p>
+                    
+                    <h3>Symbiotic Relationship</h3>
+                    <p>Clownfish have a mutualistic relationship with sea anemones. The anemone provides protection with its stinging tentacles, while the clownfish provides cleaning services and nutrients through their waste.</p>
+                    
+                    <button onclick="hideInfo('Clownfish')">← Back</button>
+                </div>
+
+                <div id="Tuna" class="info-section">
+                    <h2>Tuna</h2>
+                    <img src="list_image/tuna.jpg" alt="Tuna" />
+                    <p>Scientific Name: <b>Thunnini tribe</b></p>
+                    <p>Reproduction Type: <abbr title="They lay eggs that are fertilized externally."><b>Oviparous</b></abbr></p>
+                    <p>Tuna are large, fast-swimming pelagic fish found in oceans worldwide. They are highly valued both commercially and recreationally for their meat and fighting ability.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Tuna are found in warm and temperate seas around the world. They are highly migratory and can travel thousands of miles across ocean basins.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Tuna have streamlined bodies built for speed, with metallic blue-black backs and silver sides. They can grow quite large, with some species reaching over 8 feet in length.</p>
+                    
+                    <h3>Behavior and Diet</h3>
+                    <p>Tuna are apex predators that feed on smaller fish, squid, and crustaceans. They are known for their incredible speed and can reach speeds of up to 70 mph.</p>
+                    
+                    <button onclick="hideInfo('Tuna')">← Back</button>
+                </div>
+
+                <div id="Guppy" class="info-section">
+                    <h2>Guppy</h2>
+                    <img src="list_image/guppy.jpg" alt="Guppy" />
+                    <p>Scientific Name: <b>Poecilia reticulata</b></p>
+                    <p>Reproduction Type: <abbr title="They give birth to live young."><b>Viviparous</b></abbr></p>
+                    <p>Guppies are small, colorful freshwater fish native to South America. They are one of the most popular aquarium fish due to their hardiness and beautiful colors.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Originally from South America, guppies now live in tropical freshwater environments worldwide. They prefer shallow, warm waters with vegetation.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Male guppies are smaller and more colorful than females, with elaborate tail fins. Females are larger and more subdued in coloration but are essential for breeding.</p>
+                    
+                    <h3>Reproduction</h3>
+                    <p>Guppies are livebearers, meaning they give birth to free-swimming fry rather than laying eggs. They can reproduce rapidly under favorable conditions.</p>
+                    
+                    <button onclick="hideInfo('Guppy')">← Back</button>
+                </div>
+
+                <div id="Goldfish" class="info-section">
+                    <h2>Goldfish</h2>
+                    <p>Scientific Name: <b>Carassius auratus</b></p>
+                    <p>One of the most popular pet fish, originally domesticated from wild carp in China over 1,000 years ago.</p>
+                    <button onclick="hideInfo('Goldfish')">← Back</button>
+                </div>
+
+                <div id="Salmon" class="info-section">
+                    <h2>Salmon</h2>
+                    <p>Scientific Name: <b>Salmo and Oncorhynchus species</b></p>
+                    <p>Anadromous fish that migrate from saltwater to freshwater to spawn, known for their incredible journey upstream.</p>
+                    <button onclick="hideInfo('Salmon')">← Back</button>
+                </div>
+
+                <div id="Angelfish" class="info-section">
+                    <h2>Angelfish</h2>
+                    <p>Scientific Name: <b>Pterophyllum scalare</b></p>
+                    <p>Elegant freshwater fish with distinctive triangular shape and flowing fins, popular in the aquarium trade.</p>
+                    <button onclick="hideInfo('Angelfish')">← Back</button>
+                </div>
 
                 <div id="nonbony-fish" class="info-section">
-                    <h2>Non-Bony Fish</h2>
-                    <p>Non-bony fishes are Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi quam aperiam, totam qui dolor at omnis accusamus quos rem maiores sapiente dignissimos facilis, quisquam mollitia ipsa vero, voluptate sed.</p>
+                    <h2>🦈 Non-Bony Fish (Cartilaginous Fish)</h2>
+                    <p>Non-bony fishes, also known as cartilaginous fish, have skeletons made of cartilage instead of bone. This group includes sharks, rays, and skates. They are some of the ocean's most successful predators and have remained virtually unchanged for millions of years.</p>
                     <button class="button" onclick="showInfo('Shark')">Shark</button>
                     <button class="button" onclick="showInfo('Ray')">Ray</button>
-                    <button class="button" onclick="showInfo('Eel')">Eel</button>
+                    <button class="button" onclick="showInfo('Skate')">Skate</button>
+                    <button class="button" onclick="showInfo('Guitarfish')">Guitarfish</button>
                     <button onclick="hideInfo('nonbony-fish')">← Back</button>
                 </div>
 
-                <!-- same goes for the non bony fish-->
+                <!-- Individual Non-Bony Fish Information -->
+                <div id="Shark" class="info-section">
+                    <h2>Shark</h2>
+                    <img src="list_image/shark.jpg" alt="Shark" />
+                    <p>Scientific Name: <b>Selachimorpha superorder</b></p>
+                    <p>Reproduction Type: <abbr title="Most sharks give birth to live young, though some lay eggs."><b>Viviparous/Oviparous</b></abbr></p>
+                    <p>Sharks are apex predators that have survived for over 400 million years. They play a crucial role in maintaining ocean ecosystem balance and come in many different sizes and species.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Sharks are found in oceans worldwide, from shallow coastal waters to the deep sea. Some species can also tolerate freshwater environments.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Sharks have cartilaginous skeletons, multiple rows of teeth that are constantly replaced, and skin covered in dermal denticles that reduce drag.</p>
+                    
+                    <h3>Behavior and Diet</h3>
+                    <p>Most sharks are carnivorous, feeding on fish, seals, and other marine animals. They have excellent senses including electroreception to detect prey.</p>
+                    
+                    <button onclick="hideInfo('Shark')">← Back</button>
+                </div>
+
+                <div id="Ray" class="info-section">
+                    <h2>Ray</h2>
+                    <img src="list_image/ray.jpg" alt="Ray" />
+                    <p>Scientific Name: <b>Batoidea superorder</b></p>
+                    <p>Reproduction Type: <abbr title="Most rays give birth to live young."><b>Viviparous</b></abbr></p>
+                    <p>Rays are flattened cartilaginous fish related to sharks. They are adapted for life on the seafloor and are known for their graceful swimming motion.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Rays are found in oceans worldwide, primarily on sandy or muddy bottoms where they can bury themselves for camouflage.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Rays have flattened bodies with enlarged pectoral fins that look like wings. Their eyes and spiracles are on top of their bodies, while their mouths are underneath.</p>
+                    
+                    <h3>Feeding</h3>
+                    <p>Most rays feed on bottom-dwelling creatures like mollusks, crustaceans, and worms, which they crush with their plate-like teeth.</p>
+                    
+                    <button onclick="hideInfo('Ray')">← Back</button>
+                </div>
+
+                <div id="Skate" class="info-section">
+                    <h2>Skate</h2>
+                    <p>Scientific Name: <b>Rajidae family</b></p>
+                    <p>Bottom-dwelling cartilaginous fish similar to rays but with more rigid bodies and egg-laying reproduction.</p>
+                    <button onclick="hideInfo('Skate')">← Back</button>
+                </div>
+
+                <div id="Guitarfish" class="info-section">
+                    <h2>Guitarfish</h2>
+                    <p>Scientific Name: <b>Rhinobatidae family</b></p>
+                    <p>Fish with shark-like bodies and ray-like flattened heads, found in warm coastal waters.</p>
+                    <button onclick="hideInfo('Guitarfish')">← Back</button>
+                </div>
             </div> 
         </div>
 
@@ -104,34 +236,269 @@
                 <button class="button" onclick="showInfo('cephalopods')">Cephalopods</button>
 
                 <div id="mollusks" class="info-section">
-                    <h2>Mollusks</h2>
-                    <p>Mollusks are a diverse group of invertebrates that include snails, clams, and octopuses. They have soft bodies, often protected by a hard shell.</p>
+                    <h2>🐚 Mollusks</h2>
+                    <p>Mollusks are a diverse group of invertebrates that include snails, clams, and octopuses. They have soft bodies, often protected by a hard shell, and many possess a muscular foot for movement and a radula for feeding.</p>
                     <button class="button" onclick="showInfo('Octopus')">Octopus</button>
                     <button class="button" onclick="showInfo('Squid')">Squid</button>
-                    <button class="button" onclick="showInfo('Snail')">Snail</button>
+                    <button class="button" onclick="showInfo('Snail')">Sea Snail</button>
+                    <button class="button" onclick="showInfo('Clam')">Clam</button>
+                    <button class="button" onclick="showInfo('Mussel')">Mussel</button>
                     <button onclick="hideInfo('mollusks')">← Back</button>
                 </div>
 
-                <!-- Mollusks info goes here -->
+                <!-- Individual Mollusk Information -->
+                <div id="Octopus" class="info-section">
+                    <h2>Octopus</h2>
+                    <img src="list_image/octopus.jpg" alt="Octopus" />
+                    <p>Scientific Name: <b>Octopodidae family</b></p>
+                    <p>Reproduction Type: <abbr title="They lay eggs and die after reproduction."><b>Oviparous</b></abbr></p>
+                    <p>Octopuses are highly intelligent marine mollusks with eight arms covered in suction cups. They are known for their problem-solving abilities, camouflage skills, and unique reproductive behavior.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Octopuses live in oceans worldwide, from shallow tide pools to deep sea environments. They prefer rocky areas and coral reefs where they can find shelter.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Octopuses have soft bodies with eight flexible arms, large brains, and excellent eyesight. They can change color and texture instantly for camouflage.</p>
+                    
+                    <h3>Intelligence and Behavior</h3>
+                    <p>Octopuses are considered the most intelligent invertebrates, capable of using tools, solving puzzles, and recognizing individual humans.</p>
+                    
+                    <button onclick="hideInfo('Octopus')">← Back</button>
+                </div>
+
+                <div id="Squid" class="info-section">
+                    <h2>Squid</h2>
+                    <img src="list_image/squid.jpg" alt="Squid" />
+                    <p>Scientific Name: <b>Teuthida order</b></p>
+                    <p>Fast-swimming marine mollusks with ten arms, including two longer tentacles for catching prey. They can propel themselves by jet propulsion.</p>
+                    <button onclick="hideInfo('Squid')">← Back</button>
+                </div>
+
+                <div id="Snail" class="info-section">
+                    <h2>Sea Snail</h2>
+                    <p>Scientific Name: <b>Various gastropod species</b></p>
+                    <p>Marine gastropods with coiled shells, found in all ocean habitats from shallow waters to deep sea trenches.</p>
+                    <button onclick="hideInfo('Snail')">← Back</button>
+                </div>
+
+                <div id="Clam" class="info-section">
+                    <h2>Clam</h2>
+                    <p>Scientific Name: <b>Bivalvia class</b></p>
+                    <p>Filter-feeding mollusks with two hinged shells, important for water filtration and as food sources.</p>
+                    <button onclick="hideInfo('Clam')">← Back</button>
+                </div>
+
+                <div id="Mussel" class="info-section">
+                    <h2>Mussel</h2>
+                    <p>Scientific Name: <b>Mytilidae family</b></p>
+                    <p>Bivalve mollusks that attach to surfaces using strong byssal threads, important in marine ecosystems.</p>
+                    <button onclick="hideInfo('Mussel')">← Back</button>
+                </div>
 
                 <div id="crustaceans" class="info-section">
-                    <h2>Crustaceans</h2>
-                    <p>Crustaceans are a group of arthropods that include crabs, lobsters, and shrimp. They have a hard exoskeleton and jointed limbs.</p>
+                    <h2>🦀 Crustaceans</h2>
+                    <p>Crustaceans are a group of arthropods that include crabs, lobsters, and shrimp. They have hard exoskeletons and jointed limbs, and most live in aquatic environments.</p>
                     <button class="button" onclick="showInfo('Crab')">Crab</button>
                     <button class="button" onclick="showInfo('Lobster')">Lobster</button>
                     <button class="button" onclick="showInfo('Shrimp')">Shrimp</button>
+                    <button class="button" onclick="showInfo('Barnacle')">Barnacle</button>
                     <button onclick="hideInfo('crustaceans')">← Back</button>
                 </div>
 
-                <!-- Crustaceans info goes here -->
+                <!-- Individual Crustacean Information -->
+                <div id="Crab" class="info-section">
+                    <h2>Crab</h2>
+                    <img src="list_image/crab.jpg" alt="Crab" />
+                    <p>Scientific Name: <b>Brachyura infraorder</b></p>
+                    <p>Reproduction Type: <abbr title="They lay eggs that hatch into larvae."><b>Oviparous</b></abbr></p>
+                    <p>Crabs are decapod crustaceans with a broad, flattened body and a small tail tucked under their body. They are found in oceans, freshwater, and on land.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Crabs live in various environments including oceans, rivers, and on land. Many species live in shallow coastal waters and tide pools.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Crabs have ten legs including two claws, compound eyes on stalks, and a hard exoskeleton that they molt as they grow.</p>
+                    
+                    <h3>Behavior</h3>
+                    <p>Most crabs are omnivores and scavengers, playing important roles in cleaning up marine environments. They communicate through body language and chemical signals.</p>
+                    
+                    <button onclick="hideInfo('Crab')">← Back</button>
+                </div>
+
+                <div id="Lobster" class="info-section">
+                    <h2>Lobster</h2>
+                    <p>Scientific Name: <b>Nephropidae family</b></p>
+                    <p>Large marine crustaceans with long bodies and strong claws, prized as seafood and important predators in ocean ecosystems.</p>
+                    <button onclick="hideInfo('Lobster')">← Back</button>
+                </div>
+
+                <div id="Shrimp" class="info-section">
+                    <h2>Shrimp</h2>
+                    <p>Scientific Name: <b>Caridea and Dendrobranchiata suborders</b></p>
+                    <p>Small, swimming crustaceans found in both freshwater and marine environments, important in food webs.</p>
+                    <button onclick="hideInfo('Shrimp')">← Back</button>
+                </div>
+
+                <div id="Barnacle" class="info-section">
+                    <h2>Barnacle</h2>
+                    <p>Scientific Name: <b>Cirripedia subclass</b></p>
+                    <p>Filter-feeding crustaceans that attach permanently to surfaces like rocks, ships, and whales.</p>
+                    <button onclick="hideInfo('Barnacle')">← Back</button>
+                </div>
 
                 <div id="cnidarians" class="info-section">
-                    <h2>Cnidarians</h2>
-                    <p>Cnidarians are simple aquatic animals that include jellyfish, corals, and sea anemones. They have specialized cells called cnidocytes for capturing prey.</p>
+                    <h2>🎐 Cnidarians</h2>
+                    <p>Cnidarians are simple aquatic animals that include jellyfish, corals, and sea anemones. They have specialized cells called cnidocytes for capturing prey and are characterized by their radial symmetry.</p>
                     <button class="button" onclick="showInfo('Jellyfish')">Jellyfish</button>
                     <button class="button" onclick="showInfo('Coral')">Coral</button>
                     <button class="button" onclick="showInfo('Sea Anemone')">Sea Anemone</button>
+                    <button class="button" onclick="showInfo('Hydra')">Hydra</button>
                     <button onclick="hideInfo('cnidarians')">← Back</button>
+                </div>
+
+                <!-- Individual Cnidarian Information -->
+                <div id="Jellyfish" class="info-section">
+                    <h2>Jellyfish</h2>
+                    <img src="list_image/jellyfish.jpg" alt="Jellyfish" />
+                    <p>Scientific Name: <b>Scyphozoa class</b></p>
+                    <p>Reproduction Type: <abbr title="They have complex life cycles with both sexual and asexual reproduction."><b>Sexual/Asexual</b></abbr></p>
+                    <p>Jellyfish are free-swimming marine cnidarians with gelatinous, bell-shaped bodies and trailing tentacles armed with stinging cells.</p>
+                    
+                    <h3>Habitat</h3>
+                    <p>Jellyfish are found in oceans worldwide, from surface waters to deep sea environments. Some species also live in freshwater.</p>
+                    
+                    <h3>Physical Characteristics</h3>
+                    <p>Jellyfish have simple body structures with no brain, blood, or heart. They are 95% water and move by contracting their bell-shaped bodies.</p>
+                    
+                    <h3>Feeding and Defense</h3>
+                    <p>Jellyfish use their stinging tentacles to capture prey and defend themselves. They feed on small fish, plankton, and other jellyfish.</p>
+                    
+                    <button onclick="hideInfo('Jellyfish')">← Back</button>
+                </div>
+
+                <div id="Coral" class="info-section">
+                    <h2>Coral</h2>
+                    <p>Scientific Name: <b>Anthozoa class</b></p>
+                    <p>Colonial marine cnidarians that build calcium carbonate structures, forming the foundation of coral reef ecosystems.</p>
+                    <button onclick="hideInfo('Coral')">← Back</button>
+                </div>
+
+                <div id="Sea Anemone" class="info-section">
+                    <h2>Sea Anemone</h2>
+                    <p>Scientific Name: <b>Actiniaria order</b></p>
+                    <p>Solitary marine cnidarians that attach to surfaces and use their tentacles to capture prey, often forming symbiotic relationships.</p>
+                    <button onclick="hideInfo('Sea Anemone')">← Back</button>
+                </div>
+
+                <div id="Hydra" class="info-section">
+                    <h2>Hydra</h2>
+                    <p>Scientific Name: <b>Hydra genus</b></p>
+                    <p>Small freshwater cnidarians with remarkable regenerative abilities, able to regrow from small body fragments.</p>
+                    <button onclick="hideInfo('Hydra')">← Back</button>
+                </div>
+
+                <div id="echinoderms" class="info-section">
+                    <h2>⭐ Echinoderms</h2>
+                    <p>Echinoderms are marine animals with spiny skin and radial symmetry. This group includes starfish, sea urchins, and sea cucumbers, all characterized by their unique water vascular system.</p>
+                    <button class="button" onclick="showInfo('Starfish')">Starfish</button>
+                    <button class="button" onclick="showInfo('Sea Urchin')">Sea Urchin</button>
+                    <button class="button" onclick="showInfo('Sea Cucumber')">Sea Cucumber</button>
+                    <button onclick="hideInfo('echinoderms')">← Back</button>
+                </div>
+
+                <div id="Starfish" class="info-section">
+                    <h2>Starfish</h2>
+                    <p>Scientific Name: <b>Asteroidea class</b></p>
+                    <p>Star-shaped echinoderms with remarkable regenerative abilities, able to regrow lost arms.</p>
+                    <button onclick="hideInfo('Starfish')">← Back</button>
+                </div>
+
+                <div id="Sea Urchin" class="info-section">
+                    <h2>Sea Urchin</h2>
+                    <p>Scientific Name: <b>Echinoidea class</b></p>
+                    <p>Spiny, globe-shaped echinoderms that graze on algae and play important roles in marine ecosystems.</p>
+                    <button onclick="hideInfo('Sea Urchin')">← Back</button>
+                </div>
+
+                <div id="Sea Cucumber" class="info-section">
+                    <h2>Sea Cucumber</h2>
+                    <p>Scientific Name: <b>Holothuroidea class</b></p>
+                    <p>Elongated, soft-bodied echinoderms that help recycle nutrients in marine sediments.</p>
+                    <button onclick="hideInfo('Sea Cucumber')">← Back</button>
+                </div>
+
+                <div id="sponges" class="info-section">
+                    <h2>🧽 Sponges</h2>
+                    <p>Sponges are the simplest multicellular animals, lacking true tissues and organs. They filter water through their porous bodies to obtain food and oxygen.</p>
+                    <button class="button" onclick="showInfo('Bath Sponge')">Bath Sponge</button>
+                    <button class="button" onclick="showInfo('Tube Sponge')">Tube Sponge</button>
+                    <button onclick="hideInfo('sponges')">← Back</button>
+                </div>
+
+                <div id="Bath Sponge" class="info-section">
+                    <h2>Bath Sponge</h2>
+                    <p>Scientific Name: <b>Spongia officinalis</b></p>
+                    <p>Traditional natural sponges used for bathing, harvested from Mediterranean waters.</p>
+                    <button onclick="hideInfo('Bath Sponge')">← Back</button>
+                </div>
+
+                <div id="Tube Sponge" class="info-section">
+                    <h2>Tube Sponge</h2>
+                    <p>Scientific Name: <b>Various species</b></p>
+                    <p>Large, tube-shaped sponges that can grow several feet tall and provide habitat for many small marine animals.</p>
+                    <button onclick="hideInfo('Tube Sponge')">← Back</button>
+                </div>
+
+                <div id="marine-snakes" class="info-section">
+                    <h2>🐍 Marine Snakes</h2>
+                    <p>Marine snakes are adapted for life in saltwater environments. They have specialized features for swimming and can extract oxygen from water to some degree.</p>
+                    <button class="button" onclick="showInfo('Sea Snake')">Sea Snake</button>
+                    <button class="button" onclick="showInfo('Marine Iguana')">Marine Iguana</button>
+                    <button onclick="hideInfo('marine-snakes')">← Back</button>
+                </div>
+
+                <div id="Sea Snake" class="info-section">
+                    <h2>Sea Snake</h2>
+                    <p>Scientific Name: <b>Hydrophiinae subfamily</b></p>
+                    <p>Venomous snakes adapted for marine life with paddle-like tails and the ability to absorb oxygen through their skin.</p>
+                    <button onclick="hideInfo('Sea Snake')">← Back</button>
+                </div>
+
+                <div id="Marine Iguana" class="info-section">
+                    <h2>Marine Iguana</h2>
+                    <p>Scientific Name: <b>Amblyrhynchus cristatus</b></p>
+                    <p>The only marine lizard, found in the Galápagos Islands, that feeds on marine algae.</p>
+                    <button onclick="hideInfo('Marine Iguana')">← Back</button>
+                </div>
+
+                <div id="cephalopods" class="info-section">
+                    <h2>🐙 Cephalopods</h2>
+                    <p>Cephalopods are highly intelligent marine mollusks including octopuses, squids, and cuttlefish. They are known for their advanced nervous systems and camouflage abilities.</p>
+                    <button class="button" onclick="showInfo('Cuttlefish')">Cuttlefish</button>
+                    <button class="button" onclick="showInfo('Nautilus')">Nautilus</button>
+                    <button onclick="hideInfo('cephalopods')">← Back</button>
+                </div>
+
+                <div id="Cuttlefish" class="info-section">
+                    <h2>Cuttlefish</h2>
+                    <p>Scientific Name: <b>Sepiida order</b></p>
+                    <p>Marine cephalopods with remarkable color-changing abilities and internal cuttlebones for buoyancy control.</p>
+                    <button onclick="hideInfo('Cuttlefish')">← Back</button>
+                </div>
+
+                <div id="Nautilus" class="info-section">
+                    <h2>Nautilus</h2>
+                    <p>Scientific Name: <b>Nautilus genus</b></p>
+                    <p>Ancient cephalopods with external spiral shells, often called "living fossils" due to their unchanged form.</p>
+                    <button onclick="hideInfo('Nautilus')">← Back</button>
+                </div>
+
+                <!-- Missing creature that was mentioned earlier -->
+                <div id="Eel" class="info-section">
+                    <h2>Eel</h2>
+                    <p>Scientific Name: <b>Anguilliformes order</b></p>
+                    <p>Long, snake-like bony fish found in both freshwater and marine environments.</p>
+                    <button onclick="hideInfo('Eel')">← Back</button>
                 </div>
             </div>
         </div>

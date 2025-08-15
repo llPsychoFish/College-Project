@@ -73,7 +73,28 @@
           traveling long distances between breeding and wintering grounds. This
           migration is often triggered by changes in daylight, temperature, and
           food availability. Some birds, like the Arctic Tern, undertake the longest
-          migrations of any animal, traveling thousands of miles each year.
+          migrations of any animal, traveling thousands of miles each year.<br><br>
+          
+          Birds exhibit incredible diversity in size, from the tiny bee hummingbird
+          weighing less than 2 grams to the massive ostrich standing over 9 feet tall.
+          Their respiratory system is uniquely efficient, featuring air sacs that allow
+          for a continuous flow of oxygen during both inhalation and exhalation, enabling
+          sustained flight at high altitudes.<br><br>
+          
+          Many birds display remarkable intelligence, with species like crows and parrots
+          demonstrating problem-solving abilities, tool use, and complex social behaviors.
+          Some birds, such as the Clark's nutcracker, can remember thousands of hiding
+          places where they've cached seeds for winter survival.<br><br>
+          
+          Bird communication is equally fascinating, ranging from simple calls to complex
+          songs that can convey territory boundaries, mating availability, and danger
+          warnings. Many songbirds learn their melodies from their parents and can even
+          develop regional dialects within species.<br><br>
+          
+          Ecologically, birds serve vital roles as pollinators, seed dispersers, and
+          pest controllers. They help maintain ecosystem balance by controlling insect
+          populations and spreading plant species across vast distances through their
+          migrations and feeding habits.
           </p>
         </div>
       </div>

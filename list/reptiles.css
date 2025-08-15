@@ -1,29 +1,4 @@
-.button {
-    padding: 12px 24px;
-    margin: 10px;
-    font-size: 16px;
-    border: 2px solid #2e8b57;
-    border-radius: 10px;
-    cursor: pointer;
-    background: none;
-    color: #2e8b57;
-  }
-  .button:hover {
-    background-color: #2e8b57;
-    color: white;
-  }
-  .info-section {
-    display: none;
-    margin: 30px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    padding: 32px;
-    animation: fadeIn 0.3s ease-in;
-  }
-
-  body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -73,7 +48,7 @@ ul li a{
 
 ul li a:hover{
     color: #FFD700;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+    opacity: 0.8;
 }
 
 .dropdown {
@@ -98,7 +73,7 @@ ul li a:hover{
 }
 
 .dropdown-content a:hover {
-    background-color: #004d33;
+    background-color: rgba(0, 77, 51, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,51 +92,7 @@ footer {
     margin-top: 16px;
 }
 
-.rept-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px;
-    line-height: 1.6;
-    height: auto;
-    position: relative;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 16px;
-    margin-bottom: 32px;
-}
-
-.amph-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px;
-    line-height: 1.6;
-    height: auto;
-    position: relative;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.rept-content h1 {
-    color: black;
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 24px;
-    font-weight: bold;
-}
-
-.rept-content .par {
-    font-size: 18px;
-    margin-bottom: 24px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #333;
-}
-
-.amph-content {
+.content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 32px;
@@ -175,7 +106,7 @@ footer {
     margin-bottom: 16px;
 }
 
-.amph-content h1 {
+.content h1 {
     color: black;
     text-align: center;
     font-size: 32px;
@@ -183,7 +114,7 @@ footer {
     font-weight: bold;
 }
 
-.amph-content .par {
+.content .par {
     font-size: 18px;
     margin-bottom: 24px;
     line-height: 1.8;
@@ -191,28 +122,313 @@ footer {
     color: #333;
 }
 
-p abbr {
-    text-decoration: none;
+/* Read More/Read Less Button Styles */
+.read-more-toggle {
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #00704A;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00B050, #00704A);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 112, 74, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.back-btn {
-    background-color: #2f6e4e;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+.read-more-toggle:hover {
+    background: linear-gradient(135deg, #00B050, #00704A);
+    opacity: 0.9;
+}
+
+.read-more-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 112, 74, 0.2);
+}
+
+/* Read More Content Styles */
+.read-more {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8fcf8;
+    border-left: 4px solid #00B050;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.read-more p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Read More Block Styles */
+.readmore-block {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.readmore-block .read-more-toggle {
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.readmore-block .read-more-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Main Categories Section */
+.main-categories {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Button Styles - Reptile Theme */
+.category-btn {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    margin-top: 16px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+/* Lizards Button - Vibrant Green Theme */
+.category-btn:nth-child(1) {
+    background: #98D982;
+    border: 3px solid #98D982;
+}
+
+.category-btn:nth-child(1):hover {
+    background: #228B22;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(34, 139, 34, 0.4);
+}
+
+/* Snakes Button - Dark Green/Brown Theme */
+.category-btn:nth-child(2) {
+    background: #8FBC8F;
+    border: 3px solid #8FBC8F;
+}
+
+.category-btn:nth-child(2):hover {
+    background: #556B2F;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(85, 107, 47, 0.4);
+}
+
+/* Tortoises Button - Earthy Brown Theme */
+.category-btn:nth-child(3) {
+    background: #DEB887;
+    border: 3px solid #DEB887;
+}
+
+.category-btn:nth-child(3):hover {
+    background: #8B7355;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(139, 115, 85, 0.4);
+}
+
+/* Salamanders/Newts Button - Orange/Red Theme */
+.category-btn:nth-child(4) {
+    background: #FFA07A;
+    border: 3px solid #FFA07A;
+}
+
+.category-btn:nth-child(4):hover {
+    background: #FF6347;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 99, 71, 0.4);
+}
+
+/* Frogs Button - Bright Green/Blue Theme */
+.category-btn:nth-child(5) {
+    background: #90EE90;
+    border: 3px solid #90EE90;
+}
+
+.category-btn:nth-child(5):hover {
+    background: #32CD32;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 205, 50, 0.4);
+}
+
+/* Toads Button - Brownish Theme */
+.category-btn:nth-child(6) {
+    background: #D2B48C;
+    border: 3px solid #D2B48C;
+}
+
+.category-btn:nth-child(6):hover {
+    background: #A0522D;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(160, 82, 45, 0.4);
+}
+
+/* Active state for category buttons */
+.category-btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Reptile List Container */
+.reptile-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Individual Category Section Styling */
+.reptile-list .info-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #00B050;
+}
+
+.reptile-list .info-section h2 {
+    color: #00704A;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animal Buttons Container */
+.animal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8fcf8;
+    border-radius: 10px;
+    border: 2px dashed #00B050;
+}
+
+/* Individual Animal Button Styling */
+.animal-buttons .button {
+    padding: 14px 22px;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #00B050;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffffff, #f8fcf8);
+    color: #00704A;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(0, 176, 80, 0.2);
+    text-transform: capitalize;
+    min-width: 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+.animal-buttons .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.animal-buttons .button:hover::before {
+    left: 100%;
+}
+
+.animal-buttons .button:hover {
+    background: linear-gradient(135deg, #00B050, #00704A);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 176, 80, 0.4);
+    border-color: #00704A;
+}
+
+.animal-buttons .button:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 176, 80, 0.3);
+}
+
+/* Back Button Styling */
+.back-btn {
+    padding: 12px 25px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #00B050;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #00B050;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 176, 80, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .back-btn:hover {
-    background-color: #1f4d33;
+    background: #00704A;
+    border-color: #00704A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 112, 74, 0.4);
 }
 
+/* Individual Animal Info Section Styling */
+.info-section {
+    display: none;
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 32px;
+    animation: fadeIn 0.3s ease-in;
+    border-top: 4px solid #00B050;
+}
 
-/* Info Section Content Styling */
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Individual Animal Info Content Styling */
 .info-section img {
     width: 100%;
     max-width: 400px;
@@ -222,62 +438,164 @@ p abbr {
     margin: 16px auto;
     display: block;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #f0f8ff;
 }
 
 .info-section h2 {
-    color: black;
+    color: #00704A;
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #2e8b57;
+    border-bottom: 2px solid #00B050;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .info-section h3 {
-    color: black;
+    color: #00704A;
     font-size: 20px;
     margin-top: 24px;
     margin-bottom: 12px;
+    border-left: 4px solid #00B050;
+    padding-left: 12px;
+    background: linear-gradient(to right, #f8fcf8, transparent);
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
 .info-section p {
     line-height: 1.7;
     margin-bottom: 16px;
     text-align: justify;
+    color: #444;
+    font-size: 16px;
 }
 
 .info-section p:first-of-type {
     font-style: italic;
     color: #666;
-    border-left: 4px solid #2e8b57;
+    border-left: 4px solid #00B050;
     padding-left: 16px;
     margin: 20px 0;
+    background: #f8fcf8;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 17px;
 }
 
+/* Scientific name and special text styling */
+.info-section p b {
+    color: #00704A;
+    font-weight: 700;
+}
+
+/* Abbreviation styling */
 .info-section abbr {
     background-color: #e8f5e8;
     padding: 2px 6px;
     border-radius: 4px;
-    border-bottom: 1px dotted #2e8b57;
-}
-
-/* Animation for smooth appearance */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-abbr {
-    background-color: green;
-    color: none;
-    padding: 2px 6px;
-    border-radius: 4px;
+    border-bottom: 1px dotted #00B050;
     font-weight: bold;
-    text-decoration: wavy;
     cursor: help;
+    transition: all 0.3s ease;
 }
-abbr:hover {
-    background-color: #2e8b57;
+
+.info-section abbr:hover {
+    background-color: #00B050;
     color: white;
+    transform: scale(1.05);
+}
+
+/* Enhanced Back Button for Individual Animals */
+.info-section button {
+    background: linear-gradient(135deg, #00B050, #00704A);
+    color: white;
+    padding: 12px 25px;
     text-decoration: none;
+    border: 2px solid #00B050;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 176, 80, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 120px;
+}
+
+.info-section button:hover {
+    background: linear-gradient(135deg, #00704A, #004d33);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 112, 74, 0.4);
+    border-color: #00704A;
+}
+
+/* Special styling for detailed animal sections */
+.info-section p br {
+    margin-bottom: 8px;
+}
+
+/* Highlight important facts */
+.info-section p b {
+    background: linear-gradient(120deg, #e8f5e8, #f0f8ff);
+    padding: 2px 4px;
+    border-radius: 3px;
+    border-left: 3px solid #00B050;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-btn {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        padding: 18px 25px;
+        font-size: 16px;
+    }
+    
+    .animal-buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .animal-buttons .button {
+        width: 85%;
+        margin: 8px 0;
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+    
+    .reptile-list .info-section {
+        padding: 20px;
+        margin: 15px 10px;
+    }
+    
+    .info-section {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+    
+    .info-section img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .info-section h2 {
+        font-size: 24px;
+    }
+    
+    .info-section h3 {
+        font-size: 18px;
+    }
+    
+    .info-section p {
+        font-size: 15px;
+    }
 }
