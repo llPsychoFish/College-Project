@@ -4,10 +4,6 @@ body {
     padding: 0;
     background-color: #f0f8ff;
     color: #333;
-    font-size: 20px; /* Larger base font */
-    color: #181818;  /* Darker text */
-    font-weight: 500;
-    text-shadow: 0 1px 2px #fff, 0 0 2px #bbb;
 }
 
 header {
@@ -17,10 +13,8 @@ header {
     padding: 16px;
 }
 
-h1, h2, h3, h4 {
-    color: #003300; /* Even darker for headings */
-    font-weight: 700;
-    text-shadow: 0 2px 8px #e0ffe0, 0 1px 0 #fff;
+header p {
+    color: white;
 }
 
 h1, h2, h3 {
@@ -98,10 +92,38 @@ ul li a:hover{
     display: block;
 }
 
-.head {
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6;
+    height: auto;
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    margin-top: 16px;
+    margin-bottom: 16px;
     text-align: center;
+    border: 2px solid #e0e0e0;
+}
+
+.head {
     color: black;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.par {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 main {
@@ -114,10 +136,9 @@ main {
 }
 
 .par, p, li {
-    color: #222;
+    color: #333;
     font-size: 1.1em;
-    line-height: 1.9;
-    text-shadow: 0 1px 2px #fff, 0 0 2px #bbb;
+    line-height: 1.6;
 }
 
 section {
@@ -130,10 +151,185 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #28a745;
-    padding-bottom: 10px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c5f3f;
+    text-align: center;
+    margin: 30px 0 25px 0;
+    padding: 20px 20px 20px 60px; /* Add left padding for emoji space */
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border: 3px solid #4caf50;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: float 6s ease-in-out infinite;
+}
+
+section h2:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
+    background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+    animation-play-state: paused;
+}
+
+/* Shimmer effect - now using ::after to avoid conflict */
+section h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+section h2:hover::after {
+    left: 100%;
+}
+
+/* Animated emojis for each h2 section - using ::before for emojis */
+#species h2:first-of-type::before {
+    content: '☠️';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: skull 3s ease-in-out infinite;
+    z-index: 3;
+}
+
+#species h2:last-of-type::before {
+    content: '🧬';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: dnaHelix 4s ease-in-out infinite;
+    z-index: 3;
+}
+
+#threats h2::before {
+    content: '⚠️';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: warning 2s ease-in-out infinite;
+    z-index: 3;
+}
+
+#appeal h2::before {
+    content: '🌱';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: grow 3s ease-in-out infinite;
+    z-index: 3;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-2px);
+    }
+}
+
+/* Skull animation for extinct species */
+@keyframes skull {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg) scale(1);
+        filter: brightness(1);
+    }
+    25% {
+        transform: translateY(-55%) rotate(-5deg) scale(1.1);
+        filter: brightness(0.8);
+    }
+    50% {
+        transform: translateY(-45%) rotate(5deg) scale(0.9);
+        filter: brightness(1.2);
+    }
+    75% {
+        transform: translateY(-50%) rotate(-2deg) scale(1.05);
+        filter: brightness(0.9);
+    }
+}
+
+/* DNA helix animation for hybrids & clones */
+@keyframes dnaHelix {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateY(-50%) rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: translateY(-50%) rotate(180deg) scale(0.9);
+    }
+    75% {
+        transform: translateY(-50%) rotate(270deg) scale(1.05);
+    }
+}
+
+/* Warning animation for threats */
+@keyframes warning {
+    0%, 100% {
+        transform: translateY(-50%) scale(1);
+        filter: brightness(1) hue-rotate(0deg);
+    }
+    50% {
+        transform: translateY(-60%) scale(1.2);
+        filter: brightness(1.3) hue-rotate(10deg);
+    }
+}
+
+/* Growing plant animation for conservation */
+@keyframes grow {
+    0%, 100% {
+        transform: translateY(-50%) scale(1) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        transform: translateY(-55%) scale(1.1) rotate(-5deg);
+        filter: hue-rotate(20deg);
+    }
+    50% {
+        transform: translateY(-45%) scale(0.9) rotate(5deg);
+        filter: hue-rotate(40deg);
+    }
+    75% {
+        transform: translateY(-50%) scale(1.05) rotate(-2deg);
+        filter: hue-rotate(20deg);
+    }
+}
+
+/* Rotating background animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .species-grid {
@@ -159,7 +355,7 @@ section h2 {
 }
 
 .species-item h3 {
-    color: #007bff;
+    color: black;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -217,33 +413,171 @@ video {
     box-shadow: 0 0 16px #28a74588;
 }
 .read-more-btn {
-    background: #00704A;
+    background: linear-gradient(135deg, #00704A, #00B050);
     color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 6px 16px;
+    border: 2px solid #00704A;
+    border-radius: 25px;
+    padding: 14px 22px;
     margin-top: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-.read-more-btn:hover {
-    background: #00B050;
-}
-.read-more {
-    margin-top: 8px;
-    background: #f0f8ff;
-    border-left: 3px solid #00704A;
-    padding: 8px 12px;
-    border-radius: 6px;
-    color: #222;
-    color: #1a1a1a;
-    background: #eaffea;
-    font-size: 1.05em;
-    text-shadow: 0 1px 2px #fff, 0 0 2px #bbb;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(0, 112, 74, 0.2);
+    text-transform: capitalize;
+    min-width: 130px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Make the entire species-item a button with pop effect */
+.read-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.read-more-btn:hover::before {
+    left: 100%;
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(135deg, #00B050, #28a745);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 112, 74, 0.4);
+    border-color: #28a745;
+}
+
+.read-more-btn:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 112, 74, 0.3);
+}
+
+.read-more {
+    margin-top: 12px;
+    background: linear-gradient(135deg, #f0f9f0, #e8f5e8);
+    border: 1px solid #c8e6c9;
+    border-left: 4px solid #00704A;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: #1a1a1a;
+    font-size: 1.05em;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 112, 74, 0.1);
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background: linear-gradient(135deg, #e8f5e8, #dcedc8);
+    box-shadow: 0 4px 12px rgba(0, 112, 74, 0.15);
+    transform: translateY(-2px);
+}
+
+.read-more-toggle {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 14px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #00704A;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffffff, #f0f9f0);
+    color: #00704A;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(0, 112, 74, 0.2);
+    text-transform: capitalize;
+    min-width: 130px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.read-more-toggle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.read-more-toggle:hover::before {
+    left: 100%;
+}
+
+.read-more-toggle:hover {
+    background: linear-gradient(135deg, #00704A, #00B050);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 112, 74, 0.4);
+    border-color: #00B050;
+}
+
+.read-more-toggle:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 112, 74, 0.3);
+}
+
+/* Enhanced animations for expanded states */
+.species-item.expanded {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 8px 25px rgba(0, 112, 74, 0.2);
+    border-color: #00B050;
+}
+
+.read-more-toggle.expanded {
+    background: linear-gradient(135deg, #28a745, #00B050);
+    color: white;
+    border-color: #28a745;
+}
+
+.read-more {
+    margin-top: 12px;
+    background: linear-gradient(135deg, #f0f9f0, #e8f5e8);
+    border: 1px solid #c8e6c9;
+    border-left: 4px solid #00704A;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: #1a1a1a;
+    font-size: 1.05em;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 112, 74, 0.1);
+    overflow: hidden;
+}
+
+/* Endangered species highlight */
+.endangered-highlight {
+    border-left: 4px solid #dc3545;
+    background: linear-gradient(135deg, #fff5f5, #fef2f2);
+}
+
+.endangered-highlight h3::after {
+    content: " ⚠️";
+    color: #dc3545;
+}
+
+/* Modal enhancements */
+.card-modal {
+    backdrop-filter: blur(5px);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-modal-content {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-modal[style*="flex"] .card-modal-content {
+    transform: scale(1);
+}
 .card-btn.species-item {
     background-color: #fff;
     border: 1px solid #eee;
@@ -265,14 +599,7 @@ video {
 .card-btn.species-item img {
     pointer-events: none; /* So clicking image triggers the button */
 }
-.read-more-toggle {
-    display: inline-block;
-    margin-top: 8px;
-    color: #00704A;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: underline;
-}
+
 .card-modal {
     position: fixed;
     z-index: 9999;
@@ -324,7 +651,7 @@ video {
 }
 .card-modal-content h3 {
     margin-top: 0;
-    color: #007bff;
+    color: black;
     text-align: center;
 }
 .card-modal-content p {
@@ -333,4 +660,340 @@ video {
     margin-bottom: 0.7em;
     text-align: left;
     word-break: break-word;
+}
+
+/* Styling for h3 elements in the threats section */
+#threats h3 {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 20px 0 15px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+    border-left: 5px solid #d63031;
+    position: relative;
+    overflow: hidden;
+}
+
+#threats h3::before {
+    content: "⚠️";
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+#threats h3:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Styling for h4 elements in the threats section */
+#threats h4 {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin: 15px 0 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(116, 185, 255, 0.3);
+    border-left: 4px solid #0984e3;
+}
+
+#threats h4::before {
+    content: "🔸";
+    margin-right: 8px;
+}
+
+#threats h4:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(116, 185, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Styling for endangered species cards - dramatic green theme */
+#species .species-grid:first-of-type .species-item {
+    background: linear-gradient(135deg, #f0f9f0, #e8f5e8);
+    border: 2px solid #28a745;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+    position: relative;
+    overflow: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#species .species-grid:first-of-type .species-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #155724, #28a745, #34ce57, #68d391);
+    z-index: 1;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+#species .species-grid:first-of-type .species-item h3 {
+    color: #28a745;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(40, 167, 69, 0.2);
+}
+
+#species .species-grid:first-of-type .species-item h3::after {
+    content: " ⚠️";
+    color: #28a745;
+    font-size: 0.9em;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#species .species-grid:first-of-type .species-item:hover {
+    transform: perspective(1000px) rotateY(5deg) translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(40, 167, 69, 0.4);
+    border-color: #155724;
+}
+
+#species .species-grid:first-of-type .species-item .read-more-toggle {
+    background: linear-gradient(135deg, #f0f9f0, #e8f5e8);
+    border: 2px solid #28a745;
+    color: #28a745;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+#species .species-grid:first-of-type .species-item .read-more-toggle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(40, 167, 69, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+#species .species-grid:first-of-type .species-item .read-more-toggle:hover::before {
+    left: 100%;
+}
+
+#species .species-grid:first-of-type .species-item .read-more-toggle:hover {
+    background: linear-gradient(135deg, #28a745, #34ce57);
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+#species .species-grid:first-of-type .species-item .read-more {
+    background: linear-gradient(135deg, #f0f9f0, #e8f5e8);
+    border: 1px solid #28a745;
+    border-left: 4px solid #155724;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.1);
+}
+
+/* Styling for hybrid/clone cards - darker green theme */
+#species .species-grid:last-of-type .species-item {
+    background: linear-gradient(135deg, #e6f3e6, #c8e6c8, #a5d6a5);
+    border: 2px solid #20c997;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(32, 201, 151, 0.3);
+    position: relative;
+    overflow: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#species .species-grid:last-of-type .species-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #138a5c, #20c997, #40d9aa, #6bf7dd);
+    z-index: 1;
+    animation: dnaBackground 4s linear infinite;
+}
+
+@keyframes dnaBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#species .species-grid:last-of-type .species-item h3 {
+    color: #138a5c;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(19, 138, 92, 0.2);
+}
+
+#species .species-grid:last-of-type .species-item h3::after {
+    content: " 🧬";
+    color: #20c997;
+    font-size: 0.9em;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#species .species-grid:last-of-type .species-item:hover {
+    transform: perspective(1000px) rotateY(-5deg) translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(32, 201, 151, 0.4);
+    border-color: #138a5c;
+}
+
+#species .species-grid:last-of-type .species-item .read-more-toggle {
+    background: linear-gradient(135deg, #e6f3e6, #c8e6c8);
+    border: 2px solid #20c997;
+    color: #138a5c;
+    box-shadow: 0 4px 15px rgba(32, 201, 151, 0.2);
+    position: relative;
+}
+
+/* Styling for h3 in the appeal section */
+#appeal h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 35px auto 25px auto;
+    padding: 20px 40px;
+    max-width: 600px;
+    background: linear-gradient(135deg, #2e7d32 0%, #388e3c 50%, #4caf50 100%);
+    border: 4px solid #1b5e20;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(27, 94, 32, 0.4), 
+                inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#appeal h3:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(27, 94, 32, 0.6), 
+                inset 0 2px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%);
+    border-color: #0d4e17;
+}
+
+#appeal h3::before {
+    content: '� ';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: bounce 2s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+#appeal h3::after {
+    content: ' 🌿';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    animation: bounce 2s ease-in-out infinite reverse;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Add a glowing border animation */
+#appeal h3:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 20px 40px rgba(27, 94, 32, 0.6), 
+                    0 0 20px rgba(76, 175, 80, 0.5),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 20px 40px rgba(27, 94, 32, 0.8), 
+                    0 0 30px rgba(76, 175, 80, 0.8),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(-50%) scale(1) rotate(0deg);
+    }
+    25% { 
+        transform: translateY(-60%) scale(1.1) rotate(-5deg);
+    }
+    50% { 
+        transform: translateY(-40%) scale(0.9) rotate(5deg);
+    }
+    75% { 
+        transform: translateY(-55%) scale(1.05) rotate(-2deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    50% { 
+        transform: translateY(-50%) scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+#species .species-grid:last-of-type .species-item .read-more-toggle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(32, 201, 151, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+#species .species-grid:last-of-type .species-item .read-more-toggle:hover::before {
+    left: 100%;
+}
+
+#species .species-grid:last-of-type .species-item .read-more-toggle:hover {
+    background: linear-gradient(135deg, #20c997, #40d9aa);
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(32, 201, 151, 0.4);
+}
+
+#species .species-grid:last-of-type .species-item .read-more {
+    background: linear-gradient(135deg, #e6f3e6, #c8e6c8);
+    border: 1px solid #20c997;
+    border-left: 4px solid #138a5c;
+    box-shadow: 0 4px 15px rgba(32, 201, 151, 0.1);
 }
