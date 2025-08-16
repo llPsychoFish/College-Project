@@ -4,13 +4,13 @@
     margin: 8px;
     font-size: 15px;
     font-weight: 600;
-    border: 2px solid #2e8b57;
+    border: 2px solid #4682B4;
     border-radius: 25px;
     cursor: pointer;
-    background: linear-gradient(135deg, #ffffff, #f0fff0);
-    color: #2e8b57;
+    background: linear-gradient(135deg, #ffffff, #f8fcff);
+    color: #4682B4;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 4px 12px rgba(46, 139, 87, 0.2);
+    box-shadow: 0 4px 12px rgba(70, 130, 180, 0.2);
     text-transform: capitalize;
     min-width: 130px;
     position: relative;
@@ -33,16 +33,659 @@
 }
 
 .button:hover {
-    background: linear-gradient(135deg, #2e8b57, #228b22);
+    background: linear-gradient(135deg, #4682B4, #2F4F4F);
     color: white;
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.4);
-    border-color: #228b22;
+    box-shadow: 0 8px 20px rgba(70, 130, 180, 0.4);
+    border-color: #2F4F4F;
 }
 
 .button:active {
     transform: translateY(-2px) scale(0.98);
-    box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);
+    box-shadow: 0 4px 10px rgba(70, 130, 180, 0.3);
+}
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f3ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to left, #4682B4, #2F4F4F);
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+header h1::before {
+    content: "🐾 ";
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+header h1::after {
+    content: " 🦅";
+    font-size: 28px;
+    margin-left: 8px;
+}
+
+h1, h2, h3 {
+    margin: 8px 0;
+}
+
+/* Navigation Menu */
+.menu{
+    width: 100%;
+    height: 70px;
+    clear: both;
+    background-color: #2F4F4F;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 31px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #87CEEB;
+    opacity: 0.8;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4682B4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(70, 130, 180, 0.3);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to left, #4682B4, #2F4F4F);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+/* Main Content */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6;
+    height: auto;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.content h1 {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.content h1::before {
+    content: "🦅 ";
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.content .par {
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Read More/Read Less Button Styles */
+.read-more-toggle {
+    padding: 10px 20px;
+    margin: 15px auto;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #4682B4;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4682B4, #2F4F4F);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(70, 130, 180, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    text-align: center;
+}
+
+.read-more-toggle:hover {
+    background: linear-gradient(135deg, #4682B4, #2F4F4F);
+    opacity: 0.9;
+}
+
+.read-more-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(70, 130, 180, 0.2);
+}
+
+/* Read More Content Styles */
+.read-more {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-left: 4px solid #4682B4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    text-align: center;
+}
+
+.read-more p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Read More Block Styles */
+.readmore-block {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.readmore-block .read-more-toggle {
+    transition: all 0.3s ease;
+    transform: scale(1);
+    margin: 15px auto;
+    display: block;
+}
+
+.readmore-block .read-more-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Main Categories Section */
+.main-categories {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Button Styles */
+.category-btn {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+/* Birds of Prey Button - Sky/Predator Theme */
+.category-btn:nth-child(1) {
+    background: #FFD700;
+    border: 3px solid #FFD700;
+}
+
+.category-btn:nth-child(1):hover {
+    background: #B8860B;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(184, 134, 11, 0.4);
+}
+
+/* Waterfowl & Seabirds Button - Ocean Theme */
+.category-btn:nth-child(2) {
+    background: #87CEEB;
+    border: 3px solid #87CEEB;
+}
+
+.category-btn:nth-child(2):hover {
+    background: #4682B4;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(70, 130, 180, 0.4);
+}
+
+/* Songbirds & Forest Birds Button - Forest Theme */
+.category-btn:nth-child(3) {
+    background: #98FB98;
+    border: 3px solid #98FB98;
+}
+
+.category-btn:nth-child(3):hover {
+    background: #32CD32;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 205, 50, 0.4);
+}
+
+/* Active state for category buttons */
+.category-btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bird List Container */
+.bird-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Individual Category Section Styling */
+.bird-list .info-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #4682B4;
+    text-align: center;
+}
+
+.bird-list .info-section h2 {
+    color: #2F4F4F;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bird-list .info-section .par {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Animal Buttons Container */
+.animal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border: 2px dashed #4682B4;
+}
+
+/* Individual Animal Button Styling */
+.animal-buttons .button {
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #4682B4;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #4682B4;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(70, 130, 180, 0.2);
+    text-transform: capitalize;
+    min-width: 120px;
+}
+
+.animal-buttons .button:hover {
+    background: #4682B4;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(70, 130, 180, 0.4);
+}
+
+/* Back Button Styling */
+.back-btn {
+    padding: 12px 25px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #4682B4;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #4682B4;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(70, 130, 180, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-btn:hover {
+    background: #2F4F4F;
+    border-color: #2F4F4F;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(47, 79, 79, 0.4);
+}
+
+/* Individual Animal Info Section Styling */
+.info-section {
+    display: none;
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 32px;
+    animation: fadeIn 0.3s ease-in;
+    border-top: 4px solid #4682B4;
+    text-align: center;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Individual Animal Info Content Styling */
+.info-section img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 16px auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #e6f3ff;
+}
+
+.info-section h2 {
+    color: #2F4F4F;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4682B4;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #2F4F4F;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-left: 4px solid #4682B4;
+    padding-left: 12px;
+    background: linear-gradient(to right, #f0f8ff, transparent);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.info-section p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #444;
+    font-size: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section p:first-of-type {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #4682B4;
+    padding-left: 16px;
+    margin: 20px auto;
+    background: #f0f8ff;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 17px;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Scientific name and special text styling */
+.info-section p b {
+    color: #2F4F4F;
+    font-weight: 700;
+}
+
+/* Abbreviation styling */
+.info-section abbr {
+    background-color: #e6f3ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border-bottom: 1px dotted #4682B4;
+    font-weight: bold;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.info-section abbr:hover {
+    background-color: #4682B4;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Enhanced Back Button for Individual Animals */
+.info-section button {
+    background: linear-gradient(135deg, #4682B4, #2F4F4F);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 2px solid #4682B4;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(70, 130, 180, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 120px;
+}
+
+.info-section button::before {
+    content: "🦅 ";
+    margin-right: 5px;
+}
+
+.info-section button:hover {
+    background: linear-gradient(135deg, #2F4F4F, #1e3a3a);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(47, 79, 79, 0.4);
+    border-color: #2F4F4F;
+}
+
+/* Special styling for detailed animal sections */
+.info-section p br {
+    margin-bottom: 8px;
+}
+
+/* Highlight important facts */
+.info-section p b {
+    background: linear-gradient(120deg, #e6f3ff, #f0f8ff);
+    padding: 2px 4px;
+    border-radius: 3px;
+    border-left: 3px solid #4682B4;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+/* Individual Bird Button Emojis */
+/* Birds of Prey */
+button[onclick*="Eagle"]::before { content: "🦅 "; }
+button[onclick*="Falcon"]::before { content: "🦅 "; }
+button[onclick*="Owl"]::before { content: "🦉 "; }
+button[onclick*="Vulture"]::before { content: "🦅 "; }
+button[onclick*="Secretary_bird"]::before { content: "🦅 "; }
+
+/* Waterfowl & Seabirds */
+button[onclick*="Arctic_Tern"]::before { content: "🐦 "; }
+button[onclick*="Blue_Footed_Booby"]::before { content: "🐦 "; }
+button[onclick*="Grebe"]::before { content: "🦢 "; }
+button[onclick*="Ibis"]::before { content: "🐦 "; }
+button[onclick*="Jacana"]::before { content: "🐦 "; }
+button[onclick*="Puffin"]::before { content: "🐧 "; }
+button[onclick*="Zapata_Rail"]::before { content: "🐦 "; }
+
+/* Songbirds & Forest Birds */
+button[onclick*="Cassowary"]::before { content: "🐦 "; }
+button[onclick*="Drongo"]::before { content: "🐦 "; }
+button[onclick*="Hornbill"]::before { content: "🐦 "; }
+button[onclick*="Kiwi"]::before { content: "🥝 "; }
+button[onclick*="Lyre bird"]::before { content: "🐦 "; }
+button[onclick*="Macaw"]::before { content: "🦜 "; }
+button[onclick*="Nightingale"]::before { content: "🐦 "; }
+button[onclick*="Quetzal"]::before { content: "🐦 "; }
+button[onclick*="Roadrunner"]::before { content: "🐦 "; }
+button[onclick*="Toucan"]::before { content: "🦜 "; }
+button[onclick*="Uluguru_Bushshrike"]::before { content: "🐦 "; }
+button[onclick*="Wood_pecker"]::before { content: "🪶 "; }
+button[onclick*="Yellowhammer"]::before { content: "🐦 "; }
+
+/* Back Button Specific Styling */
+.back-btn::before { content: "🌿 "; }
+
+/* Animation for Emoji Hover Effects */
+button::before {
+    transition: transform 0.3s ease;
+}
+
+button:hover::before {
+    transform: scale(1.2) rotate(10deg);
+    animation: bounce 0.6s ease infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1.2) rotate(10deg) translateY(0); }
+    100% { transform: scale(1.2) rotate(10deg) translateY(-5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-btn {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        padding: 18px 25px;
+        font-size: 16px;
+    }
+    
+    .animal-buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .animal-buttons .button {
+        width: 85%;
+        margin: 8px 0;
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+    
+    .bird-list .info-section {
+        padding: 20px;
+        margin: 15px 10px;
+    }
+    
+    .info-section {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+    
+    .info-section img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .info-section h2 {
+        font-size: 24px;
+    }
+    
+    .info-section h3 {
+        font-size: 18px;
+    }
+    
+    .info-section p {
+        font-size: 15px;
+    }
 }
 
 /* Info Section Styles */
