@@ -126,16 +126,7 @@ ul li a:hover{
     max-width: 900px;
 }
 
-main {
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background-color: #fff;
-}
-
-.par, p, li {
+.par, li {
     color: #333;
     font-size: 1.1em;
     line-height: 1.6;
