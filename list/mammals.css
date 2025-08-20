@@ -73,7 +73,7 @@ ul li a{
 
 ul li a:hover{
     color: #FFD700;
-    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
 }
 
 .dropdown {
@@ -98,7 +98,7 @@ ul li a:hover{
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(0, 77, 51, 0.3);
+    background-color: #004d33;
 }
 
 .dropdown:hover .dropdown-content {

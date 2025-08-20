@@ -4,7 +4,7 @@
 
 ## 📋 Project Overview
 
-The Animal Atlas & Encyclopedia is an interactive web application that serves as a comprehensive resource for wildlife education and conservation awareness. This project provides detailed information about various animal species, their habitats, conservation status, and includes engaging features like quizzes and blogs.
+The Animal Atlas & Encyclopedia is an interactive web application that serves as a comprehensive resource for wildlife education and conservation awareness. This project provides detailed information about various animal species, their habitats, conservation status, and includes engaging features like quizzes, blogs, and educational resources.
 
 ## 🎓 Academic Information
 
@@ -34,11 +34,12 @@ The Animal Atlas & Encyclopedia is an interactive web application that serves as
    - 🧬 Hybrid animals and cloning information
    - ⚠️ Wildlife threats and conservation efforts
    - 🌍 Global conservation initiatives
+   - 💰 Donation system for conservation support
 
 4. **Interactive Resources**
-   - 🎯 **Fun Quiz** - Test your wildlife knowledge
+   - 🎯 **Fun Quiz** - Test your wildlife knowledge with interactive questions
    - 📚 **Facts & Jokes** - Educational content with entertainment
-   - 📝 **Blog** - Articles and wildlife stories
+   - 📝 **Blog** - Articles and wildlife stories covering various topics
 
 ### 🔧 Technical Features
 
@@ -48,6 +49,8 @@ The Animal Atlas & Encyclopedia is an interactive web application that serves as
 - **Search Functionality** - Find specific animals and information
 - **Database Integration** - MySQL database for dynamic content
 - **Read More/Less** - Expandable content sections
+- **Mobile Navigation** - Hamburger menu for mobile devices
+- **Dynamic Content** - PHP-generated content with database integration
 
 ## 🛠️ Technology Stack
 
@@ -63,37 +66,82 @@ The Animal Atlas & Encyclopedia is an interactive web application that serves as
 ### Assets
 - **Images** - High-quality wildlife and habitat photographs
 - **Icons** - Custom and web icons for navigation and content
+- **Videos** - Educational wildlife content
 
 ## 📁 Project Structure
 
 ```
 College-Project/
-├── 📄 index.php                 # Main homepage
-├── 📄 conservation.html         # Conservation information page
-├── 📄 search.php               # Search functionality
-├── 📄 dbh.php                  # Database connection handler
-├── 📁 list/                    # Animal categories
-│   ├── 📄 mammals.html
-│   ├── 📄 birds.php
-│   ├── 📄 reptiles.html
-│   ├── 📄 fish.html
-│   └── 📁 list_image/         # Animal images
-├── 📁 habitat/                 # Habitat sections
-│   ├── 📄 ocean.php
-│   ├── 📄 desert.html
-│   ├── 📄 tropics.php
-│   ├── 📄 arctic.html
-│   └── 📁 habitat_images/     # Habitat images
-├── 📁 resources/               # Educational resources
-│   ├── 📄 quiz.html
-│   ├── 📄 facts-jokes.html
-│   └── 📄 quiz.js
-├── 📁 blogfiles/               # Blog articles
-│   ├── 📄 blog2.html
-│   └── 📁 images/             # Blog images
-├── 📁 gallery/                 # Media gallery
-├── 📁 images/                  # General site images
-└── 📁 animal_site/             # Database files
+├── 📄 index.php                 # Main homepage with navigation
+├── 📄 search.php                # Search functionality
+├── 📄 dbh.php                   # Database connection handler
+├── 📄 script.js                 # Main JavaScript functionality
+├── 📄 style.css                 # Main stylesheet
+├── 📁 list/                     # Animal categories
+│   ├── 📄 mammals.html         # Mammals information
+│   ├── 📄 bird.php             # Birds information
+│   ├── 📄 reptiles.html        # Reptiles & amphibians
+│   ├── 📄 fish.html            # Sea creatures
+│   ├── 📄 list.js              # List functionality
+│   └── 📁 list_image/          # Animal category images
+├── 📁 habitat/                  # Habitat sections
+│   ├── 📄 ocean.php            # Ocean habitats
+│   ├── 📄 desert.html          # Desert environments
+│   ├── 📄 tropics.php          # Forest/tropical habitats
+│   ├── 📄 arctic.html          # Arctic/polar regions
+│   ├── 📄 artic.css            # Arctic styling
+│   ├── 📄 artic.js             # Arctic interactions
+│   ├── 📄 desert.css           # Desert styling
+│   ├── 📄 desert.js            # Desert interactions
+│   ├── 📄 ocean.css            # Ocean styling
+│   ├── 📄 ocean.js             # Ocean interactions
+│   ├── 📄 tropics.css          # Tropical styling
+│   ├── 📄 tropics.js           # Tropical interactions
+│   └── 📁 habitat_images/      # Habitat images
+├── 📁 resources/                # Educational resources
+│   ├── 📄 quiz.html            # Interactive quiz
+│   ├── 📄 quiz.js              # Quiz functionality
+│   ├── 📄 quiz.css             # Quiz styling
+│   ├── 📄 facts-jokes.html     # Facts and jokes
+│   └── 📄 facts.css            # Facts styling
+├── 📁 blogfiles/                # Blog articles
+│   ├── 📄 blog2.html           # Main blog page
+│   ├── 📄 blog2 style.css      # Blog styling
+│   ├── 📄 fastest animals.php  # Fastest animals article
+│   ├── 📄 fast.css             # Fast animals styling
+│   ├── 📄 weired animals.php   # Weird animals article
+│   ├── 📄 weired.css           # Weird animals styling
+│   ├── 📄 cute.php             # Cute but dangerous animals
+│   ├── 📄 cute.css             # Cute animals styling
+│   ├── 📄 wild.php             # Wild cousins of pets
+│   ├── 📄 wild.css             # Wild animals styling
+│   ├── 📄 animal superpowers.html
+│   ├── 📄 animals from every continent.html
+│   ├── 📄 Canivore omnivore.html
+│   ├── 📄 Elephants and other smart animals .html
+│   ├── 📄 Mythical creatures .html
+│   ├── 📄 Ocean odditties.html
+│   ├── 📄 Rainforest rumble.html
+│   └── 📁 images/              # Blog images
+├── 📁 conserve/                 # Conservation section
+│   ├── 📄 conservation.html    # Conservation information
+│   ├── 📄 conservation.css     # Conservation styling
+│   ├── 📄 conservation.js      # Conservation interactions
+│   ├── 📄 donate.php           # Donation system
+│   ├── 📄 donate.css           # Donation styling
+│   └── 📄 process_donation.php # Donation processing
+├── 📁 gallery/                  # Media gallery
+├── 📁 images/                   # General site images
+└── 📁 animal_site/              # Database files
+    ├── 📄 birds.frm            # Birds table structure
+    ├── 📄 birds.ibd            # Birds table data
+    ├── 📄 blogs.frm            # Blogs table structure
+    ├── 📄 blogs.ibd            # Blogs table data
+    ├── 📄 donations.frm        # Donations table structure
+    ├── 📄 donations.ibd        # Donations table data
+    ├── 📄 habitat.frm          # Habitat table structure
+    ├── 📄 habitat.ibd          # Habitat table data
+    └── 📄 db.opt               # Database options
 ```
 
 ## 🚀 Getting Started
@@ -108,7 +156,7 @@ College-Project/
 
 1. **Clone the repository**
    ```bash
-   git clone ["https://github.com/llPsychoFish/College-Project.git"]
+   git clone https://github.com/llPsychoFish/College-Project.git
    cd College-Project
    ```
 
@@ -132,14 +180,29 @@ College-Project/
 - Conservation status indicators
 
 ### Interactive Learning
-- Knowledge-testing quizzes with scoring
+- Knowledge-testing quizzes with scoring system
 - Educational facts and trivia
 - Engaging blog content about wildlife
+- Interactive habitat exploration
 
 ### Conservation Awareness
-- Information about endangered species
+- Information about endangered and extinct species
 - Threats to wildlife and ecosystems
 - Conservation success stories and efforts
+- Donation system for conservation support
+
+### Blog Content
+- Fastest animals in the world
+- Weirdest animals you've never heard of
+- Cute but dangerous baby animals
+- Wild cousins of domestic pets
+- Animal superpowers and abilities
+- Animals from every continent
+- Carnivore vs omnivore information
+- Elephants and other intelligent animals
+- Mythical creatures
+- Ocean oddities
+- Rainforest biodiversity
 
 ## 👥 Group 6A Members
 
@@ -154,6 +217,10 @@ College-Project/
 - **Aderkotey Foster** - Blog Creator
   - Developed and authored the blog section
   - Curated wildlife stories and articles
+- **Michelle Baffoe** - Habitat Specialist & UI/UX Designer
+  - Developed and designed habitat exploration sections
+  - Designed user interface and user experience for habitat pages
+  - Implemented responsive design and interactive elements
 
 ## 🤝 Contributing
 

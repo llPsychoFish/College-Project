@@ -32,7 +32,7 @@
           <div class="dropdown-content">
             <a href="../list/mammals.html">MAMMALS</a>
             <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
-            <a href="../list/bird.html">BIRDS</a>
+            <a href="../list/bird.php">BIRDS</a>
             <a href="../list/fish.html">SEA CREATURES</a>
           </div>
         </li>
@@ -42,7 +42,7 @@
           <div class="dropdown-content">
             <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/tropics.php">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
@@ -62,8 +62,8 @@
         <li><a href="../list/mammals.html">MAMMALS</a></li>
         <li><a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a></li>
         <li><a href="../list/bird.php">BIRDS</a></li>
-        <li><a href="../list/fish.html">SEA CREATURES</a></li>
-        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li><a href="../list/fish.php">SEA CREATURES</a></li>
+        <li><a href="../conserve/conservation.html">CONSERVATION</a></li>
         <li><a href="../habitat/ocean.php">OCEAN</a></li>
         <li><a href="../habitat/desert.html">DESERT</a></li>
         <li><a href="../habitat/tropics.php">FOREST</a></li>
@@ -100,7 +100,7 @@
         incredible creatures that call Earth home.
       </p>
       <p><strong>Explore, Learn, and Be Inspired!</strong></p>
-      <a href="list/bird.html" class="cn">Explore Our Animals</a>
+      <a href="list/bird.php" class="cn">Explore Our Animals</a>
     </div>
 
     <main>
@@ -110,7 +110,7 @@
         <div class="animal-cards">
           <!-- Animal Card -->
           <div class="card">
-            <img src="images/dingo.jpg" alt="Dingo"/>
+            <a href="../list/mammals.html"><img src="images/dingo.jpg" alt="Dingo"/></a>
             <h3>Dingo (Animal of the Week)</h3>
             <p class="des1 card-desc">
               Dingoes are highly adaptable and can thrive in various
@@ -119,10 +119,7 @@
           </div>
           <!-- Habitat Card -->
           <div class="card">
-            <img
-              src="images/tropical_rainforest.jpg"
-              alt="Tropical Rainforest"
-            />
+            <a href="../habitat/tropics.php"><img src="images/tropical_rainforest.jpg" alt="Tropical Rainforest"/></a>
             <h3>Tropical Rainforest (Weekly Habitat)</h3>
             <p class="des2 card-desc">
               Tropical rainforests are dense, warm, and wet forests that are

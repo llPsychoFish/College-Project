@@ -716,14 +716,13 @@ body {
 }
 
 header {
-    background: linear-gradient(to left, #2e8b57, #228b22);
+    background: linear-gradient(to left, #00B050, #00704A);
     color: white;
     text-align: center;
     padding: 16px;
 }
 
 header h1::before {
-    content: "🐾 ";
     font-size: 28px;
     margin-right: 8px;
 }
@@ -769,8 +768,8 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #90EE90;
-    text-shadow: 0 0 5px rgba(144, 238, 144, 0.6);
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
 }
 
 .dropdown {
@@ -795,7 +794,7 @@ ul li a:hover{
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(46, 139, 87, 0.3);
+    background-color: #004d33;
 }
 
 .dropdown:hover .dropdown-content {
@@ -808,7 +807,7 @@ h1{
 
 /* Enhanced Footer */
 footer {
-    background: linear-gradient(to left, #2e8b57, #228b22);
+    background: linear-gradient(to left, #00B050, #00704A);
     color: white;
     text-align: center;
     padding: 16px;
