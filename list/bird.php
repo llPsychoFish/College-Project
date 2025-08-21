@@ -18,24 +18,24 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../index.php">HOME</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">ANIMAL LIST</a>
           <div class="dropdown-content">
             <a href="../list/mammals.html">MAMMALS</a>
             <a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a>
-            <a href="../list/birds.html">BIRDS</a>
+            <a href="../list/birds.php">BIRDS</a>
             <a href="../list/fish.html">SEA CREATURES</a>
           </div>
         </li>
 
-        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li><a href="../conserve/conservation.html">CONSERVATION</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">HABITAT</a>
           <div class="dropdown-content">
-            <a href="../habitat/ocean.html">OCEAN</a>
+            <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/tropics.php">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
@@ -73,7 +73,28 @@
           traveling long distances between breeding and wintering grounds. This
           migration is often triggered by changes in daylight, temperature, and
           food availability. Some birds, like the Arctic Tern, undertake the longest
-          migrations of any animal, traveling thousands of miles each year.
+          migrations of any animal, traveling thousands of miles each year.<br><br>
+          
+          Birds exhibit incredible diversity in size, from the tiny bee hummingbird
+          weighing less than 2 grams to the massive ostrich standing over 9 feet tall.
+          Their respiratory system is uniquely efficient, featuring air sacs that allow
+          for a continuous flow of oxygen during both inhalation and exhalation, enabling
+          sustained flight at high altitudes.<br><br>
+          
+          Many birds display remarkable intelligence, with species like crows and parrots
+          demonstrating problem-solving abilities, tool use, and complex social behaviors.
+          Some birds, such as the Clark's nutcracker, can remember thousands of hiding
+          places where they've cached seeds for winter survival.<br><br>
+          
+          Bird communication is equally fascinating, ranging from simple calls to complex
+          songs that can convey territory boundaries, mating availability, and danger
+          warnings. Many songbirds learn their melodies from their parents and can even
+          develop regional dialects within species.<br><br>
+          
+          Ecologically, birds serve vital roles as pollinators, seed dispersers, and
+          pest controllers. They help maintain ecosystem balance by controlling insect
+          populations and spreading plant species across vast distances through their
+          migrations and feeding habits.
           </p>
         </div>
       </div>
@@ -83,7 +104,122 @@
 
     </div>
 
-    <main>
+    <div class="bird-list">
+      <!-- Birds of Prey (Raptors) Section -->
+      <div id="birds-of-prey" class="info-section">
+        <h2>🦅 Birds of Prey (Raptors)</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Birds of prey, also known as raptors, are carnivorous birds that hunt and feed on other animals. They are characterized by their sharp talons, hooked beaks, and exceptional eyesight. These powerful hunters play crucial roles as apex predators in their ecosystems, helping to maintain balance by controlling prey populations.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Raptors are among the most formidable hunters in the avian world, equipped with specialized adaptations that make them efficient predators. Their keen eyesight, often 4-8 times sharper than humans, allows them to spot prey from great distances. Their powerful talons can exert tremendous pressure to capture and kill prey, while their hooked beaks are perfectly designed for tearing flesh.<br><br>
+
+            These birds employ various hunting strategies, from the high-speed dives of falcons reaching over 240 mph, to the silent flight of owls that hunt under cover of darkness. Many raptors are territorial and solitary, coming together only during breeding season to perform elaborate courtship displays.<br><br>
+
+            Ecologically, birds of prey serve as indicator species for ecosystem health. Their position at the top of the food chain means they're particularly vulnerable to environmental changes and pollution, making their populations important indicators of overall environmental quality.<br><br>
+
+            Most raptors are monogamous and build large nests called eyries, which they often reuse for many years. Their parenting involves both adults sharing duties in incubation, feeding, and protecting their young until they're ready to hunt independently.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Eagle')">Eagle</button>
+          <button class="button" onclick="showInfo('Falcon')">Falcon</button>
+          <button class="button" onclick="showInfo('Owl')">Owl</button>
+          <button class="button" onclick="showInfo('Vulture')">Vulture</button>
+          <button class="button" onclick="showInfo('Secretary_bird')">Secretary Bird</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('birds-of-prey')">← Back</button>
+      </div>
+
+      <!-- Waterfowl & Seabirds Section -->
+      <div id="waterfowl-seabirds" class="info-section">
+        <h2>🌊 Waterfowl & Seabirds</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Waterfowl and seabirds are specially adapted for life in and around aquatic environments. These birds have evolved unique features such as waterproof feathers, webbed feet, and specialized bills for different feeding strategies. They play vital roles in aquatic ecosystems and often undertake remarkable migrations across oceans and continents.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Waterfowl and seabirds represent some of the most specialized avian adaptations to aquatic life. Their waterproof plumage is maintained through preening with oils from special glands, allowing them to stay dry and warm even in harsh marine conditions. Many have webbed feet for efficient swimming and diving, while others have developed unique feeding mechanisms like the pelican's expandable throat pouch.<br><br>
+
+            These birds are often master navigators, capable of incredible long-distance migrations. The Arctic Tern holds the record for the longest migration of any animal, traveling roughly 44,000 miles annually from Arctic to Antarctic and back. They use various navigation methods including celestial cues, magnetic fields, and geographical landmarks.<br><br>
+
+            Feeding strategies among waterfowl and seabirds are incredibly diverse. Some are surface feeders, others are pursuit divers that can reach depths of over 500 feet, while still others are filter feeders that strain small organisms from water. Many species form large colonies during breeding season, creating some of the most spectacular wildlife gatherings on Earth.<br><br>
+
+            These birds face unique challenges from marine pollution, overfishing, and climate change affecting their food sources. Many species serve as important indicators of ocean health, making their conservation crucial for marine ecosystem monitoring.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Arctic_Tern')">Arctic Tern</button>
+          <button class="button" onclick="showInfo('Blue_Footed_Booby')">Blue-Footed Booby</button>
+          <button class="button" onclick="showInfo('Grebe')">Grebe</button>
+          <button class="button" onclick="showInfo('Ibis')">Ibis</button>
+          <button class="button" onclick="showInfo('Jacana')">Jacana</button>
+          <button class="button" onclick="showInfo('Puffin')">Puffin</button>
+          <button class="button" onclick="showInfo('Zapata_Rail')">Zapata Rail</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('waterfowl-seabirds')">← Back</button>
+      </div>
+
+      <!-- Songbirds & Forest Birds Section -->
+      <div id="songbirds-forest" class="info-section">
+        <h2>🎵 Songbirds & Forest Birds</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Songbirds and forest birds represent the most diverse group of birds, including melodious singers, colorful tropical species, and specialized forest dwellers. These birds are known for their complex vocalizations, vibrant plumage, and varied ecological roles from seed dispersal to insect control. They showcase incredible diversity in size, behavior, and adaptations.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+            Songbirds and forest birds encompass an extraordinary variety of species, from tiny hummingbirds to large flightless birds like the cassowary. Many are renowned for their vocal abilities, with some species capable of learning and mimicking hundreds of different sounds. Their songs serve multiple purposes: attracting mates, defending territory, and communicating with family groups.<br><br>
+
+            Forest birds have evolved remarkable adaptations to their arboreal lifestyle. Many have strong, curved claws for gripping branches, while others like woodpeckers have specialized bills and shock-absorbing skulls for extracting insects from tree bark. Tropical species often display brilliant colors that serve as camouflage among bright flowers and foliage or as signals for species recognition.<br><br>
+
+            These birds play crucial ecological roles as pollinators, seed dispersers, and pest controllers. Hummingbirds and sunbirds are important pollinators for many flowering plants, while frugivorous birds like toucans and hornbills help maintain forest diversity by dispersing seeds across large distances. Insectivorous species provide natural pest control, consuming vast quantities of insects daily.<br><br>
+
+            Many songbirds and forest birds are highly intelligent, displaying complex social behaviors, tool use, and problem-solving abilities. Some species, like corvids and parrots, demonstrate cognitive abilities comparable to young children, including self-recognition, planning for future events, and understanding cause-and-effect relationships.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Cassowary')">Cassowary</button>
+          <button class="button" onclick="showInfo('Drongo')">Drongo</button>
+          <button class="button" onclick="showInfo('Hornbill')">Hornbill</button>
+          <button class="button" onclick="showInfo('Kiwi')">Kiwi</button>
+          <button class="button" onclick="showInfo('Lyre bird')">Lyre Bird</button>
+          <button class="button" onclick="showInfo('Macaw')">Macaw</button>
+          <button class="button" onclick="showInfo('Nightingale')">Nightingale</button>
+          <button class="button" onclick="showInfo('Quetzal')">Quetzal</button>
+          <button class="button" onclick="showInfo('Roadrunner')">Roadrunner</button>
+          <button class="button" onclick="showInfo('Toucan')">Toucan</button>
+          <button class="button" onclick="showInfo('Uluguru_Bushshrike')">Uluguru Bushshrike</button>
+          <button class="button" onclick="showInfo('Wood_pecker')">Woodpecker</button>
+          <button class="button" onclick="showInfo('Yellowhammer')">Yellowhammer</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('songbirds-forest')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Main Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('birds-of-prey')">🦅 Birds of Prey (Raptors)</button>
+      <button class="category-btn" onclick="showInfo('waterfowl-seabirds')">🌊 Waterfowl & Seabirds</button>
+      <button class="category-btn" onclick="showInfo('songbirds-forest')">🎵 Songbirds & Forest Birds</button>
+    </div>
+
+    <main style="display: none;">
       <button class="button" onclick="showInfo('Arctic_Tern')">
         Arctic Tern
       </button>

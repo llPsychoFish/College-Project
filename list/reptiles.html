@@ -14,13 +14,13 @@
     
   <nav class="menu">
     <ul>
-      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../index.php">HOME</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">ANIMAL LIST</a>
           <div class="dropdown-content">
             <a href="mammals.html">MAMMALS</a>
             <a href="reptiles.html">REPTILES & AMPHIBIANS</a>
-            <a href="bird.html">BIRDS</a>
+            <a href="bird.php">BIRDS</a>
             <a href="fish.html">SEA CREATURES</a>
           </div>
         </li>
@@ -28,9 +28,9 @@
         <li class="dropdown">
           <a href="#" class="dropbtn">HABITAT</a>
           <div class="dropdown-content">
-            <a href="../habitat/ocean.html">OCEAN</a>
+            <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/tropics.php">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
@@ -44,9 +44,9 @@
         <li><a href="../blogfiles/blog2.html">BLOG</a></li>
       </ul>
     </nav>
-    <main>
-      <div class="rept-content">
-        <h1>Reptiles</h1>
+    <div class="content">
+      <h1>Reptiles & Amphibians</h1>
+      <div class="readmore-block">
         <p class="par">
           Reptiles are cold-blooded vertebrates that have scales or scutes covering their skin. 
           They breathe air through lungs and most lay eggs on land, though some give birth to live young. 
@@ -55,35 +55,63 @@
           adapted to live in various environments including deserts, forests, oceans, and freshwater 
           habitats. Many reptiles are excellent predators with specialized hunting techniques.
         </p>
+        <button class="read-more-toggle">Read More</button>
+        <div class="read-more">
+          <p>
+            Reptiles represent one of the most ancient and successful vertebrate groups on Earth, with a fossil record dating back over 300 million years. This class includes approximately 10,000 known species divided into four major groups: lizards and snakes (Squamata), turtles and tortoises (Testudines), crocodilians (Crocodilia), and the tuatara (Rhynchocephalia).<br><br>
+            
+            The key adaptations that allowed reptiles to colonize terrestrial environments include waterproof skin covered in scales or scutes, efficient kidneys that conserve water, and the amniotic egg with a protective shell. Unlike amphibians, reptiles are not dependent on water for reproduction, allowing them to thrive in arid environments.<br><br>
+            
+            Reptilian diversity is remarkable - from the smallest gecko measuring just 16mm to massive saltwater crocodiles exceeding 6 meters in length. Their feeding strategies range from herbivorous iguanas and tortoises to apex predators like Komodo dragons and venomous snakes with sophisticated venom delivery systems.<br><br>
+            
+            Ecologically, reptiles serve crucial roles as both predators and prey. Many species are important pest controllers, with some snakes and lizards consuming large quantities of rodents and insects. Others, like marine iguanas and some tortoises, are primary herbivores that shape plant communities through their grazing patterns.<br><br>
+            
+            Modern reptiles face significant conservation challenges, with habitat destruction, climate change, and human persecution threatening many species. However, their remarkable adaptability and efficient metabolism continue to make them successful in environments where other vertebrates struggle to survive.
+          </p>
+          <button class="read-more-toggle">Read Less</button>
+        </div>
       </div>
+    </div>
 
-      <div class="rept-list">
-        <div class="reptiles">
-          <button class="button" onclick="showInfo('lizard-list')">Lizards</button>
-          <button class="button" onclick="showInfo('snake-list')">Snakes</button>
-          <button class="button" onclick="showInfo('tortoise-list')">Tortoises</button>
-
-          <div id="lizard-list" class="info-section">
-            <h2>Lizards</h2>
-                <p>
-                Lizards are a diverse group of reptiles found on every continent except Antarctica..<br/>
-                 They range in size from tiny geckos to large monitors and display a wide variety of colors, shapes, and behaviors. .<br/>
-                 Most lizards have four legs, external ear openings, and movable eyelids. .<br/>
-                 They are primarily carnivorous or insectivorous, though some species eat plants..<br/>
-                  Lizards are known for their ability to shed their tails to escape predators and for their adaptability to many habitats, including deserts, forests, and urban areas.
-                </p>
-              <button class="button" onclick="showInfo('Iguana')">Iguana</button>
-              <button class="button" onclick="showInfo('Chameleon')">Chameleon</button>
-              <button class="button" onclick="showInfo('Gecko')">Gecko</button>
-              <button class="button" onclick="showInfo('Skink')">Skink</button>
-              <button class="button" onclick="showInfo('Tegu')">Tegu</button>
-              <button class="button" onclick="showInfo('Whiptail')">Whiptail</button>
-              <button class="button" onclick="showInfo('Monitor')">Monitor</button>
-              <button class="button" onclick="showInfo('Gila monster')">Gila monster</button>
-              <button class="button" onclick="showInfo('Komondo Dragon')"> Komondo Dragon</button>
-              <button class="button" onclick="showInfo('Legless lizard')">Legless lizard</button>
-              <button onclick="hideInfo('lizard-list')">← Back</button>
-            </div>
+    <div class="reptile-list">
+      <!-- Lizards Section -->
+      <div id="lizard-list" class="info-section">
+        <h2>🦎 Lizards</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Lizards are a diverse group of reptiles found on every continent except Antarctica. They range in size from tiny geckos to large monitors and display a wide variety of colors, shapes, and behaviors. Most lizards have four legs, external ear openings, and movable eyelids. They are primarily carnivorous or insectivorous, though some species eat plants. Lizards are known for their ability to shed their tails to escape predators and for their adaptability to many habitats.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Lizards belong to the order Squamata, which they share with snakes, making them one of the most successful reptile groups on Earth. With over 6,000 known species, lizards exhibit remarkable diversity in size, habitat, and behavior. The smallest lizard, the dwarf gecko, measures just 16mm in length, while the largest, the Komodo dragon, can reach over 3 meters and weigh up to 70kg.<br><br>
+              
+              Lizards have evolved numerous fascinating adaptations for survival. Many species can change color for camouflage, communication, or temperature regulation. Some, like chameleons, have independently moving eyes and projectile tongues that can extend twice their body length. Geckos have specialized toe pads with millions of tiny hairs called setae that allow them to walk on any surface, including glass.<br><br>
+              
+              Most lizards are ectothermic, relying on external heat sources to regulate body temperature through behavioral thermoregulation - basking in the sun to warm up and seeking shade to cool down. This energy-efficient strategy allows them to survive in harsh environments where mammals might struggle.<br><br>
+              
+              Reproduction varies greatly among lizard species. While most lay eggs (oviparous), some give birth to live young (viviparous), and others retain eggs until hatching (ovoviviparous). Some species, like certain whiptail lizards, can reproduce through parthenogenesis, creating genetic clones without mating.<br><br>
+              
+              Ecologically, lizards serve crucial roles as both predators and prey. They help control insect populations, disperse seeds, and provide food for birds, mammals, and other reptiles. Many species are excellent indicators of ecosystem health due to their sensitivity to environmental changes.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Iguana')">Iguana</button>
+          <button class="button" onclick="showInfo('Chameleon')">Chameleon</button>
+          <button class="button" onclick="showInfo('Gecko')">Gecko</button>
+          <button class="button" onclick="showInfo('Skink')">Skink</button>
+          <button class="button" onclick="showInfo('Tegu')">Tegu</button>
+          <button class="button" onclick="showInfo('Whiptail')">Whiptail</button>
+          <button class="button" onclick="showInfo('Monitor Lizards')">Monitor Lizards</button>
+          <button class="button" onclick="showInfo('Gila Monster')">Gila Monster</button>
+          <button class="button" onclick="showInfo('Komodo Dragon')">Komodo Dragon</button>
+          <button class="button" onclick="showInfo('Legless lizard')">Legless Lizard</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('lizard-list')">← Back</button>
+      </div>
             
             <div id="Iguana" class="info-section">
               <h2>Iguana</h2>
@@ -154,7 +182,7 @@
                      Their ability to regenerate lost tails is a defense mechanism against predators, allowing them to escape while the predator is distracted by the detached tail.
                 </p>
 
-              <button onclick="hideInfo('Iguana')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Iguana')">← Back</button>
             </div>
             <div id="Chameleon" class="info-section">
               <h2>Chameleon</h2>
@@ -229,7 +257,7 @@
                 </p>
 
 
-              <button onclick="hideInfo('Chameleon')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Chameleon')">← Back</button>
             </div><div id="Gecko" class="info-section">
               <h2>Gecko</h2>
               <img src="list_image/Leopard-Gecko_HERO.jpg" alt="Gecko" />
@@ -300,7 +328,7 @@
                      In some cultures, geckos are considered symbols of good luck and are welcomed in homes for their pest-control abilities.
                 </p>
 
-              <button onclick="hideInfo('Gecko')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Gecko')">← Back</button>
             </div>
             <div id="Skink" class="info-section">
               <h2>Skink</h2>
@@ -332,7 +360,7 @@
               <p>
                 Skinks are characterized by their elongated bodies, smooth scales, and reduced or absent limbs.<br/>
                 They have small, bead-like scales that give them a shiny appearance.<br/>
-                Skinks vary in size from small species measuring just a few inches to larger species that can grow up to 3 feet (1 meter) in length.<br/>
+                Skinks
                 Their coloration can range from brown and gray to vibrant blues, greens, and reds, depending on the species.
               </p>
               <h3>Feeding Habits</h3>
@@ -378,7 +406,7 @@
               
 
 
-              <button onclick="hideInfo('Skink')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Skink')">← Back</button>
             </div>
             <div id="Tegu" class="info-section">
               <h2>Tegu</h2>
@@ -450,7 +478,7 @@
                 </p>
 
 
-              <button onclick="hideInfo('Tegu')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Tegu')">← Back</button>
             </div>
             <div id="Whiptail" class="info-section">
               <h2>Whiptail</h2>
@@ -523,7 +551,7 @@
                   In some regions, whiptails are considered indicators of healthy ecosystems due to their sensitivity to environmental changes.
                 </p>
 
-              <button onclick="hideInfo('Whiptail')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Whiptail')">← Back</button>
             </div>
             <div id="Monitor Lizards" class="info-section">
               <h2>Monitor Lizards</h2>
@@ -597,7 +625,7 @@ most well-known including:<br/>
             </p>
 
 
-              <button onclick="hideInfo('Monitor Lizards')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Monitor Lizards')">← Back</button>
             </div>
 
             <div id="Gila Monster" class="info-section">
@@ -656,7 +684,7 @@ most well-known including:<br/>
               </p>
 
 
-              <button onclick="hideInfo('Gila Monster')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Gila Monster')">← Back</button>
             </div>
             <div id="Komodo Dragon" class="info-section">
               <h2>Komodo Dragon</h2>
@@ -674,6 +702,7 @@ most well-known including:<br/>
               <h3>Physical Characteristics</h3>
               <p>
                 Komodo dragons are massive lizards that can grow up to 10 feet (3 meters) in length and weigh over 300 pounds (136 kg).<br/>
+  
                 They have a robust build, with a broad head, powerful limbs, and a long, muscular tail.<br/>
                 Their skin is covered in tough, scaly armor that provides protection against predators and environmental conditions.<br/>
                 Komodo dragons have sharp claws and serrated teeth that help them tear into prey.
@@ -714,7 +743,7 @@ most well-known including:<br/>
               </p>
 
 
-              <button onclick="hideInfo('Komodo Dragon')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Komodo Dragon')">← Back</button>
             </div>
             <div id="Legless lizard" class="info-section">
               <h2>Legless lizard</h2>
@@ -764,7 +793,7 @@ most well-known including:<br/>
               <h3>Breeding and Parenting</h3>
               <p>
                 Legless lizards are oviparous, meaning they lay eggs rather than giving birth to live young.<br/>
-                During the breeding season, males engage in courtship displays to attract females. After mating, females lay their eggs in sandy or loose soil, where they incubate until hatching. The young lizards are independent from birth and receive no parental care.
+                During the breeding season, males engage in courtship displays to attract females. After mating, females lay their eggs in sandy or loose soil, where they incubate until hatching. The young lizards are independent from birth and face many threats from predators and harsh conditions.
                 Incubation periods vary by species, usually lasting from several weeks to a few months.<br/>
                 Hatchlings are independent from birth and must find food and shelter immediately.
                 <h3>Niche and Ecological Role</h3>
@@ -781,35 +810,53 @@ most well-known including:<br/>
                 </p>
                 
 
-              <button onclick="hideInfo('Legless lizard')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Legless lizard')">← Back</button>
             </div>
 
 
-            <div id="snake-list" class="info-section">
-              <h2>Snakes</h2>
-              <p>
-                Snakes are elongated, legless reptiles found on every continent except Antarctica. .<br/>
-                They have flexible bodies covered in scales and move by slithering. .<br/>
-                Most snakes are carnivorous, feeding on small animals, birds, or eggs. .<br/>
-                Some species are venomous, using their venom to subdue prey or defend themselves, while others constrict their prey. .<br/>
-                Snakes play important roles in ecosystems as both predators and prey, and they inhabit a wide range of environments, from forests and deserts to wetlands and grasslands.
-              </p>
-                <button class="button" onclick="showInfo('Python')">Python</button>
-                <button class="button" onclick="showInfo('Cobra')">Cobra</button>
-                <button class="button" onclick="showInfo('Boa')">Boa</button>
-                <button class="button" onclick="showInfo('Anaconda')">Anaconda</button>
-                <button class="button" onclick="showInfo('Kingsnake')">Kingsnake</button>
-                <button class="button" onclick="showInfo('Milksnake')">Milksnake</button>
-                <button class="button" onclick="showInfo('Viper')">Viper</button>
-                <button class="button" onclick="showInfo('Mamba')">Mamba</button>
-                <button class="button" onclick="showInfo('Coralsnakes')">Coralsnakes</button>
-                <button class="button" onclick="showInfo('Krait')">Krait</button>
-                <button class="button" onclick="showInfo('Garter')">Garter</button>
-                <button class="button" onclick="showInfo('GreenSnake')">Green Snake</button>
-                <button class="button" onclick="showInfo('BlindSnake')">Blind Snake</button>
-                <button class="button" onclick="showInfo('ThreadSnake')">Thread Snake</button>
-                <button class="button" onclick="showInfo('Rattle Snake')">Rattle Snake</button>
-              <button onclick="hideInfo('snake-list')">← Back</button>
+      <!-- Snakes Section -->
+      <div id="snake-list" class="info-section">
+        <h2>🐍 Snakes</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Snakes are elongated, legless reptiles found on every continent except Antarctica. They have flexible bodies covered in scales and move by slithering. Most snakes are carnivorous, feeding on small animals, birds, or eggs. Some species are venomous, using their venom to subdue prey or defend themselves, while others constrict their prey. Snakes play important roles in ecosystems as both predators and prey, and they inhabit a wide range of environments.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Snakes represent one of the most specialized groups of reptiles, having evolved from lizard ancestors around 150 million years ago. With over 3,000 species worldwide, they exhibit remarkable diversity in size, habitat, and hunting strategies. The smallest snake, the thread snake, measures just 10cm in length, while the largest pythons and anacondas can exceed 8 meters.<br><br>
+              
+              The evolution of snakes involved the loss of limbs and the development of a highly flexible skull that allows them to swallow prey much larger than their head diameter. Their forked tongues work in conjunction with the Jacobson's organ to "taste" chemical signals in the environment, providing exceptional tracking abilities.<br><br>
+              
+              Snake locomotion is achieved through four main methods: lateral undulation (side-to-side movement), rectilinear motion (straight-line movement), concertina locomotion (accordion-like movement), and sidewinding (used in sandy environments). Each method is adapted to different terrains and hunting strategies.<br><br>
+              
+              Venomous snakes have evolved sophisticated venom delivery systems with fangs that can be fixed, rear-fanged, or retractable. Snake venoms are complex cocktails of proteins and enzymes that can affect the nervous system, blood clotting, or tissue integrity. Non-venomous species rely on constriction, drowning, or simply overpowering their prey.<br><br>
+              
+              Ecologically, snakes are crucial for controlling rodent populations and maintaining ecosystem balance. Many species are ambush predators, while others actively hunt. Their role as both predator and prey makes them keystone species in many environments.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Python')">Python</button>
+          <button class="button" onclick="showInfo('Cobra')">Cobra</button>
+          <button class="button" onclick="showInfo('Boa')">Boa</button>
+          <button class="button" onclick="showInfo('Anaconda')">Anaconda</button>
+          <button class="button" onclick="showInfo('Kingsnake')">Kingsnake</button>
+          <button class="button" onclick="showInfo('Milksnake')">Milksnake</button>
+          <button class="button" onclick="showInfo('Viper')">Viper</button>
+          <button class="button" onclick="showInfo('Mamba')">Mamba</button>
+          <button class="button" onclick="showInfo('Coralsnakes')">Coral Snakes</button>
+          <button class="button" onclick="showInfo('Krait')">Krait</button>
+          <button class="button" onclick="showInfo('Garter')">Garter Snake</button>
+          <button class="button" onclick="showInfo('GreenSnake')">Green Snake</button>
+          <button class="button" onclick="showInfo('BlindSnake')">Blind Snake</button>
+          <button class="button" onclick="showInfo('ThreadSnake')">Thread Snake</button>
+          <button class="button" onclick="showInfo('Rattle Snake')">Rattlesnake</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('snake-list')">← Back</button>
+      </div>
 
              <div id="" class="info-section">
           <h2></h2>
@@ -886,7 +933,7 @@ most well-known including:<br/>
                 In some cultures, pythons are considered symbols of strength and power, and they play a role in local folklore.<br/>
                 Pythons are popular in the exotic pet trade, but they require specialized care and large enclosures to thrive.
               </p>
-              <button onclick="hideInfo('Python')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Python')">← Back</button>
               
             </div>
              <div id="Cobra" class="info-section">
@@ -957,7 +1004,7 @@ most well-known including:<br/>
             The king cobra is the longest venomous snake in the world, capable of reaching lengths of up to 18 feet (5.5 meters).<br/>
             Cobras have a specialized forked tongue that helps them detect chemical cues in their environment, enhancing their hunting abilities.
           </p>
-          <button onclick="hideInfo('Cobra')">← Back</button>
+          <button class="back-btn" onclick="hideInfo('Cobra')">← Back</button>
         </div>
 
             <div id="Boa" class="info-section">
@@ -1090,7 +1137,7 @@ most well-known including:<br/>
                 They have a unique method of hunting, often using their camouflage to blend into their surroundings while waiting for prey.<br/>
                 Anacondas can hold their breath underwater for up to 10 minutes while stalking prey.
               </p>
-              <button onclick="hideInfo('Anaconda')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Anaconda')">← Back</button>
             </div>
             <div id="Kingsnake" class="info-section">
               <h2>Kingsnake</h2>
@@ -1225,7 +1272,7 @@ most well-known including:<br/>
                 In some cultures, milksnakes are considered symbols of protection and good luck, and they play a role in local folklore.<br/>
                 Milksnakes are popular in the exotic pet trade due to their docile nature and striking appearance.
               </p>
-              <button onclick="hideInfo('Milksnake')">← Back</button>
+              <button class="back-btn" onclick="hideInfo('Milksnake')">← Back</button>
             </div>
             <div id="GarterSnake" class="info-section">
               <h2>Garter Snake</h2>
@@ -1715,11 +1762,11 @@ most well-known including:<br/>
           <h3>Niche and Ecological Role</h3>
           <p>Rattlesnakes play an important role in their ecosystems as both predators and prey. They help control populations of small mammals and other reptiles, contributing to the balance of food webs in their habitats. Rattlesnakes also serve as prey for larger predators, including birds of prey and mammals.</p>
           <h3>Niche Facts and Fascinating Details</h3>
-          <ul>
-            <li>Rattlesnakes have a unique method of thermoregulation, using their dark coloration to absorb heat from the sun.</li>
-            <li>The rattle of a rattlesnake is made up of keratin, the same material as human nails, and grows with each shedding of the skin.</li>
-            <li>Some species of rattlesnakes can live for over 20 years in the wild.</li>
-          </ul>
+          <p>
+            Rattlesnakes have a unique method of thermoregulation, using their dark coloration to absorb heat from the sun.<br>
+            The rattle of a rattlesnake is made up of keratin, the same material as human nails, and grows with each shedding of the skin.<br>
+            Some species of rattlesnakes can live for over 20 years in the wild.
+          </p>
           <button class="back-btn" onclick="hideInfo('Rattle Snake')">← Back</button>
              </div>
 
@@ -1727,18 +1774,200 @@ most well-known including:<br/>
       
 
 
-            <div id="tortoise-list" class="info-section">
-              <h2>Tortoises</h2>
-              <p>
-                Tortoises are land-dwelling reptiles recognized for their hard, domed shells and slow, steady movement. They are herbivores, feeding mainly on grasses, leaves, and fruits. Tortoises can live for many decades, with some species reaching over 100 years old. Their sturdy shells provide protection from predators, and they are found in a variety of habitats, from deserts to forests.
-              </p>
-                <button class="button" onclick="showInfo('Galapagos Tortoise')">Galapagos Tortoise</button>
-                <button class="button" onclick="showInfo('Aldabra Tortoise')">Aldabra Tortoise</button>
-                <button class="button" onclick="showInfo('Leopard Tortoise')">Leopard Tortoise</button>
-                <button class="button" onclick="showInfo('Speckled Padloper')">Speckled Padloper</button>
-                <button class="button" onclick="showInfo('Pancake Tortoise')">Pancake Tortoise</button>
-                <button class="button" onclick="showInfo('Indian Star Tortoise')">Indian Star Tortoise</button>
-              <button onclick="hideInfo('tortoise-list')">← Back</button>
+      <!-- Tortoises Section -->
+      <div id="tortoise-list" class="info-section">
+        <h2>🐢 Tortoises & Turtles</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Tortoises are land-dwelling reptiles recognized for their hard, domed shells and slow, steady movement. They are herbivores, feeding mainly on grasses, leaves, and fruits. Tortoises can live for many decades, with some species reaching over 100 years old. Their sturdy shells provide protection from predators, and they are found in a variety of habitats, from deserts to forests.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Tortoises and turtles belong to the order Testudines, one of the oldest reptile groups with fossils dating back over 200 million years. Their most distinctive feature is the shell (carapace and plastron) formed from modified ribs and vertebrae, providing unparalleled protection among reptiles.<br><br>
+              
+              There are over 350 species of turtles and tortoises worldwide, divided into terrestrial tortoises, freshwater turtles, and marine sea turtles. Tortoises are exclusively land-dwelling and have evolved sturdy, elephant-like feet for walking on land, while aquatic species have webbed feet or flippers for swimming.<br><br>
+              
+              These reptiles exhibit remarkable longevity, with many species living well over 100 years. Their slow metabolism allows them to survive extended periods without food or water, making them well-adapted to harsh environments. Some desert tortoises can survive without drinking water for over a year.<br><br>
+              
+              Tortoises play crucial ecological roles as ecosystem engineers. Their grazing helps maintain grassland habitats, while their burrowing creates shelter for numerous other species. Many plants have co-evolved with tortoises, producing large, colorful fruits specifically adapted for tortoise dispersal.<br><br>
+              
+              Conservation challenges facing these species include habitat destruction, illegal collection for the pet trade, and climate change affecting nesting beaches for sea turtles. Many species are critically endangered, requiring dedicated conservation efforts to prevent extinction.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Galapagos Tortoise')">Galápagos Tortoise</button>
+          <button class="button" onclick="showInfo('Aldabra Tortoise')">Aldabra Tortoise</button>
+          <button class="button" onclick="showInfo('Leopard Tortoise')">Leopard Tortoise</button>
+          <button class="button" onclick="showInfo('Speckled Padloper')">Speckled Padloper</button>
+          <button class="button" onclick="showInfo('Pancake Tortoise')">Pancake Tortoise</button>
+          <button class="button" onclick="showInfo('Indian Star Tortoise')">Indian Star Tortoise</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('tortoise-list')">← Back</button>
+      </div>
+
+      <!-- Crocodilians Section -->
+      <div id="crocodilian-list" class="info-section">
+        <h2>🐊 Crocodilians</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Crocodilians are large, semi-aquatic reptiles that include crocodiles, alligators, gharials, and caimans. They are among the most successful predators on Earth, having survived virtually unchanged for over 200 million years. These powerful reptiles are found in tropical and subtropical regions worldwide and are characterized by their powerful jaws, armored skin, and semi-aquatic lifestyle.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Crocodilians represent one of the most ancient and successful reptile lineages, with 27 species currently recognized across three families: Crocodylidae (true crocodiles), Alligatoridae (alligators and caimans), and Gavialidae (gharials). These apex predators have remained virtually unchanged for millions of years, earning them the title of "living fossils."<br><br>
+              
+              Their anatomy is perfectly adapted for both aquatic and terrestrial environments. Crocodilians possess powerful tails for swimming, webbed feet, valvular nostrils and ears that seal underwater, and a nictitating membrane that protects their eyes while submerged. Their bite force is among the strongest in the animal kingdom, with saltwater crocodiles generating forces exceeding 3,700 pounds per square inch.<br><br>
+              
+              Crocodilians are surprisingly sophisticated in their behavior. They exhibit complex social structures, advanced parental care, and sophisticated communication through vocalizations, body language, and chemical signals. Mothers construct elaborate nests and provide extended care for their young, which is unusual among reptiles.<br><br>
+              
+              Ecologically, crocodilians serve as keystone species in their aquatic ecosystems. They help maintain fish populations, create wallows that provide water sources during dry seasons, and their presence indicates healthy wetland ecosystems. Unfortunately, many species have faced severe population declines due to hunting for their valuable hides and habitat destruction.<br><br>
+              
+              Modern conservation efforts have been remarkably successful for some species, with American alligators and several crocodile species recovering from near extinction. However, others like the Chinese alligator and Philippine crocodile remain critically endangered.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('crocodile-group')">🐊 Crocodiles</button>
+          <button class="button" onclick="showInfo('alligator-group')">🐊 Alligators</button>
+          <button class="button" onclick="showInfo('gharial-group')">🐊 Gharials</button>
+          <button class="button" onclick="showInfo('caiman-group')">🐊 Caimans</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('crocodilian-list')">← Back</button>
+      </div>
+
+      <!-- Crocodiles Group -->
+      <div id="crocodile-group" class="info-section">
+        <h2>🐊 Crocodiles</h2>
+        <div class="readmore-block">
+          <p class="par">
+            True crocodiles are characterized by their pointed snouts and visible teeth when their mouths are closed. They are generally more aggressive than alligators and can tolerate saltwater environments. Crocodiles are found in tropical regions around the world and include some of the largest and most dangerous predators on Earth.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Crocodiles belong to the family Crocodylidae and are distinguished from alligators by their narrower, more pointed snouts and the visibility of both upper and lower teeth when their mouths are closed. This tooth arrangement gives them a more menacing appearance and reflects their adaptation to catching fish and other aquatic prey.<br><br>
+              
+              Most crocodile species are capable of tolerating saltwater to varying degrees, with saltwater crocodiles being the most marine-adapted. They possess special salt glands that allow them to excrete excess salt, enabling them to inhabit coastal waters, estuaries, and even venture into the open ocean.<br><br>
+              
+              Crocodiles are generally more aggressive and opportunistic than their alligator cousins. They are ambush predators with incredible patience, often remaining motionless for hours before launching lightning-fast attacks on unsuspecting prey. Their bite force is among the strongest in the animal kingdom.<br><br>
+              
+              These ancient predators exhibit complex social behaviors, sophisticated communication through vocalizations and body language, and demonstrate remarkable intelligence in problem-solving and tool use. Mother crocodiles provide extensive parental care, guarding nests and carrying hatchlings to water.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('American Crocodile')">American Crocodile</button>
+          <button class="button" onclick="showInfo('Saltwater Crocodile')">Saltwater Crocodile</button>
+          <button class="button" onclick="showInfo('Nile Crocodile')">Nile Crocodile</button>
+          <button class="button" onclick="showInfo('Cuban Crocodile')">Cuban Crocodile</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('crocodile-group')">← Back</button>
+      </div>
+
+      <!-- Alligators Group -->
+      <div id="alligator-group" class="info-section">
+        <h2>🐊 Alligators</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Alligators are distinguished by their broad, rounded snouts and the fact that only their upper teeth are visible when their mouths are closed. They are primarily freshwater reptiles and are generally less aggressive than crocodiles. Alligators are found only in the United States and China, representing ancient lineages that have survived for millions of years.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Alligators belong to the family Alligatoridae and are easily distinguished from crocodiles by their broader, more U-shaped snouts. This wider jaw structure is adapted for crushing rather than gripping, making them effective at breaking the shells of turtles and the bones of large prey.<br><br>
+              
+              Unlike crocodiles, alligators are primarily restricted to freshwater environments and cannot tolerate saltwater for extended periods. They lack the specialized salt glands that allow crocodiles to excrete excess salt, limiting them to rivers, lakes, swamps, and marshes.<br><br>
+              
+              Alligators are generally more docile than crocodiles but are still formidable predators. They are excellent parents, with mothers providing protection and care for their young for up to two years. This extended parental care is unusual among reptiles and contributes to higher survival rates for juveniles.<br><br>
+              
+              The American alligator represents one of conservation's greatest success stories, recovering from near extinction in the 1960s to stable populations today. In contrast, the Chinese alligator remains critically endangered, with fewer than 130 individuals surviving in the wild.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('American Alligator')">American Alligator</button>
+          <button class="button" onclick="showInfo('Chinese Alligator')">Chinese Alligator</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('alligator-group')">← Back</button>
+      </div>
+
+      <!-- Gharials Group -->
+      <div id="gharial-group" class="info-section">
+        <h2>🐊 Gharials</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Gharials are the most specialized crocodilians, with extremely narrow snouts perfectly adapted for catching fish. They are the most aquatic of all crocodilians and are easily recognized by the distinctive bulbous growth (ghara) on mature males' snouts. These ancient reptiles are critically endangered and represent a unique evolutionary lineage.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Gharials represent the most ancient and specialized branch of crocodilian evolution, belonging to the family Gavialidae. Their extremely narrow, elongated snouts contain 106-110 sharp, interlocking teeth perfectly designed for catching slippery fish underwater.<br><br>
+              
+              The most distinctive feature of mature male gharials is the "ghara," a bulbous growth at the tip of their snout that amplifies their vocalizations during mating season. This structure, resembling a traditional Indian pot called a "ghara," gives these crocodilians their name.<br><br>
+              
+              Gharials are the most aquatic of all crocodilians, with legs positioned for efficient swimming rather than walking on land. Adult females only come ashore to nest, while males rarely leave the water. Their limbs are relatively weak compared to other crocodilians, making them clumsy on land.<br><br>
+              
+              These magnificent reptiles are critically endangered, with fewer than 200 breeding adults remaining in the wild. Their decline is due to habitat loss, fishing net entanglement, sand mining, and pollution of their river habitats. Conservation efforts are ongoing but face significant challenges in their native range.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Gharial')">Gharial</button>
+          <button class="button" onclick="showInfo('False Gharial')">False Gharial</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('gharial-group')">← Back</button>
+      </div>
+
+      <!-- Caimans Group -->
+      <div id="caiman-group" class="info-section">
+        <h2>🐊 Caimans</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Caimans are South and Central American crocodilians that belong to the alligator family. They are generally smaller than their North American and Asian relatives but are highly adaptable and successful in their range. Caimans play crucial roles as apex predators in Neotropical aquatic ecosystems and show remarkable diversity in size and habitat preferences.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Caimans are members of the Alligatoridae family and are closely related to alligators, sharing similar broad snouts and tooth arrangements. However, they have evolved unique adaptations to their Neotropical environments and show greater diversity in size and ecological niches than true alligators.<br><br>
+              
+              The group includes species ranging from the relatively small spectacled caiman to the massive black caiman, which can rival saltwater crocodiles in size. This size diversity allows different caiman species to occupy various ecological niches within the same river systems without direct competition.<br><br>
+              
+              Caimans are remarkably adaptable and have successfully colonized a wide range of aquatic habitats throughout Central and South America. Some species, like the spectacled caiman, have even adapted to human-modified environments and urban water bodies, contributing to their conservation success.<br><br>
+              
+              These crocodilians serve as keystone species in their ecosystems, particularly in the Amazon basin. The black caiman, in particular, is the apex predator of many South American river systems and plays a crucial role in maintaining fish populations and overall ecosystem health.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Spectacled Caiman')">Spectacled Caiman</button>
+          <button class="button" onclick="showInfo('Black Caiman')">Black Caiman</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('caiman-group')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Main Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('lizard-list')">🦎 Lizards</button>
+      <button class="category-btn" onclick="showInfo('snake-list')">🐍 Snakes</button>
+      <button class="category-btn" onclick="showInfo('tortoise-list')">🐢 Tortoises & Turtles</button>
+      <button class="category-btn" onclick="showInfo('crocodilian-list')">🐊 Crocodilians</button>
+    </div>
         
 
 
@@ -1775,11 +2004,11 @@ most well-known including:<br/>
           As herbivores, Galapagos tortoises help shape the island vegetation and disperse seeds. Their grazing maintains open areas and supports the ecosystem. They are a keystone species for the Galápagos Islands.
           </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-          <li>Some individuals have lived more than 150 years.</li>
-          <li>They can survive long periods without water by storing it in their bodies.</li>
-          <li>Galapagos tortoises played a key role in Charles Darwin’s theory of evolution.</li>
-          </ul>
+          <p>
+          Some individuals have lived more than 150 years.<br>
+          They can survive long periods without water by storing it in their bodies.<br>
+          Galapagos tortoises played a key role in Charles Darwin’s theory of evolution.<br>
+          </p>
 
           <button class="back-btn" onclick="hideInfo('Galapagos Tortoise')">← Back</button>
         </div>
@@ -1818,11 +2047,11 @@ most well-known including:<br/>
           As herbivores, Aldabra tortoises help maintain the health of their island ecosystem by controlling vegetation growth and dispersing seeds. They play a crucial role in shaping the landscape of the Aldabra Atoll.
           </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-          <li>Some individuals have lived over 150 years.</li>
-          <li>They can survive long periods without water by storing it in their bodies.</li>
-          <li>Aldabra tortoises are closely related to Galapagos tortoises.</li>
-          </ul>
+          <p>
+          Some individuals have lived over 150 years.<br>
+          They can survive long periods without water by storing it in their bodies.<br>
+          Aldabra tortoises are closely related to Galapagos tortoises.<br>
+          </p>
 
           <button class="back-btn" onclick="hideInfo('Aldabra Tortoise')">← Back</button>
         </div>
@@ -1861,12 +2090,12 @@ most well-known including:<br/>
           Leopard tortoises play an important role in their ecosystems as herbivores. By grazing on vegetation, they help maintain the balance of plant growth and contribute to seed dispersal. Their grazing behavior also creates open areas in the grasslands, which benefits other species.
           </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-            <li>Leopard tortoises can live for over 50 years in the wild, with some individuals reaching 100 years of age.</li>
-            <li>They are one of the largest tortoise species in Africa, with some individuals weighing over 100 pounds (45 kg).</li>
-            <li>Their unique shell patterns provide excellent camouflage in their natural habitat, helping them avoid predators.</li>
-            <li>Leopard tortoises are popular in the exotic pet trade due to their striking appearance and relatively docile nature.</li>
-          </ul>
+          <p>
+            Leopard tortoises can live for over 50 years in the wild, with some individuals reaching 100 years of age.<br>
+            They are one of the largest tortoise species in Africa, with some individuals weighing over 100 pounds (45 kg).<br>
+            Their unique shell patterns provide excellent camouflage in their natural habitat, helping them avoid predators.<br>
+            Leopard tortoises are popular in the exotic pet trade due to their striking appearance and relatively docile nature.<br>
+          </p>
           
           <button class="back-btn" onclick="hideInfo('Leopard Tortoise')">← Back</button>
         </div>
@@ -1906,11 +2135,11 @@ most well-known including:<br/>
             The Speckled Padloper plays an important role in its ecosystem as a herbivore. By grazing on vegetation, it helps maintain the balance of plant growth and contributes to seed dispersal. Its small size allows it to access food sources that larger tortoises cannot reach, making it an important part of the rocky habitat's ecology.
           </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-            <li>The Speckled Padloper is the world's smallest tortoise species.</li>
-            <li>It can retract its head and limbs into its shell for protection.</li>
-            <li>These tortoises are known to live for over 30 years in captivity.</li>
-          </ul>
+          <p>
+            The Speckled Padloper is the world's smallest tortoise species.<br>
+            It can retract its head and limbs into its shell for protection.<br>
+            These tortoises are known to live for over 30 years in captivity.<br>
+          </p>
 
 
           <button class="back-btn" onclick="hideInfo('Speckled Padloper')">← Back</button>
@@ -1945,18 +2174,30 @@ most well-known including:<br/>
           <h3>Breeding and Parenting</h3>
           <p>
             Pancake Tortoises are oviparous, meaning they lay eggs
-            rather than giving birth. The female lays a clutch of eggs in a nest dug into the ground, and the eggs incubate for several months before hatching. The young tortoises are independent from birth and must fend for themselves in their rocky habitat. 
-          </p>
+            rather than giving birth. The female lays a clutch of 1–2 eggs in a shallow nest dug into sandy soil or under rocks, often in a crevice for protection.
+             The eggs are relatively large compared to the size of the tortoise and have a leathery shell.
+              Incubation can take 4–6 months, depending on temperature and humidity.
+               After hatching, the young tortoises are fully independent and receive no parental care. Hatchlings are well-camouflaged and must quickly find shelter to avoid predators.
+             Due to their small clutch size and slow reproductive rate, Pancake Tortoise populations are vulnerable to habitat loss and over-collection.
+            </p>
           <h3>Niche and Ecological Role</h3>
           <p>
-            The Pancake Tortoise plays an important role in its ecosystem as a herbivore. By grazing on vegetation, it helps maintain the balance of plant growth and contributes to seed dispersal. Its unique shell shape allows it to access food sources that other tortoises cannot reach, making it an important part of the rocky habitat's ecology.
-          </p>
+            The Pancake Tortoise plays an important role in its ecosystem as a herbivore.
+            By grazing on vegetation, it helps maintain the balance of plant growth and contributes to seed dispersal.
+            Its unique shell shape allows it to access food sources that other tortoises cannot reach, making it an important part of the rocky habitat's ecology.
+            Pancake Tortoises also help aerate the soil as they move and shelter in crevices, which benefits plant growth and other small animals.
+            Their presence provides food for native predators and their eggs and hatchlings are an important food source for birds and mammals.
+            By occupying rocky outcrops, they reduce competition for resources with other tortoise species, supporting greater biodiversity in their environment.
+            </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-            <li>The Pancake Tortoise is named for its unique, flattened shell that resembles a pancake.</li>
-            <li>It can squeeze into narrow crevices to escape predators, making it one of the most agile tortoise species.</li>
-            <li>These tortoises are known to live for over 50 years in captivity.</li>
-          </ul>
+          <p>
+            The Pancake Tortoise is named for its unique, flattened shell that resembles a pancake.
+            It can squeeze into narrow crevices to escape predators, making it one of the most agile tortoise species.
+            These tortoises are known to live for over 50 years in captivity.
+            Their flexible shell is lighter and less domed than other tortoises, allowing for quick movement and climbing.
+            Pancake Tortoises are excellent climbers and can scale rocky outcrops with ease.
+            Unlike most tortoises, they often share crevices with other individuals, sometimes forming small groups.
+            The species is considered vulnerable due to habitat loss and collection for the pet trade.
 
 
           <button class="back-btn" onclick="hideInfo('Pancake Tortoise')">← Back</button>
@@ -2003,11 +2244,9 @@ most well-known including:<br/>
             The Indian Star Tortoise plays an important role in its ecosystem as a herbivore. By grazing on vegetation, it helps maintain the balance of plant growth and contributes to seed dispersal. Its unique shell pattern provides camouflage, allowing it to avoid predators in its natural habitat.
           </p>
           <h3>Fascinating Facts</h3>
-          <ul>
-            <li>The Indian Star Tortoise is named for the star-like patterns on its shell, which resemble a starburst.</li>
-            <li>It is a popular species in the exotic pet trade due to its striking appearance.</li>
-            <li>These tortoises can live for over 80 years in captivity, making them long-term companions.</li>
-          </ul>
+          <p>The Indian Star Tortoise is named for the star-like patterns on its shell, which resemble a starburst.<br></p>
+          <p>It is a popular species in the exotic pet trade due to its striking appearance.<br></p>
+          <p>These tortoises can live for over 80 years in captivity, making them long-term companions.<br></p>
 
 
           <button class="back-btn" onclick="hideInfo('Indian Star Tortoise')">← Back</button>
@@ -2016,85 +2255,9 @@ most well-known including:<br/>
      </div>
     <hr>
 
-    <div class="amph-content">
+    <div class="content">
       <h1>Amphibians</h1>
-      <p class="par">
-        Amphibians are cold-blooded vertebrates that typically live part of their lives in water 
-        and part on land. They have smooth, moist skin without scales and usually undergo 
-        metamorphosis from aquatic larvae to terrestrial adults. Amphibians include frogs, toads, 
-        salamanders, and newts. They breathe through their skin, lungs, and sometimes gills during 
-        their larval stage. Most amphibians lay their eggs in water or moist environments, and their 
-        permeable skin makes them sensitive to environmental changes and pollution.
-      </p>
-    </div>
-    <div class="amph-list">
-      <div class="amphibians">
-        <button class="button" onclick="showInfo('salamander-list')">Salamanders</button>
-        <button class="button" onclick="showInfo('newt-list')">Newts</button>
-        <button class="button" onclick="showInfo('frog-list')">Frogs</button>
-        <button class="button" onclick="showInfo('axolotl-list')">Axolotls</button>
-
-        <div id="salamander-list" class="info-section">
-          <h2>Salamanders</h2>
-          <p>Salamanders are a group of amphibians characterized by their slender bodies and long tails.</p>
-          <button class="button" onclick="showInfo('Newt')">Newt</button>
-          <button class="button" onclick="showInfo('Frog')">Frog</button>
-          <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
-          <button class="button" onclick="showInfo('Cassowary')">Cassowary</button>
-          <button onclick="hideInfo('salamander-list')">← Back</button>
-        </div>
-
-        <div id="" class="info-section">
-          <h2></h2>
-          <img src="" alt=""/>
-          
-          <button class="back-btn" onclick="hideInfo('')">← Back</button>
-        </div>
-
-        <div id="newt-list" class="info-section">
-          <h2>Newts</h2>
-          <p>Newts are small, semi-aquatic amphibians that belong to the salamander family.</p>
-          <button class="button" onclick="showInfo('Frog')">Frog</button>
-          <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
-          <button class="button" onclick="showInfo('Something')">Something</button>
-          <button onclick="hideInfo('newt-list')">← Back</button>
-        </div>
-
-        <div id="frog-list" class="info-section">
-          <h2>Frogs</h2>
-          <p>Frogs are tailless amphibians known for their jumping abilities, croaking sounds, and smooth, moist skin.</p>
-          <button class="button" onclick="showInfo('Newt')">Newt</button>
-          <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
-          <button class="button" onclick="showInfo('Something')">Something</button>
-          <button class="button" onclick="showInfo('Salamander')">Salamander</button>
-          <button onclick="hideInfo('frog-list')">← Back</button>
-        </div>
-
-        <div id="toad-list" class="info-section">
-            <h2>Toads</h2>
-            <p>Salamanders are a group of amphibians characterized by their slender bodies and long tails.</p>
-            <button class="button" onclick="showInfo('Newt')">Newt</button>
-            <button class="button" onclick="showInfo('Frog')">Frog</button>
-            <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
-            <button class="button" onclick="showInfo('Cassowary')">Cassowary</button>
-            <button onclick="hideInfo('toad-listlist')">← Back</button>
-          </div>
-
-        <div id="salamander-list" class="info-section">
-          <h2>salamanders</h2>
-          <p>Axolotls are a type of neotenic salamander that remain aquatic and gilled throughout their lives.</p>
-          <button class="button" onclick="showInfo('Newt')">Newt</button>
-          <button class="button" onclick="showInfo('Frog')">Frog</button>
-          <button class="button" onclick="showInfo('Something')">Something</button>
-          <button class="button" onclick="showInfo('Salamander')">Salamander</button>
-          <button onclick="hideInfo('salamanderlist')">← Back</button>
-        </div>
-
-         
-      <hr>
-
-      <div class="croc_list">
-        <h1>Crocodilians</h1>
+      <div class="readmore-block">
         <p class="par">
           Amphibians are cold-blooded vertebrates that typically live part of their lives in water 
           and part on land. They have smooth, moist skin without scales and usually undergo 
@@ -2103,26 +2266,1248 @@ most well-known including:<br/>
           their larval stage. Most amphibians lay their eggs in water or moist environments, and their 
           permeable skin makes them sensitive to environmental changes and pollution.
         </p>
+        <button class="read-more-toggle">Read More</button>
+        <div class="read-more">
+          <p>
+            Amphibians were the first vertebrates to successfully colonize land approximately 365 million years ago, representing a crucial evolutionary transition from aquatic to terrestrial life. Today, there are over 8,000 known amphibian species divided into three main groups: frogs and toads (Anura), salamanders and newts (Caudata), and caecilians (Gymnophiona).<br><br>
+            
+            The defining characteristic of amphibians is their complex life cycle involving metamorphosis. Most species begin life as aquatic larvae with gills, then undergo dramatic physiological changes to become air-breathing adults. This dual lifestyle requires specialized adaptations for both aquatic and terrestrial environments.<br><br>
+            
+            Amphibian skin is uniquely permeable, allowing for cutaneous respiration (breathing through the skin) and making them highly sensitive to environmental toxins and pH changes. This sensitivity makes amphibians excellent bioindicators of ecosystem health, with population declines often signaling environmental problems.<br><br>
+            
+            Many amphibians possess remarkable regenerative abilities, particularly salamanders, which can regrow entire limbs, tails, and even parts of their hearts and brains. This regenerative capacity has made them important subjects for medical research.<br><br>
+            
+            Unfortunately, amphibians are currently experiencing the most severe conservation crisis of any vertebrate group, with over 40% of species threatened with extinction due to habitat destruction, climate change, pollution, and emerging diseases like chytrid fungus.
+          </p>
+          <button class="read-more-toggle">Read Less</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="amphibian-list">
+      <!-- Salamanders Section -->
+      <div id="salamander-list" class="info-section">
+        <h2>🦎 Salamanders & Newts</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Salamanders are amphibians with slender bodies, long tails, and smooth, moist skin. They are found in both aquatic and terrestrial habitats, often near water. Salamanders typically undergo metamorphosis from aquatic larvae to adult forms and are known for their ability to regenerate lost limbs.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Salamanders represent the most diverse group of amphibians after frogs, with over 700 species worldwide. They are found primarily in temperate regions of the Northern Hemisphere, with the greatest diversity in North America. Salamanders range from tiny species less than 2cm long to giants like the Chinese and Japanese giant salamanders that can exceed 1.5 meters.<br><br>
+              
+              The most remarkable feature of salamanders is their extraordinary regenerative ability. They can regrow entire limbs, tails, jaws, and even portions of their hearts, brains, and spinal cords. This regeneration involves the formation of a blastema, a mass of undifferentiated cells that gradually reform the lost structure.<br><br>
+              
+              Salamanders exhibit diverse reproductive strategies. Most species lay eggs in water or moist environments, but some species give birth to live young, while others undergo direct development without an aquatic larval stage. Some lungless salamanders even practice internal fertilization and parental care.<br><br>
+              
+              Ecologically, salamanders play crucial roles as both predators and prey. They consume vast quantities of insects, spiders, and other invertebrates, helping control forest pest populations. In some ecosystems, salamander biomass exceeds that of all mammals combined.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Japanese Giant Salamander')">Japanese Giant Salamander</button>
+          <button class="button" onclick="showInfo('Hellbender')">Hellbender</button>
+          <button class="button" onclick="showInfo('Lungless Salamander')">Lungless Salamander</button>
+          <button class="button" onclick="showInfo('Tiger Salamander')">Tiger Salamander</button>
+          <button class="button" onclick="showInfo('Axolotl')">Axolotl</button>
+          <button class="button" onclick="showInfo('Smooth Newt')">Smooth Newt</button>
+          <button class="button" onclick="showInfo('Rough-skinned Newt')">Rough-skinned Newt</button>
+          <button class="button" onclick="showInfo('Great Crested Newt')">Great Crested Newt</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('salamander-list')">← Back</button>
       </div>
 
-      <div class="amph-list">
-        <div class="amphibians">
-          <button class="button" onclick="showInfo('salamander-list')">Salamanders</button>
-          <button class="button" onclick="showInfo('newt-list')">Newts</button>
-          <button class="button" onclick="showInfo('frog-list')">Frogs</button>
-          <button class="button" onclick="showInfo('axolotl-list')">Axolotls</button>
+        <div id="Japanese Giant Salamander" class="info-section">
+          <h2>Japanese Giant Salamander</h2>
+          <img src="list_image/japan g. Salamander.jpg" alt="Japanese Giant Salamander"/>
+          <p>Scientific Name: <b>Andrias japonicus</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          
+          <p>The Japanese Giant Salamander is one of the largest amphibians in the world, reaching lengths of up to 5 feet (1.5 meters). It is native to Japan and inhabits clean, fast-flowing rivers and streams. This salamander has a wrinkled, dark gray or brown skin and is known for its impressive size and longevity.</p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Japanese Giant Salamander has a large, flattened body with a broad head and small eyes. Its skin is wrinkled and covered in a slimy mucus layer, which helps keep it moist. They have four limbs with webbed feet, allowing them to swim efficiently in their aquatic habitat.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            These salamanders are primarily nocturnal, meaning they are most active at night. They are excellent swimmers and can move quickly through water using their limbs and tail. Japanese Giant Salamanders are generally solitary creatures, but they may come together during the breeding season.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Japanese Giant Salamander inhabits clean, fast-flowing rivers and streams in Japan. They prefer rocky substrates and areas with plenty of hiding spots, such as crevices and underwater caves. Their habitat is typically found in mountainous regions with cool, clear water.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Japanese Giant Salamanders are carnivorous and primarily feed on small fish, crustaceans, and other aquatic invertebrates. They use their keen sense of smell to locate prey and can swallow it whole due to their large mouths.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Japanese Giant Salamanders are oviparous, meaning they lay eggs rather than giving live birth. The female typically lays her eggs in a secluded, underwater location, and the male fertilizes them externally. After laying eggs, the female may guard the nest until the eggs hatch.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Japanese Giant Salamander plays an important role in its ecosystem as a top predator in freshwater habitats. By controlling the populations of small fish and invertebrates, it helps maintain the balance of the aquatic food web. Its presence also indicates the health of the river ecosystem, as it is sensitive to pollution and habitat degradation.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Japanese Giant Salamander can live for over 80 years, making it one of the longest-lived amphibians.
+            It is considered a national treasure in Japan and is protected by law.
+            These salamanders have a unique ability to regenerate lost limbs, similar to some species of newts.
+            They are known for their impressive size and can weigh up to 140 pounds (63 kg).
+          </p>
+          <button class="back-btn" onclick="hideInfo('Japanese Giant Salamander')">← Back</button>
+        </div>
+
+         <div id="Hellbender" class="info-section">
+          <h2>Hellbender</h2>
+          <img src="list_image/Hellbender-3.jpg" alt="Hellbender"/>
+          <p>Scientific Name: <b>Crypotbranchus alleganiensis alleganiensis</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          
+          <p>The Hellbender is the largest salamander in North America, reaching lengths of up to 29 inches (74 cm). It is found in clean, fast-flowing rivers and streams in the eastern United States. This salamander has a flattened body, loose skin, and a distinctive wrinkled appearance, which helps it absorb oxygen from the water.</p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Hellbender has a long, slender body with a flattened head and small eyes. Its skin is loose and wrinkled, allowing for increased surface area to absorb oxygen. They have four limbs with webbed feet, which help them navigate through fast-moving water.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            Hellbenders are primarily nocturnal, meaning they are most active at night. They are excellent swimmers and can move quickly through water using their limbs and tail. These salamanders are generally solitary creatures, but they may come together during the breeding season.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Hellbender inhabits clean, fast-flowing rivers and streams in the eastern United States, particularly in the Appalachian region. They prefer rocky substrates and areas with plenty of hiding spots, such as crevices and underwater caves. Their habitat is typically found in cool, clear water.
+            </p>
+            <h3>Feeding Habits</h3>
+            <p>
+              Hellbenders are carnivorous and primarily feed on crayfish, small fish, insects, and other aquatic invertebrates. They are ambush predators, waiting under rocks or in crevices to catch passing prey. Hellbenders use suction to quickly draw prey into their mouths and swallow it whole.
+            </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Hellbenders are oviparous, meaning they lay eggs rather than giving live birth. The female lays a clutch of 150–200 eggs in a nest cavity under a rock or log in the stream. Males guard the nest and protect the eggs until they hatch, which can take up to 2–3 months. After hatching, the larvae are independent and receive no further parental care.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+
+          <p>
+            The Hellbender plays an important role in its ecosystem as a top predator in freshwater habitats. By controlling the populations of crayfish and other invertebrates, it helps maintain the balance of the aquatic food web. Its presence also indicates the health of the river ecosystem, as it is sensitive to pollution and habitat degradation.
+          </p>
+          <h3>Fascinating Facts</h3>
+
+            <p>
+              The Hellbender is known for its impressive size and can weigh up to 5 pounds (2.3 kg).<br>
+              It has a unique ability to absorb oxygen through its skin, allowing it to survive in low-oxygen environments.<br>
+              Hellbenders are often referred to as "snot otters" due to the slimy mucus that covers their skin.<br>
+              They are considered a species of concern in many states due to habitat loss and pollution.
+            </p>
+
+          <button class="back-btn" onclick="hideInfo('Hellbender')">← Back</button>
+        </div>
+
+         <div id="Axolotl" class="info-section">
+          <h2>Axolotl</h2>
+          <img src="list_image/axolotl.png" alt="Axolotl"/>
+          <p>Scientific Name: <b>Ambystoma mexicanum</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          <p>The Axolotl, also known as the Mexican Salamander, is a unique amphibian native to the lakes of Mexico City. It is famous for its ability to regenerate lost limbs and other body parts. Unlike most salamanders, Axolotls remain in their aquatic larval form throughout their lives, retaining their gills and fins.</p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Axolotl has a distinct appearance with feathery external gills, a wide head, and a long, slender body. Its skin can vary in color, including shades of gray, brown, and albino. They have small eyes and a broad mouth, giving them a unique, smiling expression.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            Axolotls are primarily aquatic and spend most of their lives in water. They are not strong swimmers and prefer to stay near the bottom of their habitat. They use their gills to breathe underwater and can also absorb oxygen through their skin. Axolotls are known for their regenerative abilities, capable of regrowing lost limbs, tail, and even parts of their heart and brain.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Axolotl is native to the lakes and canals of Mexico City, particularly Lake Xochimilco. They prefer shallow, slow-moving waters with plenty of vegetation and hiding spots. Due to urbanization and pollution, their natural habitat has been severely reduced, making them critically endangered in the wild.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Axolotls are carnivorous and primarily feed on small invertebrates, such as worms, insects, and small crustaceans. They use their keen sense of smell to locate prey and can quickly snap it up with their wide mouths. In captivity, they are often fed a diet of specialized pellets or live food.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Axolotls are oviparous, meaning they lay eggs rather than giving live birth. During the breeding season, females can lay hundreds of eggs, which are fertilized externally by the male. The eggs are usually attached to aquatic plants and hatch into larvae within a few weeks. Axolotls exhibit little parental care, and the larvae are independent from birth.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Axolotl plays an important role in its ecosystem as a top predator in freshwater habitats. By controlling the populations of small invertebrates, it helps maintain the balance of the aquatic food web. Its unique regenerative abilities also make it a subject of scientific research, providing insights into tissue regeneration and development.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Axolotl is often referred to as the "Mexican Walking Fish," although it is not a fish but an amphibian.<br>
+            It can regenerate lost limbs, tail, and even parts of its heart and brain.<br>
+            Axolotls are critically endangered in the wild due to habitat loss and pollution.<br>
+            They are popular in the pet trade and are often kept in aquariums.<br>
+          </p>
+          
+          <button class="back-btn" onclick="hideInfo('Axolotl')">← Back</button>
+        </div>
+
+         <div id="Lungless Salamander" class="info-section">
+          <h2>Lungless Salamander</h2>
+          <img src="list_image/lungless. sal.jpg" alt="Lungless"/>
+          <p>Scientific Name: <b>Plethodon cinereus</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          <p>The Lungless Salamander is a unique species that lacks lungs and breathes entirely
+            through its skin and mucous membranes. It is found in the eastern United States and parts of Canada, inhabiting moist, forested areas. This salamander is small, typically measuring around 4–6 inches (10–15 cm) in length, and has a slender body with smooth skin.</p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Lungless Salamander has a slender, elongated body with smooth, moist skin that is usually brown or gray in color. It has small limbs and a long tail, which it uses for balance and movement. Its skin is highly permeable, allowing for efficient gas exchange through its surface.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            Lungless Salamanders are primarily nocturnal, meaning they are most active at night. They are excellent climbers and can often be found on rocks, logs, and vegetation in their forested habitat. These salamanders are known for their secretive nature and can quickly retreat into crevices or under leaves when threatened.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Lungless Salamander inhabits moist, forested areas in the eastern United States and parts of Canada. They prefer habitats with plenty of leaf litter, rocks, and logs, which provide shelter and moisture. Their habitat is typically found in cool, shaded areas with high humidity.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Lungless Salamanders are carnivorous and primarily feed on small invertebrates, such as insects, worms, and spiders. They use their keen sense of smell to locate prey and can quickly capture it with their sticky tongues. Their diet varies depending on the availability of food sources in their forested habitat.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Lungless Salamanders are oviparous, meaning they lay eggs rather than giving live birth. The female typically lays a small clutch of eggs in a moist, sheltered location, such as under leaves or in crevices. After laying the eggs, she guards them until they hatch, which can take several weeks. The larvae are fully formed and independent from birth.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Lungless Salamander plays an important role in its ecosystem as a predator of small invertebrates. By controlling the populations of insects and other small creatures, it helps maintain the balance of the forest food web. Its unique method of respiration through the skin allows it to thrive in moist environments, making it an important indicator of ecosystem health.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Lungless Salamander is one of the few amphibians that lacks lungs and breathes entirely through its skin.<br>
+            It can absorb oxygen directly from the water or moist soil, allowing it to survive in low-oxygen environments.<br>
+            These salamanders are known for their ability to regenerate lost limbs, similar to some species of newts.<br>
+            Lungless Salamanders are often found in large numbers in their forested habitats, making them an important part of the ecosystem.<br>
+          </p>
 
           
+          <button class="back-btn" onclick="hideInfo('Lungless Salamander')">← Back</button>
+        </div>
+
+         <div id="Tiger Salamander" class="info-section">
+          <h2>Tiger Salamander</h2>
+          <img src="list_image/tiger-salamander.jpg" alt="Tiger Salamander"/>
+          <p>
+            The Tiger Salamander is a large, stocky salamander with a distinctive pattern of yellow or white spots on a dark background. They are primarily found in the eastern and central United States, as well as parts of Mexico. These salamanders prefer moist environments, such as forests, grasslands, and wetlands.
+          </p>
+          <h3>Behavior</h3>
+          <p>
+            Tiger Salamanders are mostly nocturnal and spend much of their time underground in burrows. They are excellent diggers and can create extensive tunnel systems. During the breeding season, they migrate to temporary ponds to breed.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Tiger Salamander inhabits a variety of habitats, including forests, grasslands, and wetlands. They prefer areas with abundant cover, such as leaf litter, logs, and rocks, which provide shelter and moisture.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Tiger Salamanders are carnivorous and primarily feed on small invertebrates, such as insects, worms, and snails. They use their keen sense of smell to locate prey and can quickly capture it with their sticky tongues. Their diet varies depending on the availability of food sources in their habitat.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Tiger Salamanders are oviparous, meaning they lay eggs rather than giving live birth. The female typically lays a large clutch of eggs in a temporary pond or other aquatic environment. After laying the eggs, she leaves them to develop on their own. The larvae are fully aquatic and undergo metamorphosis to become terrestrial adults.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Tiger Salamander plays an important role in its ecosystem as a predator of small invertebrates. By controlling the populations of insects and other small creatures, it helps maintain the balance of the food web. Its presence is also an indicator of a healthy environment.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Tiger Salamander is one of the largest salamander species in North America, reaching lengths of up to 10 inches (25 cm).<br>
+            They have a unique ability to regenerate lost limbs, similar to some species of newts.<br>
+            Tiger Salamanders are often found in large numbers during the breeding season, making them an important part of the ecosystem.<br>
+          </p>
+          <p>
+            They are known for their striking appearance, with their bright yellow or white spots contrasting against their dark skin.
+          </p>
+          <button class="back-btn" onclick="hideInfo('Tiger Salamander')">← Back</button>
+        </div>
+
+        </div>
+
+
+
+
+
+           <div id="Smooth Newt" class="info-section">
+          <h2>Smooth Newt</h2>
+          <img src="list_image/smooth newt.jpg" alt="Smooth Newt"/>
+          <p>Scientific Name: <b>Lissotriton vulgaris</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          <p>
+            The Smooth Newt is a common species found across Europe and parts of Asia. 
+          </p>
+          <p>
+            The Smooth Newt is a small, slender newt with a smooth, moist skin.<br>
+            They are typically brown or gray with a lighter underside and may have small dark spots.<br>
+            Smooth Newts are found in a variety of habitats, including gardens, woodlands, and wetlands.
+          </p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Smooth Newt has a slender body with smooth, moist skin that is usually brown or gray in color. 
+            They have a long tail and small limbs, which they use for swimming and walking on land. 
+            Their skin is covered in a slimy mucus layer, which helps keep them moist and provides protection from predators.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            Smooth Newts are primarily nocturnal, meaning they are most active at night. 
+            They are excellent swimmers and can move quickly through water using their limbs and tail. 
+            These newts are generally solitary creatures but may come together during the breeding season.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Smooth Newt inhabits a variety of habitats, including gardens, woodlands, and wetlands. 
+            They prefer areas with plenty of vegetation and access to water sources, such as ponds or streams. 
+            Their habitat is typically found in temperate regions with moderate temperatures and seasonal rainfall.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Smooth Newts are carnivorous and primarily feed on small invertebrates, such as insects, worms, and snails. 
+            They use their keen sense of smell to locate prey and can quickly capture it with their sticky tongues. 
+            Their diet varies depending on the availability of food sources in their habitat.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Smooth Newts are oviparous, meaning they lay eggs rather than giving live birth. 
+            The female lays her eggs in water, attaching them to aquatic plants. 
+            The eggs hatch into larvae, which undergo metamorphosis to become adult newts.
+            After metamorphosis, the young newts leave the water and begin their terrestrial phase.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Smooth Newt plays an important role in its ecosystem as a predator of small invertebrates. 
+            By controlling the populations of insects and other small creatures, it helps maintain the balance of the food web. 
+            Its presence is also an indicator of a healthy environment, as they are sensitive to pollution and habitat degradation.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Smooth Newt is known for its ability to regenerate lost limbs, similar to some species of salamanders.<br>
+            They can change color slightly depending on their environment, providing camouflage.<br>
+            Smooth Newts are often found in large numbers during the breeding season, making them an important part of the ecosystem.<br>
+            They are commonly kept as pets in aquariums due to their interesting behavior and appearance.
+          </p>
+          <p>
+            Smooth Newts are also known for their vocalizations, which can include chirps and clicks during mating season.
+          </p>
+          <p>
+            They are often mistaken for other newt species due to their similar appearance, but their smooth skin and coloration help distinguish them.
+          </p>
+
+
+          <button class="back-btn" onclick="hideInfo('Smooth Newt')">← Back</button>
+        </div>
+
+
+         <div id="Rough-skinned Newt" class="info-section">
+          <h2>Rough-skinned Newt</h2>
+          <img src="list_image/" alt="Rough-skinned Newt"/>
+          <p>Scientific Name: <b>Taricha granulosa</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          <p>
+            The Rough-skinned Newt is a species native to the western United States and Canada.
+          </p>
+          <p>
+            The Rough-skinned Newt is characterized by its rough, warty skin and is typically brown or gray with a lighter underside. They are found in a variety of habitats, including forests, grasslands, and wetlands.
+          </p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Rough-skinned Newt has a stocky body with rough, warty skin that is usually brown or gray in color. 
+            They have a long tail and small limbs, which they use for swimming and walking on land. 
+            Their skin is covered in a slimy mucus layer, which helps keep them moist and provides protection from predators.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            The Rough-skinned Newt is primarily aquatic but can also be found on land, especially during the breeding season. 
+            They are known for their slow, deliberate movements and can often be seen basking in the sun on rocks or logs.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Rough-skinned Newt inhabits a variety of habitats, including forests, grasslands, and wetlands. 
+            They prefer areas with plenty of vegetation and access to water sources, such as ponds or streams. 
+            Their habitat is typically found in temperate regions with moderate temperatures and seasonal rainfall.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            Rough-skinned Newts are carnivorous and primarily feed on small invertebrates, such as insects, worms, and snails. 
+            They use their keen sense of smell to locate prey and can quickly capture it with their sticky tongues. 
+            Their diet varies depending on the availability of food sources in their habitat.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Rough-skinned Newts are oviparous, meaning they lay eggs rather than giving live birth.
+          </p>
+          <p>
+            The female Rough-skinned Newt typically lays her eggs in water, attaching them to aquatic vegetation. 
+            The eggs are small and gelatinous, and they hatch into larvae after a few weeks. 
+            The larvae are fully aquatic and undergo metamorphosis to become terrestrial adults.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Rough-skinned Newt plays an important role in its ecosystem as a predator of small invertebrates. 
+            By controlling the populations of insects and other small creatures, it helps maintain the balance of the food web. 
+            Its presence is also an indicator of a healthy environment, as they are sensitive to pollution and habitat degradation.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Rough-skinned Newt is known for its bright orange or yellow coloration, which serves as a warning to predators about its toxicity.<br>
+            They can secrete toxins from their skin that can be harmful to predators, making them unpalatable.<br>
+            Rough-skinned Newts are often found in large numbers during the breeding season, making them an important part of the ecosystem.<br>
+            They are commonly kept as pets in aquariums due to their interesting behavior and appearance.
+          </p>
+          <p>
+            Rough-skinned Newts are also known for their unique courtship behavior, which involves elaborate displays and vocalizations during mating season.
+          </p>
+
+          <button class="back-btn" onclick="hideInfo('Rough-skinned Newt')">← Back</button>
+        </div>
+
+
+         <div id="Great Crested Newt" class="info-section">
+          <h2>Great Crested Newt</h2>
+          <img src="list_image/great-crest-newt.png" alt="Great Crested Newt"/>
+          <p>Scientific Name: <b>Triturus cristatus</b></p>
+          <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+          <p>
+            The Great Crested Newt is a large newt species found in Europe and parts of Asia.
+          </p>
+          <p>
+            The Great Crested Newt is a large newt with a distinctive crest along its back during the breeding season. They are typically dark brown or black with a lighter underside and may have orange or yellow spots. Great Crested Newts are found in a variety of habitats, including ponds, marshes, and woodlands.
+          </p>
+          <h3>Physical Characteristics</h3>
+          <p>
+            The Great Crested Newt has a robust body with a distinctive crest along its back during the breeding season. 
+            They have smooth, moist skin that is usually dark brown or black in color, with a lighter underside. 
+            Their skin is covered in a slimy mucus layer, which helps keep them moist and provides protection from predators.
+          </p>
+          <h3>Behavior and Movement</h3>
+          <p>
+            The Great Crested Newt is primarily aquatic but can also be found on land, especially during the breeding season. 
+            They are known for their slow, deliberate movements and can often be seen basking in the sun on rocks or logs. 
+            These newts are generally solitary creatures but may come together during the breeding season.
+          </p>
+          <h3>Habitat</h3>
+          <p>
+            The Great Crested Newt inhabits a variety of habitats, including ponds, marshes, and woodlands. 
+            They prefer areas with plenty of vegetation and access to water sources, such as ponds or streams. 
+            Their habitat is typically found in temperate regions with moderate temperatures and seasonal rainfall.
+          </p>
+          <h3>Feeding Habits</h3>
+          <p>
+            The Great Crested Newt is primarily insectivorous, feeding on a diet of small invertebrates such as insects, worms, and crustaceans. 
+            They use their long, sticky tongues to catch prey in the water. During the breeding season, they may also consume small fish and amphibian larvae.
+          </p>
+          <h3>Breeding and Parenting</h3>
+          <p>
+            Great Crested Newts are oviparous, meaning they lay eggs rather than giving live birth.
+          </p>
+          <p>
+            The female lays her eggs in water, attaching them to aquatic plants. The eggs hatch into larvae, which undergo metamorphosis to become adult newts.
+          </p>
+          <h3>Niche and Ecological Role</h3>
+          <p>
+            The Great Crested Newt plays an important role in its ecosystem as a predator of small invertebrates. 
+            By controlling the populations of insects and other small creatures, it helps maintain the balance of the food web. 
+            Its presence is also an indicator of a healthy environment, as they are sensitive to pollution and habitat degradation.
+          </p>
+          <h3>Fascinating Facts</h3>
+          <p>
+            The Great Crested Newt is one of the largest newt species in Europe, reaching lengths of up to 7 inches (18 cm).<br>
+            They have a unique courtship display during the breeding season, where males perform elaborate dances and displays to attract females.
+          </p>
+          <p>
+            Great Crested Newts are protected by law in many countries due to their declining populations and habitat loss.<br>
+            They are commonly found in gardens and parks, where they help control insect populations.
+          </p>
+          <button class="back-btn" onclick="hideInfo('Great Crested Newt')">← Back</button>
+        </div>
 
 
         </div>
-      </div>
-    </main>
 
+      <!-- Frogs Section -->
+      <div id="frog-list" class="info-section">
+        <h2>🐸 Frogs</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Frogs are tailless amphibians known for their jumping abilities, croaking sounds, and smooth, moist skin. They are found in diverse habitats worldwide and play crucial roles in ecosystem food webs as both predators and prey.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Frogs belong to the order Anura, which means "without tail," and represent the largest and most diverse group of amphibians with over 6,000 species worldwide. They have successfully colonized virtually every habitat except the most extreme polar and desert environments.<br><br>
+              
+              Frog anatomy is highly specialized for their lifestyle. Their powerful hind legs and modified pelvic girdle enable remarkable jumping abilities - some species can leap over 40 times their body length. Their specialized skin serves multiple functions: respiration, water absorption, and protection through toxic secretions.<br><br>
+              
+              Frog reproduction typically involves external fertilization in aquatic environments. Males often engage in elaborate courtship behaviors, including complex vocalizations produced by vocal sacs. Tadpoles undergo complete metamorphosis, developing from herbivorous filter-feeders to carnivorous adults.<br><br>
+              
+              Ecologically, frogs serve as crucial links in food webs. As tadpoles, they help control algae and detritus in aquatic systems, while adults consume vast quantities of insects, making them natural pest controllers. They also serve as important prey for fish, birds, snakes, and mammals.<br><br>
+              
+              Many frog species face severe conservation challenges, with over 200 species having gone extinct in recent decades due to habitat destruction, climate change, pollution, and the devastating chytrid fungus pandemic.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Goliath Frog')">Goliath Frog</button>
+          <button class="button" onclick="showInfo('Brazilian Gold Frog')">Brazilian Gold Frog</button>
+          <button class="button" onclick="showInfo('Poison Dart Frog')">Poison Dart Frog</button>
+          <button class="button" onclick="showInfo('Glass Frog')">Glass Frog</button>
+          <button class="button" onclick="showInfo('Tree Frog')">Tree Frog</button>
+          <button class="button" onclick="showInfo('Flying Frog')">Flying Frog</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('frog-list')">← Back</button>
+      </div>
+
+            <div id="Goliath Frog" class="info-section">
+              <h2>Goliath Frog</h2>
+              <img src="list_image/goliath frog.jpg" alt="Goliath Frog"/>
+              <p>Scientific Name: <b>Conraua goliath</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  The Goliath Frog is the largest frog species in the world, reaching lengths of up to 32 inches (80 cm) and weighing over 3 kg (6.6 lbs).<br>
+                  It is native to the rainforests of Cameroon and Equatorial Guinea.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  The Goliath Frog has a robust body with long limbs and large webbed feet, which aid in swimming.<br>
+                  Its skin is smooth and can vary in color from green to brown, often with darker spots or stripes.<br>
+                  Unlike many frogs, it lacks vocal sacs and eardrums, making it less vocal than other species.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  These frogs are primarily nocturnal and are excellent swimmers.<br>
+                  They can leap impressive distances, making them agile hunters in their aquatic habitat.<br>
+                  Goliath Frogs are shy and elusive, often hiding under rocks or dense vegetation during the day to avoid predators.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  The Goliath Frog inhabits fast-flowing rivers and streams in tropical rainforests.<br>
+                  They prefer areas with plenty of vegetation and hiding spots, and are highly sensitive to changes in water quality and habitat disturbance.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Goliath Frogs are carnivorous and primarily feed on insects, small fish, crustaceans, worms, and other small animals.<br>
+                  They use their long tongues to catch prey quickly and may also eat smaller frogs and even young turtles.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, females lay hundreds of eggs in water, which hatch into tadpoles.<br>
+                  The tadpoles undergo metamorphosis to become adult frogs.<br>
+                  Males are known to build and guard nests by moving stones to create suitable egg-laying sites, a rare behavior among frogs.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  The Goliath Frog plays an important role in its ecosystem as a predator of small animals, helping to control their populations.<br>
+                  Its presence is also an indicator of healthy, unpolluted river systems.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  The Goliath Frog can jump up to 10 feet (3 meters) in a single leap.<br>
+                  It has a unique vocal sac that can inflate to amplify its calls.<br>
+                  Despite its size, the Goliath Frog is not poisonous and relies on camouflage and agility for protection.<br>
+                  It can live up to 15 years in the wild.<br>
+                  The species is considered endangered due to habitat loss and over-collection for the pet trade and food markets.<br>
+                  Goliath Frogs are capable of moving rocks weighing over 2 kg (4.4 lbs) to build nests for their eggs.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Goliath Frog')">← Back</button>
+        </div>
+            <div id="Brazilian Gold Frog" class="info-section">
+              <h2>Brazilian Gold Frog</h2>
+              <img src="list_image/brazil gold frog.jpg" alt="Brazilian Gold Frog"/>
+              <p>Scientific Name: <b>Phyllomedusa tomopterna</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  The Brazilian Gold Frog is a small, brightly colored frog native to the Atlantic Forest of Brazil.<br>
+                  It is known for its striking golden-yellow coloration and unique reproductive behavior.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  The Brazilian Gold Frog has smooth, moist skin that is bright yellow with black spots or stripes.<br>
+                  It has large, bulging eyes and long limbs, which aid in climbing and jumping.<br>
+                  This species is relatively small, typically measuring around 2–3 inches (5–8 cm) in length.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  These frogs are primarily arboreal, spending most of their time in trees and shrubs.<br>
+                  They are known for their unique mating calls, which can be heard during the breeding season.<br>
+                  Brazilian Gold Frogs are agile climbers and can leap impressive distances between branches.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  The Brazilian Gold Frog inhabits the humid understory of the Atlantic Forest, preferring areas with dense vegetation.<br>
+                  They are often found near streams or ponds, where they breed and lay eggs.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Brazilian Gold Frogs are insectivorous, primarily feeding on small insects and other invertebrates.<br>
+                  They use their long tongues to catch prey quickly and efficiently.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, male Brazilian Gold Frogs call to attract females. Once a female selects a mate, they engage in amplexus, where the male grasps the female to fertilize the eggs as she lays them. The eggs are typically laid in small clusters on leaves overhanging water. After hatching, the tadpoles drop into the water below, where they continue their development.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  The Brazilian Gold Frog plays an important role in its ecosystem as a predator of small insects, helping to control their populations.<br>
+                  Its presence is also an indicator of healthy, undisturbed forest habitats.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  The Brazilian Gold Frog is known for its vibrant coloration, which serves as a warning to predators about its toxicity.<br>
+                  It has a unique reproductive strategy, laying eggs on leaves above water to protect them from aquatic predators.<br>
+                  This species is considered endangered due to habitat loss and deforestation in the Atlantic Forest.<br>
+                  Brazilian Gold Frogs are also known for their ability to change color slightly depending on their environment.<br>
+                  They can live up to 10 years in the wild.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Brazilian Gold Frog')">← Back</button>
+              </div>
+            <div id="Poison Dart Frog" class="info-section">
+              <h2>Poison Dart Frog</h2>
+              <img src="list_image/poison-dart-frog-blue.jpg" alt="Poison Dart Frog"/>
+              <p>Scientific Name: <b>Dendrobates tinctorius</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  Poison Dart Frogs are small, brightly colored frogs native to the tropical rainforests of Central and South America.<br>
+                  They are known for their vibrant colors and potent skin toxins, which they use for defense against predators.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  Poison Dart Frogs have smooth, moist skin that can vary in color from bright blue to yellow, red, or green.<br>
+                  They are small, typically measuring around 1–2 inches (2.5–5 cm) in length.<br>
+                  Their skin contains potent alkaloid toxins, which can be harmful or even lethal to predators.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  These frogs are primarily diurnal, meaning they are most active during the day.<br>
+                  They are known for their unique mating calls, which can be heard during the breeding season.<br>
+                  Poison Dart Frogs are agile climbers and can leap impressive distances between branches.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  Poison Dart Frogs inhabit the humid understory of tropical rainforests, preferring areas with dense vegetation.<br>
+                  They are often found near streams or ponds, where they breed and lay eggs.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Poison Dart Frogs are insectivorous, primarily feeding on small insects and other invertebrates.<br>
+                  They use their long tongues to catch prey quickly and efficiently.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, male Poison Dart Frogs call to attract females. Once a female selects a mate, they engage in amplexus, a mating position where the male grasps the female. The female then lays her eggs on leaves above water, and the male fertilizes them. After the eggs hatch, the male often carries the tadpoles on his back to a suitable water source.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  Poison Dart Frogs play an important role in their ecosystem as predators of small insects, helping to control their populations.<br>
+                  Their bright coloration serves as a warning to potential predators about their toxicity, which is a form of aposematism.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  Poison Dart Frogs are named for the indigenous people of South America, who used their skin toxins to poison the tips of blow darts for hunting.<br>
+                  The toxicity of these frogs varies by species and is influenced by their diet, which includes specific ants and other invertebrates.<br>
+                  Some species of Poison Dart Frogs are kept as pets, but they lose their toxicity in captivity due to a lack of their natural diet.<br>
+                  They can live up to 10 years in the wild and are known for their complex social behaviors during mating.<br>
+                  Poison Dart Frogs are also known for their unique parental care, with males often carrying the tadpoles on their backs to water sources.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Poison Dart Frog')">← Back</button>
+            </div>
+            <div id="Glass Frog" class="info-section">
+                <h2>Glass Frog</h2>
+                <p>Glass Frogs are known for their translucent skin, which allows you to see their internal organs.</p>
+                <img src="list_image/glass frog.jpg" alt="Glass Frog"/>
+                <p>Scientific Name: <b>Hyalinobatrachium fleischeri</b></p>
+                <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  Glass Frogs are small, arboreal frogs native to the tropical rainforests of Central and South America.<br>
+                  They are known for their unique translucent skin, which allows you to see their internal organs.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  Glass Frogs are small, typically measuring 2 to 3 inches in length.<br>
+                  They have a distinctive green coloration on their dorsal side, while their ventral side is translucent, allowing visibility of their internal organs.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  These frogs are primarily nocturnal and are excellent climbers, spending most of their time in trees.<br>
+                  They are known for their unique mating calls, which can be heard during the breeding season.<br>
+                  Glass Frogs are generally solitary creatures but may come together during the breeding season.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  Glass Frogs inhabit the humid understory of tropical rainforests, preferring areas with dense vegetation.<br>
+                  They are often found near streams or ponds, where they breed and lay eggs.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Glass Frogs are insectivorous, primarily feeding on small insects and other invertebrates.<br>
+                  They use their long tongues to catch prey quickly and efficiently.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, male Glass Frogs call to attract females, often using unique vocalizations.<br>
+                  After mating, females lay their eggs on leaves overhanging water, and the tadpoles drop into the water below upon hatching.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  Glass Frogs play an important role in their ecosystem as predators of small insects, helping to control their populations.<br>
+                  Their unique skin adaptation provides camouflage against predators, making them less visible in their leafy habitats.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  Glass Frogs are named for their translucent skin, which allows you to see their internal organs.<br>
+                  They are known for their unique reproductive behaviors, including the use of vocalizations and visual displays to attract mates.
+                </p>
+                <p>
+                  Glass Frogs are sensitive to environmental changes, making them important indicators of ecosystem health.<br>
+                  They can live up to 10 years in the wild and are known for their complex social behaviors during mating.<br>
+                  Glass Frogs are also known for their unique parental care, with males often guarding the eggs and transporting the tadpoles to water after hatching.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Glass Frog')">← Back</button>
+            </div>
+
+            <div id="Tree Frog" class="info-section">
+              <h2>Tree Frog</h2>
+              <p>Tree Frogs are known for their ability to climb trees and their distinctive vocalizations.</p>
+              <img src="list_image/tree frog.jpg" alt="Tree Frog"/>
+              <p>Scientific Name: <b>Hyla cinerea</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  Tree Frogs are small, arboreal frogs found in various habitats, including forests, wetlands, and gardens.<br>
+                  They are known for their ability to climb trees and their distinctive vocalizations.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  Tree Frogs have smooth, moist skin that can vary in color from green to brown or gray.<br>
+                  They have long limbs and large toe pads that help them climb and grip onto surfaces.<br>
+                  These frogs are typically small, measuring around 1–3 inches (2.5–7.5 cm) in length.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  Tree Frogs are primarily nocturnal and are excellent climbers.<br>
+                  They use their long limbs and toe pads to navigate through trees and shrubs.<br>
+                  Tree Frogs are known for their unique mating calls, which can be heard during the breeding season.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  Tree Frogs inhabit a variety of habitats, including forests, wetlands, and gardens.<br>
+                  They prefer areas with plenty of vegetation and access to water sources for breeding.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Tree Frogs are insectivorous, primarily feeding on small insects and other invertebrates.<br>
+                  They use their long tongues to catch prey quickly and efficiently.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, male Tree Frogs call to attract females, often using distinctive vocalizations.<br>
+                  Females lay their eggs in water, where they hatch into tadpoles before undergoing metamorphosis into adult frogs.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  Tree Frogs play an important role in their ecosystem as predators of small insects, helping to control their populations.<br>
+                  Their ability to climb trees allows them to access a variety of food sources and avoid ground-based predators.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  Tree Frogs have a unique ability to change color based on their environment, helping them blend in with their surroundings.<br>
+                  Some species can even produce toxins to deter predators.
+                </p>
+                <p>
+                  Tree Frogs are known for their distinctive vocalizations, which vary by species and can include croaks, whistles, and trills.<br>
+                  They can live up to 5–10 years in the wild and are often found in gardens and parks, where they help control insect populations.<br>
+                  Tree Frogs are also known for their unique parental care, with some species guarding their eggs or transporting tadpoles to water sources.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Tree Frog')">← Back</button>
+            </div>
+
+            <div id="Flying Frog" class="info-section">
+              <h2>Flying Frog</h2>
+              <p>Flying Frogs are known for their unique ability to glide through the air using their webbed feet.</p>
+              <img src="list_image/frog fly.jpg" alt="Flying Frog"/>
+              <p>Scientific Name: <b>Rhacophorus nigropalmatus</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+                <p>
+                  Flying Frogs are arboreal frogs native to the rainforests of Southeast Asia.<br>
+                  They are known for their unique ability to glide through the air using their webbed feet.
+                </p>
+                <h3>Physical Characteristics</h3>
+                <p>
+                  Flying Frogs have smooth, moist skin that is typically green or brown in color.<br>
+                  They have large, webbed feet that allow them to glide through the air when jumping from tree to tree.<br>
+                  These frogs are relatively small, measuring around 2–4 inches (5–10 cm) in length.
+                </p>
+                <h3>Behavior and Movement</h3>
+                <p>
+                  Flying Frogs are primarily nocturnal and are excellent climbers.<br>
+                  They use their webbed feet to glide through the air, allowing them to travel long distances between trees.<br>
+                  Flying Frogs are known for their unique mating calls, which can be heard during the breeding season.
+                </p>
+                <h3>Habitat</h3>
+                <p>
+                  Flying Frogs inhabit the humid understory of tropical rainforests, preferring areas with dense vegetation.<br>
+                  They are often found near streams or ponds, where they breed and lay eggs.
+                </p>
+                <h3>Feeding Habits</h3>
+                <p>
+                  Flying Frogs are insectivorous, primarily feeding on small insects and other invertebrates.<br>
+                  They use their long tongues to catch prey quickly and efficiently.
+                </p>
+                <h3>Breeding and Parenting</h3>
+                <p>
+                  During the breeding season, male Flying Frogs call to attract females, and they engage in elaborate courtship displays. After mating, females lay their eggs on leaves overhanging water, and the tadpoles drop into the water below once they hatch.
+                </p>
+                <h3>Niche and Ecological Role</h3>
+                <p>
+                  Flying Frogs play an important role in their ecosystem as predators of small insects, helping to control their populations.<br>
+                  Their unique gliding ability allows them to access a variety of food sources and avoid ground-based predators.
+                </p>
+                <h3>Fascinating Facts</h3>
+                <p>
+                  Flying Frogs are named for their unique ability to glide through the air, which is a rare adaptation among frogs.<br>
+                  They can glide distances of up to 50 feet (15 meters) by spreading their webbed feet and using them like parachutes.<br>
+                  This species is considered vulnerable due to habitat loss and deforestation in their native range.<br>
+                  Flying Frogs are also known for their unique courtship behavior, which involves elaborate displays and vocalizations during mating season.
+                </p>
+                <button class="back-btn" onclick="hideInfo('Flying Frog')">← Back</button>
+            </div>
+
+          </div>
+
+                  
+
+      <!-- Toads Section -->
+      <div id="toad-list" class="info-section">
+        <h2>🐸 Toads</h2>
+        <div class="readmore-block">
+          <p class="par">
+            Toads are a group of amphibians characterized by their dry, warty skin and stout bodies. While closely related to frogs, toads have adapted to more terrestrial lifestyles and can be found in drier environments.
+          </p>
+          <button class="read-more-toggle">Read More</button>
+          <div class="read-more">
+            <p>
+              Toads are actually a specialized group of frogs that have evolved adaptations for terrestrial life. Their thick, warty skin helps prevent water loss, allowing them to venture farther from water sources than typical frogs. The "warts" are actually specialized glands that can secrete toxic or noxious substances for protection.<br><br>
+              
+              Most toads have prominent parotoid glands behind their eyes that produce bufotoxins - powerful chemical deterrents against predators. These toxins can cause severe irritation or even death in small predators, making toads formidable despite their passive appearance.<br><br>
+              
+              Toad reproduction still requires water, but many species are more flexible in their breeding site requirements. Some species can breed in temporary pools, slow-moving streams, or even roadside ditches. Their eggs are typically laid in long strings rather than clusters.<br><br>
+              
+              Ecologically, toads are important pest controllers, consuming large quantities of insects, slugs, and other invertebrates. A single toad can eat thousands of insects in a growing season, making them valuable allies in agriculture and gardening.<br><br>
+              
+              Many toad species are excellent colonizers and can adapt to disturbed habitats, though some specialized species are threatened by habitat loss and pollution.
+            </p>
+            <button class="read-more-toggle">Read Less</button>
+          </div>
+        </div>
+        
+        <div class="animal-buttons">
+          <button class="button" onclick="showInfo('Cane Toad')">Cane Toad</button>
+          <button class="button" onclick="showInfo('Oak Toad')">Oak Toad</button>
+          <button class="button" onclick="showInfo('Common Toad')">Common Toad</button>
+          <button class="button" onclick="showInfo('Surinam Toad')">Surinam Toad</button>
+        </div>
+        <button class="back-btn" onclick="hideInfo('toad-list')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Amphibian Category Buttons -->
+    <div class="main-categories">
+      <button class="category-btn" onclick="showInfo('salamander-list')">🦎 Salamanders & Newts</button>
+      <button class="category-btn" onclick="showInfo('frog-list')">🐸 Frogs</button>
+      <button class="category-btn" onclick="showInfo('toad-list')">🐸 Toads</button>
+    </div>
+
+            <div id="Cane Toad" class="info-section">
+              <h2>Cane Toad</h2>
+              <img src="list_image/cane.jpg" alt="Cane Toad"/>
+              <p>Scientific Name: <b>Rhinella marina</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+              <p>The Cane Toad is a large, robust toad native to Central and South America, but introduced to many other regions. It is known for its warty skin, toxic secretions, and adaptability to various environments.</p>
+              <h3>Physical Characteristics</h3>
+              <p>
+              Cane Toads have dry, warty skin, large parotoid glands behind the eyes, and can grow up to 9 inches (23 cm) long. Their coloration ranges from brown to olive.
+              </p>
+              <h3>Habitat</h3>
+              <p>
+              Found in grasslands, forests, and urban areas, especially near water sources for breeding.
+              </p>
+              <h3>Feeding Habits</h3>
+              <p>
+              Omnivorous; feeds on insects, small animals, and even pet food in urban areas.
+              </p>
+              <h3>Behavior and Movement</h3>
+              <p>
+              Cane Toads are mostly nocturnal and move with slow hops or walks. They are highly adaptable and can survive in disturbed habitats. When threatened, they inflate their bodies and secrete toxins from their skin.
+              </p>
+              <h3>Breeding and Parenting</h3>
+              <p>
+              Breeds in ponds, ditches, and slow-moving streams. Females lay long strings of eggs, sometimes up to 30,000 at a time. Tadpoles develop quickly and are also toxic to predators. There is no parental care after eggs are laid.
+              </p>
+              <h3>Niche and Ecological Role</h3>
+              <p>
+              Cane Toads help control insect populations but can disrupt native ecosystems where introduced. Their toxins can poison native predators, leading to declines in local wildlife.
+              </p>
+              <h3>Fascinating Facts</h3>
+              <p>
+              Cane Toads secrete toxins that can be fatal to predators and pets.<br>
+              They were introduced to Australia in 1935 to control pests, but became a major invasive species.<br>
+              Cane Toads can lay up to 30,000 eggs at a time.<br>
+              Their skin toxins have been used in traditional medicine and as a hallucinogen in some cultures.<br>
+              They are considered invasive in many countries.<br>
+              Cane Toads can live up to 10–15 years in the wild.<br>
+              </p>
+             
+              </p>
+              <h3>Unique Adaptations</h3>
+              <p>
+              Cane Toads can tolerate a wide range of environments, from dry grasslands to urban gardens. Their parotoid glands produce bufotoxin, a chemical defense that deters most predators. They are able to survive droughts by burrowing and can travel long distances in search of water.
+              </p>
+              <h3>Interesting Behaviors</h3>
+              <p>
+              Cane Toads are known to eat almost anything, including pet food, carrion, and even other toads. They are active at night and are attracted to lights, which often brings them into contact with humans. Their call is a loud, harsh trill, especially during the breeding season.
+              </p>
+              <button class="back-btn" onclick="hideInfo('Cane Toad')">← Back</button>
+            </div>
+
+            <div id="Oak Toad" class="info-section">
+              <h2>Oak Toad</h2>
+              <img src="list_image/oak toad .jpg" alt="Oak Toad"/>
+              <p>Scientific Name: <b>Anaxyrus quercicus</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+              <p>The Oak Toad is the smallest North American toad, native to the southeastern United States. It is known for its small size, distinctive white stripe down its back, and preference for sandy pine forests and oak woodlands.</p>
+              <h3>Physical Characteristics</h3>
+              <p>
+              Oak Toads are small, rarely exceeding 1.5 inches (3.8 cm) in length. They have dry, warty skin, a prominent white or yellow stripe down the back, and dark spots on a gray or brown background.
+              </p>
+              <h3>Habitat</h3>
+              <p>
+              Found in sandy pine forests, oak woodlands, and savannas, often near temporary ponds or ditches for breeding.
+              </p>
+              <h3>Feeding Habits</h3>
+              <p>
+              Insectivorous; feeds on ants, beetles, spiders, and other small invertebrates.
+              </p>
+              <h3>Behavior and Movement</h3>
+              <p>
+              Oak Toads are active during the day and night, moving with short hops. They burrow into sand or hide under leaf litter to avoid predators and desiccation.
+              </p>
+              <h3>Breeding and Parenting</h3>
+              <p>
+              Breeds in shallow, temporary pools after heavy rains. Females lay strings of eggs attached to vegetation. Tadpoles develop rapidly and transform into toadlets within a few weeks. No parental care after eggs are laid.
+              </p>
+              <h3>Niche and Ecological Role</h3>
+              <p>
+              Oak Toads help control populations of small insects and are prey for birds, snakes, and mammals. Their presence indicates healthy, undisturbed sandy habitats.
+              </p>
+              <h3>Fascinating Facts</h3>
+              <p>
+              Oak Toads are the smallest toad species in North America.<br>
+              Their call is a high-pitched peep, often heard after summer rains.<br>
+              They can tolerate dry conditions by burrowing and reducing activity.<br>
+              Oak Toads are considered a species of concern in some areas due to habitat loss.<br>
+              </p>
+              <button class="back-btn" onclick="hideInfo('Oak Toad')">← Back</button>
+            </div>
+
+            <div id="Common Toad" class="info-section">
+              <h2>Common Toad</h2>
+              <img src="list_image/common toad.jpg" alt="Common Toad"/>
+              <p>Scientific Name: <b>Bufo bufo</b></p>
+              <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+              <p>The Common Toad is widespread across Europe and parts of Asia. It is known for its dry, warty skin and slow, lumbering movement.</p>
+              <h3>Physical Characteristics</h3>
+              <p>
+              Medium to large size, brown or olive skin with warts, and horizontal pupils.<br>
+              Stout body, short legs, and a broad head with prominent parotoid glands behind the eyes.<br>
+              Skin is dry and covered in small bumps or warts, which help retain moisture and provide some protection from predators.
+              </p>
+              <h3>Habitat</h3>
+              <p>
+              Found in woodlands, gardens, grasslands, farmland, and near ponds for breeding.<br>
+              Prefers damp environments but can be found far from water outside the breeding season.<br>
+              Often shelters under logs, stones, or in burrows during the day.
+              </p>
+              <h3>Feeding Habits</h3>
+              <p>
+              Eats insects, worms, spiders, slugs, and other small invertebrates.<br>
+              Hunts mainly at night using a sit-and-wait strategy, catching prey with a sticky tongue.<br>
+              Plays an important role in controlling pest populations in gardens and agricultural areas.
+              </p>
+              <h3>Behavior and Movement</h3>
+              <p>
+              Moves with a slow, deliberate walk or short hops rather than long jumps.<br>
+              Nocturnal and spends the day hidden in cool, damp places.<br>
+              Migrates to breeding ponds in spring, sometimes traveling long distances.<br>
+              Can remain dormant during cold or dry periods by burrowing underground.
+              </p>
+              <h3>Breeding and Parenting</h3>
+              <p>
+              Breeds in ponds, lakes, and slow-moving streams in early spring.<br>
+              Females lay long strings of eggs (spawn) in water, which hatch into tadpoles.<br>
+              Tadpoles undergo metamorphosis into juvenile toads over several weeks.<br>
+              No parental care after eggs are laid; juveniles are independent from birth.
+              </p>
+              <h3>Niche and Ecological Role</h3>
+              <p>
+              Important predator of garden and crop pests.<br>
+              Prey for birds, snakes, mammals, and some fish.<br>
+              Their presence indicates a healthy, balanced ecosystem.<br>
+              Toads help aerate soil through their burrowing behavior.
+              </p>
+              <h3>Fascinating Facts</h3>
+              <p>
+              Common Toads migrate to water bodies in spring to breed, often returning to the same pond each year.<br>
+              They can live up to 40 years in the wild.<br>
+              Produce a mild toxin from their skin that deters many predators.<br>
+              Can play dead or puff up their bodies when threatened.<br>
+              Important for controlling garden pests such as slugs and insects.<br>
+              Their warty skin is not contagious and does not cause warts in humans.<br>
+              Toads have been featured in folklore and literature for centuries.
+              </p>
+              <button class="back-btn" onclick="hideInfo('Common Toad')">← Back</button>
+            </div>
+
+            <div id="Surinam Toad" class="info-section">
+              <h2>Surinam Toad</h2>
+              <img src="list_image/surinam.jpg" alt="Surinam Toad"/>
+              <p>Scientific Name: <b>Pipa pipa</b></p>
+              <p>Reproduction Type: <abbr data-tooltip="They lay eggs."><b>Oviparous</b></abbr></p>
+              <p>The Surinam Toad is an aquatic toad native to South America, famous for its flat, leaf-like body and unique reproductive method.</p>
+              <h3>Physical Characteristics</h3>
+              <p>
+              Flattened, brownish body, small eyes, and webbed feet.<br>
+              Adults can reach up to 8 inches (20 cm) in length.<br>
+              Their skin is rough and covered in small, star-shaped sensory organs.
+              </p>
+              <h3>Habitat</h3>
+              <p>
+              Inhabits slow-moving rivers, ponds, and swamps in tropical rainforests.<br>
+              Prefers muddy bottoms with plenty of leaf litter for camouflage.<br>
+              Found in countries such as Brazil, Suriname, Guyana, and Peru.
+              </p>
+              <h3>Feeding Habits</h3>
+              <p>
+              Carnivorous; feeds on small fish, worms, and aquatic invertebrates.<br>
+              Uses a suction feeding method by rapidly opening its mouth to draw in prey.<br>
+              Lacks a tongue, so it relies on its forelimbs to help manipulate food.
+              </p>
+              <h3>Behavior and Movement</h3>
+              <p>
+              Surinam Toads are fully aquatic and rarely leave the water.<br>
+              They are mostly nocturnal and remain motionless during the day.<br>
+              Their webbed feet aid in swimming and digging into the substrate.
+              </p>
+              <h3>Breeding and Parenting</h3>
+              <p>
+              Mating involves an elaborate underwater "somersault" where the male fertilizes the eggs and presses them onto the female's back.<br>
+              The skin on the female's back swells and forms pockets, where the eggs are embedded.<br>
+              Tadpoles develop inside these pockets and emerge as fully formed toadlets after several weeks.<br>
+              This unique brooding method provides protection from predators and environmental hazards.
+              </p>
+              <h3>Niche and Ecological Role</h3>
+              <p>
+              Surinam Toads help control populations of aquatic invertebrates and small fish.<br>
+              Their presence indicates healthy, unpolluted freshwater habitats.<br>
+              They serve as prey for larger fish, birds, and mammals.
+              </p>
+              <h3>Fascinating Facts</h3>
+              <p>
+              Females carry fertilized eggs embedded in the skin of their backs, where the young develop and emerge as fully formed toadlets.<br>
+              Surinam Toads have no tongue or teeth and use their hands to shovel food into their mouths.<br>
+              Their unique reproductive method is one of the most unusual among amphibians.<br>
+              They can remain motionless for long periods, camouflaged among leaf litter in the water.<br>
+              Their star-shaped sensory organs help detect vibrations and movement in the water.<br>
+              The Surinam Toad can live up to 8 years in the wild.<br>
+              </p>
+              <button class="back-btn" onclick="hideInfo('Surinam Toad')">← Back</button>
+            </div>
+
+          </div>
+
+      <!-- Crocodilian Individual Animal Sections -->
+      <div id="American Alligator" class="info-section">
+        <h2>American Alligator</h2>
+        <img src="list_image/american-alligator.jpg" alt="American Alligator" />
+        <p>Scientific Name: <b>Alligator mississippiensis</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The American Alligator is a large, semi-aquatic crocodilian native to the southeastern United States. Once near extinction, it has made a remarkable recovery and is now considered a conservation success story. These powerful predators are keystone species in their wetland ecosystems.</p>
+        <h3>Habitat</h3>
+        <p>American Alligators inhabit freshwater environments including swamps, marshes, rivers, lakes, and ponds throughout the southeastern United States, from North Carolina to Texas.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Adult males can reach 11-15 feet in length and weigh up to 1,000 pounds. They have broad, rounded snouts, powerful tails, and armored skin. Their coloration is dark olive-brown to black.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic predators feeding on fish, birds, mammals, reptiles, and amphibians. They are ambush hunters with one of the strongest bite forces in the animal kingdom.</p>
+        <h3>Behavior and Parenting</h3>
+        <p>Females build large mound nests and provide extensive parental care, carrying hatchlings to water and protecting them for up to two years. They communicate through vocalizations and body language.</p>
+        <button class="back-btn" onclick="hideInfo('American Alligator')">← Back</button>
+      </div>
+
+      <div id="American Crocodile" class="info-section">
+        <h2>American Crocodile</h2>
+        <img src="list_image/american-crocodile.jpg" alt="American Crocodile" />
+        <p>Scientific Name: <b>Crocodylus acutus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The American Crocodile is a large crocodilian found in coastal areas of the Caribbean, Central America, and southern Florida. Unlike their alligator cousins, they can tolerate saltwater and are excellent swimmers in marine environments.</p>
+        <h3>Habitat</h3>
+        <p>Coastal areas, mangrove swamps, river mouths, and saltwater lagoons from southern Florida through Central America and the Caribbean islands.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 20 feet. Distinguished from alligators by their narrower, more pointed snouts and visible teeth when mouth is closed. Olive-green to gray coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Diet includes fish, birds, crabs, turtles, and small mammals. They are excellent swimmers and often hunt in deeper waters than alligators.</p>
+        <h3>Conservation Status</h3>
+        <p>Listed as vulnerable, with habitat loss and hunting being primary threats. Conservation efforts have helped stabilize some populations.</p>
+        <button class="back-btn" onclick="hideInfo('American Crocodile')">← Back</button>
+      </div>
+
+      <div id="Saltwater Crocodile" class="info-section">
+        <h2>Saltwater Crocodile</h2>
+        <img src="list_image/saltwater-crocodile.jpg" alt="Saltwater Crocodile" />
+        <p>Scientific Name: <b>Crocodylus porosus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Saltwater Crocodile is the largest living crocodilian and the largest terrestrial predator on Earth. Found throughout Southeast Asia and northern Australia, these apex predators are renowned for their size, strength, and aggressive nature.</p>
+        <h3>Habitat</h3>
+        <p>Coastal waters, rivers, swamps, and estuaries from India and Southeast Asia to northern Australia. They can travel far out to sea.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Males can exceed 23 feet in length and weigh over 2,200 pounds. They have the strongest bite force of any animal, exceeding 3,700 psi. Broad head with powerful jaws.</p>
+        <h3>Feeding Habits</h3>
+        <p>Apex predators that hunt fish, birds, mammals, and other reptiles. Known for their "death roll" hunting technique and ability to take large prey.</p>
+        <h3>Behavior</h3>
+        <p>Highly territorial and aggressive. Excellent swimmers capable of traveling hundreds of miles through ocean waters. Mothers provide extensive parental care.</p>
+        <button class="back-btn" onclick="hideInfo('Saltwater Crocodile')">← Back</button>
+      </div>
+
+      <div id="Nile Crocodile" class="info-section">
+        <h2>Nile Crocodile</h2>
+        <img src="list_image/nile-crocodile.jpg" alt="Nile Crocodile" />
+        <p>Scientific Name: <b>Crocodylus niloticus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Nile Crocodile is Africa's largest crocodilian and one of the most feared predators on the continent. These ancient hunters have terrorized and fascinated humans for millennia, featuring prominently in Egyptian mythology and culture.</p>
+        <h3>Habitat</h3>
+        <p>Rivers, lakes, marshes, and coastal areas throughout much of Africa, from the Nile River basin to southern Africa.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 20 feet and weigh over 1,650 pounds. Dark olive-bronze coloration with darker cross-banding. Powerful build with armored skin.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic predators that hunt fish, birds, zebras, hippos, and other large mammals. Known for cooperative hunting behavior during wildebeest migrations.</p>
+        <h3>Cultural Significance</h3>
+        <p>Revered and feared in ancient Egyptian culture, often associated with the god Sobek. Featured prominently in African folklore and modern conservation efforts.</p>
+        <button class="back-btn" onclick="hideInfo('Nile Crocodile')">← Back</button>
+      </div>
+
+      <div id="Gharial" class="info-section">
+        <h2>Gharial</h2>
+        <img src="list_image/gharial.jpg" alt="Gharial" />
+        <p>Scientific Name: <b>Gavialis gangeticus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Gharial is a critically endangered crocodilian native to the Indian subcontinent. Distinguished by its extremely narrow snout and the bulbous growth (ghara) on mature males' snouts, gharials are specialized fish-eaters and among the most aquatic of all crocodilians.</p>
+        <h3>Habitat</h3>
+        <p>Fast-flowing rivers with sandy banks in India and Nepal, primarily the Ganges, Brahmaputra, Mahanadi, and Indus river systems.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Males can reach 20 feet in length. Distinguished by extremely narrow snouts adapted for catching fish, and the distinctive bulbous "ghara" on mature males. Olive-green coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Specialized fish-eaters with narrow snouts perfectly adapted for catching slippery prey underwater. Their diet consists almost entirely of fish.</p>
+        <h3>Conservation Status</h3>
+        <p>Critically endangered with fewer than 200 breeding adults remaining in the wild. Threats include habitat loss, fishing nets, and pollution.</p>
+        <button class="back-btn" onclick="hideInfo('Gharial')">← Back</button>
+      </div>
+
+      <div id="Chinese Alligator" class="info-section">
+        <h2>Chinese Alligator</h2>
+        <img src="list_image/chinese-alligator.jpg" alt="Chinese Alligator" />
+        <p>Scientific Name: <b>Alligator sinensis</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Chinese Alligator is one of the world's most endangered crocodilians, with fewer than 130 individuals remaining in the wild. Native to eastern China, these small alligators are critically important for conservation efforts and scientific research.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater wetlands, ponds, and slow-moving rivers in the Yangtze River valley of eastern China. Historically more widespread.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Smaller than American Alligators, reaching only 5-7 feet in length. Heavily armored with bony plates and a broad, rounded snout. Dark coloration with lighter banding.</p>
+        <h3>Feeding Habits</h3>
+        <p>Diet consists of fish, snails, mussels, birds, and small mammals. They are less aggressive than their American cousins.</p>
+        <h3>Conservation Efforts</h3>
+        <p>Critically endangered with extensive captive breeding programs. Habitat restoration and release programs are ongoing but face significant challenges.</p>
+        <button class="back-btn" onclick="hideInfo('Chinese Alligator')">← Back</button>
+      </div>
+
+      <div id="Spectacled Caiman" class="info-section">
+        <h2>Spectacled Caiman</h2>
+        <img src="list_image/spectacled-caiman.jpg" alt="Spectacled Caiman" />
+        <p>Scientific Name: <b>Caiman crocodilus</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Spectacled Caiman is the most widespread crocodilian in the Americas, found from southern Mexico to northern Argentina. Named for the bony ridge between their eyes that resembles spectacles, these adaptable crocodilians thrive in various aquatic habitats.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater habitats including rivers, lakes, wetlands, and even man-made water bodies throughout Central and South America.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Medium-sized crocodilians reaching 6-8 feet in length. Distinguished by the bony ridge connecting the eyes and relatively narrow snout. Olive-green to brown coloration.</p>
+        <h3>Feeding Habits</h3>
+        <p>Opportunistic feeders consuming fish, birds, small mammals, reptiles, and invertebrates. Diet varies with age and availability of prey.</p>
+        <h3>Adaptability</h3>
+        <p>Highly adaptable to human-modified environments, often found in agricultural areas and urban water bodies. This adaptability has helped them maintain stable populations.</p>
+        <button class="back-btn" onclick="hideInfo('Spectacled Caiman')">← Back</button>
+      </div>
+
+      <div id="Black Caiman" class="info-section">
+        <h2>Black Caiman</h2>
+        <img src="list_image/black-caiman.jpg" alt="Black Caiman" />
+        <p>Scientific Name: <b>Melanosuchus niger</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Black Caiman is the largest crocodilian in South America and the apex predator of the Amazon basin. Once heavily hunted for their valuable hides, conservation efforts have helped their populations recover in many areas.</p>
+        <h3>Habitat</h3>
+        <p>Slow-moving rivers, flooded forests, lakes, and wetlands throughout the Amazon basin in South America.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 16 feet and weigh over 880 pounds. Dark coloration with lighter bands, particularly visible in juveniles. Broad snout and powerful build.</p>
+        <h3>Feeding Habits</h3>
+        <p>Apex predators feeding on fish, birds, mammals, and other reptiles. Adults can take large prey including capybaras, deer, and even jaguars.</p>
+        <h3>Ecological Role</h3>
+        <p>Keystone species in Amazon ecosystems, helping maintain fish populations and creating habitat for other species through their movements and nesting activities.</p>
+        <button class="back-btn" onclick="hideInfo('Black Caiman')">← Back</button>
+      </div>
+
+      <div id="Cuban Crocodile" class="info-section">
+        <h2>Cuban Crocodile</h2>
+        <img src="list_image/cuban-crocodile.jpg" alt="Cuban Crocodile" />
+        <p>Scientific Name: <b>Crocodylus rhombifer</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The Cuban Crocodile is one of the most endangered crocodilian species, found only in Cuba's Zapata Swamp and Isla de la Juventud. These highly intelligent and aggressive crocodiles are known for their ability to leap out of water and their distinctive diamond-shaped scales.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater swamps and marshes in Cuba, primarily the Zapata Swamp and Lanier Swamp on Isla de la Juventud.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Medium-sized crocodiles reaching 10-11 feet in length. Distinguished by their bright coloration, diamond-shaped scales, and relatively short, broad snout.</p>
+        <h3>Unique Abilities</h3>
+        <p>Exceptional jumpers capable of leaping several feet out of water. Highly intelligent and known for their problem-solving abilities and tool use.</p>
+        <h3>Conservation Status</h3>
+        <p>Critically endangered with only about 3,000-4,000 individuals remaining. Hybridization with American crocodiles poses an additional threat.</p>
+        <button class="back-btn" onclick="hideInfo('Cuban Crocodile')">← Back</button>
+      </div>
+
+      <div id="False Gharial" class="info-section">
+        <h2>False Gharial</h2>
+        <img src="list_image/false-gharial.jpg" alt="False Gharial" />
+        <p>Scientific Name: <b>Tomistoma schlegelii</b></p>
+        <p>Reproduction Type: <abbr title="They lay eggs."><b>Oviparous</b></abbr></p>
+        <p>The False Gharial is a critically endangered crocodilian found in Southeast Asia. Despite its name, recent genetic studies suggest it may be more closely related to gharials than to true crocodiles. These semi-aquatic predators are known for their narrow snouts and arboreal tendencies.</p>
+        <h3>Habitat</h3>
+        <p>Freshwater swamps, rivers, and peat swamp forests in Malaysia, Indonesia, Brunei, and Thailand.</p>
+        <h3>Physical Characteristics</h3>
+        <p>Can reach lengths of up to 16 feet. Distinguished by their narrow snout (similar to gharials), dark coloration with lighter bands, and relatively long legs.</p>
+        <h3>Feeding Habits</h3>
+        <p>Primarily fish-eaters, but also consume crustaceans, amphibians, and small mammals. Their narrow snouts are adapted for catching fish.</p>
+        <h3>Unique Behavior</h3>
+        <p>Unusual among crocodilians for their tendency to climb and bask on fallen logs and low branches. Mothers provide extended parental care.</p>
+        <button class="back-btn" onclick="hideInfo('False Gharial')">← Back</button>
+      </div>
+
+      <hr>
+
+    
+
+  
     <footer>
       <p>© 2025 Animal Atlas | Group 6A Project</p>
     </footer>
 
-    <script src="list.js"></script>
-</body>
+    <script src="mammals.js"></script>
+  </body>
 </html>

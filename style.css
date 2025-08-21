@@ -361,3 +361,151 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .menu {
+    height: auto;
+  }
+  ul {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 0;
+  }
+  ul li {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+    box-shadow: none;
+  }
+  .content {
+    padding: 16px;
+    margin: 8px;
+    max-width: 100%;
+  }
+  .animal-cards, .gallery-row {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 8px;
+  }
+  .card {
+    width: 95vw;
+    min-width: 0;
+    padding: 12px 6px 14px 6px;
+  }
+  .card img, .gallery-row img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    min-width: 0;
+  }
+  .gallery {
+    padding: 8px;
+  }
+  .gallery-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+  .search {
+    flex-direction: column;
+    padding: 8px;
+  }
+  .srch, .btn {
+    width: 90vw;
+    max-width: 350px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+  .dropdown-content a {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .content .par, .content p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Hamburger menu button */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 6px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #00B050, #00704A);
+    box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding-top: 80px;
+    transition: left 0.3s;
+}
+.sidebar.active {
+    display: block;
+}
+.sidebar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+.sidebar ul li {
+    margin: 18px 0;
+}
+.sidebar ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .menu ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sidebar.active {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding-right: 48px;
+    }
+}

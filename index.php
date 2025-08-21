@@ -19,9 +19,14 @@
       <p>Explore the fascinating world of animals!</p>
     </header>
 
-    <nav class="menu">
+   <nav class="menu">
+      <div class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
-        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.php">HOME</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">ANIMAL LIST</a>
           <div class="dropdown-content">
@@ -31,13 +36,13 @@
             <a href="../list/fish.html">SEA CREATURES</a>
           </div>
         </li>
-        <li><a href="../conservation.html">CONSERVATION</a></li>
+        <li><a href="../conserve/conservation.html">CONSERVATION</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">HABITAT</a>
           <div class="dropdown-content">
-            <a href="../habitat/ocean.html">OCEAN</a>
+            <a href="../habitat/ocean.php">OCEAN</a>
             <a href="../habitat/desert.html">DESERT</a>
-            <a href="../habitat/tropics.html">FOREST</a>
+            <a href="../habitat/tropics.php">FOREST</a>
             <a href="../habitat/arctic.html">ARCTIC</a>
           </div>
         </li>
@@ -51,6 +56,23 @@
         <li><a href="../blogfiles/blog2.html">BLOG</a></li>
       </ul>
     </nav>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="../list/mammals.html">MAMMALS</a></li>
+        <li><a href="../list/reptiles.html">REPTILES & AMPHIBIANS</a></li>
+        <li><a href="../list/bird.php">BIRDS</a></li>
+        <li><a href="../list/fish.php">SEA CREATURES</a></li>
+        <li><a href="../conserve/conservation.html">CONSERVATION</a></li>
+        <li><a href="../habitat/ocean.php">OCEAN</a></li>
+        <li><a href="../habitat/desert.html">DESERT</a></li>
+        <li><a href="../habitat/tropics.php">FOREST</a></li>
+        <li><a href="../habitat/arctic.html">ARCTIC</a></li>
+        <li><a href="../resources/facts-jokes.html">FACTS & JOKES</a></li>
+        <li><a href="../resources/quiz.html">FUN QUIZ</a></li>
+        <li><a href="../blogfiles/blog2.html">BLOG</a></li>
+      </ul>
+    </div>
 
     <div class="search">
       <form action="search.php" method="POST">
@@ -78,7 +100,7 @@
         incredible creatures that call Earth home.
       </p>
       <p><strong>Explore, Learn, and Be Inspired!</strong></p>
-      <a href="list/bird.html" class="cn">Explore Our Animals</a>
+      <a href="list/bird.php" class="cn">Explore Our Animals</a>
     </div>
 
     <main>
@@ -88,7 +110,7 @@
         <div class="animal-cards">
           <!-- Animal Card -->
           <div class="card">
-            <img src="images/dingo.jpg" alt="Dingo" />
+            <a href="../list/mammals.html"><img src="images/dingo.jpg" alt="Dingo"/></a>
             <h3>Dingo (Animal of the Week)</h3>
             <p class="des1 card-desc">
               Dingoes are highly adaptable and can thrive in various
@@ -97,10 +119,7 @@
           </div>
           <!-- Habitat Card -->
           <div class="card">
-            <img
-              src="images/tropical_rainforest.jpg"
-              alt="Tropical Rainforest"
-            />
+            <a href="../habitat/tropics.php"><img src="images/tropical_rainforest.jpg" alt="Tropical Rainforest"/></a>
             <h3>Tropical Rainforest (Weekly Habitat)</h3>
             <p class="des2 card-desc">
               Tropical rainforests are dense, warm, and wet forests that are

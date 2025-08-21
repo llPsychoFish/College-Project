@@ -1,23 +1,68 @@
+/* Enhanced Button Styles */
 .button {
-    padding: 12px 24px;
-    margin: 10px;
-    font-size: 16px;
-    border: 2px solid #2e8b57;
-    border-radius: 10px;
+    padding: 14px 22px;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #0077be;
+    border-radius: 25px;
     cursor: pointer;
-    background: none;
-    color: #2e8b57;
-  }
-  .button:hover {
-    background-color: #2e8b57;
-    color: white;
-  }
-  .info-section {
-    display: none;
-    margin-top: 30px;
-  }
+    background: linear-gradient(135deg, #ffffff, #f0f8ff);
+    color: #0077be;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 12px rgba(0, 119, 190, 0.2);
+    text-transform: capitalize;
+    min-width: 130px;
+    position: relative;
+    overflow: hidden;
+}
 
-  body {
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #0077be, #005a8b);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 119, 190, 0.4);
+    border-color: #005a8b;
+}
+
+.button:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 119, 190, 0.3);
+}
+
+/* Info Section Styles */
+.info-section {
+    display: none;
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 32px;
+    animation: fadeIn 0.3s ease-in;
+    border-top: 4px solid #0077be;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}  body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,21 +71,34 @@
 }
 
 header {
-    background: linear-gradient(to left, #00B050, #00704A);
+    background: linear-gradient(to left, #0077be, #005a8b);
     color: white;
     text-align: center;
     padding: 16px;
+}
+
+header h1::before {
+    content: "🐾 ";
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+header h1::after {
+    content: " 🌊";
+    font-size: 28px;
+    margin-left: 8px;
 }
 
 h1, h2, h3 {
     margin: 8px 0;
 }
 
+/* Enhanced Navigation Menu */
 .menu{
     width: 100%;
     height: 70px;
     clear: both;
-    background-color: #004d33;
+    background-color: #004d7a;
 }
 
 ul{
@@ -66,8 +124,8 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #FFD700;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+    color: #00BFFF;
+    text-shadow: 0 0 5px rgba(0, 191, 255, 0.6);
 }
 
 .dropdown {
@@ -78,7 +136,7 @@ ul li a:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #00704A;
+    background-color: #0077be;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -92,7 +150,7 @@ ul li a:hover{
 }
 
 .dropdown-content a:hover {
-    background-color: #004d33;
+    background-color: rgba(0, 119, 190, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,15 +161,17 @@ h1{
     text-align: center;
 }
 
+/* Enhanced Footer */
 footer {
-    background: linear-gradient(to left, #00B050, #00704A);
+    background: linear-gradient(to left, #0077be, #005a8b);
     color: white;
     text-align: center;
     padding: 16px;
     margin-top: 16px;
 }
 
-.content {
+/* Enhanced Content Styling */
+.fish-content, .sea-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 32px;
@@ -125,15 +185,28 @@ footer {
     margin-bottom: 16px;
 }
 
-.content h1 {
-    color: black;
+.fish-content h1, .sea-content h1 {
+    color: #0077be;
     text-align: center;
     font-size: 32px;
     margin-bottom: 24px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.content .par {
+.fish-content h1::before {
+    content: "🐠 ";
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.sea-content h1::before {
+    content: "🌊 ";
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.fish-content .par, .sea-content .par {
     font-size: 18px;
     margin-bottom: 24px;
     line-height: 1.8;
@@ -141,6 +214,421 @@ footer {
     color: #333;
 }
 
+/* Fish and Sea Creature List Styling */
+.fish-list, .sea-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.fishes, .creatures {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #0077be;
+    text-align: center;
+}
+
+/* Main Category Buttons for Fish */
+.fishes > .button, .creatures > .button {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+/* Bony Fish Button - Ocean Blue Theme */
+.fishes > .button:nth-child(1) {
+    background: #87CEEB;
+    border: 3px solid #87CEEB;
+}
+
+.fishes > .button:nth-child(1)::before {
+    content: "🐠 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.fishes > .button:nth-child(1):hover {
+    background: #1E90FF;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.4);
+}
+
+/* Non-Bony Fish Button - Deep Ocean Theme */
+.fishes > .button:nth-child(2) {
+    background: #4682B4;
+    border: 3px solid #4682B4;
+    color: white;
+}
+
+.fishes > .button:nth-child(2)::before {
+    content: "🦈 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.fishes > .button:nth-child(2):hover {
+    background: #191970;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(25, 25, 112, 0.4);
+}
+
+/* Sea Creatures Category Buttons - Various Ocean Themes */
+.creatures > .button:nth-child(1) { /* Mollusks */
+    background: #DDA0DD;
+    border: 3px solid #DDA0DD;
+}
+
+.creatures > .button:nth-child(1)::before {
+    content: "🐚 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(1):hover {
+    background: #9370DB;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(147, 112, 219, 0.4);
+}
+
+.creatures > .button:nth-child(2) { /* Crustaceans */
+    background: #F4A460;
+    border: 3px solid #F4A460;
+}
+
+.creatures > .button:nth-child(2)::before {
+    content: "🦀 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(2):hover {
+    background: #D2691E;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(210, 105, 30, 0.4);
+}
+
+.creatures > .button:nth-child(3) { /* Cnidarians */
+    background: #FFB6C1;
+    border: 3px solid #FFB6C1;
+}
+
+.creatures > .button:nth-child(3)::before {
+    content: "🎐 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(3):hover {
+    background: #FF69B4;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+}
+
+.creatures > .button:nth-child(4) { /* Echinoderms */
+    background: #20B2AA;
+    border: 3px solid #20B2AA;
+}
+
+.creatures > .button:nth-child(4)::before {
+    content: "⭐ ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(4):hover {
+    background: #008B8B;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 139, 139, 0.4);
+}
+
+.creatures > .button:nth-child(5) { /* Sponges */
+    background: #F0E68C;
+    border: 3px solid #F0E68C;
+}
+
+.creatures > .button:nth-child(5)::before {
+    content: "🧽 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(5):hover {
+    background: #DAA520;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(218, 165, 32, 0.4);
+}
+
+.creatures > .button:nth-child(6) { /* Marine Snakes */
+    background: #98FB98;
+    border: 3px solid #98FB98;
+}
+
+.creatures > .button:nth-child(6)::before {
+    content: "🐍 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(6):hover {
+    background: #32CD32;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 205, 50, 0.4);
+}
+
+.creatures > .button:nth-child(7) { /* Cephalopods */
+    background: #DEB887;
+    border: 3px solid #DEB887;
+}
+
+.creatures > .button:nth-child(7)::before {
+    content: "🐙 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.creatures > .button:nth-child(7):hover {
+    background: #CD853F;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(205, 133, 63, 0.4);
+}
+
+/* Enhanced Info Section Headers */
+.info-section h2 {
+    color: #0077be;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077be;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #0077be;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-left: 4px solid #0077be;
+    padding-left: 12px;
+    background: linear-gradient(to right, #f0f8ff, transparent);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.info-section p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: #444;
+    font-size: 16px;
+}
+
+.info-section p:first-of-type {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #0077be;
+    padding-left: 16px;
+    margin: 20px 0;
+    background: #f0f8ff;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+/* Scientific name and special text styling */
+.info-section p b {
+    color: #0077be;
+    font-weight: 700;
+}
+
+/* Enhanced Image Styling */
+.info-section img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 16px auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #f0f8ff;
+}
+
+/* Enhanced Back Button */
+.info-section button {
+    background: linear-gradient(135deg, #0077be, #005a8b);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 2px solid #0077be;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 119, 190, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 120px;
+}
+
+.info-section button::before {
+    content: "🌊 ";
+    margin-right: 5px;
+}
+
+.info-section button:hover {
+    background: linear-gradient(135deg, #005a8b, #004d7a);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 90, 139, 0.4);
+    border-color: #005a8b;
+}
+
 p abbr {
     text-decoration: none;
+    background-color: #e8f4fd;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border-bottom: 1px dotted #0077be;
+    font-weight: bold;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+p abbr:hover {
+    background-color: #0077be;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Individual Animal Button Emojis */
+.info-section .button:nth-child(1)::before { content: "🐠 "; } /* First fish button */
+.info-section .button:nth-child(2)::before { content: "🐟 "; } /* Second fish button */
+.info-section .button:nth-child(3)::before { content: "🐡 "; } /* Third fish button */
+.info-section .button:nth-child(4)::before { content: "🐠 "; } /* Fourth fish button */
+.info-section .button:nth-child(5)::before { content: "🐟 "; } /* Fifth fish button */
+.info-section .button:nth-child(6)::before { content: "🐡 "; } /* Sixth fish button */
+
+/* Specific animal button emojis */
+button[onclick*="Clownfish"]::before { content: "🤡 "; }
+button[onclick*="Tuna"]::before { content: "🐟 "; }
+button[onclick*="Guppy"]::before { content: "🐠 "; }
+button[onclick*="Goldfish"]::before { content: "🟡 "; }
+button[onclick*="Salmon"]::before { content: "🍣 "; }
+button[onclick*="Angelfish"]::before { content: "😇 "; }
+
+button[onclick*="Shark"]::before { content: "🦈 "; }
+button[onclick*="Ray"]::before { content: "🗲 "; }
+button[onclick*="Skate"]::before { content: "⛸️ "; }
+button[onclick*="Guitarfish"]::before { content: "🎸 "; }
+
+button[onclick*="Octopus"]::before { content: "🐙 "; }
+button[onclick*="Squid"]::before { content: "🦑 "; }
+button[onclick*="Snail"]::before { content: "🐌 "; }
+button[onclick*="Clam"]::before { content: "🦪 "; }
+button[onclick*="Mussel"]::before { content: "🦪 "; }
+
+button[onclick*="Crab"]::before { content: "🦀 "; }
+button[onclick*="Lobster"]::before { content: "🦞 "; }
+button[onclick*="Shrimp"]::before { content: "🦐 "; }
+button[onclick*="Barnacle"]::before { content: "🪨 "; }
+
+button[onclick*="Jellyfish"]::before { content: "🎐 "; }
+button[onclick*="Coral"]::before { content: "🪸 "; }
+button[onclick*="Sea Anemone"]::before { content: "🌺 "; }
+button[onclick*="Hydra"]::before { content: "💧 "; }
+
+button[onclick*="Starfish"]::before { content: "⭐ "; }
+button[onclick*="Sea Urchin"]::before { content: "🦔 "; }
+button[onclick*="Sea Cucumber"]::before { content: "🥒 "; }
+
+button[onclick*="Bath Sponge"]::before { content: "🧽 "; }
+button[onclick*="Tube Sponge"]::before { content: "🧪 "; }
+
+button[onclick*="Sea Snake"]::before { content: "🐍 "; }
+button[onclick*="Marine Iguana"]::before { content: "🦎 "; }
+
+button[onclick*="Cuttlefish"]::before { content: "🦑 "; }
+button[onclick*="Nautilus"]::before { content: "🐚 "; }
+
+button[onclick*="Eel"]::before { content: "🐍 "; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fish-content, .sea-content {
+        padding: 20px;
+        margin: 15px 10px;
+    }
+    
+    .fish-list, .sea-list {
+        padding: 15px;
+        margin: 15px 10px;
+    }
+    
+    .fishes, .creatures {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .button {
+        width: 85%;
+        margin: 8px auto;
+        padding: 16px 20px;
+        font-size: 16px;
+        display: block;
+    }
+    
+    .info-section {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+    
+    .info-section img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .info-section h2 {
+        font-size: 24px;
+    }
+    
+    .info-section h3 {
+        font-size: 18px;
+    }
+    
+    .info-section p {
+        font-size: 15px;
+    }
+    
+    .fish-content h1, .sea-content h1 {
+        font-size: 28px;
+    }
 }
